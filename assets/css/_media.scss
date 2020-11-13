@@ -1,0 +1,384 @@
+
+
+
+@media screen and (min-width: 993px) {
+body {
+ .footer__mob {
+   display: none;
+ }
+}
+}
+
+@media only screen and(min-width: 768px) and(max-width: 992px) {
+  body {
+      .header_profiles {
+          .user_block_info {
+              .user_nick_name {
+                  font-size: 30px !important;
+              }
+          }
+        .buttons {
+            button {
+                width: 170px !important;
+            }
+        }
+        .mobile_user_title {
+            align-items: start !important;
+            flex-direction: column;
+            .interesting_block {
+                width: 100% !important;
+            }
+            .verification_block {
+                margin-top: 20px;
+                display: flex !important;
+                justify-content: space-between !important;
+                flex-direction: initial !important;
+                align-items: start !important;
+                .verification_box {
+                    margin-top: 0 !important;
+                    margin-left: 30px !important;
+                }
+            }
+        }
+        .sub_right_info {
+            margin-top: 20px;
+        }
+      }
+      .exhibited_works {
+          .box_work {
+              width: 147px !important;
+          }
+      }
+    footer {
+      display: none !important;
+    }
+  .footer__mob {
+    display: block;
+  }
+  
+}
+}
+@media only screen and(max-width: 767px) {
+  body {
+      
+    .head__main_block {
+      padding-top: 0 !important;
+      margin-left: 0 !important;
+    }
+     .header_profiles {
+         
+        .mobile_user_sup {
+            align-items: start !important;
+            flex-direction: column;
+            .buttons {
+                margin-top: 15px;
+            }
+        }
+        .sub_right_info {
+            flex-direction: column;
+            align-items: start !important;
+            .user_stars {
+                text-align: start !important;
+            }
+        }
+          .user_block_info {
+              .user_nick_name {
+                  font-size: 30px !important;
+              }
+          }
+        .buttons {
+            button {
+                width: 170px !important;
+            }
+        }
+        .mobile_user_title {
+            align-items: start !important;
+            flex-direction: column;
+            .interesting_block {
+                width: 100% !important;
+            }
+            .verification_block {
+                margin-top: 20px;
+                display: flex !important;
+                justify-content: space-between !important;
+                flex-direction: column !important;
+                align-items: start !important;
+                .verification_box {
+                    margin-top: 15px !important;
+                }
+            }
+            .interesting_info {
+                display: none !important;
+            }
+            .user_name_info {
+                font-size: 25px !important;
+            }
+        }
+        .sub_right_info {
+            margin-top: 20px;
+        }
+      }
+      .mobile_achievements {
+          flex-wrap: wrap;
+      }
+      .exhibited_works {
+          p {
+              font-size: 20px !important;
+          }
+          .box_work {
+              width: 134px !important;
+          }
+      }
+      .mobile_reviews {
+        p {
+            font-size: 20px !important;
+            margin-top: 20px;
+        }
+        button {
+            width: 110px !important;
+        }
+      }
+      
+      .review_info {
+        .mobile_review_info {
+            flex-direction: column !important;
+            align-items: start !important;
+            margin-left: 15px;
+        }
+        .last_info {
+            width: 100% !important;
+            flex-direction: column;
+            align-items: flex-end !important;
+            span {
+                font-size: 12px !important;
+            }
+        }
+      }
+    
+    footer {
+      display: none !important;
+    } 
+    
+  }
+}
+
+
+@media only screen and(max-width: 567px) {
+  body {
+    
+  }
+}
+
+@media only screen and(max-width: 467px) {
+  body {
+    .header_profiles {
+        .buttons {
+            button {
+                width: 150px !important;
+            }
+        }
+        .block_experience {
+            margin-top: 15px;
+        }
+    }
+}
+}
+@media screen and (max-width: 368px) {
+  body {
+
+  }
+}
+
+
+
+// ************** added footer
+
+@media (min-width: 1160px) {
+  body {
+      font-size: 14px;
+  }
+  
+  .social a i {
+      font-size: 25px;
+  }
+  
+  .item__list {
+      font-size: 12px;
+  }
+  .container_ded{
+      width: 1160px;
+      padding: 0 20px;
+  }
+  .footer__item{
+      margin-right: 9%;
+  }
+}
+@media (max-width: 1100px) {
+  .social a i{
+      font-size: 18px;
+  }
+  .item__list{
+      font-size: 13px;
+  }
+  #investonse{
+      width: 150px;
+
+  }
+  #letcop_com{
+      width: 50px;
+  }
+  .footer__item{
+      margin-right: 4.5%;
+  }
+}
+@media (max-width: 1000px) {
+  #investonse_mob{
+      width: 160px;
+  }
+  body {
+      line-height: 1.5em;
+      font-size: 15px;
+  }
+
+  .container_ded {
+      width: 98%;
+  }
+
+  .disNon {
+      display: none;
+  }
+  
+  .dis {
+      display: block;
+  }
+  
+  .footer__item {
+      margin: 0;
+      margin-top: 7px;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px;
+      
+      background-color:  #12114A;
+  }
+  
+  .footer__item:first-child {
+      justify-content: center;
+      background-color: #fff;
+      margin-bottom: 0;
+      
+  }
+  
+  .blocks_fr {
+      margin-top: 5px;
+      text-align: center;
+      
+  }
+  
+  .fr__item {
+      width: 100%;
+      color: #12114A;
+      font-weight: 600;
+  }
+  
+  .fr__line {
+      margin: 5px 0;
+      border-bottom: 1px solid #12114A;
+  }
+  
+  .logo__mob {
+      width: auto;
+  }
+  
+  #aboutServiceBlock {
+      position: relative;
+  }
+  
+  #chevronAbSv {
+      position: absolute;
+      top: 29%;
+      right: 10px;
+  }
+  
+  #forUsersBlock {
+      position: relative;
+  }
+  
+  #chevronForUsers {
+      position: absolute;
+      top: 29%;
+      right: 10px;
+  }
+  
+  #hpBlock {
+      position: relative;
+  }
+  
+  #chevronHp {
+      position: absolute;
+      top: 29%;
+      right: 10px;
+  }
+  
+  #scBlock {
+      position: relative;
+  }
+  
+  #chevronSc {
+      position: absolute;
+      top: 29%;
+      right: 10px;
+  }
+  
+  .social {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .social a {
+      margin-right: 60px;
+      color: #12114A;
+  }
+  
+  .social a:last-child {
+      margin: 0;
+  }
+  
+  .social a:hover {
+      color: #00CF4D;
+  }
+  
+  .social a i {
+      font-size: 30px;
+  }
+
+  .copy {
+      line-height: 1.8em;
+      text-align: center;
+  }
+
+}
+
+@media (max-width: 770px) {
+  body {
+      font-size: 14px;
+  }
+  
+  .footer__item {
+      margin-top: 5px;
+      padding: 8px 0;
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer__item {
+      margin-top: 6px;
+      padding: 6px 0;
+      font-size: 14px;
+  }
+}
