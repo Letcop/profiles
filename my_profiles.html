@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профили</title>
+  <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+</head>
+
+<body class="profiles_page">
+  <header class="header_profiles">
+    <div class="conteiner">
+      <div class="head__main_block">
+        <div class="head__burger">
+          <div class="burger__iteam"></div>
+        </div>
+        <img class="media__logo" src="assets/icons/icon.svg">
+
+        <div class="head__left">
+          <img class="head__logo" src="assets/icons/icon.svg">
+          <nav>
+            <a href="#/">Заказы</a>
+            <a href="#/">Вакансии</a>
+
+            <div class="head__bottom clickedElem">
+              <span>Люди</span>
+              <i class="fal fa-chevron-down"></i>
+
+              <div class="hide__link">
+                <a href="#/">Все команды</a>
+                <a href="#/">Все исполнители</a>
+              </div>
+            </div>
+
+            <div class="head__bottom clickedElem">
+              <span>Еще</span>
+              <i class="fal fa-chevron-down"></i>
+
+              <div class="hide__link">
+                <a href="#/">Форум</a>
+                <a href="#/">Блог</a>
+                <a href="#/">Новости</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="head__botton">
+          <div class="head__bell clickedElem active__bell">
+            <p>200</p>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 251.2 251.2"
+              style="enable-background:new 0 0 251.2 251.2;" xml:space="preserve">
+              <path class="st0" d="M174.9,154.9c-0.3-0.3-0.4-0.6-0.4-1v-44.8c0-25.4-19.5-46.3-44.2-48.7V49.8c0-2.6-2.1-4.7-4.7-4.7
+            c-2.6,0-4.7,2.1-4.7,4.7v10.7c-24.8,2.4-44.2,23.3-44.2,48.7v44.8c0,0.4-0.2,0.7-0.4,1l-11.7,11.7c-2,2-3.1,4.7-3.1,7.6v3.6
+            c0,5.9,4.8,10.8,10.8,10.8h32.7c1.7,9.9,10.3,17.5,20.7,17.5s19-7.6,20.7-17.5H179c5.9,0,10.8-4.8,10.8-10.8v-3.6
+            c0-2.9-1.1-5.6-3.1-7.6L174.9,154.9z M125.6,196.7c-5.2,0-9.6-3.5-11.1-8.2h22.1C135.1,193.3,130.8,196.7,125.6,196.7z M61.7,150.1
+            c-0.9,0.9-2.1,1.4-3.3,1.4c-1.2,0-2.4-0.5-3.3-1.4c-7.5-7.5-11.6-17.5-11.6-28s4.1-20.6,11.6-28c1.8-1.8,4.8-1.8,6.6,0
+            c1.8,1.8,1.8,4.8,0,6.6c-5.7,5.7-8.9,13.3-8.9,21.4c0,8.1,3.1,15.7,8.9,21.4C63.5,145.3,63.5,148.3,61.7,150.1z M45.2,160
+            c1.8,1.8,1.8,4.8,0,6.6c-0.9,0.9-2.1,1.4-3.3,1.4c-1.2,0-2.4-0.5-3.3-1.4c-11.9-11.9-18.5-27.7-18.5-44.5s6.6-32.6,18.5-44.5
+            c1.8-1.8,4.8-1.8,6.6,0c1.8,1.8,1.8,4.8,0,6.6c-10.1,10.1-15.7,23.6-15.7,37.9S35.1,149.9,45.2,160z M196.1,150.1
+            c-0.9,0.9-2.1,1.4-3.3,1.4s-2.4-0.5-3.3-1.4c-1.8-1.8-1.8-4.8,0-6.6c11.8-11.8,11.8-31.1,0-42.9c-1.8-1.8-1.8-4.8,0-6.6
+            c1.8-1.8,4.8-1.8,6.6,0C211.6,109.5,211.6,134.7,196.1,150.1z M231,122.1c0,16.8-6.6,32.6-18.5,44.5c-0.9,0.9-2.1,1.4-3.3,1.4
+            s-2.4-0.5-3.3-1.4c-1.8-1.8-1.8-4.8,0-6.6c10.1-10.1,15.7-23.6,15.7-37.9s-5.6-27.8-15.7-37.9c-1.8-1.8-1.8-4.8,0-6.6
+            c1.8-1.8,4.8-1.8,6.6,0C224.5,89.4,231,105.3,231,122.1z" />
+            </svg>
+
+            <div class="hide__modal_block" id="remove__mobile">
+              <div class="hide__modal_triangle"></div>
+              <div class="hide__bell_modal">
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-bullhorn"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Напоминание</div>
+                    <div class="hide__modal_text">Действие вашего вашего тарифа истекает через 1 день! </div>
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-award"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Достижение</div>
+                    <div class="hide__modal_text">Вы получили новое достижение “Торговец”</div>
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-gift"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Подарки</div>
+                    <div class="hide__modal_text">Администрация Letcop поздравляет вас с Днем Рождения, вы получаете в
+                      подарок тариф "Gold"</div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Администрация</div>
+                    <div class="hide__modal_text">Ваш заказ был удален по причине "Ненормативная лексика"</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head__chat active__chat">
+            <p>50000000</p>
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 477.6 477.6" style="enable-background:new 0 0 477.6 477.6;"
+              xml:space="preserve">
+              <g>
+                <g>
+                  <path class="st0" d="M407.6,70c-45.1-45.1-105-70-168.8-70S115.1,24.9,70,70c-87,87-93.3,226-15.8,320.2
+                  c-10.7,21.9-23.3,36.5-37.6,43.5C7.9,438,3,447.4,4.4,457c1.5,9.7,8.9,17.2,18.6,18.7c5.3,0.8,11,1.3,16.9,1.3l0,0
+                  c29.3,0,60.1-10.1,85.8-27.8c34.6,18.6,73.5,28.4,113.1,28.4c63.8,0,123.7-24.8,168.8-69.9s69.9-105.1,69.9-168.8
+                  S452.7,115.1,407.6,70z" />
+                  <path class="st1"
+                    d="M338.8,160h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5S346.2,160,338.8,160z" />
+                  <path class="st1" d="M338.8,225.3h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5
+                  S346.2,225.3,338.8,225.3z" />
+                  <path class="st1" d="M338.8,290.6h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5
+                  S346.2,290.6,338.8,290.6z" />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="head__right clickedElem">
+          <div class="head__bottom clickedElem">
+            <span>RU</span>
+            <i class="fal fa-chevron-down"></i>
+            <div class="hide__link">
+              <a href="#/">UZ</a>
+            </div>
+          </div>
+          <a href="#/" class="head__singIn large_signIn">
+            <i class="fal fa-sign-in"></i>
+            <p>Войти</p>
+          </a>
+          <div class="head__profile">
+            <div class="head__foto">
+              <img src="assets/icons/avatar.png">
+            </div>
+            <div class="head__profile_content">
+              <div class="head__logine">
+                <p>Hamillioner</p>
+                <i class="fal fa-chevron-down"></i>
+              </div>
+              <div class="head__name">Тимур Касымов</div>
+              <div class="head__line_block">
+                <div class="head__line"></div>
+                <div class="head__line_number">1 LV</div>
+              </div>
+            </div>
+          </div>
+          <div class="head__hide">
+            <div class="head__hide_box">
+              <div class="head__hide_left">
+                <a class="head__hide_share" href="#/">
+                  <span>ФИНАНСЫ</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a><br>
+                <a href="#/">История переводов</a><br>
+                <a href="#/">Реферальная программа</a><br>
+                <a href="#/">Платный услуги</a><br>
+                <a href="#/">Настройки</a><br>
+              </div>
+              <div class="head__hide_right">
+                <a class="head__hide_share" href="#/">
+                  <span>ПРОФИЛЬ</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a><br>
+                <a href="#/">Команды</a><br>
+                <a href="#/">Вкладки</a><br>
+                <a href="#/">Мои заявки</a><br>
+                <a href="#/">Творческая мастерская</a><br>
+              </div>
+            </div>
+            <div class="media__hide_box">
+              <div class="media__hide_button">
+                <a href="#/">ПРОФИЛЬ</a>
+                <i class="fas fa-external-link-alt icon"></i>
+                <i class="fal fa-chevron-down down__icon"></i>
+              </div>
+              <div class="media__hide_links">
+                <a href="#/">История переводов</a><br>
+                <a href="#/">Реферальная программа</a><br>
+                <a href="#/">Платный услуги</a><br>
+                <a href="#/">Настройки</a>
+              </div>
+
+              <div class="color_blue media__hide_button">
+                <a href="#/">ФИНАНСЫ</a>
+                <i class="fas fa-external-link-alt icon"></i>
+                <i class="fal fa-chevron-down down__icon"></i>
+              </div>
+              <div class="media__hide_links">
+                <a href="#/">Команды</a><br>
+                <a href="#/">Вкладки</a><br>
+                <a href="#/">Мои заявки</a><br>
+                <a href="#/">Творческая мастерская</a>
+              </div>
+            </div>
+            <div class="head__hide_bottom">
+              <a class="head__support" href="#/">
+                <span>Поддержка</span>
+                <i class="fas fa-headset"></i>
+              </a>
+              <a class="head__logout" href="#/">
+                <span>Выход</span>
+                <i class="fal fa-sign-out"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="head__media_modal clickedElem">
+      <div class="head__modal_inner">
+        <a href="#/">Заказы</a>
+        <a href="#/">Вакансии</a>
+        <div class="media__hide_box">
+          <div class="media__hide_button">
+            <a href="#/">Люди</a>
+            <i class="fal fa-chevron-down down__icon"></i>
+          </div>
+          <div class="media__hide_links">
+            <a href="#/">Все команды</a>
+            <a href="#/">Все исполнители</a>
+
+          </div>
+
+          <div class="media__hide_button">
+            <a href="#/">Еще</a>
+            <i class="fal fa-chevron-down down__icon"></i>
+          </div>
+          <div class="media__hide_links">
+            <a href="#/">Форум</a>
+            <a href="#/">Блог</a>
+            <a href="#/">Новости</a>
+          </div>
+        </div>
+        <div class="change__lang">
+          <p class="change__title">Язык</p>
+          <p class="active__lang">RU</p>
+          <p>UZ</p>
+        </div>
+        <i class="fas fa-times-circle close"></i>
+      </div>
+      <div class="mobile__modal">
+        <div class="head__profile">
+          <div class="head__foto">
+            <img src="assets/icons/avatar.png">
+          </div>
+          <div class="head__profile_content">
+            <div class="modile__head_login ">
+              <p>Hamillioner</p>
+            </div>
+            <div class="head__name">Тимур Касымов</div>
+            <div class="head__line_block">
+              <div class="head__line"></div>
+              <div class="head__line_number">1 LV</div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile__singIn">
+          <a href="#/" class="head__singIn">
+            <i class="fal fa-sign-in"></i>
+            <p>Войти</p>
+          </a>
+        </div>
+        <div class="mobile__normal_menu head_mobile_page">
+          <div class="media__hide_box">
+            <div class="media__hide_button">
+              <a href="#/">Меню</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Заказы</a>
+              <a href="#/">Вакансии</a>
+              <a href="#/">Все команды</a>
+              <a href="#/">Все исполнители</a>
+              <a href="#/">Форум</a>
+              <a href="#/">Блог</a>
+              <a href="#/">Новости</a>
+            </div>
+
+            <div class="media__hide_button">
+              <a href="#/">ПРОФИЛЬ</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">История переводов</a>
+              <a href="#/">Реферальная программа</a>
+              <a href="#/">Платный услуги</a>
+              <a href="#/">Настройки</a>
+            </div>
+
+            <div class="media__hide_button">
+              <a href="#/">ФИНАНСЫ</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Команды</a>
+              <a href="#/">Вкладки</a>
+              <a href="#/">Мои заявки</a>
+              <a href="#/">Творческая мастерская</a>
+            </div>
+          </div>
+          <div class="change__lang">
+            <p class="change__title">Язык</p>
+            <p class="active__lang">RU</p>
+            <p>UZ</p>
+          </div>
+          <div class="head__hide_bottom">
+            <a class="head__support" href="#/">
+              <span>Поддержка</span>
+              <i class="fas fa-headset"></i>
+            </a>
+            <a class="head__logout" href="#/">
+              <span>Выход</span>
+              <i class="fal fa-sign-out"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mobile__singin_menu head__modal_inner mobile_modal_head_page">
+          <a href="#/">Заказы</a>
+          <a href="#/">Вакансии</a>
+          <div class="media__hide_box">
+            <div class="media__hide_button">
+              <a href="#/">Люди</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Все команды</a>
+              <a href="#/">Все исполнители</a>
+
+            </div>
+
+            <div class="media__hide_button">
+              <a href="#/">Еще</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Форум</a>
+              <a href="#/">Блог</a>
+              <a href="#/">Новости</a>
+            </div>
+          </div>
+          <div class="change__lang">
+            <p class="change__title">Язык</p>
+            <p class="active__lang">RU</p>
+            <p>UZ</p>
+          </div>
+          <!-- <i class="fas fa-times-circle close"></i> -->
+        </div>
+
+        <i class="fas fa-times-circle close"></i>
+
+      </div>
+    </div>
+
+    <div class="mobile__bell_modal hide__modal_block">
+      <div class="hide__modal_triangle"></div>
+      <div class="hide__bell_modal">
+        <div class="hide__modal_iteam">
+          <i class="fas fa-bullhorn"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Напоминание</div>
+            <div class="hide__modal_text">Действие вашего вашего тарифа истекает через 1 день! </div>
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-award"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Достижение</div>
+            <div class="hide__modal_text">Вы получили новое достижение “Торговец”</div>
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-gift"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Подарки</div>
+            <div class="hide__modal_text">Администрация Letcop поздравляет вас с Днем Рождения, вы получаете в подарок
+              тариф "Gold"</div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-exclamation-circle"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Администрация</div>
+            <div class="hide__modal_text">Ваш заказ был удален по причине "Ненормативная лексика"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-between mobile_user_sup">
+          <div class="user_block_info">
+            <div class="circle_avatar">
+              <img src="assets/images/user1.png" alt="">
+            </div>
+            <div class="d-flex align-items-start flex-column ml-3 ">
+              <span class="user_nick_name">Hamillioner</span>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="add_friends">мои друзья</button>
+            <button class="create_group">редиктировать</button>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-between align-items-end mobile_user_title">
+          <div class="sub_left_info">
+            <span class="private_info">Тип аккаунта: <a href=""> Исполнитель</a></span>
+            <span class="user_name_info">Тимур Касымов</span>
+            <div class="user_address">
+              <span>3 года на сервисе</span> <span> | </span>
+              <span>UZBEKISTAN</span><span> | </span>
+              <span>Tashkent</span>
+            </div>
+          </div>
+          <div class="sub_right_info">
+            <div class="user_stars">
+              <span>2 Lvl</span>
+              <div class="reviews">
+                <span>20 <span> отзывов</span></span>
+                <div class="stars">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/off_star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="block_experience">
+              <div class="block_experience_text">
+                <span class="experience_text">Опыт </span>
+                <span>70 из 100</span>
+              </div>
+              <div class="skill_bar">
+                <div class="progress_skill" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex align-items-start justify-content-between mt-3 mobile_user_title">
+          <div class="interesting_block">
+            <p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Пояс текстами
+              осталось снова жаренные ручеек не решила строчка маленькая переписывается коварных заголовок текста
+              которое своих все меня продолжил рыбными лучше, предупредила то безорфографичный? Дороге безопасную
+              запятой жизни точках инициал?</p>
+            <div class="back_text" style="display: none;">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur fugit rerum nesciunt eum,
+                alias maiores modi nostrum voluptatum quasi, ea expedita ab numquam ex corrupti similique hic saepe
+                quidem!</p>
+            </div>
+            <div class="d-flex align-items-end justify-content-end">
+              <div class="expand_btn d-inline-block ml-auto clicked_elem">Развернуть <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="interesting_info mt-3">
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/int.1.png" alt="">
+                <div class="d-flex align-items-start flex-column ml-3">
+                  <strong class="counter_num">30</strong>
+                  <span>Выставлено <br> работ</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/int.2.png" alt="">
+                <div class="d-flex align-items-start flex-column ml-3">
+                  <strong class="counter_num">101</strong>
+                  <span>Достиженией <br> получено</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/int.3.png" alt="">
+                <div class="d-flex align-items-start flex-column ml-3">
+                  <span><strong class="counter_num">2000</strong><strong>$</strong></span>
+                  <span>Выплачено <br> средства</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/int.4.png" alt="">
+                <div class="d-flex align-items-start flex-column ml-3">
+                  <span><strong class="counter_num">500</strong><strong>$</strong></span>
+                  <span>Дорогой <br> заказ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="verification_block">
+            <div class="ampount_box">
+              <p>ваша Сумма за час / $</p>
+              <div class="inp_payment">
+                <input type="text" maxlength="7" placeholder="Cумма не указана"
+                  onkeypress="return (event.charCode >= 48 && event.charCode <= 57);">
+                <i class="fas fa-money-check-alt"></i>
+              </div>
+            </div>
+            <div class="verification_box mt-3">
+              <p>верификация</p>
+              <div class="user_info_list">
+                <i class="fas fa-phone"></i>
+                <span>Ваша личность верифицирована</span>
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="user_phone_num">
+                <i class="fas fa-user"></i>
+                <span>Номер телефона - <a href="">не верификацион</a></span>
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="user_email">
+                <i class="fas fa-envelope"></i>
+                <span>Почта потверждена</span>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="head__overlay"></div>
+
+  <!-- End header **************** -->
+
+  <main class="main_profiles">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="achievements w-100">
+            <p>Достижения</p>
+            <div class="d-flex align-items-center justify-content-between mobile_achievements">
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <strong>+ 9</strong>
+                <h6>Смотреть всё</h6>
+              </div>
+            </div>
+          </div>
+          <div class="exhibited_works w-100">
+            <div class="d-flex align-items-center justify-content-between">
+              <p>Выставленные работы</p>
+              <button>Все работы</button>
+            </div>
+            <div class="d-flex flex-wrap">
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+            </div>
+          </div>
+          <div class="reviews">
+            <div class="d-flex align-items-center justify-content-between mobile_reviews">
+              <p>Отзывы - <span>20</span></p>
+              <button>все отзывы</button>
+            </div>
+            <div class="review_list">
+              <div class="avatar">
+                <img src="assets/images/user4.png" alt="">
+              </div>
+              <div class="review_info">
+                <div class="d-flex align-items-center justify-content-between mobile_review_info">
+                  <div class="right_info">
+                    <h6 class="name">георгий петров</h6>
+                    <span class="nick_name">misteryoda128</span>
+                  </div>
+                  <div class="last_info">
+                    <div class="stars">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <i class="fas fa-star off_star"></i>
+                    </div>
+                    <div class="date">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span><span class="day">24</span>.<span class="month">07</span>.<span
+                          class="year">2020</span></span>
+                    </div>
+                    <div class="time">
+                      <i class="fas fa-clock"></i>
+                      <span><span class="hour">18</span>:<span class="minutes">37</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_text">
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Над вскоре
+                    переписали однажды ему не рукописи назад которой, текст большой строчка последний точках своих его
+                    она образ текстами своего.</p>
+                </div>
+              </div>
+            </div>
+            <div class="review_list">
+              <div class="avatar">
+                <img src="assets/images/user4.png" alt="">
+              </div>
+              <div class="review_info">
+                <div class="d-flex align-items-center justify-content-between mobile_review_info">
+                  <div class="right_info">
+                    <h6 class="name">георгий петров</h6>
+                    <span class="nick_name">misteryoda128</span>
+                  </div>
+                  <div class="last_info">
+                    <div class="stars">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <i class="fas fa-star off_star"></i>
+                    </div>
+                    <div class="date">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span><span class="day">24</span>.<span class="month">07</span>.<span
+                          class="year">2020</span></span>
+                    </div>
+                    <div class="time">
+                      <i class="fas fa-clock"></i>
+                      <span><span class="hour">18</span>:<span class="minutes">37</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_text">
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Над вскоре
+                    переписали однажды ему не рукописи назад которой, текст большой строчка последний точках своих его
+                    она образ текстами своего.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="specializations">
+            <div class="specialization_btn click_elem">специализации <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="specializations_info">
+              <a href="">Веб - программирование</a>
+              <a href="">Сис.управление (CMS)</a>
+              <a href="">HTML - верстка</a>
+              <a href="">Сайт "под ключ"</a>
+              <a href="">Интернет - магазин</a>
+              <a href="">Тестирование сайтов</a>
+              <a href="">Маркетинговый анализ</a>
+              <a href="">Рерайтинг</a>
+            </div>
+          </div>
+          <div class="similar_performers">
+            <div class="perfomers_btn click_elem">подобные исполнители<i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="performers_info">
+              <a href="">Водитель</a>
+              <a href="">Мaшиностроение </a>
+              <a href="">Дизайнер</a>
+              <a href="">Руковадитель</a>
+              <a href="">Водитель</a>
+              <a href="">Мaшиностроение</a>
+              <a href="">Дизайнер</a>
+              <a href="">Руковадитель</a>
+            </div>
+          </div>
+          <div class="share_profile">
+            <p>поделитесь профилем</p>
+            <div class="profile_icons">
+              <i class="fab fa-whatsapp fa-2x"></i>
+              <i class="fab fa-viber fa-2x"></i>
+              <i class="fab fa-facebook-square fa-2x"></i>
+              <i class="fab fa-instagram fa-2x"></i>
+              <i class="fab fa-telegram-plane fa-2x"></i>
+              <i class="fab fa-twitter fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 footer_logo mr-auto">
+          <a href="#">
+            <img src="assets/icons/logo.svg" alt="" class="letcop_logo">
+            <span>LETCOP <br> group</span>
+          </a>
+          <a href=""><img src="assets/icons/INVESTONSE.svg" alt="" class="mt-3 investone_logo"></a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 d-flex  justify-content-center footer_text">
+          <div class="d-block">
+            <p>О сервисе</p>
+            <ul>
+              <li> <a href=""> О компонии</a> </li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 footer_text d-flex justify-content-center">
+          <div class="d-block">
+            <p>Пользователям</p>
+            <ul>
+              <li> <a href="">Тарифы</a> </li>
+              <li><a href="">Фриланс заказы</a></li>
+              <li><a href="">Архив заказов</a></li>
+              <li><a href="">Реферальная программа</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 footer_text d-flex justify-content-center">
+          <div class="d-block">
+            <p>Помощь</p>
+            <ul>
+              <li> <a href="">Помощь</a> </li>
+              <li> <a href="">Правила сервиса</a> </li>
+              <li><a href="">Служба поддержки</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6 footer_text justify-content-center text-center">
+          <p>Социальные сети</p>
+          <div class="social_networks d-flex justify-content-around align-items-center mt-4 mb-4">
+            <a href="https://www.facebook.com/letcopcom"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/letcop/"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/letcop"><i class="fab fa-telegram-plane"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+          <span class="copy text-muted ">&copy; Letcop 2020</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Мобильный футер -->
+
+  <div class="footer__mob dis">
+
+    <div class="footer__item">
+      <a href="#" class="logo__mob">
+        <img src="assets/icons/investonse_mob.png" class="investonse_mob" id="investonse_mob" alt="INVESTONSE">
+      </a>
+    </div>
+
+    <div id="aboutServiceBlock" class="footer__item">О сервисе <span class="spanFin"><i id="chevronAbSv"
+          style="cursor: pointer" class="fas fa-chevron-down"></i></span>
+    </div>
+    <div id="aboutServiceBlocks" class="blocks_fr" style="overflow: hidden; height: 0">
+      <a href="#" class="fr__item">О компании</a>
+      <div class="fr__line"></div>
+      <a href="#" class="fr__item">Контакты</a>
+    </div>
+
+    <div id="forUsersBlock" class="footer__item">Пользователям <span class="spanFin"><i id="chevronForUsers"
+          style="cursor: pointer" class="fas fa-chevron-down"></i></span>
+    </div>
+    <div id="forUsersBlocks" class="blocks_fr" style="overflow: hidden; height: 0">
+      <a href="#" class="fr__item">Тарифы</a>
+      <div class="fr__line"></div>
+      <a href="#" class="fr__item">Фриланс заказы</a>
+      <div class="fr__line"></div>
+      <a href="#" class="fr__item">Архив заказов</a>
+      <div class="fr__line"></div>
+      <a href="#" class="fr__item">Реферальная программа</a>
+    </div>
+
+    <div id="hpBlock" class="footer__item">Помощь <span class="spanFin"><i id="chevronHp" style="cursor: pointer"
+          class="fas fa-chevron-down"></i></span>
+    </div>
+    <div id="hpBlocks" class="blocks_fr" style="overflow: hidden; height: 0">
+      <a href="#" class="fr__item">Помощь</a>
+      <div class="fr__line"></div>
+      <a href="#" class="fr__item">Правила сервиса</a>
+      <div class="fr__line"></div>
+      <a href="#" class="fr__item">Служба поддержки</a>
+    </div>
+
+    <div id="scBlock" class="footer__item">Социальные сети <span class="spanFin"><i id="chevronSc"
+          style="cursor: pointer" class="fas fa-chevron-down"></i></span></div>
+    <div id="scBlocks" class="blocks_fr social" style="overflow: hidden; height: 0">
+      <a href="https://www.facebook.com/letcopcom" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/letcop/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/letcop" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+      <a href="https://www.youtube.com/channel/UCUsrbBhYrHi9tguALYINWfA?view_as=subscriber" target="_blank"><i
+          class="fab fa-youtube"></i></a>
+    </div>
+
+    <p class="copy">&copy; Letcop 2020</p>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+  <script src="assets/js/jquery.countup.min.js"></script>
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/profiles.js"></script>
+</body>
+
+</html>
