@@ -316,6 +316,7 @@ body .header_profiles .interesting_block .interesting_info {
       -ms-flex-align: center;
           align-items: center;
   color: #253556;
+  margin-bottom: 10px;
 }
 
 body .header_profiles .interesting_block .interesting_info strong {
@@ -327,6 +328,10 @@ body .header_profiles .interesting_block .interesting_info span {
   line-height: 15px;
   font-size: 15px;
   font-weight: 400;
+}
+
+body .header_profiles .interesting_block .interesting_info img {
+  color: #253556;
 }
 
 body .header_profiles .verification_block {
@@ -443,6 +448,12 @@ body .main_profiles .achievements p {
 }
 
 body .main_profiles .achievements .achievements_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -459,6 +470,7 @@ body .main_profiles .achievements .achievements_list {
 
 body .main_profiles .achievements .achievements_list img {
   margin-bottom: 10px;
+  color: #253556;
 }
 
 body .main_profiles .achievements .achievements_list span {
@@ -522,6 +534,10 @@ body .main_profiles .exhibited_works .box_work:hover {
 
 body .main_profiles .reviews {
   width: 100%;
+}
+
+body .main_profiles .reviews i {
+  color: #253556;
 }
 
 body .main_profiles .reviews p {

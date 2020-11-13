@@ -236,6 +236,7 @@ border-radius: 10px;
       .interesting_info {
         @include d-lex();
         color: $accent-color;
+        margin-bottom: 10px;
         strong {
           font-size: 22px;
           font-weight: 700;
@@ -244,6 +245,9 @@ border-radius: 10px;
           line-height: 15px;
           font-size: 15px;
           font-weight: 400;
+        }
+        img {
+          color: $accent-color;
         }
       }
     }
@@ -343,6 +347,8 @@ border-radius: 10px;
       color: $accent-color;
     }
     .achievements_list {
+      display: flex;
+      align-items: center;
       flex-direction: column;
       width: 90px;
       height: 100px;
@@ -353,6 +359,7 @@ border-radius: 10px;
       text-align: center;
       img {
         margin-bottom: 10px;
+        color: $accent-color;
       }
       span {
         font-weight: 500;
@@ -407,6 +414,10 @@ border-radius: 10px;
   }
   .reviews {
     width: 100%;
+    
+    i {
+      color: $accent-color;
+    }
     p {
       font-size: 25px;
       font-weight: 700;

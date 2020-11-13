@@ -2,6 +2,14 @@ let expandBtn = document.querySelector('.expand_btn');
 let backText = document.querySelector('.back_text');
 let clickElements = document.querySelectorAll('.click_elem');
 
+$(document).ready(function() {
+  $('.counter_num').countUp({
+    'time': 1500,
+    'delay': 10
+  });
+
+})
+
 let clickNum;
 expandBtn.addEventListener('click', () => {
   if(clickNum == 1) {
