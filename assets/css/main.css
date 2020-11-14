@@ -187,6 +187,7 @@ body .header_profiles .sub_left_info .private_info {
 body .header_profiles .sub_left_info .private_info a {
   color: #00cf4d;
   font-weight: 600;
+  padding-left: 5px;
 }
 
 body .header_profiles .sub_left_info .user_name_info {
@@ -290,6 +291,8 @@ body .header_profiles .interesting_block {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 15px;
+  /* Track */
+  /* Handle */
 }
 
 body .header_profiles .interesting_block p {
@@ -297,6 +300,29 @@ body .header_profiles .interesting_block p {
   line-height: 20px;
   color: #333333;
   font-weight: 400;
+  height: 80px;
+  overflow: hidden;
+}
+
+body .header_profiles .interesting_block .added_scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body .header_profiles .interesting_block .added_scroll::-webkit-scrollbar {
+  width: 5px;
+  cursor: pointer;
+}
+
+body .header_profiles .interesting_block .added_scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+body .header_profiles .interesting_block .added_scroll::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
 }
 
 body .header_profiles .interesting_block .expand_btn {
@@ -404,6 +430,20 @@ body .header_profiles .verification_block .verification_box p {
   font-weight: 500;
 }
 
+body .header_profiles .verification_block .verification_box .user_info_list,
+body .header_profiles .verification_block .verification_box .user_phone_num,
+body .header_profiles .verification_block .verification_box .user_email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body .header_profiles .verification_block .verification_box .user_info_list span,
 body .header_profiles .verification_block .verification_box .user_phone_num span,
 body .header_profiles .verification_block .verification_box .user_email span {
@@ -431,10 +471,6 @@ body .header_profiles .verification_block .verification_box .user_phone_num a {
 body .header_profiles .verification_block .verification_box .user_phone_num .fa-times-circle {
   color: #ff8fb4;
   padding-left: 10px;
-}
-
-body .header_profiles .verification_block .user_email .fa-check-circle {
-  margin-left: 92px;
 }
 
 body .main_profiles .achievements {
@@ -662,8 +698,9 @@ body .main_profiles .similar_performers .perfomers_btn {
 
 body .main_profiles .specializations .specializations_info,
 body .main_profiles .similar_performers .specializations_info {
-  margin-top: 10px;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -671,6 +708,9 @@ body .main_profiles .similar_performers .specializations_info {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
+  height: 0px;
+  margin-top: 10px;
 }
 
 body .main_profiles .specializations .specializations_info a,
@@ -689,12 +729,20 @@ body .main_profiles .similar_performers .specializations_info a:hover {
 
 body .main_profiles .specializations .performers_info,
 body .main_profiles .similar_performers .performers_info {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow: hidden;
+  height: 0px;
+  margin-top: 10px;
 }
 
 body .main_profiles .specializations .performers_info a,
@@ -702,9 +750,7 @@ body .main_profiles .similar_performers .performers_info a {
   border: 1px solid #253556;
   padding: 2px 5px;
   border-radius: 20px;
-  margin-top: 10px;
-  margin-left: 5px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: #253556;
   text-decoration: none;
@@ -1157,6 +1203,35 @@ body footer .soc-end a {
   }
   body .header_profiles .block_experience {
     margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  body .mobile_user_sup .buttons button {
+    width: 135px !important;
+    font-size: 10px !important;
+  }
+  body .skill_bar {
+    width: 280px !important;
+  }
+  body .verification_block {
+    width: 100% !important;
+  }
+  body .verification_block .ampount_box,
+  body .verification_block .verification_box {
+    width: 100% !important;
+  }
+  body .verification_box span {
+    font-size: 11px !important;
+  }
+  body .exhibited_works p {
+    font-size: 18px !important;
+  }
+  body .exhibited_works button {
+    font-size: 10px !important;
+  }
+  body .exhibited_works .box_work {
+    width: 115px !important;
   }
 }
 

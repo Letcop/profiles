@@ -479,18 +479,18 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="add_friends">удалить аккоунт</button>
-            <button class="create_group">сохранить</button>
+            <button class="add_friends">добавить в друзья</button>
+            <button class="create_group">написать</button>
           </div>
         </div>
         <div class="col-12 d-flex justify-content-between align-items-end mobile_user_title">
           <div class="sub_left_info">
-            <span class="private_info">Тип аккаунта: <a href=""> Исполнитель</a><i class="fas fa-pencil"></i></span>
-            <span class="user_name_info">Тимур Касымов </span> <i class="fas fa-pencil"></i>
+            <span class="private_info">Тип аккаунта: <a> Исполнитель</a></span>
+            <span class="user_name_info">Тимур Касымов</span>
             <div class="user_address">
-              <span>3 года на сервисе</span> <span> <i class="fas fa-pencil"></i> | </span>
-              <span>UZBEKISTAN</span><span><i class="fas fa-pencil"></i> | </span>
-              <span>Tashkent</span><i class="fas fa-pencil"></i>
+              <span>3 года на сервисе</span> <span> | </span>
+              <span>Uzbekistan</span><span> | </span>
+              <span>Tashkent</span>
             </div>
           </div>
           <div class="sub_right_info">
@@ -520,14 +520,55 @@
         </div>
         <div class="col-12 d-flex align-items-start justify-content-between mt-3 mobile_user_title">
           <div class="interesting_block">
-            <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Запятой, имеет?
-              Путь снова первую собрал вдали себя коварный пояс даль своего эта власти родного, встретил страна, имени
-              пор продолжил вопрос страну свой моей повстречался ручеек, подзаголовок журчит подпоясал? Эта переписали,
-              моей вершину заманивший маленькая, рукописи алфавит залетают инициал коварных от всех семь. Продолжил
-              рекламных снова ему текстов агентство безорфографичный оксмокс пор, страна своих маленькая предупредила,
-              путь сбить всемогущая родного жизни запятой рыбного но вершину? Оксмокс рыбными ее силуэт снова толку.</p>
+            <p class="scroll_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae cum quis eligendi
+              recusandae dolor
+              sequi dignissimos, ducimus, similique, incidunt sapiente atque nobis voluptatibus facere provident esse!
+              Reiciendis quos corporis deserunt, sapiente repellat quaerat, blanditiis nostrum accusamus, necessitatibus
+              ullam assumenda nisi in vel architecto temporibus provident! Excepturi tempora maiores, sapiente at
+              doloribus dicta repudiandae accusamus cum ducimus dolore nihil, ab sint quasi, ad nemo adipisci
+              consectetur! Perferendis atque ad blanditiis quas provident, consequuntur illum saepe perspiciatis
+              quisquam deleniti. Voluptates, tempore quis! Consectetur eaque facere quisquam veniam sint officiis cum,
+              itaque voluptates incidunt quasi accusantium. Fuga maiores quod cum enim culpa deleniti odit natus, iste
+              atque aliquam laboriosam saepe vel neque dolore aperiam, explicabo adipisci magni aut nemo eos voluptates.
+              Iste itaque voluptas sunt, nisi, repudiandae voluptates fugit molestiae dignissimos cumque eaque
+              laudantium earum recusandae quas odit quos rem temporibus! Assumenda ab ipsa velit iusto dolorem nostrum
+              dolor recusandae et. Iste qui eos quibusdam velit nesciunt voluptates veritatis laboriosam sed, inventore
+              soluta. Minus earum dolorum amet velit quibusdam nam placeat voluptatum architecto iure accusantium ab
+              natus incidunt, maxime sequi quae totam tempora voluptas. Ab blanditiis tenetur quis harum nisi iure
+              accusamus consequuntur perferendis illum vel labore eligendi iusto corrupti ipsam, laborum id!</p>
             <div class="d-flex align-items-end justify-content-end">
-              <button>сохранить</button>
+              <div class="expand_btn d-inline-block ml-auto clicked_elem">Развернуть <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="interesting_info mt-3">
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/int.1.png" alt="">
+                <div class="d-flex align-items-start flex-column ml-3">
+                  <strong class="counter_num">30</strong>
+                  <span>Выставлено <br> работ</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/int.2.png" alt="">
+                <div class="d-flex align-items-start flex-column ml-3">
+                  <strong class="counter_num">101</strong>
+                  <span>Достиженией <br> получено</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/int.3.png" alt="">
+                <div class="d-flex align-items-start flex-column ml-3">
+                  <span><strong class="counter_num">2000</strong><strong>$</strong></span>
+                  <span>Выплачено <br> средства</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/int.4.png" alt="">
+                <div class="d-flex align-items-start flex-column ml-3">
+                  <span><strong class="counter_num">500</strong><strong>$</strong></span>
+                  <span>Дорогой <br> заказ</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="verification_block">
@@ -535,25 +576,31 @@
               <p>ваша Сумма за час / $</p>
               <div class="inp_payment">
                 <input type="text" maxlength="7" placeholder="Cумма не указана"
-                  onkeypress="return (event.charCode >= 48 && event.charCode <= 57);">
+                  onkeypress="return (event.charCode >= 48 && event.charCode <= 57);" disabled>
                 <i class="fas fa-money-check-alt"></i>
               </div>
             </div>
             <div class="verification_box mt-3">
               <p>верификация</p>
               <div class="user_info_list">
-                <i class="fas fa-phone"></i>
-                <span>Ваша личность верифицирована</span>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone"></i>
+                  <span>Ваша личность верифицирована</span>
+                </div>
                 <i class="fas fa-check-circle"></i>
               </div>
               <div class="user_phone_num">
-                <i class="fas fa-user"></i>
-                <span>Номер телефона - <a href="">не верификацион</a></span>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-user"></i>
+                  <span>Номер телефон - <a href="">не верифицирован</a></span>
+                </div>
                 <i class="fas fa-times-circle"></i>
               </div>
               <div class="user_email">
-                <i class="fas fa-envelope"></i>
-                <span>Почта потверждена</span>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-envelope"></i>
+                  <span>Почта подтверждена</span>
+                </div>
                 <i class="fas fa-check-circle"></i>
               </div>
             </div>
@@ -570,6 +617,39 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
+          <div class="achievements w-100">
+            <p>Достижения</p>
+            <div class="d-flex align-items-center justify-content-between mobile_achievements">
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <img src="assets/icons/achievements.png" alt="">
+                <span>За что?</span>
+              </div>
+              <div class="achievements_list">
+                <strong>+ 9</strong>
+                <h6>Смотреть всё</h6>
+              </div>
+            </div>
+          </div>
           <div class="exhibited_works w-100">
             <div class="d-flex align-items-center justify-content-between">
               <p>Выставленные работы</p>
@@ -602,17 +682,95 @@
               </a>
             </div>
           </div>
+          <div class="reviews">
+            <div class="d-flex align-items-center justify-content-between mobile_reviews">
+              <p>Отзывы - <span>20</span></p>
+              <button>все отзывы</button>
+            </div>
+            <div class="review_list">
+              <div class="avatar">
+                <img src="assets/images/user4.png" alt="">
+              </div>
+              <div class="review_info">
+                <div class="d-flex align-items-center justify-content-between mobile_review_info">
+                  <div class="right_info">
+                    <h6 class="name">георгий петров</h6>
+                    <span class="nick_name">misteryoda128</span>
+                  </div>
+                  <div class="last_info">
+                    <div class="stars">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <i class="fas fa-star off_star"></i>
+                    </div>
+                    <div class="date">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span><span class="day">24</span>.<span class="month">07</span>.<span
+                          class="year">2020</span></span>
+                    </div>
+                    <div class="time">
+                      <i class="fas fa-clock"></i>
+                      <span><span class="hour">18</span>:<span class="minutes">37</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_text">
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Над вскоре
+                    переписали однажды ему не рукописи назад которой, текст большой строчка последний точках своих его
+                    она образ текстами своего.</p>
+                </div>
+              </div>
+            </div>
+            <div class="review_list">
+              <div class="avatar">
+                <img src="assets/images/user4.png" alt="">
+              </div>
+              <div class="review_info">
+                <div class="d-flex align-items-center justify-content-between mobile_review_info">
+                  <div class="right_info">
+                    <h6 class="name">георгий петров</h6>
+                    <span class="nick_name">misteryoda128</span>
+                  </div>
+                  <div class="last_info">
+                    <div class="stars">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <img src="assets/images/on_star.png" alt="">
+                      <i class="fas fa-star off_star"></i>
+                    </div>
+                    <div class="date">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span><span class="day">24</span>.<span class="month">07</span>.<span
+                          class="year">2020</span></span>
+                    </div>
+                    <div class="time">
+                      <i class="fas fa-clock"></i>
+                      <span><span class="hour">18</span>:<span class="minutes">37</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_text">
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Над вскоре
+                    переписали однажды ему не рукописи назад которой, текст большой строчка последний точках своих его
+                    она образ текстами своего.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-4">
           <div class="specializations">
-            <div class="specialization_btn click_elem">специализации <i class="fas fa-chevron-down"></i>
+            <div class="specialization_btn click_elem">специализации<i class="fas fa-chevron-down" id="chevronSpec"></i>
             </div>
-            <div class="specializations_info">
-              <a href="">Веб - программирование</a>
-              <a href="">Сис.управление (CMS)</a>
+            <div class="specializations_info invisible_block" id="special">
+              <a href="#" class="special__item">Веб-программирование</a>
+              <a href="">Сис. управление(CMS)</a>
               <a href="">HTML - верстка</a>
-              <a href="">Сайт "под ключ"</a>
+              <a href="">Сайт "Под ключ"</a>
               <a href="">Интернет - магазин</a>
               <a href="">Тестирование сайтов</a>
               <a href="">Маркетинговый анализ</a>
@@ -620,17 +778,21 @@
             </div>
           </div>
           <div class="similar_performers">
-            <div class="perfomers_btn click_elem">подобные исполнители<i class="fas fa-chevron-down"></i>
+            <div class="perfomers_btn click_elem">Подобные исполнители<i class="fas fa-chevron-down"
+                id="chevronSim"></i>
             </div>
             <div class="performers_info">
-              <a href="">Водитель</a>
-              <a href="">Мaшиностроение </a>
-              <a href="">Дизайнер</a>
-              <a href="">Руковадитель</a>
-              <a href="">Водитель</a>
-              <a href="">Мaшиностроение</a>
-              <a href="">Дизайнер</a>
-              <a href="">Руковадитель</a>
+              <a href="#">Водитель</a>
+              <a href="#">Машиностроение</a>
+              <a href="#">Дизайнер</a>
+              <a href="#">Руководитель</a>
+              <a href="#">Машиностроение</a>
+              <a href="#">Водитель</a>
+              <a href="#">Машиностроение</a>
+              <a href="#">Дизайнер</a>
+              <a href="#">Водитель</a>
+              <a href="#">Машиностроение</a>
+              <a href="#">Дизайнер</a>
             </div>
           </div>
           <div class="share_profile">
@@ -767,6 +929,7 @@
   <script src="assets/js/jquery.waypoints.min.js"></script>
   <script src="assets/js/header.js"></script>
   <script src="assets/js/profiles.js"></script>
+  <script src="assets/js/footer.js"></script>
 </body>
 
 </html>

@@ -185,7 +185,41 @@ body {
 }
 @media screen and (max-width: 368px) {
   body {
+      .mobile_user_sup {
+        .buttons {
+            button {
+                width: 135px !important;
+                font-size: 10px !important;
+            }
+        }
 
+      }
+    .skill_bar {
+        width: 280px !important;
+    }
+    .verification_block {
+        width: 100% !important;
+        .ampount_box,
+        .verification_box {
+            width: 100% !important;  
+        }
+    }
+    .verification_box {
+        span {
+            font-size: 11px !important;
+        }
+    }
+    .exhibited_works {
+        p {
+            font-size: 18px !important;
+        }
+        button {
+            font-size: 10px !important;
+        }
+        .box_work {
+            width: 115px !important;
+        }
+    }
   }
 }
 
