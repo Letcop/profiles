@@ -1,5 +1,3 @@
-
-
 const strelkaAbSv = document.getElementById('chevronAbSv');
 const abSvBl = document.getElementById('aboutServiceBlock');
 const abSv = document.getElementById('aboutServiceBlocks');

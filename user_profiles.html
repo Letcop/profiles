@@ -489,8 +489,7 @@
             <span class="user_name_info">Тимур Касымов</span>
             <div class="user_address">
               <span>3 года на сервисе</span> <span> | </span>
-              <span>Uzbekistan</span><span> | </span>
-              <span>Tashkent</span>
+              <span>Uzbekistan</span>
             </div>
           </div>
           <div class="sub_right_info">
@@ -558,22 +557,22 @@
               <div class="d-flex align-items-center">
                 <img src="assets/icons/int.3.png" alt="">
                 <div class="d-flex align-items-start flex-column ml-3">
-                  <span><strong class="counter_num">2000</strong><strong>$</strong></span>
+                  <strong><span class="counter_num">2000</span><span>$</span></strong>
                   <span>Выплачено <br> средства</span>
                 </div>
               </div>
               <div class="d-flex align-items-center">
                 <img src="assets/icons/int.4.png" alt="">
                 <div class="d-flex align-items-start flex-column ml-3">
-                  <span><strong class="counter_num">500</strong><strong>$</strong></span>
+                  <strong><span class="counter_num">500</span><span>$</span></strong>
                   <span>Дорогой <br> заказ</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="verification_block">
+          <div class="verification_block ml-auto">
             <div class="ampount_box">
-              <p>ваша Сумма за час / $</p>
+              <p>Сумма за час / $</p>
               <div class="inp_payment">
                 <input type="text" maxlength="7" placeholder="Cумма не указана"
                   onkeypress="return (event.charCode >= 48 && event.charCode <= 57);" disabled>
@@ -585,7 +584,7 @@
               <div class="user_info_list">
                 <div class="d-flex align-items-center">
                   <i class="fas fa-phone"></i>
-                  <span>Ваша личность верифицирована</span>
+                  <span>личность верифицирована</span>
                 </div>
                 <i class="fas fa-check-circle"></i>
               </div>
@@ -644,7 +643,7 @@
                 <img src="assets/icons/achievements.png" alt="">
                 <span>За что?</span>
               </div>
-              <div class="achievements_list">
+              <div class="achievements_list" data-toggle="modal" data-target="#achievement_btn">
                 <strong>+ 9</strong>
                 <h6>Смотреть всё</h6>
               </div>
@@ -653,9 +652,33 @@
           <div class="exhibited_works w-100">
             <div class="d-flex align-items-center justify-content-between">
               <p>Выставленные работы</p>
-              <button>Все работы</button>
+              <button class="exhibited_btn">Все работы</button>
             </div>
-            <div class="d-flex flex-wrap">
+            <div class="d-flex flex-wrap box_works">
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
+              <a href="">
+                <div class="box_work"></div>
+              </a>
               <a href="">
                 <div class="box_work"></div>
               </a>
@@ -685,77 +708,151 @@
           <div class="reviews">
             <div class="d-flex align-items-center justify-content-between mobile_reviews">
               <p>Отзывы - <span>20</span></p>
-              <button>все отзывы</button>
+              <button class="review_btn">все отзывы</button>
             </div>
-            <div class="review_list">
-              <div class="avatar">
-                <img src="assets/images/user4.png" alt="">
-              </div>
-              <div class="review_info">
-                <div class="d-flex align-items-center justify-content-between mobile_review_info">
-                  <div class="right_info">
-                    <h6 class="name">георгий петров</h6>
-                    <span class="nick_name">misteryoda128</span>
+            <div class="review_item">
+              <div class="review_list">
+                <div class="avatar">
+                  <img src="assets/images/user4.png" alt="">
+                </div>
+                <div class="review_info">
+                  <div class="d-flex align-items-center justify-content-between mobile_review_info">
+                    <div class="right_info">
+                      <h6 class="name">георгий петров</h6>
+                      <span class="nick_name">misteryoda128</span>
+                    </div>
+                    <div class="last_info">
+                      <div class="stars">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <i class="fas fa-star off_star"></i>
+                      </div>
+                      <div class="date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span><span class="day">24</span>.<span class="month">07</span>.<span
+                            class="year">2020</span></span>
+                      </div>
+                      <div class="time">
+                        <i class="fas fa-clock"></i>
+                        <span><span class="hour">18</span>:<span class="minutes">37</span></span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="last_info">
-                    <div class="stars">
-                      <img src="assets/images/on_star.png" alt="">
-                      <img src="assets/images/on_star.png" alt="">
-                      <img src="assets/images/on_star.png" alt="">
-                      <img src="assets/images/on_star.png" alt="">
-                      <i class="fas fa-star off_star"></i>
-                    </div>
-                    <div class="date">
-                      <i class="fas fa-calendar-alt"></i>
-                      <span><span class="day">24</span>.<span class="month">07</span>.<span
-                          class="year">2020</span></span>
-                    </div>
-                    <div class="time">
-                      <i class="fas fa-clock"></i>
-                      <span><span class="hour">18</span>:<span class="minutes">37</span></span>
-                    </div>
+                  <div class="comment_text">
+                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Над вскоре
+                      переписали однажды ему не рукописи назад которой, текст большой строчка последний точках своих его
+                      она образ текстами своего.</p>
                   </div>
                 </div>
-                <div class="comment_text">
-                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Над вскоре
-                    переписали однажды ему не рукописи назад которой, текст большой строчка последний точках своих его
-                    она образ текстами своего.</p>
+              </div>
+              <div class="review_list">
+                <div class="avatar">
+                  <img src="assets/images/user4.png" alt="">
                 </div>
-              </div>
-            </div>
-            <div class="review_list">
-              <div class="avatar">
-                <img src="assets/images/user4.png" alt="">
-              </div>
-              <div class="review_info">
-                <div class="d-flex align-items-center justify-content-between mobile_review_info">
-                  <div class="right_info">
-                    <h6 class="name">георгий петров</h6>
-                    <span class="nick_name">misteryoda128</span>
-                  </div>
-                  <div class="last_info">
-                    <div class="stars">
-                      <img src="assets/images/on_star.png" alt="">
-                      <img src="assets/images/on_star.png" alt="">
-                      <img src="assets/images/on_star.png" alt="">
-                      <img src="assets/images/on_star.png" alt="">
-                      <i class="fas fa-star off_star"></i>
+                <div class="review_info">
+                  <div class="d-flex align-items-center justify-content-between mobile_review_info">
+                    <div class="right_info">
+                      <h6 class="name">георгий петров</h6>
+                      <span class="nick_name">misteryoda128</span>
                     </div>
-                    <div class="date">
-                      <i class="fas fa-calendar-alt"></i>
-                      <span><span class="day">24</span>.<span class="month">07</span>.<span
-                          class="year">2020</span></span>
-                    </div>
-                    <div class="time">
-                      <i class="fas fa-clock"></i>
-                      <span><span class="hour">18</span>:<span class="minutes">37</span></span>
+                    <div class="last_info">
+                      <div class="stars">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <i class="fas fa-star off_star"></i>
+                      </div>
+                      <div class="date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span><span class="day">24</span>.<span class="month">07</span>.<span
+                            class="year">2020</span></span>
+                      </div>
+                      <div class="time">
+                        <i class="fas fa-clock"></i>
+                        <span><span class="hour">18</span>:<span class="minutes">37</span></span>
+                      </div>
                     </div>
                   </div>
+                  <div class="comment_text">
+                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Над вскоре
+                      переписали однажды ему не рукописи назад которой, текст большой строчка последний точках своих его
+                      она образ текстами своего.</p>
+                  </div>
                 </div>
-                <div class="comment_text">
-                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Над вскоре
-                    переписали однажды ему не рукописи назад которой, текст большой строчка последний точках своих его
-                    она образ текстами своего.</p>
+              </div>
+              <div class="review_list">
+                <div class="avatar">
+                  <img src="assets/images/user4.png" alt="">
+                </div>
+                <div class="review_info">
+                  <div class="d-flex align-items-center justify-content-between mobile_review_info">
+                    <div class="right_info">
+                      <h6 class="name">георгий петров</h6>
+                      <span class="nick_name">misteryoda128</span>
+                    </div>
+                    <div class="last_info">
+                      <div class="stars">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <i class="fas fa-star off_star"></i>
+                      </div>
+                      <div class="date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span><span class="day">24</span>.<span class="month">07</span>.<span
+                            class="year">2020</span></span>
+                      </div>
+                      <div class="time">
+                        <i class="fas fa-clock"></i>
+                        <span><span class="hour">18</span>:<span class="minutes">37</span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment_text">
+                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Над вскоре
+                      переписали однажды ему не рукописи назад которой, текст большой строчка последний точках своих его
+                      она образ текстами своего.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="review_list">
+                <div class="avatar">
+                  <img src="assets/images/user4.png" alt="">
+                </div>
+                <div class="review_info">
+                  <div class="d-flex align-items-center justify-content-between mobile_review_info">
+                    <div class="right_info">
+                      <h6 class="name">георгий петров</h6>
+                      <span class="nick_name">misteryoda128</span>
+                    </div>
+                    <div class="last_info">
+                      <div class="stars">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <img src="assets/images/on_star.png" alt="">
+                        <i class="fas fa-star off_star"></i>
+                      </div>
+                      <div class="date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span><span class="day">24</span>.<span class="month">07</span>.<span
+                            class="year">2020</span></span>
+                      </div>
+                      <div class="time">
+                        <i class="fas fa-clock"></i>
+                        <span><span class="hour">18</span>:<span class="minutes">37</span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment_text">
+                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Над вскоре
+                      переписали однажды ему не рукописи назад которой, текст большой строчка последний точках своих его
+                      она образ текстами своего.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -764,9 +861,9 @@
 
         <div class="col-lg-4">
           <div class="specializations">
-            <div class="specialization_btn click_elem">специализации<i class="fas fa-chevron-down" id="chevronSpec"></i>
+            <div class="specialization_btn">специализации<i class="fas fa-chevron-down" id="chevronSpec"></i>
             </div>
-            <div class="specializations_info invisible_block" id="special">
+            <div class="specializations_info" id="special">
               <a href="#" class="special__item">Веб-программирование</a>
               <a href="">Сис. управление(CMS)</a>
               <a href="">HTML - верстка</a>
@@ -778,7 +875,7 @@
             </div>
           </div>
           <div class="similar_performers">
-            <div class="perfomers_btn click_elem">Подобные исполнители<i class="fas fa-chevron-down"
+            <div class="perfomers_btn click_elem">Дополнительные навыки<i class="fas fa-chevron-down"
                 id="chevronSim"></i>
             </div>
             <div class="performers_info">
@@ -810,6 +907,108 @@
       </div>
     </div>
   </main>
+  <!-- End main **************** -->
+
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal modal_achievement fade" id="achievement_btn" data-backdrop="static" data-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal_header">
+          <div class="modal_user_header">
+            <div class="avatar">
+              <div class="border">
+                <img src="assets/images/user4.png" alt="">
+              </div>
+            </div>
+            <div class="stars">
+              <img src="assets/images/on_star.png" alt="">
+              <img src="assets/images/on_star.png" alt="">
+              <img src="assets/images/on_star.png" alt="">
+              <img src="assets/images/on_star.png" alt="">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="name">
+              <h6>георгий петров</h6>
+              <span>masteryoda128</span>
+            </div>
+          </div>
+          <div class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times-circle close"></i>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="modal_title">
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+            <div class="achievements_list">
+              <img src="assets/icons/achievements.png" alt="">
+              <span>За что?</span>
+            </div>
+          </div>
+          <div class="info_list">
+            Наведите на достижение, что бы прочитать описание
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="container">
