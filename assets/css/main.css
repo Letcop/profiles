@@ -93,14 +93,35 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .profiles_page {
-  background-color: #efefef;
-}
-
-body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #efefef;
+  /* Track */
+  /* Handle */
 }
 
-body .header_profiles {
+.profiles_page .anim_all_box_works::-webkit-scrollbar,
+.profiles_page .anim_all_reviews::-webkit-scrollbar,
+.profiles_page .anim_MobileText::-webkit-scrollbar {
+  width: 5px;
+  cursor: pointer;
+}
+
+.profiles_page .anim_all_box_works::-webkit-scrollbar-track,
+.profiles_page .anim_all_reviews::-webkit-scrollbar-track,
+.profiles_page .anim_MobileText::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.profiles_page .anim_all_box_works::-webkit-scrollbar-thumb,
+.profiles_page .anim_all_reviews::-webkit-scrollbar-thumb,
+.profiles_page .anim_MobileText::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+
+.profiles_page .header_profiles {
   background-image: url("../images/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,27 +129,27 @@ body .header_profiles {
   padding: 20px 0 45px;
 }
 
-body .header_profiles .head__logine i {
+.profiles_page .header_profiles .head__logine i {
   margin-top: -15px;
 }
 
-body .header_profiles .close,
-body .header_profiles .fa-times-circle,
-body .header_profiles .mobile__bell_modal {
+.profiles_page .header_profiles .close,
+.profiles_page .header_profiles .fa-times-circle,
+.profiles_page .header_profiles .mobile__bell_modal {
   z-index: 9 !important;
 }
 
-body .header_profiles .head__main_block {
+.profiles_page .header_profiles .head__main_block {
   margin-left: 50px;
   height: 100px !important;
   padding-bottom: 40px;
 }
 
-body .header_profiles .head__name {
+.profiles_page .header_profiles .head__name {
   margin-top: -15px;
 }
 
-body .header_profiles .user_block_info {
+.profiles_page .header_profiles .user_block_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,13 +158,13 @@ body .header_profiles .user_block_info {
           align-items: center;
 }
 
-body .header_profiles .user_block_info .user_nick_name {
+.profiles_page .header_profiles .user_block_info .user_nick_name {
   font-size: 40px;
   font-weight: 700;
   color: #ffffff;
 }
 
-body .header_profiles .buttons button {
+.profiles_page .header_profiles .buttons button {
   width: 210px;
   height: 30px;
   border-radius: 20px;
@@ -152,19 +173,19 @@ body .header_profiles .buttons button {
   font-weight: 700;
 }
 
-body .header_profiles .buttons .add_friends {
+.profiles_page .header_profiles .buttons .add_friends {
   background: transparent;
   border: 2px solid #00cf4d;
   color: #ffffff;
   margin-right: 15px;
 }
 
-body .header_profiles .buttons .add_friends:hover {
+.profiles_page .header_profiles .buttons .add_friends:hover {
   background-color: #00cf4d;
   color: #ffffff;
 }
 
-body .header_profiles .sub_left_info {
+.profiles_page .header_profiles .sub_left_info {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,28 +200,28 @@ body .header_profiles .sub_left_info {
   line-height: 30px;
 }
 
-body .header_profiles .sub_left_info .private_info {
+.profiles_page .header_profiles .sub_left_info .private_info {
   font-size: 13px;
   font-weight: 400;
 }
 
-body .header_profiles .sub_left_info .private_info a {
+.profiles_page .header_profiles .sub_left_info .private_info a {
   color: #00cf4d;
   font-weight: 600;
   padding-left: 5px;
 }
 
-body .header_profiles .sub_left_info .user_name_info {
+.profiles_page .header_profiles .sub_left_info .user_name_info {
   font-size: 30px;
   font-weight: 600;
 }
 
-body .header_profiles .sub_left_info .user_address {
+.profiles_page .header_profiles .sub_left_info .user_address {
   font-size: 13px;
   font-weight: 400;
 }
 
-body .header_profiles .sub_right_info {
+.profiles_page .header_profiles .sub_right_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,17 +230,17 @@ body .header_profiles .sub_right_info {
           align-items: center;
 }
 
-body .header_profiles .sub_right_info .user_stars {
+.profiles_page .header_profiles .sub_right_info .user_stars {
   text-align: right;
   margin-right: 30px;
 }
 
-body .header_profiles .sub_right_info .user_stars span {
+.profiles_page .header_profiles .sub_right_info .user_stars span {
   font-size: 25px;
   font-weight: 600;
 }
 
-body .header_profiles .sub_right_info .reviews {
+.profiles_page .header_profiles .sub_right_info .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,16 +252,16 @@ body .header_profiles .sub_right_info .reviews {
           justify-content: center;
 }
 
-body .header_profiles .sub_right_info .reviews span {
+.profiles_page .header_profiles .sub_right_info .reviews span {
   font-size: 13px;
   font-weight: 400;
 }
 
-body .header_profiles .sub_right_info .reviews .stars {
+.profiles_page .header_profiles .sub_right_info .reviews .stars {
   margin-left: 10px;
 }
 
-body .header_profiles .sub_right_info .block_experience {
+.profiles_page .header_profiles .sub_right_info .block_experience {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,17 +274,17 @@ body .header_profiles .sub_right_info .block_experience {
           flex-direction: column;
 }
 
-body .header_profiles .sub_right_info .block_experience .experience_text {
+.profiles_page .header_profiles .sub_right_info .block_experience .experience_text {
   font-size: 25px;
   font-weight: 600;
 }
 
-body .header_profiles .sub_right_info .block_experience span {
+.profiles_page .header_profiles .sub_right_info .block_experience span {
   font-size: 13px;
   font-weight: 400;
 }
 
-body .header_profiles .sub_right_info .block_experience .skill_bar {
+.profiles_page .header_profiles .sub_right_info .block_experience .skill_bar {
   width: 330px;
   height: 10px;
   background-color: #ffffff;
@@ -272,7 +293,7 @@ body .header_profiles .sub_right_info .block_experience .skill_bar {
   margin-top: 10px;
 }
 
-body .header_profiles .sub_right_info .block_experience .skill_bar .progress_skill {
+.profiles_page .header_profiles .sub_right_info .block_experience .skill_bar .progress_skill {
   position: absolute;
   top: 0;
   left: 0;
@@ -285,7 +306,7 @@ body .header_profiles .sub_right_info .block_experience .skill_bar .progress_ski
           animation: anim_skill 4s ease-in-out forwards;
 }
 
-body .header_profiles .interesting_block {
+.profiles_page .header_profiles .interesting_block {
   position: absolute;
   width: 750px;
   height: auto;
@@ -297,7 +318,7 @@ body .header_profiles .interesting_block {
   /* Handle */
 }
 
-body .header_profiles .interesting_block p {
+.profiles_page .header_profiles .interesting_block p {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -308,34 +329,38 @@ body .header_profiles .interesting_block p {
   transition: max-height 0.8s ease-in-out;
 }
 
-body .header_profiles .interesting_block .anim_addText {
+.profiles_page .header_profiles .interesting_block .anim_addText {
   max-height: 125px;
   overflow-y: scroll;
 }
 
-body .header_profiles .interesting_block .anim_addText::-webkit-scrollbar {
+.profiles_page .header_profiles .interesting_block .anim_addText::-webkit-scrollbar {
   width: 5px;
   cursor: pointer;
 }
 
-body .header_profiles .interesting_block .anim_addText::-webkit-scrollbar-track {
+.profiles_page .header_profiles .interesting_block .anim_addText::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 5px grey;
           box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
-body .header_profiles .interesting_block .anim_addText::-webkit-scrollbar-thumb {
+.profiles_page .header_profiles .interesting_block .anim_addText::-webkit-scrollbar-thumb {
   background: #00cf4d;
   border-radius: 10px;
 }
 
-body .header_profiles .interesting_block .expand_btn {
+.profiles_page .header_profiles .interesting_block .expand_btn {
   color: #253556;
   cursor: pointer;
   text-align: end;
 }
 
-body .header_profiles .interesting_block .interesting_info {
+.profiles_page .header_profiles .interesting_block .add_expend_btn {
+  color: #00cf4d;
+}
+
+.profiles_page .header_profiles .interesting_block .interesting_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,27 +374,27 @@ body .header_profiles .interesting_block .interesting_info {
   margin-bottom: 10px;
 }
 
-body .header_profiles .interesting_block .interesting_info strong {
+.profiles_page .header_profiles .interesting_block .interesting_info strong {
   font-size: 22px;
   font-weight: 700;
 }
 
-body .header_profiles .interesting_block .interesting_info strong span {
+.profiles_page .header_profiles .interesting_block .interesting_info strong span {
   font-size: 22px;
   font-weight: 700;
 }
 
-body .header_profiles .interesting_block .interesting_info span {
+.profiles_page .header_profiles .interesting_block .interesting_info span {
   line-height: 15px;
   font-size: 15px;
   font-weight: 400;
 }
 
-body .header_profiles .interesting_block .interesting_info img {
+.profiles_page .header_profiles .interesting_block .interesting_info img {
   color: #253556;
 }
 
-body .header_profiles .verification_block {
+.profiles_page .header_profiles .verification_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,7 +407,7 @@ body .header_profiles .verification_block {
           flex-direction: column;
 }
 
-body .header_profiles .verification_block .ampount_box {
+.profiles_page .header_profiles .verification_block .ampount_box {
   width: 330px;
   background-color: #ffffff;
   padding: 15px;
@@ -391,18 +416,18 @@ body .header_profiles .verification_block .ampount_box {
   line-height: 5px;
 }
 
-body .header_profiles .verification_block .ampount_box .inp_payment {
+.profiles_page .header_profiles .verification_block .ampount_box .inp_payment {
   position: relative;
 }
 
-body .header_profiles .verification_block .ampount_box p {
+.profiles_page .header_profiles .verification_block .ampount_box p {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
   color: #253556;
 }
 
-body .header_profiles .verification_block .ampount_box input {
+.profiles_page .header_profiles .verification_block .ampount_box input {
   width: 100%;
   border-radius: 20px;
   background-color: #efefef;
@@ -413,19 +438,19 @@ body .header_profiles .verification_block .ampount_box input {
   font-weight: 500;
 }
 
-body .header_profiles .verification_block .ampount_box input:focus {
+.profiles_page .header_profiles .verification_block .ampount_box input:focus {
   outline: none;
   border: 1px solid #00cf4d;
 }
 
-body .header_profiles .verification_block .ampount_box i {
+.profiles_page .header_profiles .verification_block .ampount_box i {
   position: absolute;
   left: 10px;
   top: 5px;
   color: #253556;
 }
 
-body .header_profiles .verification_block .verification_box {
+.profiles_page .header_profiles .verification_block .verification_box {
   width: 330px;
   padding: 15px;
   background-color: #ffffff;
@@ -433,15 +458,15 @@ body .header_profiles .verification_block .verification_box {
   color: #253556;
 }
 
-body .header_profiles .verification_block .verification_box p {
+.profiles_page .header_profiles .verification_block .verification_box p {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
 }
 
-body .header_profiles .verification_block .verification_box .user_info_list,
-body .header_profiles .verification_block .verification_box .user_phone_num,
-body .header_profiles .verification_block .verification_box .user_email {
+.profiles_page .header_profiles .verification_block .verification_box .user_info_list,
+.profiles_page .header_profiles .verification_block .verification_box .user_phone_num,
+.profiles_page .header_profiles .verification_block .verification_box .user_email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,46 +478,632 @@ body .header_profiles .verification_block .verification_box .user_email {
           align-items: center;
 }
 
-body .header_profiles .verification_block .verification_box .user_info_list span,
-body .header_profiles .verification_block .verification_box .user_phone_num span,
-body .header_profiles .verification_block .verification_box .user_email span {
+.profiles_page .header_profiles .verification_block .verification_box .user_info_list span,
+.profiles_page .header_profiles .verification_block .verification_box .user_phone_num span,
+.profiles_page .header_profiles .verification_block .verification_box .user_email span {
   font-size: 13px;
   font-weight: 400;
   padding-left: 5px;
 }
 
-body .header_profiles .verification_block .verification_box .user_info_list .fa-check-circle,
-body .header_profiles .verification_block .verification_box .user_phone_num .fa-check-circle,
-body .header_profiles .verification_block .verification_box .user_email .fa-check-circle {
+.profiles_page .header_profiles .verification_block .verification_box .user_info_list .fa-check-circle,
+.profiles_page .header_profiles .verification_block .verification_box .user_phone_num .fa-check-circle,
+.profiles_page .header_profiles .verification_block .verification_box .user_email .fa-check-circle {
   color: #00cf4d;
   padding-left: 30px;
 }
 
-body .header_profiles .verification_block .verification_box .user_phone_num {
+.profiles_page .header_profiles .verification_block .verification_box .user_phone_num {
   margin: 10px 0;
 }
 
-body .header_profiles .verification_block .verification_box .user_phone_num a {
+.profiles_page .header_profiles .verification_block .verification_box .user_phone_num a {
   color: #00cf4d;
   text-decoration: underline;
 }
 
-body .header_profiles .verification_block .verification_box .user_phone_num .fa-times-circle {
+.profiles_page .header_profiles .verification_block .verification_box .user_phone_num .fa-times-circle {
   color: #ff8fb4;
   padding-left: 10px;
 }
 
-body .main_profiles .achievements {
+.profiles_page .header_profiles .mobile_row {
+  position: relative;
+}
+
+.profiles_page .header_profiles .mobile_row .block_experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profiles_page .header_profiles .mobile_row .block_experience .block_experience_text {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 10px !important;
+}
+
+.profiles_page .header_profiles .mobile_row .block_experience span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.profiles_page .header_profiles .mobile_row .block_experience .skill_bar {
+  width: 330px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.profiles_page .header_profiles .mobile_row .block_experience .skill_bar .progress_skill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: #00cf4d;
+  height: 10px;
+  -webkit-box-shadow: inset 0 0 2px #000;
+          box-shadow: inset 0 0 2px #000;
+  -webkit-animation: anim_skill 4s ease-in-out forwards;
+          animation: anim_skill 4s ease-in-out forwards;
+}
+
+.profiles_page .header_profiles .mobile_row .mobile_titte_info {
+  margin-top: 20px;
+  position: absolute;
+  z-index: 1;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile {
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 8px;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .user_avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  position: absolute;
+  left: calc(100%/2.7);
+  top: -40px;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .user_avatar img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .add_button {
+  text-align: end;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .add_button i {
+  color: #c1c4ca;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .user_info_title {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #253556;
+  line-height: 17px;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .user_info_title .nick_name {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 5px;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .user_info_title span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .user_info_title span .type {
+  color: #00cf4d;
+  font-weight: 500;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .user_info_title .jobs {
+  font-size: 15px;
+  font-weight: 600;
+  color: #00cf4d;
+  padding-top: 5px;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .user_info_title .sub_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.profiles_page .header_profiles .mobile_row .info_text_mobile {
+  color: #253556;
+  margin-top: 15px;
+  height: auto;
+}
+
+.profiles_page .header_profiles .mobile_row .info_text_mobile P {
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+  max-height: 160px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.8s ease-in-out;
+  transition: max-height 0.8s ease-in-out;
+}
+
+.profiles_page .header_profiles .mobile_row .info_text_mobile .anim_MobileText {
+  max-height: 250px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.profiles_page .achievements_slider {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  background-color: #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profiles_page .achievements_slider p {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.profiles_page .achievements_slider .slider_item {
+  width: 80%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.profiles_page .achievements_slider .slider_item input {
+  display: none;
+}
+
+.profiles_page .achievements_slider .slider_item .achievements_list {
+  background-color: #efefef;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  height: 100px !important;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  -webkit-transition: 2s;
+  transition: 2s;
+  padding: 10px 15px;
+}
+
+.profiles_page .achievements_slider .slider_item .achievements_list span {
+  padding-top: 10px;
+}
+
+.profiles_page .achievements_slider .slider_item .achievements_list strong {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.profiles_page .achievements_slider .slider_item .achievements_list:hover {
+  border: 1px solid #00cf4d;
+}
+
+.profiles_page .manual_navigation {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.profiles_page .manual_navigation .manual_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+.profiles_page .manual_navigation .manual_btn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c1c4ca;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.profiles_page .manual_navigation .manual_btn:hover {
+  background-color: #00cf4d;
+}
+
+.profiles_page #radio_1:checked ~ .first_list {
+  margin-left: 0;
+}
+
+.profiles_page #radio_2:checked ~ .first_list {
+  margin-left: -72%;
+}
+
+.profiles_page #radio_3:checked ~ .first_list {
+  margin-left: -109%;
+}
+
+.profiles_page #radio_4:checked ~ .first_list {
+  margin-left: -180%;
+}
+
+.profiles_page .interesting_info_mobile {
+  color: #253556;
+  margin-top: 90px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.profiles_page .interesting_info_mobile strong {
+  font-size: 18px;
+}
+
+.profiles_page .interesting_info_mobile span {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.profiles_page .interesting_info_mobile strong span {
+  font-size: 18px;
+}
+
+.profiles_page .mobile_slider_works {
+  padding: 20px 0;
+  background-color: #ffffff;
+  width: 100%;
+  overflow: hidden;
+}
+
+.profiles_page .mobile_slider_works .title_text {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.profiles_page .mobile_slider_works .slider_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.profiles_page .mobile_slider_works .slider_item .slider_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+}
+
+.profiles_page .mobile_slider_works .slider_item .slider_list .work_box {
+  width: 160px;
+  height: 100px;
+  background-color: #efefef;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.profiles_page .mobile_slider_works ul {
+  margin: 30px auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.profiles_page .mobile_slider_works ul li {
+  width: 15px;
+  height: 15px;
+  background-color: #c1c4ca;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profiles_page .mobile_slider_works ul .colored {
+  background-color: #7fe7a6;
+}
+
+.profiles_page .mobile_slider_works ul > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.profiles_page .mobile_review {
+  padding: 20px 10px 20px 20px;
+  margin-bottom: 20px;
+  margin-top: 70px !important;
+}
+
+.profiles_page .mobile_review .mobile_review_btn {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.profiles_page .mobile_review .mobile_review_btn span,
+.profiles_page .mobile_review .mobile_review_btn p {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.profiles_page .mobile_review .mobile_review_btn i {
+  font-size: 20px;
+  margin-top: -15px;
+}
+
+.profiles_page .mobile_review .review_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #253556 !important;
+  margin-top: 20px;
+}
+
+.profiles_page .mobile_review .review_info {
+  margin-left: 15px;
+  color: #253556 !important;
+}
+
+.profiles_page .mobile_review .comment_text {
+  background-color: #efefef;
+  padding: 5px;
+  border-radius: 5px;
+  color: #253556 !important;
+}
+
+.profiles_page .mobile_review .comment_text p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profiles_page .mobile_review .right_info {
+  line-height: 3px;
+  margin-bottom: 20px;
+  color: #253556 !important;
+}
+
+.profiles_page .mobile_review .right_info .name {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.profiles_page .mobile_review .right_info .nick_name {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.profiles_page .mobile_review .last_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  color: #253556 !important;
+}
+
+.profiles_page .mobile_review .last_info span {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.profiles_page .mobile_review .more_comments {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profiles_page .mobile_review .more_comments button {
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 15px auto;
+}
+
+.profiles_page .mobile_review .added_scroll_comments {
+  overflow-x: scroll !important;
+  max-height: 800px !important;
+}
+
+.profiles_page .look_reviews_anim {
+  max-height: 750px;
+}
+
+.profiles_page .share_profile_mobile {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0;
+}
+
+.profiles_page .share_profile_mobile p {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.profiles_page .share_profile_mobile .profile_icons_mobile {
+  margin-left: 20px;
+}
+
+.profiles_page .share_profile_mobile .profile_icons_mobile i {
+  margin-right: 25px;
+  color: #c1c4ca;
+}
+
+.profiles_page .share_profile_mobile .profile_icons_mobile i:hover {
+  color: #00cf4d;
+}
+
+.profiles_page .main_profiles .mobile_wrap {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
+}
+
+.profiles_page .main_profiles .achievements {
   padding: 20px 0;
 }
 
-body .main_profiles .achievements p {
+.profiles_page .main_profiles .achievements p {
   font-size: 25px;
   font-weight: 700;
   color: #253556;
 }
 
-body .main_profiles .achievements .achievements_list {
+.profiles_page .main_profiles .achievements .achievements_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,47 +1124,45 @@ body .main_profiles .achievements .achievements_list {
   text-align: center;
 }
 
-body .main_profiles .achievements .achievements_list img {
+.profiles_page .main_profiles .achievements .achievements_list img {
   margin-bottom: 10px;
   color: #253556;
 }
 
-body .main_profiles .achievements .achievements_list span {
+.profiles_page .main_profiles .achievements .achievements_list span {
   font-weight: 500;
   line-height: 5px;
 }
 
-body .main_profiles .achievements .achievements_list strong {
+.profiles_page .main_profiles .achievements .achievements_list strong {
   font-size: 20px;
   font-weight: 700;
 }
 
-body .main_profiles .achievements .achievements_list h6 {
+.profiles_page .main_profiles .achievements .achievements_list h6 {
   font-size: 14px;
 }
 
-body .main_profiles .achievements .achievements_list:hover {
+.profiles_page .main_profiles .achievements .achievements_list:hover {
   border: 1px solid #00cf4d;
   cursor: pointer;
 }
 
-body .main_profiles .exhibited_works {
+.profiles_page .main_profiles .exhibited_works {
   background-color: #ffffff;
   border-radius: 10px;
   height: auto;
   color: #253556;
-  /* Track */
-  /* Handle */
 }
 
-body .main_profiles .exhibited_works p {
+.profiles_page .main_profiles .exhibited_works p {
   font-size: 25px;
   font-weight: 700;
   padding-left: 20px;
   padding: 15px;
 }
 
-body .main_profiles .exhibited_works button {
+.profiles_page .main_profiles .exhibited_works button {
   width: 150px;
   height: 30px;
   border-radius: 20px;
@@ -563,35 +1172,19 @@ body .main_profiles .exhibited_works button {
   margin-right: 20px;
 }
 
-body .main_profiles .exhibited_works .box_works {
+.profiles_page .main_profiles .exhibited_works .box_works {
   max-height: 240px;
   overflow: hidden;
   -webkit-transition: max-height 0.8s ease-in-out;
   transition: max-height 0.8s ease-in-out;
 }
 
-body .main_profiles .exhibited_works .anim_all_box_works {
+.profiles_page .main_profiles .exhibited_works .anim_all_box_works {
   max-height: 350px;
   overflow-y: scroll !important;
 }
 
-body .main_profiles .exhibited_works .anim_all_box_works::-webkit-scrollbar {
-  width: 5px;
-  cursor: pointer;
-}
-
-body .main_profiles .exhibited_works .anim_all_box_works::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 5px grey;
-          box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-body .main_profiles .exhibited_works .anim_all_box_works::-webkit-scrollbar-thumb {
-  background: #00cf4d;
-  border-radius: 10px;
-}
-
-body .main_profiles .exhibited_works .box_work {
+.profiles_page .main_profiles .exhibited_works .box_work {
   width: 157px;
   height: 100px;
   border-radius: 10px;
@@ -603,28 +1196,26 @@ body .main_profiles .exhibited_works .box_work {
   transition: .5s ease-in-out;
 }
 
-body .main_profiles .exhibited_works .box_work:hover {
+.profiles_page .main_profiles .exhibited_works .box_work:hover {
   border: 1px solid #00cf4d;
 }
 
-body .main_profiles .reviews {
+.profiles_page .main_profiles .reviews {
   width: 100%;
-  /* Track */
-  /* Handle */
 }
 
-body .main_profiles .reviews i {
+.profiles_page .main_profiles .reviews i {
   color: #253556;
 }
 
-body .main_profiles .reviews p {
+.profiles_page .main_profiles .reviews p {
   font-size: 25px;
   font-weight: 700;
   padding-left: 20px;
   padding: 15px;
 }
 
-body .main_profiles .reviews button {
+.profiles_page .main_profiles .reviews button {
   width: 150px;
   height: 30px;
   border-radius: 20px;
@@ -634,35 +1225,19 @@ body .main_profiles .reviews button {
   margin-right: 20px;
 }
 
-body .main_profiles .reviews .review_item {
+.profiles_page .main_profiles .reviews .review_item {
   max-height: 400px;
   overflow: hidden;
   -webkit-transition: max-height 0.8s ease-in-out;
   transition: max-height 0.8s ease-in-out;
 }
 
-body .main_profiles .reviews .anim_all_reviews {
+.profiles_page .main_profiles .reviews .anim_all_reviews {
   max-height: 600px;
   overflow-y: scroll !important;
 }
 
-body .main_profiles .reviews .anim_all_reviews::-webkit-scrollbar {
-  width: 5px;
-  cursor: pointer;
-}
-
-body .main_profiles .reviews .anim_all_reviews::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 5px grey;
-          box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-body .main_profiles .reviews .anim_all_reviews::-webkit-scrollbar-thumb {
-  background: #00cf4d;
-  border-radius: 10px;
-}
-
-body .main_profiles .reviews .review_list {
+.profiles_page .main_profiles .reviews .review_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,29 +1247,29 @@ body .main_profiles .reviews .review_list {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  margin-top: 20px;
+  margin-top: 35px;
   width: 98%;
 }
 
-body .main_profiles .reviews .review_list .review_info {
+.profiles_page .main_profiles .reviews .review_list .review_info {
   width: 85%;
 }
 
-body .main_profiles .reviews .review_list .review_info .right_info {
+.profiles_page .main_profiles .reviews .review_list .review_info .right_info {
   line-height: 5px;
 }
 
-body .main_profiles .reviews .review_list .review_info .right_info h6 {
+.profiles_page .main_profiles .reviews .review_list .review_info .right_info h6 {
   text-transform: uppercase;
   font-weight: 600;
 }
 
-body .main_profiles .reviews .review_list .review_info .right_info span {
+.profiles_page .main_profiles .reviews .review_list .review_info .right_info span {
   font-size: 13px;
   font-weight: 500;
 }
 
-body .main_profiles .reviews .review_list .review_info .last_info {
+.profiles_page .main_profiles .reviews .review_list .review_info .last_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,23 +1282,23 @@ body .main_profiles .reviews .review_list .review_info .last_info {
   width: 50%;
 }
 
-body .main_profiles .reviews .review_list .review_info .last_info .stars i {
+.profiles_page .main_profiles .reviews .review_list .review_info .last_info .stars i {
   color: yellow;
 }
 
-body .main_profiles .reviews .review_list .review_info .last_info .stars .off_star {
+.profiles_page .main_profiles .reviews .review_list .review_info .last_info .stars .off_star {
   color: #c1c4ca;
 }
 
-body .main_profiles .reviews .review_list .review_info .last_info .date span,
-body .main_profiles .reviews .review_list .review_info .last_info .time span {
+.profiles_page .main_profiles .reviews .review_list .review_info .last_info .date span,
+.profiles_page .main_profiles .reviews .review_list .review_info .last_info .time span {
   font-size: 13px;
   font-weight: 500;
   color: #253556;
   padding-left: 3px;
 }
 
-body .main_profiles .reviews .review_list .review_info .comment_text {
+.profiles_page .main_profiles .reviews .review_list .review_info .comment_text {
   width: 100%;
   height: auto;
   margin-top: 10px;
@@ -731,29 +1306,39 @@ body .main_profiles .reviews .review_list .review_info .comment_text {
   border-radius: 10px;
 }
 
-body .main_profiles .reviews .review_list .review_info .comment_text p {
+.profiles_page .main_profiles .reviews .review_list .review_info .comment_text p {
   font-size: 15px;
   font-weight: 500;
 }
 
-body .main_profiles .specializations,
-body .main_profiles .similar_performers {
+.profiles_page .main_profiles .specializations,
+.profiles_page .main_profiles .similar_performers,
+.profiles_page .main_profiles .verification,
+.profiles_page .main_profiles .mobile_review {
   width: 100%;
   background-color: #ffffff;
   color: #253556;
   margin-top: 30px;
   border-radius: 10px;
-  padding: 15px 15px 10px 30px;
+  padding: 15px;
   overflow: hidden;
   max-height: 50px;
   -webkit-transition: max-height 0.8s ease-in-out;
   transition: max-height 0.8s ease-in-out;
 }
 
-body .main_profiles .specializations .specialization_btn,
-body .main_profiles .specializations .perfomers_btn,
-body .main_profiles .similar_performers .specialization_btn,
-body .main_profiles .similar_performers .perfomers_btn {
+.profiles_page .main_profiles .specializations .specialization_btn,
+.profiles_page .main_profiles .specializations .perfomers_btn,
+.profiles_page .main_profiles .specializations .verification_btn,
+.profiles_page .main_profiles .similar_performers .specialization_btn,
+.profiles_page .main_profiles .similar_performers .perfomers_btn,
+.profiles_page .main_profiles .similar_performers .verification_btn,
+.profiles_page .main_profiles .verification .specialization_btn,
+.profiles_page .main_profiles .verification .perfomers_btn,
+.profiles_page .main_profiles .verification .verification_btn,
+.profiles_page .main_profiles .mobile_review .specialization_btn,
+.profiles_page .main_profiles .mobile_review .perfomers_btn,
+.profiles_page .main_profiles .mobile_review .verification_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,8 +1354,10 @@ body .main_profiles .similar_performers .perfomers_btn {
   font-weight: 500;
 }
 
-body .main_profiles .specializations .specializations_info,
-body .main_profiles .similar_performers .specializations_info {
+.profiles_page .main_profiles .specializations .specializations_info,
+.profiles_page .main_profiles .similar_performers .specializations_info,
+.profiles_page .main_profiles .verification .specializations_info,
+.profiles_page .main_profiles .mobile_review .specializations_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -784,8 +1371,10 @@ body .main_profiles .similar_performers .specializations_info {
   margin-top: 10px;
 }
 
-body .main_profiles .specializations .specializations_info a,
-body .main_profiles .similar_performers .specializations_info a {
+.profiles_page .main_profiles .specializations .specializations_info a,
+.profiles_page .main_profiles .similar_performers .specializations_info a,
+.profiles_page .main_profiles .verification .specializations_info a,
+.profiles_page .main_profiles .mobile_review .specializations_info a {
   color: #253556;
   text-decoration: underline;
   font-size: 14px;
@@ -793,13 +1382,123 @@ body .main_profiles .similar_performers .specializations_info a {
   padding-top: 2px;
 }
 
-body .main_profiles .specializations .specializations_info a:hover,
-body .main_profiles .similar_performers .specializations_info a:hover {
+.profiles_page .main_profiles .specializations .specializations_info a:hover,
+.profiles_page .main_profiles .similar_performers .specializations_info a:hover,
+.profiles_page .main_profiles .verification .specializations_info a:hover,
+.profiles_page .main_profiles .mobile_review .specializations_info a:hover {
   color: #00cf4d;
 }
 
-body .main_profiles .specializations .performers_info,
-body .main_profiles .similar_performers .performers_info {
+.profiles_page .main_profiles .specializations .verification_info,
+.profiles_page .main_profiles .similar_performers .verification_info,
+.profiles_page .main_profiles .verification .verification_info,
+.profiles_page .main_profiles .mobile_review .verification_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #253556;
+}
+
+.profiles_page .main_profiles .specializations .verification_info .user_info_list,
+.profiles_page .main_profiles .specializations .verification_info .user_phone_num,
+.profiles_page .main_profiles .specializations .verification_info .user_email,
+.profiles_page .main_profiles .similar_performers .verification_info .user_info_list,
+.profiles_page .main_profiles .similar_performers .verification_info .user_phone_num,
+.profiles_page .main_profiles .similar_performers .verification_info .user_email,
+.profiles_page .main_profiles .verification .verification_info .user_info_list,
+.profiles_page .main_profiles .verification .verification_info .user_phone_num,
+.profiles_page .main_profiles .verification .verification_info .user_email,
+.profiles_page .main_profiles .mobile_review .verification_info .user_info_list,
+.profiles_page .main_profiles .mobile_review .verification_info .user_phone_num,
+.profiles_page .main_profiles .mobile_review .verification_info .user_email {
+  margin-top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profiles_page .main_profiles .specializations .verification_info .user_info_list span,
+.profiles_page .main_profiles .specializations .verification_info .user_phone_num span,
+.profiles_page .main_profiles .specializations .verification_info .user_email span,
+.profiles_page .main_profiles .similar_performers .verification_info .user_info_list span,
+.profiles_page .main_profiles .similar_performers .verification_info .user_phone_num span,
+.profiles_page .main_profiles .similar_performers .verification_info .user_email span,
+.profiles_page .main_profiles .verification .verification_info .user_info_list span,
+.profiles_page .main_profiles .verification .verification_info .user_phone_num span,
+.profiles_page .main_profiles .verification .verification_info .user_email span,
+.profiles_page .main_profiles .mobile_review .verification_info .user_info_list span,
+.profiles_page .main_profiles .mobile_review .verification_info .user_phone_num span,
+.profiles_page .main_profiles .mobile_review .verification_info .user_email span {
+  padding-left: 5px;
+  font-size: 13px;
+}
+
+.profiles_page .main_profiles .specializations .verification_info .user_info_list .fa-check-circle,
+.profiles_page .main_profiles .specializations .verification_info .user_phone_num .fa-check-circle,
+.profiles_page .main_profiles .specializations .verification_info .user_email .fa-check-circle,
+.profiles_page .main_profiles .similar_performers .verification_info .user_info_list .fa-check-circle,
+.profiles_page .main_profiles .similar_performers .verification_info .user_phone_num .fa-check-circle,
+.profiles_page .main_profiles .similar_performers .verification_info .user_email .fa-check-circle,
+.profiles_page .main_profiles .verification .verification_info .user_info_list .fa-check-circle,
+.profiles_page .main_profiles .verification .verification_info .user_phone_num .fa-check-circle,
+.profiles_page .main_profiles .verification .verification_info .user_email .fa-check-circle,
+.profiles_page .main_profiles .mobile_review .verification_info .user_info_list .fa-check-circle,
+.profiles_page .main_profiles .mobile_review .verification_info .user_phone_num .fa-check-circle,
+.profiles_page .main_profiles .mobile_review .verification_info .user_email .fa-check-circle {
+  color: #00cf4d;
+}
+
+.profiles_page .main_profiles .specializations .verification_info .user_info_list a,
+.profiles_page .main_profiles .specializations .verification_info .user_phone_num a,
+.profiles_page .main_profiles .specializations .verification_info .user_email a,
+.profiles_page .main_profiles .similar_performers .verification_info .user_info_list a,
+.profiles_page .main_profiles .similar_performers .verification_info .user_phone_num a,
+.profiles_page .main_profiles .similar_performers .verification_info .user_email a,
+.profiles_page .main_profiles .verification .verification_info .user_info_list a,
+.profiles_page .main_profiles .verification .verification_info .user_phone_num a,
+.profiles_page .main_profiles .verification .verification_info .user_email a,
+.profiles_page .main_profiles .mobile_review .verification_info .user_info_list a,
+.profiles_page .main_profiles .mobile_review .verification_info .user_phone_num a,
+.profiles_page .main_profiles .mobile_review .verification_info .user_email a {
+  color: #00cf4d;
+}
+
+.profiles_page .main_profiles .specializations .verification_info .user_info_list .fa-times-circle,
+.profiles_page .main_profiles .specializations .verification_info .user_phone_num .fa-times-circle,
+.profiles_page .main_profiles .specializations .verification_info .user_email .fa-times-circle,
+.profiles_page .main_profiles .similar_performers .verification_info .user_info_list .fa-times-circle,
+.profiles_page .main_profiles .similar_performers .verification_info .user_phone_num .fa-times-circle,
+.profiles_page .main_profiles .similar_performers .verification_info .user_email .fa-times-circle,
+.profiles_page .main_profiles .verification .verification_info .user_info_list .fa-times-circle,
+.profiles_page .main_profiles .verification .verification_info .user_phone_num .fa-times-circle,
+.profiles_page .main_profiles .verification .verification_info .user_email .fa-times-circle,
+.profiles_page .main_profiles .mobile_review .verification_info .user_info_list .fa-times-circle,
+.profiles_page .main_profiles .mobile_review .verification_info .user_phone_num .fa-times-circle,
+.profiles_page .main_profiles .mobile_review .verification_info .user_email .fa-times-circle {
+  color: #ff8fb4;
+}
+
+.profiles_page .main_profiles .specializations .performers_info,
+.profiles_page .main_profiles .similar_performers .performers_info,
+.profiles_page .main_profiles .verification .performers_info,
+.profiles_page .main_profiles .mobile_review .performers_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -814,8 +1513,10 @@ body .main_profiles .similar_performers .performers_info {
   margin-top: 10px;
 }
 
-body .main_profiles .specializations .performers_info a,
-body .main_profiles .similar_performers .performers_info a {
+.profiles_page .main_profiles .specializations .performers_info a,
+.profiles_page .main_profiles .similar_performers .performers_info a,
+.profiles_page .main_profiles .verification .performers_info a,
+.profiles_page .main_profiles .mobile_review .performers_info a {
   border: 1px solid #253556;
   padding: 2px 5px;
   border-radius: 20px;
@@ -828,33 +1529,53 @@ body .main_profiles .similar_performers .performers_info a {
   margin-top: 10px;
 }
 
-body .main_profiles .specializations .performers_info a:hover,
-body .main_profiles .similar_performers .performers_info a:hover {
+.profiles_page .main_profiles .specializations .performers_info a:hover,
+.profiles_page .main_profiles .similar_performers .performers_info a:hover,
+.profiles_page .main_profiles .verification .performers_info a:hover,
+.profiles_page .main_profiles .mobile_review .performers_info a:hover {
   background-color: #00cf4d;
   color: #ffffff;
   border: 1px solid #00cf4d;
 }
 
-body .main_profiles .anim_performers_info {
+.profiles_page .main_profiles .mobile_review {
+  color: #253556;
+}
+
+.profiles_page .main_profiles .anim_performers_info {
+  max-height: 775px;
+  color: #00cf4d;
+}
+
+.profiles_page .main_profiles .add_anim::before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f078';
+  font-weight: 900;
+  font-size: 16px;
+  position: absolute;
+  right: 30px;
+}
+
+.profiles_page .main_profiles .anim_performers_info.add_anim::before {
+  content: '\f077';
+}
+
+.profiles_page .main_profiles .anim_specializations_info {
   max-height: 250px;
 }
 
-body .main_profiles .anim_specializations_info {
-  max-height: 250px;
-}
-
-body .main_profiles .share_profile {
+.profiles_page .main_profiles .share_profile {
   margin-top: 30px;
 }
 
-body .main_profiles .share_profile p {
+.profiles_page .main_profiles .share_profile p {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
   padding-left: 30px;
 }
 
-body .main_profiles .share_profile .profile_icons {
+.profiles_page .main_profiles .share_profile .profile_icons {
   margin: 15px 15px 15px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -867,32 +1588,92 @@ body .main_profiles .share_profile .profile_icons {
           align-items: center;
 }
 
-body .main_profiles .share_profile .profile_icons i {
+.profiles_page .main_profiles .share_profile .profile_icons i {
   color: #c1c4ca;
   cursor: pointer;
   -webkit-transition: .2s ease-in;
   transition: .2s ease-in;
 }
 
-body .main_profiles .share_profile .profile_icons i:hover {
+.profiles_page .main_profiles .share_profile .profile_icons i:hover {
   color: #00cf4d;
 }
 
-body .modal_achievement {
+.profiles_page .my_works_slider {
+  width: 103%;
+  height: 400px;
+  position: relative;
+  background-color: #c1c4ca;
+}
+
+.profiles_page .my_works_slider .btn_prev,
+.profiles_page .my_works_slider .btn_next {
+  position: absolute;
+  top: 80%;
+  color: #00cf4d;
+  cursor: pointer;
+}
+
+.profiles_page .my_works_slider .btn_prev:hover,
+.profiles_page .my_works_slider .btn_next:hover {
+  color: #069106;
+}
+
+.profiles_page .my_works_slider .btn_prev {
+  left: 20px;
+}
+
+.profiles_page .my_works_slider .btn_next {
+  right: 20px;
+}
+
+.profiles_page .my_works_slider ul {
+  list-style: none;
+  position: relative;
+  width: 80% !important;
+  height: 300px !important;
+  margin: 0;
+  padding: 0;
+}
+
+.profiles_page .my_works_slider ul li {
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 0;
+  border: 3px solid #fff;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.profiles_page .my_works_slider ul li img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+}
+
+.profiles_page .modal_achievement {
   padding: 40px 0 !important;
 }
 
-body .modal_achievement .modal-content {
+.profiles_page .modal_achievement .modal-content {
   width: 700px !important;
   margin-left: -100px !important;
 }
 
-body .modal_achievement .modal_header {
+.profiles_page .modal_achievement .modal_header {
   margin-left: -50px !important;
   position: relative;
+  margin-bottom: 5px;
 }
 
-body .modal_achievement .modal_header .modal_user_header {
+.profiles_page .modal_achievement .modal_header .modal_user_header {
   position: absolute;
   left: calc(100%/2.5);
   top: -40px;
@@ -911,7 +1692,7 @@ body .modal_achievement .modal_header .modal_user_header {
           flex-direction: column;
 }
 
-body .modal_achievement .modal_header .modal_user_header .avatar {
+.profiles_page .modal_achievement .modal_header .modal_user_header .avatar {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -927,7 +1708,7 @@ body .modal_achievement .modal_header .modal_user_header .avatar {
           justify-content: center;
 }
 
-body .modal_achievement .modal_header .modal_user_header .avatar .border {
+.profiles_page .modal_achievement .modal_header .modal_user_header .avatar .border {
   border-radius: 50%;
   width: 77px;
   height: 77px;
@@ -936,7 +1717,7 @@ body .modal_achievement .modal_header .modal_user_header .avatar .border {
   display: block;
 }
 
-body .modal_achievement .modal_header .modal_user_header .avatar img {
+.profiles_page .modal_achievement .modal_header .modal_user_header .avatar img {
   position: absolute;
   top: 0;
   left: 0;
@@ -949,29 +1730,29 @@ body .modal_achievement .modal_header .modal_user_header .avatar img {
      object-fit: cover;
 }
 
-body .modal_achievement .modal_header .modal_user_header .stars i {
+.profiles_page .modal_achievement .modal_header .modal_user_header .stars i {
   color: #c1c4ca;
 }
 
-body .modal_achievement .modal_header .modal_user_header .name {
+.profiles_page .modal_achievement .modal_header .modal_user_header .name {
   color: #253556;
   text-align: center;
   margin-top: 10px;
   line-height: 5px;
 }
 
-body .modal_achievement .modal_header .modal_user_header .name h6 {
+.profiles_page .modal_achievement .modal_header .modal_user_header .name h6 {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
 }
 
-body .modal_achievement .modal_header .modal_user_header .name span {
+.profiles_page .modal_achievement .modal_header .modal_user_header .name span {
   font-size: 14px;
   font-weight: 400;
 }
 
-body .modal_achievement .modal_header .close {
+.profiles_page .modal_achievement .modal_header .close {
   display: block;
   margin-right: 10px;
   margin-top: 10px;
@@ -979,7 +1760,7 @@ body .modal_achievement .modal_header .close {
   color: red !important;
 }
 
-body .modal_achievement .modal-body .modal_title {
+.profiles_page .modal_achievement .modal-body .modal_title {
   margin: 50px 70px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -994,7 +1775,7 @@ body .modal_achievement .modal-body .modal_title {
       flex-wrap: wrap;
 }
 
-body .modal_achievement .modal-body .modal_title .achievements_list {
+.profiles_page .modal_achievement .modal-body .modal_title .achievements_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1016,22 +1797,22 @@ body .modal_achievement .modal-body .modal_title .achievements_list {
   margin-top: 10px;
 }
 
-body .modal_achievement .modal-body .modal_title .achievements_list img {
+.profiles_page .modal_achievement .modal-body .modal_title .achievements_list img {
   margin-bottom: 10px;
   color: #253556;
 }
 
-body .modal_achievement .modal-body .modal_title .achievements_list span {
+.profiles_page .modal_achievement .modal-body .modal_title .achievements_list span {
   font-weight: 500;
   line-height: 5px;
   padding-top: 15px;
 }
 
-body .modal_achievement .modal-body .modal_title .achievements_list:hover {
+.profiles_page .modal_achievement .modal-body .modal_title .achievements_list:hover {
   border: 1px solid #00cf4d;
 }
 
-body .modal_achievement .modal-body .info_list {
+.profiles_page .modal_achievement .modal-body .info_list {
   width: 70%;
   height: 30px;
   background-color: #efefef;
@@ -1052,7 +1833,7 @@ body .modal_achievement .modal-body .info_list {
   margin: 10px auto;
 }
 
-body footer {
+.profiles_page footer {
   background-image: url("../images/footer.jpg");
   background-size: cover;
   background-position: center;
@@ -1063,76 +1844,76 @@ body footer {
   /* Footer */
 }
 
-body footer .footer_logo a,
-body footer .footer_logo_sub a {
+.profiles_page footer .footer_logo a,
+.profiles_page footer .footer_logo_sub a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
 }
 
-body footer .footer_logo .letcop_logo {
+.profiles_page footer .footer_logo .letcop_logo {
   width: 45px;
   height: 45px;
 }
 
-body footer .investone_logo {
+.profiles_page footer .investone_logo {
   width: 70%;
 }
 
-body footer .investone_logo_sub {
+.profiles_page footer .investone_logo_sub {
   display: block;
   width: 60%;
   margin-left: 30px;
 }
 
-body footer .footer_logo span {
+.profiles_page footer .footer_logo span {
   color: #ffffff;
   font-size: 22px;
   font-weight: 700;
   line-height: 23px;
 }
 
-body footer .footer_logo_sub span {
+.profiles_page footer .footer_logo_sub span {
   font-size: 18px;
   line-height: 16px;
 }
 
-body footer .footer_text p {
+.profiles_page footer .footer_text p {
   font-size: 18px;
   font-weight: 500;
 }
 
-body footer .footer_text ul li {
+.profiles_page footer .footer_text ul li {
   list-style: none;
   font-weight: 300;
   padding-bottom: 2px;
 }
 
-body footer .footer_text ul li a {
+.profiles_page footer .footer_text ul li a {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
 }
 
-body footer .footer_text ul li a:hover {
+.profiles_page footer .footer_text ul li a:hover {
   color: #00cf4d;
   border-bottom: 1px solid #00cf4d;
 }
 
-body footer i {
+.profiles_page footer i {
   font-size: 25px;
 }
 
-body footer a {
+.profiles_page footer a {
   color: #ffffff;
 }
 
-body footer i:hover {
+.profiles_page footer i:hover {
   color: #00cf4d;
 }
 
-body footer .footer_logo_sub {
+.profiles_page footer .footer_logo_sub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1144,16 +1925,16 @@ body footer .footer_logo_sub {
           align-items: center;
 }
 
-body footer .letcop_logo_sub {
+.profiles_page footer .letcop_logo_sub {
   width: 35px;
   height: 35px;
 }
 
-body footer .dis {
+.profiles_page footer .dis {
   display: none;
 }
 
-body footer .container_ded {
+.profiles_page footer .container_ded {
   width: 88.99%;
   margin: 10px auto;
   display: -webkit-box;
@@ -1166,36 +1947,36 @@ body footer .container_ded {
           justify-content: flex-start;
 }
 
-body footer .footer {
+.profiles_page footer .footer {
   background: url(img/footer.jpg) no-repeat;
   background-size: cover;
   color: #fff;
   background-color: #12114a;
 }
 
-body footer .container_ded:last-child {
+.profiles_page footer .container_ded:last-child {
   margin: 0 auto;
 }
 
-body footer .social a i {
+.profiles_page footer .social a i {
   font-size: 20px;
 }
 
-body footer .footer__item {
+.profiles_page footer .footer__item {
   margin: 20px 0;
   margin-right: 5%;
 }
 
-body footer .footer__item:last-child {
+.profiles_page footer .footer__item:last-child {
   margin-right: 0;
 }
 
-body footer .footer__item:first-child a:hover {
+.profiles_page footer .footer__item:first-child a:hover {
   text-decoration: none;
   color: #fff;
 }
 
-body footer .letcop__com {
+.profiles_page footer .letcop__com {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1208,7 +1989,7 @@ body footer .letcop__com {
   font-weight: 700;
 }
 
-body footer .letcop__com div {
+.profiles_page footer .letcop__com div {
   height: 57px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1223,39 +2004,127 @@ body footer .letcop__com div {
   line-height: 20px;
 }
 
-body footer .letcop__com div span {
+.profiles_page footer .letcop__com div span {
   font-family: 'Montserrat';
 }
 
-body footer #letcop_com {
+.profiles_page footer #letcop_com {
   width: 55px;
   height: 57px;
 }
 
-body footer #investonse {
+.profiles_page footer #investonse {
   width: 163px;
   height: 33px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-body footer .olymp p {
+.profiles_page footer .olymp p {
   font-size: 100%;
   margin-top: 20px;
 }
 
-body footer .footer__item__head {
+.profiles_page footer .footer__item__head {
   margin: 10px 0 20px;
   font-weight: 600;
 }
 
-body footer .item__list {
+.profiles_page footer .item__list {
   line-height: 1.5em;
   font-size: 14px;
 }
 
-body footer .soc-end a {
+.profiles_page footer .soc-end a {
   margin-right: 15px;
+}
+
+.profiles_page .portfolio_slider {
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.profiles_page .portfolio_slider p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.profiles_page .portfolio_slider .works_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profiles_page .portfolio_slider .box1 {
+  width: 140px;
+  height: 100px;
+  background-color: #c1c4ca;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  opacity: 1;
+}
+
+.profiles_page .achievements_slick {
+  padding: 20px 0;
+}
+
+.profiles_page .achievements_slick .title_text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.profiles_page .achievements_slick .achievements-slider {
+  background-color: #efefef !important;
+  margin-top: 0 !important;
+  margin-bottom: 15px !important;
+}
+
+.profiles_page .achievements_slick .achievements-slider .achievements_list {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #efefef;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.profiles_page .achievements_slick .achievements-slider .achievements_list:hover {
+  border: 1px solid #00cf4d;
+}
+
+.profiles_page .achievements_slick .achievements-slider p {
+  padding-top: 15px;
+  font-weight: 500;
+  color: #253556;
 }
 
 @-webkit-keyframes anim_skill {
@@ -1270,20 +2139,45 @@ body footer .soc-end a {
   }
 }
 
-@media screen and (min-width: 993px) {
-  body .footer__mob {
-    display: none;
+@media screen and (min-width: 1025px) {
+  .profiles_page .interesting_info_mobile,
+  .profiles_page .achievements_slider,
+  .profiles_page .manual_navigation,
+  .profiles_page .tablet_share_profile,
+  .profiles_page .tablet_row,
+  .profiles_page .mobile_row,
+  .profiles_page .footer__mob {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+  .profiles_page .interesting_block {
+    width: 590px !important;
+    padding: 5px !important;
+  }
+  .profiles_page .interesting_block span {
+    font-size: 14px !important;
+  }
+  .profiles_page .interesting_info_mobile,
+  .profiles_page .achievements_slider,
+  .profiles_page .manual_navigation,
+  .profiles_page .tablet_share_profile,
+  .profiles_page .tablet_row,
+  .profiles_page .mobile_row,
+  .profiles_page .footer__mob {
+    display: none !important;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  body .header_profiles .user_block_info .user_nick_name {
+  .profiles_page .header_profiles .user_block_info .user_nick_name {
     font-size: 30px !important;
   }
-  body .header_profiles .buttons button {
+  .profiles_page .header_profiles .buttons button {
     width: 170px !important;
   }
-  body .header_profiles .mobile_user_title {
+  .profiles_page .header_profiles .mobile_user_title {
     -webkit-box-align: start !important;
         -ms-flex-align: start !important;
             align-items: start !important;
@@ -1292,11 +2186,11 @@ body footer .soc-end a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body .header_profiles .mobile_user_title .interesting_block {
+  .profiles_page .header_profiles .mobile_user_title .interesting_block {
     width: 100% !important;
   }
-  body .header_profiles .mobile_user_title .verification_block {
-    margin-top: 20px;
+  .profiles_page .header_profiles .mobile_user_title .verification_block {
+    margin-top: 220px;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -1311,184 +2205,230 @@ body footer .soc-end a {
         -ms-flex-align: start !important;
             align-items: start !important;
   }
-  body .header_profiles .mobile_user_title .verification_block .verification_box {
+  .profiles_page .header_profiles .mobile_user_title .verification_block .verification_box {
     margin-top: 0 !important;
     margin-left: 30px !important;
   }
-  body .header_profiles .sub_right_info {
+  .profiles_page .header_profiles .sub_right_info {
     margin-top: 20px;
   }
-  body .exhibited_works .box_work {
+  .profiles_page .exhibited_works .box_work {
     width: 147px !important;
   }
-  body footer {
-    display: none !important;
+  .profiles_page .sub_right_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
   }
-  body .footer__mob {
+  .profiles_page .sub_right_info .user_stars {
+    text-align-last: left !important;
+  }
+  .profiles_page .footer__mob {
     display: block;
+  }
+  .profiles_page .mobile_row,
+  .profiles_page .mobile_share_profile,
+  .profiles_page .desktop_row_share, .profiles_page .interesting_info_mobile,
+  .profiles_page .achievements_slider,
+  .profiles_page .manual_navigation,
+  .profiles_page footer {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 767px) {
-  body .head__main_block {
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .profiles_page .header_profiles {
+    height: 75vh !important;
+  }
+  .profiles_page .head__main_block {
     padding-top: 0 !important;
     margin-left: 0 !important;
   }
-  body .header_profiles .mobile_user_sup {
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: start !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .profiles_page .achievements_slider,
+  .profiles_page .manual_navigation,
+  .profiles_page .desktop_row_share,
+  .profiles_page .desktop_row,
+  .profiles_page .footer {
+    display: none;
   }
-  body .header_profiles .mobile_user_sup .buttons {
-    margin-top: 15px;
+  .profiles_page .block_experience {
+    margin-top: -30px;
+    line-height: 10px !important;
   }
-  body .header_profiles .sub_right_info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: start !important;
+  .profiles_page .block_experience .skill_bar {
+    width: 175px !important;
+    height: 7px !important;
   }
-  body .header_profiles .sub_right_info .user_stars {
-    text-align: start !important;
+  .profiles_page .block_experience .skill_bar .progress_skill {
+    height: 7px !important;
   }
-  body .header_profiles .user_block_info .user_nick_name {
-    font-size: 30px !important;
+  .profiles_page .achievements_slick {
+    margin-top: 10px;
   }
-  body .header_profiles .buttons button {
-    width: 170px !important;
+  .profiles_page .interesting_info_mobile {
+    margin-top: 190px !important;
   }
-  body .header_profiles .mobile_user_title {
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: start !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .profiles_page .modal_achievement {
+    padding: 40px 0 !important;
   }
-  body .header_profiles .mobile_user_title .interesting_block {
+  .profiles_page .modal_achievement .modal-content {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+  .profiles_page .modal_achievement .modal_header {
+    margin-left: -60px !important;
+  }
+  .profiles_page .modal_achievement .modal_header .modal_user_header {
+    position: absolute;
+    left: calc(100%/2.5);
+    top: -40px;
+  }
+  .profiles_page .modal_achievement .modal-body .modal_title {
+    margin: 50px 70px 20px;
+  }
+  .profiles_page .modal_achievement .modal-body .info_list {
     width: 100% !important;
   }
-  body .header_profiles .mobile_user_title .verification_block {
-    margin-top: 20px;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: start !important;
+}
+
+@media only screen and (max-width: 567px) {
+  .profiles_page .header_profiles {
+    height: 75vh !important;
   }
-  body .header_profiles .mobile_user_title .verification_block .verification_box {
-    margin-top: 15px !important;
+  .profiles_page .desktop_row {
+    display: none;
   }
-  body .header_profiles .mobile_user_title .interesting_info {
+  .profiles_page .interesting_info_mobile,
+  .profiles_page .achievements_slider,
+  .profiles_page .manual_navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .profiles_page .block_experience {
+    margin-top: -30px;
+    line-height: 10px !important;
+  }
+  .profiles_page .block_experience .skill_bar {
+    width: 150px !important;
+    height: 7px !important;
+  }
+  .profiles_page .block_experience .skill_bar .progress_skill {
+    height: 7px !important;
+  }
+  .profiles_page footer {
     display: none !important;
   }
-  body .header_profiles .mobile_user_title .user_name_info {
-    font-size: 25px !important;
+  .profiles_page .modal_achievement {
+    padding: 40px 0 !important;
   }
-  body .header_profiles .sub_right_info {
-    margin-top: 20px;
-  }
-  body .mobile_achievements {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  body .exhibited_works p {
-    font-size: 20px !important;
-  }
-  body .exhibited_works .box_work {
-    width: 134px !important;
-  }
-  body .mobile_reviews p {
-    font-size: 20px !important;
-    margin-top: 20px;
-  }
-  body .mobile_reviews button {
-    width: 110px !important;
-  }
-  body .review_info .mobile_review_info {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: start !important;
-    margin-left: 15px;
-  }
-  body .review_info .last_info {
+  .profiles_page .modal_achievement .modal-content {
     width: 100% !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end !important;
-        -ms-flex-align: end !important;
-            align-items: flex-end !important;
+    margin-left: 0px !important;
   }
-  body .review_info .last_info span {
-    font-size: 12px !important;
+  .profiles_page .modal_achievement .modal_header {
+    margin-left: -60px !important;
+    margin-bottom: 5px;
   }
-  body footer {
-    display: none !important;
+  .profiles_page .modal_achievement .modal_header .modal_user_header {
+    position: absolute;
+    left: calc(100%/2.5);
+    top: -40px;
+  }
+  .profiles_page .modal_achievement .modal-body .modal_title {
+    margin: 60px 0px 20px;
+  }
+  .profiles_page .modal_achievement .modal-body .info_list {
+    width: 100% !important;
   }
 }
 
 @media only screen and (max-width: 467px) {
-  body .header_profiles .buttons button {
-    width: 150px !important;
+  .profiles_page .head__main_block {
+    margin-left: 0 !important;
   }
-  body .header_profiles .block_experience {
-    margin-top: 15px;
+  .profiles_page .block_experience {
+    margin-top: -30px;
+    line-height: 10px !important;
+  }
+  .profiles_page .block_experience .skill_bar {
+    width: 115px !important;
+    height: 7px !important;
+  }
+  .profiles_page .block_experience .skill_bar .progress_skill {
+    height: 7px !important;
+  }
+  .profiles_page .interesting_info_mobile {
+    margin-top: 90px !important;
+  }
+  .profiles_page .modal_achievement {
+    padding: 40px 0 !important;
+  }
+  .profiles_page .modal_achievement .modal-content {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+  .profiles_page .modal_achievement .modal_header {
+    margin-left: -60px !important;
+    margin-bottom: 5px;
+  }
+  .profiles_page .modal_achievement .modal_header .modal_user_header {
+    position: absolute;
+    left: calc(100%/3);
+    top: -40px;
+  }
+  .profiles_page .modal_achievement .modal-body .modal_title {
+    margin: 60px 0px 20px;
+  }
+  .profiles_page .modal_achievement .modal-body .info_list {
+    width: 100% !important;
+    height: 40px !important;
+    font-size: 12px !important;
   }
 }
 
-@media screen and (max-width: 368px) {
-  body .mobile_user_sup .buttons button {
-    width: 135px !important;
-    font-size: 10px !important;
+@media screen and (max-width: 320px) {
+  .profiles_page .interesting_info_mobile {
+    margin-top: 200px !important;
+    padding: 5px !important;
   }
-  body .skill_bar {
-    width: 280px !important;
+  .profiles_page .interesting_info_mobile div {
+    margin-left: 10px !important;
   }
-  body .verification_block {
-    width: 100% !important;
+  .profiles_page .portfolio_slider {
+    margin-top: 20px;
   }
-  body .verification_block .ampount_box,
-  body .verification_block .verification_box {
-    width: 100% !important;
+  .profiles_page .portfolio_slider .box1 {
+    width: 120px !important;
   }
-  body .verification_box span {
-    font-size: 11px !important;
+  .profiles_page .profile_icons_mobile {
+    margin-left: 10px !important;
   }
-  body .exhibited_works p {
-    font-size: 18px !important;
+  .profiles_page .profile_icons_mobile i {
+    margin-right: 20px !important;
   }
-  body .exhibited_works button {
-    font-size: 10px !important;
+  .profiles_page .block_experience {
+    margin-top: -30px;
+    line-height: 10px !important;
   }
-  body .exhibited_works .box_work {
-    width: 115px !important;
+  .profiles_page .block_experience .skill_bar {
+    width: 100px !important;
+    height: 7px !important;
+  }
+  .profiles_page .block_experience .skill_bar .progress_skill {
+    height: 7px !important;
+  }
+  .profiles_page .interesting_info_mobile {
+    margin-top: 210px !important;
   }
 }
 
 @media (min-width: 1160px) {
-  body {
+  .profiles_page {
     font-size: 14px;
   }
   .social a i {
@@ -1528,7 +2468,7 @@ body footer .soc-end a {
   #investonse_mob {
     width: 160px;
   }
-  body {
+  .profiles_page {
     line-height: 1.5em;
     font-size: 15px;
   }
@@ -1642,7 +2582,7 @@ body footer .soc-end a {
 }
 
 @media (max-width: 770px) {
-  body {
+  .profiles_page {
     font-size: 14px;
   }
   .footer__item {

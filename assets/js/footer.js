@@ -1,7 +1,6 @@
 const strelkaAbSv = document.getElementById('chevronAbSv');
 const abSvBl = document.getElementById('aboutServiceBlock');
 const abSv = document.getElementById('aboutServiceBlocks');
-console.log(strelkaAbSv)
 
 let ab_Sv=abSv.clientHeight;
 abSvBl.onclick = function() {

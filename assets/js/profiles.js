@@ -6,11 +6,22 @@ let mouseoverBlocks = document.querySelectorAll('.mouseover_block');
 let exhibitedBtn = document.querySelector('.exhibited_btn');
 let boxWorks = document.querySelector('.box_works');
 let reviewBtn = document.querySelector('.review_btn');
-let reviewItem = document.querySelector('.review_item');
+let reviewItem = document.querySelector('.desktop_reviews .review_item');
 let specializationsInfo = document.querySelector('.specializations');
 let specializationBtn = document.querySelector('.specialization_btn');
 let perfomersBtn = document.querySelector('.perfomers_btn');
 let similarPerformers = document.querySelector('.similar_performers');
+let expandBtnMobile = document.querySelector('.expand_btn_mobile');
+let scrollTextMobile = document.querySelector('.scroll_text_mobile');
+let sliderwork = document.querySelector('.mobile_slider_works .slider_item');
+let options = document.querySelectorAll('.option');
+let sliderList = document.querySelectorAll('.slider_list');
+let moreCommentsBtn = document.querySelector('.more_comments button');
+let mobileReview = document.querySelector('.mobile_review');
+let addAnimMobileReview = document.querySelector('.add_anim_mobile_review');
+let mobileReviewBtn = document.querySelector('.mobile_review_btn');
+console.log(mobileReviewBtn)
+
 
 $(document).ready(function() {
   $('.counter_num').countUp({
@@ -18,7 +29,53 @@ $(document).ready(function() {
     'delay': 10
   });
 
-})
+  $('.add_anim').click(function() {
+    $(this).siblings().removeClass('anim_performers_info');
+    $(this).toggleClass('anim_performers_info');
+  });
+
+
+  $(".regular").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+ 
+
+  });
+
+  $(".regular1").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2500,
+
+  });
+
+});
+
+// Animate mobile
+let clickNum0;
+expandBtnMobile.addEventListener('click', () => {
+  if(clickNum0 == 0) {
+    scrollTextMobile.classList.remove('anim_MobileText');
+    expandBtnMobile.innerHTML = 'Развернуть <i class="fas fa-chevron-down"></i>'
+    expandBtnMobile.style.color = '#253556'
+    return clickNum0 = 1;
+   
+  }
+  else {
+    scrollTextMobile.classList.add('anim_MobileText');
+    expandBtnMobile.innerHTML = 'Свернуть <i class="fas fa-chevron-up"></i>'
+    expandBtnMobile.style.color = '#00cf4d'
+    return clickNum0 = 0;
+  }
+
+  
+});
+
 
 // Animate
 let clickNum;
@@ -64,50 +121,34 @@ reviewBtn.addEventListener('click', () => {
   }
 });
 
+
+// добавить еще коммент
+
 let clickNum4;
-specializationBtn.addEventListener('click', () => {
+mobileReviewBtn.addEventListener('click', () => {
   if(clickNum4 == 0) {
-    specializationsInfo.classList.remove('anim_specializations_info');
+    addAnimMobileReview.classList.remove('anim_performers_info');
+    mobileReviewBtn.children[1].style.transform = 'rotate(0deg)'
     return clickNum4 = 1;
    
   }
   else {
-    specializationsInfo.classList.add('anim_specializations_info');
+    addAnimMobileReview.classList.add('anim_performers_info');
+    mobileReviewBtn.children[1].style.transform = 'rotate(180deg)'
     return clickNum4 = 0;
   }
 });
-let clickNum5;
-perfomersBtn.addEventListener('click', () => {
-  if(clickNum5 == 0) {
-    similarPerformers.classList.remove('anim_performers_info');
-    return clickNum5 = 1;
-   
-  }
-  else {
-    similarPerformers.classList.add('anim_performers_info');
-    return clickNum5 = 0;
-  }
+
+// mobileReviewBtn.addEventListener('click', () => {
+//  addAnimMobileReview.classList.add('anim_performers_info');
+// //  console.dir(addAnimMobileReview.children[0].children[1].style.transform = 'rotate(180deg)')
+// });
+
+moreCommentsBtn.addEventListener('click', () => {
+  addAnimMobileReview.style.overflowY = 'scroll';
+  moreCommentsBtn.style.display = 'none'
+
 });
 
-
-  // clickElements.forEach((clickElement) => {
-  //   let i = clickElement.nextElementSibling.clientHeight
-  //   clickElement.addEventListener('click', () => {
-  //     if(i==0) {
-  //       let g = setInterval(function(){
-  //         clickElement.nextElementSibling.style.height = i+ 'px';
-  //                    i++;
-  //                    if(i==200) { clearInterval(g); clickElement.children[0].setAttribute('class', 'fas fa-chevron-up');}
-  //                }, 0.1)
-  //               }
-  //                  else { 
-  //     let g = setInterval(function(){
-  //       clickElement.nextElementSibling.style.height = i+ 'px';
-  //            i--;
-  //            if(i==-1) { clearInterval(g); i=0; clickElement.children[0].setAttribute('class', 'fas fa-chevron-down');}
-  //        }, 0.1)
-  //     }
-  //   });
-  // });
 
 

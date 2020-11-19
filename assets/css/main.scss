@@ -82,11 +82,33 @@ border-radius: 10px;
 ::-moz-selection {background: #00CF4D; color:#fff;}
 ::-webkit-selection {background: #00CF4D; color:#fff;}
 
-  .profiles_page {
-    background-color: $divider-color;
-  }
- body {
+ 
+ .profiles_page {
   font-family: 'Montserrat', sans-serif;
+  background-color: $divider-color;
+  
+  .anim_all_box_works::-webkit-scrollbar,
+  .anim_all_reviews::-webkit-scrollbar,
+  .anim_MobileText::-webkit-scrollbar {
+    width: 5px;
+    cursor: pointer;
+  }
+  /* Track */
+  .anim_all_box_works::-webkit-scrollbar-track,
+  .anim_all_reviews::-webkit-scrollbar-track,
+  .anim_MobileText::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  }
+  
+  /* Handle */
+  .anim_all_box_works::-webkit-scrollbar-thumb,
+  .anim_all_reviews::-webkit-scrollbar-thumb,
+  .anim_MobileText::-webkit-scrollbar-thumb {
+  background: $primary-color; 
+  border-radius: 10px;
+  }
+
   .header_profiles {
     background-image: url('../images/header.jpg');
     background-repeat: no-repeat;
@@ -261,6 +283,9 @@ border-radius: 10px;
         cursor: pointer;
         text-align: end;
       }
+      .add_expend_btn {
+        color: $primary-color;
+      }
       .interesting_info {
         @include d-lex();
         color: $accent-color;
@@ -362,11 +387,447 @@ border-radius: 10px;
         }
       }
      } 
+    //  End Desctop row
+
+    // Start mobile_row
+
+    .mobile_row {
+      position: relative;
+      .block_experience {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        .block_experience_text {
+          font-size: 25px;
+          font-weight: 600;
+          line-height: 10px !important;
+        }
+        span {
+          font-size: 13px;
+          font-weight: 500;
+        }
+        .skill_bar {
+          width: 330px;
+          height: 10px;
+          background-color: $primary-color-text;
+          border-radius: 5px;
+          position: relative;
+          margin-top: 10px;
+          .progress_skill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 5px;
+            background-color: $primary-color;
+            height: 10px;
+            box-shadow: inset 0 0 2px #000;
+            animation: anim_skill 4s ease-in-out forwards;
+          }
+        }
+      }
+      .mobile_titte_info {
+        margin-top: 20px;
+        position: absolute;
+        z-index: 1;
+      }
+      .user_info_mobile {
+        top: 0;
+        left: 0;
+        padding: 5px 10px;
+        width: 100%;
+        height: auto;
+        background-color: $primary-color-text;
+        position: relative;
+        border-radius: 8px;
+        .user_avatar {
+          width: 75px;
+          height: 75px;
+          border-radius: 50%;
+          border: 2px solid $primary-color;
+          position: absolute;
+          left: calc(100%/2.7);
+          top: -40px;
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+        .add_button {
+          text-align: end;
+          i {
+            color: $divider-color-text;
+            margin-right: 5px;
+            cursor: pointer;
+          }
+        }
+        .user_info_title { 
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          color: $accent-color;
+          line-height: 17px;
+          .nick_name {
+            font-size: 18px;
+            font-weight: 700;
+            padding-top: 5px;
+          }
+          span {
+            font-size: 12px;
+            font-weight: 400;
+            .type {
+              color: $primary-color;
+              font-weight: 500;
+            }
+          }
+          .jobs {
+            font-size: 15px;
+            font-weight: 600;
+            color: $primary-color;
+            padding-top: 5px;
+          }
+          .sub_info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 15px;
+          }
+        }
+      }
+      .info_text_mobile {
+        color: $accent-color;
+        margin-top: 15px;
+        height: auto;
+         P {
+           text-align: justify;
+           font-size: 12px;
+           font-weight: 400;
+          line-height: 20px;
+          color: #333333;
+          max-height: 160px;
+          overflow: hidden;
+          -webkit-transition: max-height 0.8s ease-in-out;
+          -moz-transition: max-height 0.8s ease-in-out;
+          transition: max-height 0.8s ease-in-out;
+         }
+        .anim_MobileText {
+          max-height: 250px;
+          overflow-y: scroll;
+          padding-right: 10px;
+        }
+      }
+    }
     }
 
   // End header *********************
 
+    // Start Slider mobile 
+
+  .achievements_slider {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    background-color: $divider-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 15px;
+    }
+    .slider_item {
+      width: 80%;
+      height: 120px;
+      display: flex;
+      overflow: hidden;
+      input {
+        display: none;
+      }
+      .achievements_list {
+        background-color: $divider-color;
+        border: 1px solid $divider-color;
+        border-radius: 5px;
+        height: 100px !important;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: nowrap;
+        transition: 2s;
+        padding: 10px 15px;
+        span {
+          padding-top: 10px;
+        }
+        strong {
+          font-size: 25px;
+          font-weight: 600;
+          margin: 10px 0;
+        }
+      }
+      .achievements_list:hover {
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+  .manual_navigation {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: $primary-color-text;
+    .manual_item {
+      @include d-lex();
+      width: 30%;
+    }
+    .manual_btn {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $divider-color-text;
+      cursor: pointer;
+      transition: 1s;
+    }
+    .manual_btn:hover {
+      background-color: $primary-color;
+    }
+  }
+  #radio_1:checked ~ .first_list {
+    margin-left: 0;
+  }
+  #radio_2:checked ~ .first_list {
+    margin-left: -72%;
+  }
+  #radio_3:checked ~ .first_list {
+    margin-left: -109%;
+  }
+  #radio_4:checked ~ .first_list {
+    margin-left: -180%;
+  }
+
+  // End Slider mobil
+  
+  // Start Mobile Box
+  .interesting_info_mobile {
+    color: $accent-color;
+    margin-top: 90px;
+    background-color: $primary-color-text;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    strong {
+      font-size: 18px;
+    }
+    span {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    strong {
+     
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+// End Mobile box
+
+// Start Mobile Slider Works
+.mobile_slider_works {
+  padding: 20px 0;
+  background-color: $primary-color-text;
+  width: 100%;
+  overflow: hidden;
+  .title_text {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .slider_item {
+    display: flex;
+    width: 100%;
+    // transform: translateX(-350px);
+    .slider_list {
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+      .work_box {
+        width: 160px;
+        height: 100px;
+        background-color: $divider-color;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+  ul {
+    margin: 30px auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    li {
+      width: 15px;
+      height: 15px;
+      background-color: $divider-color-text;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .colored {
+      background-color: $primary-color-light;
+    }
+  }
+  
+
+  ul>li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+// End Mobile Slider Works
+
+// Start mobile Review
+
+  .mobile_review {
+    padding: 20px 10px 20px 20px;
+    margin-bottom: 20px;
+    margin-top: 70px !important;
+    // background-color: $divider-color !important;
+    .mobile_review_btn {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      span,
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      i {
+        font-size: 20px;
+        margin-top: -15px;
+      }
+    }
+    .review_list {
+      display: flex;
+      justify-content: space-between;
+      color: $accent-color !important;
+      margin-top: 20px;
+    }
+    .review_info {
+      margin-left: 15px;
+      color: $accent-color !important;
+    }
+    .comment_text {
+      background-color: $divider-color;
+      padding: 5px;
+      border-radius: 5px;
+      color: $accent-color !important;
+      p {
+        font-size: 14px;
+        font-weight: 500;
+
+      }
+    }
+    .right_info {
+      line-height: 3px;
+      margin-bottom: 20px;
+      color: $accent-color !important;
+      .name {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .nick_name {
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
+    .last_info {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      color: $accent-color !important;
+      span {
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
+    .more_comments {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        width: 80%;
+        height: 40px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 15px auto;
+      }
+    }
+    .added_scroll_comments{
+      overflow-x: scroll !important;
+      max-height: 800px !important;
+    }
+  }
+  
+  .look_reviews_anim {
+    max-height: 750px;
+  }
+
+// End mobile Review
+
+// Start mobile profile
+
+.share_profile_mobile {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+  p {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .profile_icons_mobile {
+    margin-left: 20px;
+    i {
+      margin-right: 25px;
+      color: $divider-color-text;
+    }
+    i:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+
 .main_profiles {
+  .mobile_wrap {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+}
   .achievements {
     padding: 20px 0;
     p {
@@ -437,21 +898,6 @@ border-radius: 10px;
       max-height: 350px;
       overflow-y: scroll !important;
     }
-    .anim_all_box_works::-webkit-scrollbar {
-      width: 5px;
-      cursor: pointer;
-    }
-    /* Track */
-    .anim_all_box_works::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-    }
-    
-    /* Handle */
-    .anim_all_box_works::-webkit-scrollbar-thumb {
-    background: $primary-color; 
-    border-radius: 10px;
-    }
     .box_work {
       width: 157px;
       height: 100px;
@@ -498,26 +944,12 @@ border-radius: 10px;
       max-height: 600px;
       overflow-y: scroll !important;
     }
-    .anim_all_reviews::-webkit-scrollbar {
-      width: 5px;
-      cursor: pointer;
-    }
-    /* Track */
-    .anim_all_reviews::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-    }
-    
-    /* Handle */
-    .anim_all_reviews::-webkit-scrollbar-thumb {
-    background: $primary-color; 
-    border-radius: 10px;
-    }
+
     .review_list {
       display: flex;
       justify-content: space-between;
       align-items: start;
-      margin-top: 20px;
+      margin-top: 35px;
       width: 98%;
       .review_info {
         width: 85%;
@@ -568,20 +1000,23 @@ border-radius: 10px;
     }
   }
   .specializations,
-  .similar_performers {
+  .similar_performers,
+  .verification,
+  .mobile_review {
     width: 100%;
     background-color: $primary-color-text;
     color: $accent-color;
     margin-top: 30px;
     border-radius: 10px;
-    padding: 15px 15px 10px 30px ;
+    padding: 15px;
     overflow: hidden;
     max-height: 50px;
     -webkit-transition: max-height 0.8s ease-in-out;
     -moz-transition: max-height 0.8s ease-in-out;
     transition: max-height 0.8s ease-in-out;
     .specialization_btn,
-    .perfomers_btn {
+    .perfomers_btn,
+    .verification_btn {
       @include d-lex();
       cursor: pointer;
       text-transform: uppercase;
@@ -605,6 +1040,35 @@ border-radius: 10px;
         color: $primary-color;
       }
     }
+    .verification_info {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      flex-direction: column;
+      color: $accent-color;
+      .user_info_list,
+      .user_phone_num,
+      .user_email {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+          padding-left: 5px;
+          font-size: 13px;
+        }
+        .fa-check-circle {
+          color: $primary-color;
+        }
+        a {
+          color: $primary-color;
+        }
+        .fa-times-circle {
+          color: #ff8fb4;
+        }
+      }
+    } 
     .performers_info {
       display: flex;
       align-items: center;
@@ -630,9 +1094,25 @@ border-radius: 10px;
       }
     }
   }
+
+  .mobile_review {
+    color: $accent-color;
+  }
   
   .anim_performers_info {
-    max-height: 250px;
+    max-height: 775px;
+    color: $primary-color;
+  }
+  .add_anim::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f078';
+    font-weight: 900;
+    font-size: 16px;
+    position: absolute;
+    right: 30px;
+  }
+  .anim_performers_info.add_anim::before {
+    content: '\f077';
   }
   .anim_specializations_info {
     max-height: 250px;
@@ -658,8 +1138,62 @@ border-radius: 10px;
       }
     }
   }
+  
+}
+.my_works_slider {
+  width: 103%;
+  height: 400px;
+  position: relative;
+  background-color: $divider-color-text;
+  .btn_prev,
+  .btn_next {
+    position: absolute;
+    top: 80%;
+    color: $primary-color;
+    cursor: pointer;
+  }
+  .btn_prev:hover,
+  .btn_next:hover {
+    color: rgb(6, 145, 6);
+  }
+  .btn_prev {
+    left: 20px;
+  }
+  .btn_next {
+    right: 20px;
+  }
+
+  ul {
+    list-style: none;
+    position: relative;
+    width: 80% !important;
+    height: 300px !important;
+    margin: 0;
+    padding: 0;
+  li {
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 0;
+    border: 3px solid #fff;
+    background-color: #333;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
 }
 
+// Start Modal
 .modal_achievement {
   padding: 40px 0 !important;
   .modal-content {
@@ -669,6 +1203,7 @@ border-radius: 10px;
   .modal_header {
     margin-left: -50px !important;
     position: relative;
+    margin-bottom: 5px;
     .modal_user_header {
       position: absolute;
       left: calc(100%/2.5);
@@ -782,6 +1317,8 @@ border-radius: 10px;
     }
   }
 }
+
+// End Modal
   
   footer {
     @include background-img('../images/footer.jpg');
@@ -943,6 +1480,75 @@ border-radius: 10px;
       margin-right: 15px;
   }
   }
+
+  // Start Slick sliders
+  .portfolio_slider {
+    margin-top: 20px;
+    background-color: $primary-color-text;
+    p {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-top: 20px;
+      padding-bottom: 0;
+      margin: 0;
+    }
+    .works_list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    
+.box1 {
+  width: 140px;
+  height: 100px;
+  background-color: $divider-color-text;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  opacity: 1;
+}
+  }
+
+  .achievements_slick {
+    padding: 20px 0;
+    .title_text {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-top: 20px;
+      padding-bottom: 0;
+      margin: 0;
+    }
+    .achievements-slider {
+      background-color: $divider-color !important;
+      margin-top: 0 !important;
+      margin-bottom: 15px !important;
+      .achievements_list {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        border: 1px solid $divider-color;
+        align-items: center;
+        text-align: center;
+        transition: .5s ease-in-out;
+      }
+      .achievements_list:hover {
+        border: 1px solid $primary-color;
+      }
+      p {
+        padding-top: 15px;
+        font-weight: 500;
+        color: $accent-color;
+      }
+    }
+
+  }
+
  }
 
  @keyframes anim_skill {
