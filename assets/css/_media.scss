@@ -37,6 +37,7 @@
 @media only screen and(min-width: 768px) and(max-width: 992px) {
   .profiles_page {
       .header_profiles {
+        height: 50vh;
           .user_block_info {
               .user_nick_name {
                   font-size: 30px !important;
@@ -51,18 +52,7 @@
             align-items: start !important;
             flex-direction: column;
             .interesting_block {
-                width: 100% !important;
-            }
-            .verification_block {
-                margin-top: 220px;
-                display: flex !important;
-                justify-content: space-between !important;
-                flex-direction: initial !important;
-                align-items: start !important;
-                .verification_box {
-                    margin-top: 0 !important;
-                    margin-left: 30px !important;
-                }
+                width: 96% !important;
             }
         }
         .sub_right_info {
@@ -81,6 +71,10 @@
               text-align-last: left !important;
           }
       }
+      
+      .tablet_row {
+        margin-top: 10px !important;
+      }
   .footer__mob {
     display: block;
   }
@@ -89,8 +83,11 @@
   .desktop_row_share, .interesting_info_mobile,
   .achievements_slider,
   .manual_navigation,
+  .tablet_none,
+  .specializations_desktop,
+  .similar_performers_desktop,
   footer {
-      display: none;
+      display: none !important;
   }
 }
 }
@@ -151,6 +148,14 @@
       .info_list {
         width: 100% !important;
       }
+    }
+  }
+
+  .modal_works {
+    padding: 30px 0 !important;
+    .modal-content {
+      width: 100% !important;
+      margin-left: 0px !important;
     }
   }
 // End Modal
@@ -214,6 +219,25 @@
       }
     }
   }
+
+  .modal_works {
+    padding: 30px 0 !important;
+    .modal-content {
+      width: 100% !important;
+      margin-left: 0px !important;
+    }
+    .modal-body {
+      padding: 10px 50px;
+      .block_works {
+        .work_list{
+         .my_work {
+           width: 48%;
+           height: 150px !important;
+         }
+        }
+      }
+    }
+  }
 // End Modal
   }
 }
@@ -264,6 +288,22 @@
         width: 100% !important;
         height: 40px !important;
         font-size: 12px !important;
+      }
+    }
+  }
+
+  
+  .modal_works {
+    padding: 10px 0 !important;
+    .modal-body {
+      padding: 10px !important;
+      .block_works {
+        .work_list{
+         .my_work {
+           height: 120px !important;
+           border-radius: 5px !important;
+         }
+        }
       }
     }
   }

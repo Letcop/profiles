@@ -323,7 +323,7 @@ textarea::-webkit-scrollbar-thumb {
   line-height: 20px;
   color: #333333;
   font-weight: 400;
-  max-height: 60px;
+  max-height: 77px;
   overflow: hidden;
   -webkit-transition: max-height 0.8s ease-in-out;
   transition: max-height 0.8s ease-in-out;
@@ -1175,8 +1175,8 @@ textarea::-webkit-scrollbar-thumb {
 .profiles_page .main_profiles .exhibited_works .box_works {
   max-height: 240px;
   overflow: hidden;
-  -webkit-transition: max-height 0.8s ease-in-out;
-  transition: max-height 0.8s ease-in-out;
+  -webkit-transition: max-height 0.4s ease-in-out;
+  transition: max-height 0.4s ease-in-out;
 }
 
 .profiles_page .main_profiles .exhibited_works .anim_all_box_works {
@@ -1311,10 +1311,30 @@ textarea::-webkit-scrollbar-thumb {
   font-weight: 500;
 }
 
+.profiles_page .main_profiles .specializations_desktop,
+.profiles_page .main_profiles .similar_performers_desktop,
+.profiles_page .main_profiles .desktop_row_share {
+  overflow: auto !important;
+  max-height: 280px !important;
+}
+
+.profiles_page .main_profiles .specializations_desktop p,
+.profiles_page .main_profiles .similar_performers_desktop p,
+.profiles_page .main_profiles .desktop_row_share p {
+  text-transform: uppercase;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.profiles_page .main_profiles .similar_performers_desktop {
+  margin-top: 25px !important;
+}
+
 .profiles_page .main_profiles .specializations,
 .profiles_page .main_profiles .similar_performers,
 .profiles_page .main_profiles .verification,
-.profiles_page .main_profiles .mobile_review {
+.profiles_page .main_profiles .mobile_review,
+.profiles_page .main_profiles .amount_box {
   width: 100%;
   background-color: #ffffff;
   color: #253556;
@@ -1323,22 +1343,30 @@ textarea::-webkit-scrollbar-thumb {
   padding: 15px;
   overflow: hidden;
   max-height: 50px;
-  -webkit-transition: max-height 0.8s ease-in-out;
-  transition: max-height 0.8s ease-in-out;
+  -webkit-transition: max-height 0.6s ease-in;
+  transition: max-height 0.6s ease-in;
 }
 
 .profiles_page .main_profiles .specializations .specialization_btn,
 .profiles_page .main_profiles .specializations .perfomers_btn,
 .profiles_page .main_profiles .specializations .verification_btn,
+.profiles_page .main_profiles .specializations .amount_info,
 .profiles_page .main_profiles .similar_performers .specialization_btn,
 .profiles_page .main_profiles .similar_performers .perfomers_btn,
 .profiles_page .main_profiles .similar_performers .verification_btn,
+.profiles_page .main_profiles .similar_performers .amount_info,
 .profiles_page .main_profiles .verification .specialization_btn,
 .profiles_page .main_profiles .verification .perfomers_btn,
 .profiles_page .main_profiles .verification .verification_btn,
+.profiles_page .main_profiles .verification .amount_info,
 .profiles_page .main_profiles .mobile_review .specialization_btn,
 .profiles_page .main_profiles .mobile_review .perfomers_btn,
-.profiles_page .main_profiles .mobile_review .verification_btn {
+.profiles_page .main_profiles .mobile_review .verification_btn,
+.profiles_page .main_profiles .mobile_review .amount_info,
+.profiles_page .main_profiles .amount_box .specialization_btn,
+.profiles_page .main_profiles .amount_box .perfomers_btn,
+.profiles_page .main_profiles .amount_box .verification_btn,
+.profiles_page .main_profiles .amount_box .amount_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1357,7 +1385,8 @@ textarea::-webkit-scrollbar-thumb {
 .profiles_page .main_profiles .specializations .specializations_info,
 .profiles_page .main_profiles .similar_performers .specializations_info,
 .profiles_page .main_profiles .verification .specializations_info,
-.profiles_page .main_profiles .mobile_review .specializations_info {
+.profiles_page .main_profiles .mobile_review .specializations_info,
+.profiles_page .main_profiles .amount_box .specializations_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1374,7 +1403,8 @@ textarea::-webkit-scrollbar-thumb {
 .profiles_page .main_profiles .specializations .specializations_info a,
 .profiles_page .main_profiles .similar_performers .specializations_info a,
 .profiles_page .main_profiles .verification .specializations_info a,
-.profiles_page .main_profiles .mobile_review .specializations_info a {
+.profiles_page .main_profiles .mobile_review .specializations_info a,
+.profiles_page .main_profiles .amount_box .specializations_info a {
   color: #253556;
   text-decoration: underline;
   font-size: 14px;
@@ -1385,14 +1415,16 @@ textarea::-webkit-scrollbar-thumb {
 .profiles_page .main_profiles .specializations .specializations_info a:hover,
 .profiles_page .main_profiles .similar_performers .specializations_info a:hover,
 .profiles_page .main_profiles .verification .specializations_info a:hover,
-.profiles_page .main_profiles .mobile_review .specializations_info a:hover {
+.profiles_page .main_profiles .mobile_review .specializations_info a:hover,
+.profiles_page .main_profiles .amount_box .specializations_info a:hover {
   color: #00cf4d;
 }
 
 .profiles_page .main_profiles .specializations .verification_info,
 .profiles_page .main_profiles .similar_performers .verification_info,
 .profiles_page .main_profiles .verification .verification_info,
-.profiles_page .main_profiles .mobile_review .verification_info {
+.profiles_page .main_profiles .mobile_review .verification_info,
+.profiles_page .main_profiles .amount_box .verification_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1420,7 +1452,10 @@ textarea::-webkit-scrollbar-thumb {
 .profiles_page .main_profiles .verification .verification_info .user_email,
 .profiles_page .main_profiles .mobile_review .verification_info .user_info_list,
 .profiles_page .main_profiles .mobile_review .verification_info .user_phone_num,
-.profiles_page .main_profiles .mobile_review .verification_info .user_email {
+.profiles_page .main_profiles .mobile_review .verification_info .user_email,
+.profiles_page .main_profiles .amount_box .verification_info .user_info_list,
+.profiles_page .main_profiles .amount_box .verification_info .user_phone_num,
+.profiles_page .main_profiles .amount_box .verification_info .user_email {
   margin-top: 10px;
   width: 100%;
   display: -webkit-box;
@@ -1445,7 +1480,10 @@ textarea::-webkit-scrollbar-thumb {
 .profiles_page .main_profiles .verification .verification_info .user_email span,
 .profiles_page .main_profiles .mobile_review .verification_info .user_info_list span,
 .profiles_page .main_profiles .mobile_review .verification_info .user_phone_num span,
-.profiles_page .main_profiles .mobile_review .verification_info .user_email span {
+.profiles_page .main_profiles .mobile_review .verification_info .user_email span,
+.profiles_page .main_profiles .amount_box .verification_info .user_info_list span,
+.profiles_page .main_profiles .amount_box .verification_info .user_phone_num span,
+.profiles_page .main_profiles .amount_box .verification_info .user_email span {
   padding-left: 5px;
   font-size: 13px;
 }
@@ -1461,7 +1499,10 @@ textarea::-webkit-scrollbar-thumb {
 .profiles_page .main_profiles .verification .verification_info .user_email .fa-check-circle,
 .profiles_page .main_profiles .mobile_review .verification_info .user_info_list .fa-check-circle,
 .profiles_page .main_profiles .mobile_review .verification_info .user_phone_num .fa-check-circle,
-.profiles_page .main_profiles .mobile_review .verification_info .user_email .fa-check-circle {
+.profiles_page .main_profiles .mobile_review .verification_info .user_email .fa-check-circle,
+.profiles_page .main_profiles .amount_box .verification_info .user_info_list .fa-check-circle,
+.profiles_page .main_profiles .amount_box .verification_info .user_phone_num .fa-check-circle,
+.profiles_page .main_profiles .amount_box .verification_info .user_email .fa-check-circle {
   color: #00cf4d;
 }
 
@@ -1476,7 +1517,10 @@ textarea::-webkit-scrollbar-thumb {
 .profiles_page .main_profiles .verification .verification_info .user_email a,
 .profiles_page .main_profiles .mobile_review .verification_info .user_info_list a,
 .profiles_page .main_profiles .mobile_review .verification_info .user_phone_num a,
-.profiles_page .main_profiles .mobile_review .verification_info .user_email a {
+.profiles_page .main_profiles .mobile_review .verification_info .user_email a,
+.profiles_page .main_profiles .amount_box .verification_info .user_info_list a,
+.profiles_page .main_profiles .amount_box .verification_info .user_phone_num a,
+.profiles_page .main_profiles .amount_box .verification_info .user_email a {
   color: #00cf4d;
 }
 
@@ -1491,14 +1535,18 @@ textarea::-webkit-scrollbar-thumb {
 .profiles_page .main_profiles .verification .verification_info .user_email .fa-times-circle,
 .profiles_page .main_profiles .mobile_review .verification_info .user_info_list .fa-times-circle,
 .profiles_page .main_profiles .mobile_review .verification_info .user_phone_num .fa-times-circle,
-.profiles_page .main_profiles .mobile_review .verification_info .user_email .fa-times-circle {
+.profiles_page .main_profiles .mobile_review .verification_info .user_email .fa-times-circle,
+.profiles_page .main_profiles .amount_box .verification_info .user_info_list .fa-times-circle,
+.profiles_page .main_profiles .amount_box .verification_info .user_phone_num .fa-times-circle,
+.profiles_page .main_profiles .amount_box .verification_info .user_email .fa-times-circle {
   color: #ff8fb4;
 }
 
 .profiles_page .main_profiles .specializations .performers_info,
 .profiles_page .main_profiles .similar_performers .performers_info,
 .profiles_page .main_profiles .verification .performers_info,
-.profiles_page .main_profiles .mobile_review .performers_info {
+.profiles_page .main_profiles .mobile_review .performers_info,
+.profiles_page .main_profiles .amount_box .performers_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1516,7 +1564,8 @@ textarea::-webkit-scrollbar-thumb {
 .profiles_page .main_profiles .specializations .performers_info a,
 .profiles_page .main_profiles .similar_performers .performers_info a,
 .profiles_page .main_profiles .verification .performers_info a,
-.profiles_page .main_profiles .mobile_review .performers_info a {
+.profiles_page .main_profiles .mobile_review .performers_info a,
+.profiles_page .main_profiles .amount_box .performers_info a {
   border: 1px solid #253556;
   padding: 2px 5px;
   border-radius: 20px;
@@ -1532,10 +1581,66 @@ textarea::-webkit-scrollbar-thumb {
 .profiles_page .main_profiles .specializations .performers_info a:hover,
 .profiles_page .main_profiles .similar_performers .performers_info a:hover,
 .profiles_page .main_profiles .verification .performers_info a:hover,
-.profiles_page .main_profiles .mobile_review .performers_info a:hover {
+.profiles_page .main_profiles .mobile_review .performers_info a:hover,
+.profiles_page .main_profiles .amount_box .performers_info a:hover {
   background-color: #00cf4d;
   color: #ffffff;
   border: 1px solid #00cf4d;
+}
+
+.profiles_page .main_profiles .specializations .inp_payment,
+.profiles_page .main_profiles .similar_performers .inp_payment,
+.profiles_page .main_profiles .verification .inp_payment,
+.profiles_page .main_profiles .mobile_review .inp_payment,
+.profiles_page .main_profiles .amount_box .inp_payment {
+  position: relative;
+  margin-top: 20px;
+}
+
+.profiles_page .main_profiles .specializations .inp_payment p,
+.profiles_page .main_profiles .similar_performers .inp_payment p,
+.profiles_page .main_profiles .verification .inp_payment p,
+.profiles_page .main_profiles .mobile_review .inp_payment p,
+.profiles_page .main_profiles .amount_box .inp_payment p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  color: #253556;
+}
+
+.profiles_page .main_profiles .specializations .inp_payment input,
+.profiles_page .main_profiles .similar_performers .inp_payment input,
+.profiles_page .main_profiles .verification .inp_payment input,
+.profiles_page .main_profiles .mobile_review .inp_payment input,
+.profiles_page .main_profiles .amount_box .inp_payment input {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #efefef;
+  border: none;
+  height: 25px;
+  padding-left: 40px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+.profiles_page .main_profiles .specializations .inp_payment input:focus,
+.profiles_page .main_profiles .similar_performers .inp_payment input:focus,
+.profiles_page .main_profiles .verification .inp_payment input:focus,
+.profiles_page .main_profiles .mobile_review .inp_payment input:focus,
+.profiles_page .main_profiles .amount_box .inp_payment input:focus {
+  outline: none;
+  border: 1px solid #00cf4d;
+}
+
+.profiles_page .main_profiles .specializations .inp_payment i,
+.profiles_page .main_profiles .similar_performers .inp_payment i,
+.profiles_page .main_profiles .verification .inp_payment i,
+.profiles_page .main_profiles .mobile_review .inp_payment i,
+.profiles_page .main_profiles .amount_box .inp_payment i {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  color: #253556;
 }
 
 .profiles_page .main_profiles .mobile_review {
@@ -1808,6 +1913,10 @@ textarea::-webkit-scrollbar-thumb {
   padding-top: 15px;
 }
 
+.profiles_page .modal_achievement .modal-body .modal_title .achievements_list .closed_text {
+  display: none;
+}
+
 .profiles_page .modal_achievement .modal-body .modal_title .achievements_list:hover {
   border: 1px solid #00cf4d;
 }
@@ -1831,6 +1940,149 @@ textarea::-webkit-scrollbar-thumb {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 10px auto;
+  border: none;
+}
+
+.profiles_page .modal_works {
+  padding: 40px 0 !important;
+  color: #253556;
+}
+
+.profiles_page .modal_works .modal-content {
+  width: 700px !important;
+  margin-left: -100px !important;
+}
+
+.profiles_page .modal_works .modal_header {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 20px 0;
+}
+
+.profiles_page .modal_works .modal_header .modal-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.profiles_page .modal_works .modal_header .close {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: red !important;
+}
+
+.profiles_page .modal_works .modal-body {
+  padding: 10px 50px;
+}
+
+.profiles_page .modal_works .modal-body input,
+.profiles_page .modal_works .modal-body textarea {
+  width: 100%;
+  background-color: #efefef;
+  border-radius: 20px;
+  color: #253556;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #c1c4ca;
+}
+
+.profiles_page .modal_works .modal-body input {
+  height: 30px;
+}
+
+.profiles_page .modal_works .modal-body textarea {
+  height: 120px;
+  border-radius: 10px;
+}
+
+.profiles_page .modal_works .modal-body .block_works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.profiles_page .modal_works .modal-body .block_works .work_list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.profiles_page .modal_works .modal-body .block_works .work_list .my_work {
+  width: 48%;
+  height: 200px;
+  background-color: #efefef;
+  border-radius: 10px;
+}
+
+.profiles_page .modal_works .modal-body .block_works .work_list .my_work img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profiles_page .modal_works .modal-body .block_works .home_screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 1;
+  border: 1.5 px solid #00cf4d;
+  display: none;
+}
+
+.profiles_page .modal_works .modal-body .block_works #homeScreen {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.profiles_page .modal_works .modal-body .block_works i {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: #ff8fb4;
+  padding: 3px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 1 !important;
+}
+
+.profiles_page .modal_works .modal-body .block_works i:hover {
+  color: tomato;
 }
 
 .profiles_page footer {
@@ -2171,6 +2423,9 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .profiles_page .header_profiles {
+    height: 50vh;
+  }
   .profiles_page .header_profiles .user_block_info .user_nick_name {
     font-size: 30px !important;
   }
@@ -2187,27 +2442,7 @@ textarea::-webkit-scrollbar-thumb {
             flex-direction: column;
   }
   .profiles_page .header_profiles .mobile_user_title .interesting_block {
-    width: 100% !important;
-  }
-  .profiles_page .header_profiles .mobile_user_title .verification_block {
-    margin-top: 220px;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-    -webkit-box-orient: initial !important;
-    -webkit-box-direction: initial !important;
-        -ms-flex-direction: initial !important;
-            flex-direction: initial !important;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: start !important;
-  }
-  .profiles_page .header_profiles .mobile_user_title .verification_block .verification_box {
-    margin-top: 0 !important;
-    margin-left: 30px !important;
+    width: 96% !important;
   }
   .profiles_page .header_profiles .sub_right_info {
     margin-top: 20px;
@@ -2227,6 +2462,9 @@ textarea::-webkit-scrollbar-thumb {
   .profiles_page .sub_right_info .user_stars {
     text-align-last: left !important;
   }
+  .profiles_page .tablet_row {
+    margin-top: 10px !important;
+  }
   .profiles_page .footer__mob {
     display: block;
   }
@@ -2235,8 +2473,11 @@ textarea::-webkit-scrollbar-thumb {
   .profiles_page .desktop_row_share, .profiles_page .interesting_info_mobile,
   .profiles_page .achievements_slider,
   .profiles_page .manual_navigation,
+  .profiles_page .tablet_none,
+  .profiles_page .specializations_desktop,
+  .profiles_page .similar_performers_desktop,
   .profiles_page footer {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -2293,6 +2534,13 @@ textarea::-webkit-scrollbar-thumb {
   .profiles_page .modal_achievement .modal-body .info_list {
     width: 100% !important;
   }
+  .profiles_page .modal_works {
+    padding: 30px 0 !important;
+  }
+  .profiles_page .modal_works .modal-content {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
 }
 
 @media only screen and (max-width: 567px) {
@@ -2345,6 +2593,20 @@ textarea::-webkit-scrollbar-thumb {
   .profiles_page .modal_achievement .modal-body .info_list {
     width: 100% !important;
   }
+  .profiles_page .modal_works {
+    padding: 30px 0 !important;
+  }
+  .profiles_page .modal_works .modal-content {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+  .profiles_page .modal_works .modal-body {
+    padding: 10px 50px;
+  }
+  .profiles_page .modal_works .modal-body .block_works .work_list .my_work {
+    width: 48%;
+    height: 150px !important;
+  }
 }
 
 @media only screen and (max-width: 467px) {
@@ -2388,6 +2650,16 @@ textarea::-webkit-scrollbar-thumb {
     width: 100% !important;
     height: 40px !important;
     font-size: 12px !important;
+  }
+  .profiles_page .modal_works {
+    padding: 10px 0 !important;
+  }
+  .profiles_page .modal_works .modal-body {
+    padding: 10px !important;
+  }
+  .profiles_page .modal_works .modal-body .block_works .work_list .my_work {
+    height: 120px !important;
+    border-radius: 5px !important;
   }
 }
 

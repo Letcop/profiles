@@ -1,28 +1,25 @@
 let expandBtn = document.querySelector('.expand_btn');
 let backText = document.querySelector('.scroll_text');
-let interestingInfo = document.querySelector('.interesting_info');
-let clickElements = document.querySelectorAll('.click_elem');
-let mouseoverBlocks = document.querySelectorAll('.mouseover_block');
 let exhibitedBtn = document.querySelector('.exhibited_btn');
 let boxWorks = document.querySelector('.box_works');
 let reviewBtn = document.querySelector('.review_btn');
 let reviewItem = document.querySelector('.desktop_reviews .review_item');
-let specializationsInfo = document.querySelector('.specializations');
-let specializationBtn = document.querySelector('.specialization_btn');
-let perfomersBtn = document.querySelector('.perfomers_btn');
-let similarPerformers = document.querySelector('.similar_performers');
 let expandBtnMobile = document.querySelector('.expand_btn_mobile');
 let scrollTextMobile = document.querySelector('.scroll_text_mobile');
-let sliderwork = document.querySelector('.mobile_slider_works .slider_item');
-let options = document.querySelectorAll('.option');
-let sliderList = document.querySelectorAll('.slider_list');
 let moreCommentsBtn = document.querySelector('.more_comments button');
 let mobileReview = document.querySelector('.mobile_review');
 let addAnimMobileReview = document.querySelector('.add_anim_mobile_review');
 let mobileReviewBtn = document.querySelector('.mobile_review_btn');
-console.log(mobileReviewBtn)
+let modalClosedTexts = document.querySelectorAll('.modal_title .achievements_list');
+let variableText = document.querySelector('.modal-body .info_list')
+let myWorksInfo = document.querySelectorAll('.block_works .my_work img');
+let closeMyWork = document.querySelector('.home_screen .close');
+let homeScreenWork = document.querySelector('.home_screen');
+let workName = document.getElementById('workName');
+let workDescriptions = document.getElementById('workDescriptions');
 
 
+// function jQuery
 $(document).ready(function() {
   $('.counter_num').countUp({
     'time': 1500,
@@ -55,6 +52,7 @@ $(document).ready(function() {
   });
 
 });
+
 
 // Animate mobile
 let clickNum0;
@@ -139,16 +137,49 @@ mobileReviewBtn.addEventListener('click', () => {
   }
 });
 
-// mobileReviewBtn.addEventListener('click', () => {
-//  addAnimMobileReview.classList.add('anim_performers_info');
-// //  console.dir(addAnimMobileReview.children[0].children[1].style.transform = 'rotate(180deg)')
-// });
-
 moreCommentsBtn.addEventListener('click', () => {
   addAnimMobileReview.style.overflowY = 'scroll';
   moreCommentsBtn.style.display = 'none'
 
 });
+
+// Modal  наведении текст
+
+modalClosedTexts.forEach((openText) => {
+  openText.addEventListener('mouseover', () => {
+    function addVariableText() {
+      variableText.value = openText.children[2].innerText
+    }
+    addVariableText()
+  });
+});
+
+// modal my works
+
+myWorksInfo.forEach((myWork) => {
+
+  myWork.addEventListener('click', () => {
+    let myImg = document.getElementById('homeScreen');
+    myImg.src = myWork.src
+    homeScreenWork.style.display = 'block';
+
+  })
+});
+
+closeMyWork.addEventListener('click', () => {
+  homeScreenWork.style.display = 'none';
+});
+
+
+function returnInfo() {
+  workName.value = 'Letcop'
+  workDescriptions.value = 'Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Деревни своего ipsum скатился, однажды все злых? Первую деревни выйти раз свой свое на берегу продолжил родного решила моей ipsum, предупреждал грустный! Живет свой гор образ заголовок собрал выйти даже, то безопасную своих, всеми свою его если текстами! Рыбного, знаках свою.'
+}
+
+returnInfo();
+
+
+
 
 
 
