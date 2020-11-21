@@ -17,6 +17,8 @@ let closeMyWork = document.querySelector('.home_screen .close');
 let homeScreenWork = document.querySelector('.home_screen');
 let workName = document.getElementById('workName');
 let workDescriptions = document.getElementById('workDescriptions');
+let myFriendsList = document.querySelectorAll('.modal-body .my_friends_list');
+let removeMyFriend = document.querySelectorAll('.modal-body .my_friends_list .remove_friend');
 
 
 // function jQuery
@@ -169,6 +171,27 @@ myWorksInfo.forEach((myWork) => {
 closeMyWork.addEventListener('click', () => {
   homeScreenWork.style.display = 'none';
 });
+
+// Modal my friends
+myFriendsList.forEach((myFriend) => {
+  myFriend.addEventListener('mouseover', () => {
+   myFriend.children[2].children[0].style.display = 'block'
+  })
+});
+
+myFriendsList.forEach((myFriend) => {
+  myFriend.addEventListener('mouseout', () => {
+  myFriend.children[2].children[0].style.display = 'none'
+  })
+});
+
+// remove my friend
+
+removeMyFriend.forEach((removeFriend) => {
+  removeFriend.addEventListener('click', () => {
+    console.dir(removeFriend.parentElement.style.display = 'none')
+  })
+})
 
 
 function returnInfo() {

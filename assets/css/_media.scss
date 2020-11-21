@@ -6,6 +6,7 @@
         .tablet_share_profile,
         .tablet_row,
         .mobile_row,
+       .head__botton .my_friends,
         .footer__mob {
             display: none !important;
         }
@@ -28,6 +29,7 @@
     .tablet_share_profile,
     .tablet_row,
     .mobile_row,
+    .head__botton .my_friends,
     .footer__mob {
         display: none !important;
     }
@@ -86,6 +88,7 @@
   .tablet_none,
   .specializations_desktop,
   .similar_performers_desktop,
+  .head__botton .my_friends,
   footer {
       display: none !important;
   }
@@ -238,6 +241,26 @@
       }
     }
   }
+
+  .modal_my_friends {
+    .modal-content {
+      width: 100% !important;
+      margin-left: 0px !important;
+    }
+    .modal-body {
+      .my_friends_item {
+        @include d-lex();
+        flex-wrap: wrap;
+        .my_friends_list {
+          width: 100% !important;
+        .avatar {
+          width: 65px !important;
+          height: 65px;
+          }
+        }
+      }
+    }
+  }
 // End Modal
   }
 }
@@ -246,6 +269,9 @@
   .profiles_page {
    .head__main_block {
        margin-left: 0 !important;
+   }
+   .mobile__bell_modal {
+     margin-top: 10px !important;
    }
     .block_experience {
         margin-top: -30px;
@@ -303,6 +329,30 @@
            height: 120px !important;
            border-radius: 5px !important;
          }
+        }
+      }
+    }
+  }
+
+  .modal_my_friends {
+    .modal-content {
+      width: 100% !important;
+      margin-left: 0px !important;
+    }
+    
+    .modal-title {
+      font-size: 25px !important;
+    }
+    .modal-body {
+      .my_friends_item {
+        @include d-lex();
+        flex-wrap: wrap;
+        .my_friends_list {
+          width: 100% !important;
+        .avatar {
+          width: 85px !important;
+          height: 65px;
+          }
         }
       }
     }

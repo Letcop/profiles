@@ -139,6 +139,14 @@ textarea::-webkit-scrollbar-thumb {
   z-index: 9 !important;
 }
 
+.profiles_page .header_profiles .my_friends {
+  margin-left: 20px;
+}
+
+.profiles_page .header_profiles .my_friends i {
+  color: #00cf4d;
+}
+
 .profiles_page .header_profiles .head__main_block {
   margin-left: 50px;
   height: 100px !important;
@@ -593,11 +601,13 @@ textarea::-webkit-scrollbar-thumb {
   border-radius: 50%;
 }
 
-.profiles_page .header_profiles .mobile_row .user_info_mobile .add_button {
+.profiles_page .header_profiles .mobile_row .user_info_mobile .add_button,
+.profiles_page .header_profiles .mobile_row .user_info_mobile .edit_button {
   text-align: end;
 }
 
-.profiles_page .header_profiles .mobile_row .user_info_mobile .add_button i {
+.profiles_page .header_profiles .mobile_row .user_info_mobile .add_button i,
+.profiles_page .header_profiles .mobile_row .user_info_mobile .edit_button i {
   color: #c1c4ca;
   margin-right: 5px;
   cursor: pointer;
@@ -2085,6 +2095,121 @@ textarea::-webkit-scrollbar-thumb {
   color: tomato;
 }
 
+.profiles_page .modal_my_friends {
+  padding: 20px 0 !important;
+  color: #253556;
+}
+
+.profiles_page .modal_my_friends .modal-content {
+  background-color: #efefef;
+  width: 700px !important;
+  margin-left: -100px !important;
+}
+
+.profiles_page .modal_my_friends .modal_header {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 20px 0;
+}
+
+.profiles_page .modal_my_friends .modal_header .modal-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.profiles_page .modal_my_friends .modal_header .close {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: red !important;
+}
+
+.profiles_page .modal_my_friends .modal-body .my_friends_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list {
+  width: 48%;
+  height: 100px;
+  border-radius: 10px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list .avatar {
+  width: 85px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  position: relative;
+}
+
+.profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list .avatar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list .name {
+  line-height: 18px;
+  margin-left: 10px;
+}
+
+.profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list .name strong {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list .name span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list .remove_friend {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+}
+
+.profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list .remove_friend i {
+  color: #ff8fb4;
+  display: none;
+}
+
+.profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list:hover {
+  background-color: #ffffff;
+}
+
 .profiles_page footer {
   background-image: url("../images/footer.jpg");
   background-size: cover;
@@ -2398,6 +2523,7 @@ textarea::-webkit-scrollbar-thumb {
   .profiles_page .tablet_share_profile,
   .profiles_page .tablet_row,
   .profiles_page .mobile_row,
+  .profiles_page .head__botton .my_friends,
   .profiles_page .footer__mob {
     display: none !important;
   }
@@ -2417,6 +2543,7 @@ textarea::-webkit-scrollbar-thumb {
   .profiles_page .tablet_share_profile,
   .profiles_page .tablet_row,
   .profiles_page .mobile_row,
+  .profiles_page .head__botton .my_friends,
   .profiles_page .footer__mob {
     display: none !important;
   }
@@ -2476,6 +2603,7 @@ textarea::-webkit-scrollbar-thumb {
   .profiles_page .tablet_none,
   .profiles_page .specializations_desktop,
   .profiles_page .similar_performers_desktop,
+  .profiles_page .head__botton .my_friends,
   .profiles_page footer {
     display: none !important;
   }
@@ -2607,11 +2735,38 @@ textarea::-webkit-scrollbar-thumb {
     width: 48%;
     height: 150px !important;
   }
+  .profiles_page .modal_my_friends .modal-content {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+  .profiles_page .modal_my_friends .modal-body .my_friends_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list {
+    width: 100% !important;
+  }
+  .profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list .avatar {
+    width: 65px !important;
+    height: 65px;
+  }
 }
 
 @media only screen and (max-width: 467px) {
   .profiles_page .head__main_block {
     margin-left: 0 !important;
+  }
+  .profiles_page .mobile__bell_modal {
+    margin-top: 10px !important;
   }
   .profiles_page .block_experience {
     margin-top: -30px;
@@ -2660,6 +2815,33 @@ textarea::-webkit-scrollbar-thumb {
   .profiles_page .modal_works .modal-body .block_works .work_list .my_work {
     height: 120px !important;
     border-radius: 5px !important;
+  }
+  .profiles_page .modal_my_friends .modal-content {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+  .profiles_page .modal_my_friends .modal-title {
+    font-size: 25px !important;
+  }
+  .profiles_page .modal_my_friends .modal-body .my_friends_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list {
+    width: 100% !important;
+  }
+  .profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list .avatar {
+    width: 85px !important;
+    height: 65px;
   }
 }
 
