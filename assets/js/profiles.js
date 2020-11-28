@@ -21,6 +21,7 @@ let myFriendsList = document.querySelectorAll('.modal-body .my_friends_list');
 let removeMyFriend = document.querySelectorAll('.modal-body .my_friends_list .remove_friend');
 
 
+
 // function jQuery
 $(document).ready(function() {
   $('.counter_num').countUp({
@@ -197,6 +198,7 @@ removeMyFriend.forEach((removeFriend) => {
 function returnInfo() {
   workName.value = 'Letcop'
   workDescriptions.value = 'Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Деревни своего ipsum скатился, однажды все злых? Первую деревни выйти раз свой свое на берегу продолжил родного решила моей ipsum, предупреждал грустный! Живет свой гор образ заголовок собрал выйти даже, то безопасную своих, всеми свою его если текстами! Рыбного, знаках свою.'
+ 
 }
 
 returnInfo();

@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профили</title>
+  <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/slick/slick.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+</head>
+
+<body class="profiles_page edit_profile">
+  <header class="header_profiles">
+    <!-- Start Navbar Header -->
+    <div class="conteiner">
+      <div class="head__main_block">
+        <div class="head__burger">
+          <div class="burger__iteam"></div>
+        </div>
+        <img class="media__logo" src="assets/icons/icon.svg">
+
+        <div class="head__left">
+          <img class="head__logo" src="assets/icons/icon.svg">
+          <nav>
+            <a href="#/">Заказы</a>
+            <a href="#/">Вакансии</a>
+
+            <div class="head__bottom clickedElem">
+              <span>Люди</span>
+              <i class="fal fa-chevron-down"></i>
+
+              <div class="hide__link">
+                <a href="#/">Все команды</a>
+                <a href="#/">Все исполнители</a>
+              </div>
+            </div>
+
+            <div class="head__bottom clickedElem">
+              <span>Еще</span>
+              <i class="fal fa-chevron-down"></i>
+
+              <div class="hide__link">
+                <a href="#/">Форум</a>
+                <a href="#/">Блог</a>
+                <a href="#/">Новости</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="head__botton">
+          <div class="head__bell clickedElem active__bell">
+            <p>200</p>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 251.2 251.2"
+              style="enable-background:new 0 0 251.2 251.2;" xml:space="preserve">
+              <path class="st0" d="M174.9,154.9c-0.3-0.3-0.4-0.6-0.4-1v-44.8c0-25.4-19.5-46.3-44.2-48.7V49.8c0-2.6-2.1-4.7-4.7-4.7
+            c-2.6,0-4.7,2.1-4.7,4.7v10.7c-24.8,2.4-44.2,23.3-44.2,48.7v44.8c0,0.4-0.2,0.7-0.4,1l-11.7,11.7c-2,2-3.1,4.7-3.1,7.6v3.6
+            c0,5.9,4.8,10.8,10.8,10.8h32.7c1.7,9.9,10.3,17.5,20.7,17.5s19-7.6,20.7-17.5H179c5.9,0,10.8-4.8,10.8-10.8v-3.6
+            c0-2.9-1.1-5.6-3.1-7.6L174.9,154.9z M125.6,196.7c-5.2,0-9.6-3.5-11.1-8.2h22.1C135.1,193.3,130.8,196.7,125.6,196.7z M61.7,150.1
+            c-0.9,0.9-2.1,1.4-3.3,1.4c-1.2,0-2.4-0.5-3.3-1.4c-7.5-7.5-11.6-17.5-11.6-28s4.1-20.6,11.6-28c1.8-1.8,4.8-1.8,6.6,0
+            c1.8,1.8,1.8,4.8,0,6.6c-5.7,5.7-8.9,13.3-8.9,21.4c0,8.1,3.1,15.7,8.9,21.4C63.5,145.3,63.5,148.3,61.7,150.1z M45.2,160
+            c1.8,1.8,1.8,4.8,0,6.6c-0.9,0.9-2.1,1.4-3.3,1.4c-1.2,0-2.4-0.5-3.3-1.4c-11.9-11.9-18.5-27.7-18.5-44.5s6.6-32.6,18.5-44.5
+            c1.8-1.8,4.8-1.8,6.6,0c1.8,1.8,1.8,4.8,0,6.6c-10.1,10.1-15.7,23.6-15.7,37.9S35.1,149.9,45.2,160z M196.1,150.1
+            c-0.9,0.9-2.1,1.4-3.3,1.4s-2.4-0.5-3.3-1.4c-1.8-1.8-1.8-4.8,0-6.6c11.8-11.8,11.8-31.1,0-42.9c-1.8-1.8-1.8-4.8,0-6.6
+            c1.8-1.8,4.8-1.8,6.6,0C211.6,109.5,211.6,134.7,196.1,150.1z M231,122.1c0,16.8-6.6,32.6-18.5,44.5c-0.9,0.9-2.1,1.4-3.3,1.4
+            s-2.4-0.5-3.3-1.4c-1.8-1.8-1.8-4.8,0-6.6c10.1-10.1,15.7-23.6,15.7-37.9s-5.6-27.8-15.7-37.9c-1.8-1.8-1.8-4.8,0-6.6
+            c1.8-1.8,4.8-1.8,6.6,0C224.5,89.4,231,105.3,231,122.1z" />
+            </svg>
+
+            <div class="hide__modal_block" id="remove__mobile">
+              <div class="hide__modal_triangle"></div>
+              <div class="hide__bell_modal">
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-bullhorn"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Напоминание</div>
+                    <div class="hide__modal_text">Действие вашего вашего тарифа истекает через 1 день! </div>
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-award"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Достижение</div>
+                    <div class="hide__modal_text">Вы получили новое достижение “Торговец”</div>
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-gift"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Подарки</div>
+                    <div class="hide__modal_text">Администрация Letcop поздравляет вас с Днем Рождения, вы получаете в
+                      подарок тариф "Gold"</div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Администрация</div>
+                    <div class="hide__modal_text">Ваш заказ был удален по причине "Ненормативная лексика"</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head__chat active__chat">
+            <p>50000000</p>
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 477.6 477.6" style="enable-background:new 0 0 477.6 477.6;"
+              xml:space="preserve">
+              <g>
+                <g>
+                  <path class="st0" d="M407.6,70c-45.1-45.1-105-70-168.8-70S115.1,24.9,70,70c-87,87-93.3,226-15.8,320.2
+                  c-10.7,21.9-23.3,36.5-37.6,43.5C7.9,438,3,447.4,4.4,457c1.5,9.7,8.9,17.2,18.6,18.7c5.3,0.8,11,1.3,16.9,1.3l0,0
+                  c29.3,0,60.1-10.1,85.8-27.8c34.6,18.6,73.5,28.4,113.1,28.4c63.8,0,123.7-24.8,168.8-69.9s69.9-105.1,69.9-168.8
+                  S452.7,115.1,407.6,70z" />
+                  <path class="st1"
+                    d="M338.8,160h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5S346.2,160,338.8,160z" />
+                  <path class="st1" d="M338.8,225.3h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5
+                  S346.2,225.3,338.8,225.3z" />
+                  <path class="st1" d="M338.8,290.6h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5
+                  S346.2,290.6,338.8,290.6z" />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="head__right clickedElem">
+          <div class="head__bottom clickedElem">
+            <span>RU</span>
+            <i class="fal fa-chevron-down"></i>
+            <div class="hide__link">
+              <a href="#/">UZ</a>
+            </div>
+          </div>
+          <a href="#/" class="head__singIn large_signIn">
+            <i class="fal fa-sign-in"></i>
+            <p>Войти</p>
+          </a>
+          <div class="head__profile">
+            <div class="head__foto">
+              <img src="assets/icons/avatar.png">
+            </div>
+            <div class="head__profile_content">
+              <div class="head__logine">
+                <p>Hamillioner</p>
+                <i class="fal fa-chevron-down"></i>
+              </div>
+              <div class="head__name">Тимур Касымов</div>
+              <div class="head__line_block">
+                <div class="head__line"></div>
+                <div class="head__line_number">1 LV</div>
+              </div>
+            </div>
+          </div>
+          <div class="head__hide">
+            <div class="head__hide_box">
+              <div class="head__hide_left">
+                <a class="head__hide_share" href="#/">
+                  <span>ФИНАНСЫ</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a><br>
+                <a href="#/">История переводов</a><br>
+                <a href="#/">Реферальная программа</a><br>
+                <a href="#/">Платный услуги</a><br>
+                <a href="#/">Настройки</a><br>
+              </div>
+              <div class="head__hide_right">
+                <a class="head__hide_share" href="#/">
+                  <span>ПРОФИЛЬ</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a><br>
+                <a href="#/">Команды</a><br>
+                <a href="#/">Вкладки</a><br>
+                <a href="#/">Мои заявки</a><br>
+                <a href="#/">Творческая мастерская</a><br>
+              </div>
+            </div>
+            <div class="media__hide_box">
+              <div class="media__hide_button">
+                <a href="#/">ПРОФИЛЬ</a>
+                <i class="fas fa-external-link-alt icon"></i>
+                <i class="fal fa-chevron-down down__icon"></i>
+              </div>
+              <div class="media__hide_links">
+                <a href="#/">История переводов</a><br>
+                <a href="#/">Реферальная программа</a><br>
+                <a href="#/">Платный услуги</a><br>
+                <a href="#/">Настройки</a>
+              </div>
+
+              <div class="color_blue media__hide_button">
+                <a href="#/">ФИНАНСЫ</a>
+                <i class="fas fa-external-link-alt icon"></i>
+                <i class="fal fa-chevron-down down__icon"></i>
+              </div>
+              <div class="media__hide_links">
+                <a href="#/">Команды</a><br>
+                <a href="#/">Вкладки</a><br>
+                <a href="#/">Мои заявки</a><br>
+                <a href="#/">Творческая мастерская</a>
+              </div>
+            </div>
+            <div class="head__hide_bottom">
+              <a class="head__support" href="#/">
+                <span>Поддержка</span>
+                <i class="fas fa-headset"></i>
+              </a>
+              <a class="head__logout" href="#/">
+                <span>Выход</span>
+                <i class="fal fa-sign-out"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="head__media_modal clickedElem">
+      <div class="head__modal_inner">
+        <a href="#/">Заказы</a>
+        <a href="#/">Вакансии</a>
+        <div class="media__hide_box">
+          <div class="media__hide_button">
+            <a href="#/">Люди</a>
+            <i class="fal fa-chevron-down down__icon"></i>
+          </div>
+          <div class="media__hide_links">
+            <a href="#/">Все команды</a>
+            <a href="#/">Все исполнители</a>
+
+          </div>
+
+          <div class="media__hide_button">
+            <a href="#/">Еще</a>
+            <i class="fal fa-chevron-down down__icon"></i>
+          </div>
+          <div class="media__hide_links">
+            <a href="#/">Форум</a>
+            <a href="#/">Блог</a>
+            <a href="#/">Новости</a>
+          </div>
+        </div>
+        <div class="change__lang">
+          <p class="change__title">Язык</p>
+          <p class="active__lang">RU</p>
+          <p>UZ</p>
+        </div>
+        <i class="fas fa-times-circle close"></i>
+      </div>
+      <div class="mobile__modal">
+        <div class="head__profile">
+          <div class="head__foto">
+            <img src="assets/icons/avatar.png">
+          </div>
+          <div class="head__profile_content">
+            <div class="modile__head_login ">
+              <p>Hamillioner</p>
+            </div>
+            <div class="head__name">Тимур Касымов</div>
+            <div class="head__line_block">
+              <div class="head__line"></div>
+              <div class="head__line_number">1 LV</div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile__singIn">
+          <a href="#/" class="head__singIn">
+            <i class="fal fa-sign-in"></i>
+            <p>Войти</p>
+          </a>
+        </div>
+        <div class="mobile__normal_menu head_mobile_page">
+          <div class="media__hide_box">
+            <div class="media__hide_button">
+              <a href="#/">Меню</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Заказы</a>
+              <a href="#/">Вакансии</a>
+              <a href="#/">Все команды</a>
+              <a href="#/">Все исполнители</a>
+              <a href="#/">Форум</a>
+              <a href="#/">Блог</a>
+              <a href="#/">Новости</a>
+            </div>
+
+            <div class="media__hide_button">
+              <a href="#/">ПРОФИЛЬ</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">История переводов</a>
+              <a href="#/">Реферальная программа</a>
+              <a href="#/">Платный услуги</a>
+              <a href="#/">Настройки</a>
+            </div>
+
+            <div class="media__hide_button">
+              <a href="#/">ФИНАНСЫ</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Команды</a>
+              <a href="#/">Вкладки</a>
+              <a href="#/">Мои заявки</a>
+              <a href="#/">Творческая мастерская</a>
+            </div>
+          </div>
+          <div class="change__lang">
+            <p class="change__title">Язык</p>
+            <p class="active__lang">RU</p>
+            <p>UZ</p>
+          </div>
+          <div class="head__hide_bottom">
+            <a class="head__support" href="#/">
+              <span>Поддержка</span>
+              <i class="fas fa-headset"></i>
+            </a>
+            <a class="head__logout" href="#/">
+              <span>Выход</span>
+              <i class="fal fa-sign-out"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mobile__singin_menu head__modal_inner mobile_modal_head_page">
+          <a href="#/">Заказы</a>
+          <a href="#/">Вакансии</a>
+          <div class="media__hide_box">
+            <div class="media__hide_button">
+              <a href="#/">Люди</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Все команды</a>
+              <a href="#/">Все исполнители</a>
+
+            </div>
+
+            <div class="media__hide_button">
+              <a href="#/">Еще</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Форум</a>
+              <a href="#/">Блог</a>
+              <a href="#/">Новости</a>
+            </div>
+          </div>
+          <div class="change__lang">
+            <p class="change__title">Язык</p>
+            <p class="active__lang">RU</p>
+            <p>UZ</p>
+          </div>
+          <!-- <i class="fas fa-times-circle close"></i> -->
+        </div>
+
+        <i class="fas fa-times-circle close"></i>
+
+      </div>
+    </div>
+
+    <div class="mobile__bell_modal hide__modal_block">
+      <div class="hide__modal_triangle"></div>
+      <div class="hide__bell_modal">
+        <div class="hide__modal_iteam">
+          <i class="fas fa-bullhorn"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Напоминание</div>
+            <div class="hide__modal_text">Действие вашего вашего тарифа истекает через 1 день! </div>
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-award"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Достижение</div>
+            <div class="hide__modal_text">Вы получили новое достижение “Торговец”</div>
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-gift"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Подарки</div>
+            <div class="hide__modal_text">Администрация Letcop поздравляет вас с Днем Рождения, вы получаете в подарок
+              тариф "Gold"</div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-exclamation-circle"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Администрация</div>
+            <div class="hide__modal_text">Ваш заказ был удален по причине "Ненормативная лексика"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar Header -->
+
+
+    <!-- Start Desktop experience -->
+    <div class="container">
+      <div class="row desktop_row">
+        <div class="col-12 d-flex align-items-center justify-content-between">
+          <div class="user_block_info">
+            <div class="circle_avatar">
+              <img src="assets/images/user4.png" alt="">
+              <i class="fas fa-camera fa-2x open_edit_block"></i>
+            </div>
+            <div class="d-flex justify-content-center align-items-center  ml-3 ">
+              <span class="user_nick_name">Hamillioner</span>
+            </div>
+          </div>
+          <!-- edit user block -->
+          <div class="edit_user_block">
+            <div class="circle_avatar">
+              <img src="assets/images/user4.png" id="editMyAvatar" alt="">
+            </div>
+            <div class="profile_photo">
+              <strong>Фото Профиля</strong>
+              <div class="upload_profile_photo">
+                <span>Загрузить <br> Фото профиля</span>
+                <i class="fas fa-arrow-alt-circle-down fa-2x upload_icon"></i>
+                <input type="file" id="uploadProfile">
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="block_cover">
+              <div class="title">
+                <strong>обложка</strong>
+                <i class="fas fa-times-circle close_edit_profile"></i>
+              </div>
+              <div class="cover_item">
+                <div class="cover_list active">
+                  <img src="assets/images/header.jpg" alt="">
+                </div>
+                <div class="cover_list">
+                  <img src="assets/images/1.jpg" alt="">
+                </div>
+                <div class="cover_list">
+                  <img src="assets/images/2.jpg" alt="">
+                </div>
+                <div class="cover_list">
+                  <img src="assets/images/3.jpg" alt="">
+                </div>
+                <div class="cover_list add_my_cover">
+                  <img src="" id="addedMyCover" alt="">
+                  <input type="file" id="uploadMyCover">
+                  <i class="fas fa-plus-circle"></i>
+                  <span id="paymentCover">+1$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="add_friends">удалить аккаунт</button>
+            <button class="create_group">сохранить</button>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-between align-items-end">
+          <div class="sub_left_info">
+            <span class="private_info">Тип аккаунта:
+              <select name="type_account" id="typeAccountInput" disabled>
+                <option value="Executor">Исполнитель</option>
+                <option value="Customer">Заказчик</option>
+              </select>
+              <a class="edit_text_btn">
+                <i class="fas fa-pen"></i>
+              </a>
+            </span>
+            <span class="user_name_info">Тимур Касымов</span>
+            <div class="user_address">
+              <span>3 года на сервисе</span>
+              <span> | </span>
+              <span>
+                <select size="1" name="country" id="country" disabled>
+
+                  <option value="-1">Узбекистан</option>
+                  <option value="0">Абхазия</option>
+                  <option value="1">Австралия</option>
+                  <option value="2">Австрия</option>
+                  <option value="3">Азербайджан</option>
+                  <option value="4">Албания</option>
+                  <option value="5">Алжир</option>
+                  <option value="6">Ангола</option>
+                  <option value="7">Андорра</option>
+                  <option value="8">Антигуа и Барбуда</option>
+                  <option value="9">Аргентина</option>
+                  <option value="10">Армения</option>
+                  <option value="11">Аруба</option>
+                  <option value="12">Афганистан</option>
+                  <option value="13">Багамы</option>
+                  <option value="14">Бангладеш</option>
+                  <option value="15">Барбадос</option>
+                  <option value="16">Бахрейн</option>
+                  <option value="17">Белиз</option>
+                  <option value="18">Белоруссия</option>
+                  <option value="16">Бельгия</option>
+                  <option value="17">Бенин</option>
+                  <option value="18">Бермудские Острова</option>
+                  <option value="19">Болгария</option>
+                  <option value="20">Боливия</option>
+                  <option value="21">Босния и Герцеговина</option>
+                  <option value="22">Ботсвана</option>
+                  <option value="23">Бразилия</option>
+                  <option value="24">Бруней</option>
+                  <option value="25">Буркина-Фасо</option>
+                  <option value="26">Бурунди</option>
+                  <option value="27">Бутан</option>
+                  <option value="28">Вануату</option>
+                  <option value="29">Ватикан</option>
+                  <option value="30">Великобритания</option>
+                  <option value="31">Венгрия</option>
+                  <option value="32">Венесуэла</option>
+                  <option value="33">ВиргинскиеОстрова</option>
+                  <option value="34">ВиргинскиеОстрова</option>
+                  <option value="35">ВосточныйТимор</option>
+                  <option value="36">Вьетнам</option>
+                  <option value="37">Габон</option>
+                  <option value="38">Гавайи</option>
+                  <option value="49">Гаити</option>
+                  <option value="50">Гайана</option>
+                  <option value="51">Гамбия</option>
+                  <option value="52">Гана</option>
+                  <option value="53">Гваделупа</option>
+                  <option value="54">Гватемала</option>
+                  <option value="55">Гвиана</option>
+                  <option value="56">Гвинея</option>
+                  <option value="57">Гвинея-Бисау</option>
+                  <option value="58">Германия</option>
+                  <option value="59">Гернси</option>
+                  <option value="60">Гибралтар</option>
+                  <option value="61">Гондурас</option>
+                  <option value="62">Гонконг</option>
+                  <option value="63">Гренада</option>
+                  <option value="64">Гренландия</option>
+                  <option value="65">Греция</option>
+                  <option value="66">Грузия</option>
+                  <option value="67">Гуам</option>
+                  <option value="68">Дания</option>
+                  <option value="69">Джерси</option>
+                  <option value="70">Джибути</option>
+                  <option value="71">Доминика</option>
+                  <option value="72">Доминиканская Республика</option>
+                  <option value="73">Египет</option>
+                  <option value="74">Замбия</option>
+                  <option value="75">ЗападнаяСахара</option>
+                  <option value="76">Зимбабве</option>
+                  <option value="77">Израиль</option>
+                  <option value="78">Индия</option>
+                  <option value="79">Индонезия</option>
+                  <option value="80">Иордания</option>
+                  <option value="81">Ирак</option>
+                  <option value="82">Иран</option>
+                  <option value="83">Ирландия</option>
+                  <option value="84">Исландия</option>
+                  <option value="85">Испания</option>
+                  <option value="86">Италия</option>
+                  <option value="87">Йемен</option>
+                  <option value="88">Кабо-Верде</option>
+                  <option value="89">Казахстан</option>
+                  <option value="90">КаймановыОстрова</option>
+                  <option value="91">Камбоджа</option>
+                  <option value="92">Камерун</option>
+                  <option value="93">Канада</option>
+                  <option value="94">Канарскиеострова</option>
+                  <option value="95">Катар</option>
+                  <option value="96">Кения</option>
+                  <option value="97">Кипр</option>
+                  <option value="98">Киргизия</option>
+                  <option value="99">Кирибати</option>
+                  <option value="100">Китай</option>
+                  <option value="101">КокосовыеОстрова</option>
+                  <option value="102">Колумбия</option>
+                  <option value="103">КоморскиеОстрова</option>
+                  <option value="104">РеспубликаКонго</option>
+                  <option value="105">Конго</option>
+                  <option value="106">Корея(Северная)</option>
+                  <option value="107">Корея(Южная)</option>
+                  <option value="108">Косово</option>
+                  <option value="109">Коста-Рика</option>
+                  <option value="110">Кот-д'Ивуар</option>
+                  <option value="111">Куба</option>
+                  <option value="112">Кувейт</option>
+                  <option value="113">Кукаострова</option>
+                  <option value="114">Лаос</option>
+                  <option value="115">Латвия</option>
+                  <option value="116">Лесото</option>
+                  <option value="117">Либерия</option>
+                  <option value="118">Ливан</option>
+                  <option value="119">Ливия</option>
+                  <option value="120">Литва</option>
+                  <option value="121">Лихтенштейн</option>
+                  <option value="122">Люксембург</option>
+                  <option value="123">Маврикий</option>
+                  <option value="124">Мавритания</option>
+                  <option value="125">Мадагаскар</option>
+                  <option value="126">Мадейра(острова)</option>
+                  <option value="127">Майотта</option>
+                  <option value="128">Македония</option>
+                  <option value="129">Малави</option>
+                  <option value="130">Малайзия</option>
+                  <option value="131">Мали</option>
+                  <option value="133">Мальдивы</option>
+                  <option value="134">Мальта</option>
+                  <option value="135">Марокко</option>
+                  <option value="136">Мартиника</option>
+                  <option value="137">МаршалловыОстрова</option>
+                  <option value="138">Мексика</option>
+                  <option value="139">Мелилья</option>
+                  <option value="140">Микронезия</option>
+                  <option value="141">Мозамбик</option>
+                  <option value="142">Молдавия</option>
+                  <option value="143">Монако</option>
+                  <option value="144">Монголия</option>
+                  <option value="145">Монтсеррат</option>
+                  <option value="146">Мьянма</option>
+                  <option value="147">Мэн</option>
+                  <option value="149">Намибия</option>
+                  <option value="150">Науру</option>
+                  <option value="151">Непал</option>
+                  <option value="152">Нигер</option>
+                  <option value="153">Нигерия</option>
+                  <option value="154">Нидерланды</option>
+                  <option value="155">Никарагуа</option>
+                  <option value="156">Ниуэ</option>
+                  <option value="157">НоваяЗеландия</option>
+                  <option value="158">НоваяКаледония</option>
+                  <option value="159">Норвегия</option>
+                  <option value="160">Норфолк</option>
+                  <option value="161">Объединенные Арабские Эмираты</option>
+                  <option value="162">Оман</option>
+                  <option value="163">Пакистан</option>
+                  <option value="164">Палау</option>
+                  <option value="165">Палестина</option>
+                  <option value="166">Панама</option>
+                  <option value="167">Папуа</option>
+                  <option value="168">Парагвай</option>
+                  <option value="169">Перу</option>
+                  <option value="170">Питкэрн</option>
+                  <option value="171">Польша</option>
+                  <option value="172">Португалия</option>
+                  <option value="173">Приднестровье</option>
+                  <option value="174">Пуэрто-Рико</option>
+                  <option value="175">Реюньон</option>
+                  <option value="176">РождестваОстров</option>
+                  <option value="177">Россия</option>
+                  <option value="178">Руанда</option>
+                  <option value="179">Румыния</option>
+                  <option value="180">Сальвадор</option>
+                  <option value="181">Самоа</option>
+                  <option value="182">Сан-Марино</option>
+                  <option value="183">Сан-Томе и Принсипи</option>
+                  <option value="184">Саудовская Аравия</option>
+                  <option value="185">Свазиленд</option>
+                  <option value="185">Северная Корея</option>
+                  <option value="186">Северная Македония</option>
+                  <option value="189">Северный Кипр</option>
+                  <option value="191">Сенегал</option>
+                  <option value="192">Сен-Пьер и Микелон</option>
+                  <option value="193">Сент-Винсент и Гренадины</option>
+                  <option value="194">Сент-Китс и Невис</option>
+                  <option value="195">Сент-Люсия</option>
+                  <option value="196">Сербия</option>
+                  <option value="197">Сеута</option>
+                  <option value="198">Сингапур</option>
+                  <option value="199">Сирия</option>
+                  <option value="200">Словакия</option>
+                  <option value="201">Словения</option>
+                  <option value="203">Соломоновы Острова</option>
+                  <option value="204">Сомали</option>
+                  <option value="206">Судан</option>
+                  <option value="207">Суринам</option>
+                  <option value="207">США</option>
+                  <option value="208">Сьерра-Леоне</option>
+                  <option value="209">Таджикистан</option>
+                  <option value="210">Таиланд</option>
+                  <option value="211">Тайвань</option>
+                  <option value="212">Тамил-Илам</option>
+                  <option value="213">Танзания</option>
+                  <option value="215">Того</option>
+                  <option value="216">Токелау</option>
+                  <option value="217">Тонга</option>
+                  <option value="218">Тринидад и Тобаго</option>
+                  <option value="219">Тувалу</option>
+                  <option value="220">Тунис</option>
+                  <option value="221">Туркменистан</option>
+                  <option value="222">Турция</option>
+                  <option value="223">Уганда</option>
+                  <option value="225">Украина</option>
+                  <option value="226">Уоллис и Футуна</option>
+                  <option value="227">Уругвай</option>
+                  <option value="229">Фиджи</option>
+                  <option value="230">Филиппины</option>
+                  <option value="231">Финляндия</option>
+                  <option value="233">Франция</option>
+                  <option value="236">Хорватия</option>
+                  <option value="237">Центрально-африканская республика</option>
+                  <option value="238">Чад</option>
+                  <option value="239">Черногория</option>
+                  <option value="240">Чехия</option>
+                  <option value="241">Чили</option>
+                  <option value="242">Швейцария</option>
+                  <option value="243">Швеция</option>
+                  <option value="244">Шри-Ланка</option>
+                  <option value="245">Эквадор</option>
+                  <option value="246">Экваториальная Гвинея</option>
+                  <option value="247">Эритрея</option>
+                  <option value="248">Эстония</option>
+                  <option value="249">Эфиопия</option>
+                  <option value="251">ЮАР</option>
+                  <option value="252">Южная Корея</option>
+                  <option value="253">Ямайка</option>
+                  <option value="254">Япония</option>
+                </select>
+                <i class="fas fa-pen edit_text_btn"></i>
+                <span> | </span>
+
+                <input type="text" class="city_inp" id="cityInput" value="Ташкент"
+                  onkeypress="this.style.width = ((this.value.length + 1) * 10) + 'px';" size="6" disabled>
+                <a class="edit_text_btn"><i class="fas fa-pen"></i></a>
+              </span>
+            </div>
+          </div>
+          <div class="sub_right_info">
+            <div class="user_stars">
+              <span>2 Lvl</span>
+              <div class="reviews">
+                <span>20 <span> отзывов</span></span>
+                <div class="stars">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/off_star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="block_experience">
+              <div class="block_experience_text">
+                <span class="experience_text">Опыт </span>
+                <span>70 из 100</span>
+              </div>
+              <div class="skill_bar">
+                <div class="progress_skill" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex align-items-start justify-content-between mt-3">
+          <div class="descriptions_list">
+            <textarea class="w-100" onkeypress="auto_grow(this)" onkeydown="auto_grow(this)">
+              Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Вдали приставка океана власти правилами, повстречался путь то. Парадигматическая последний свое текстов семь своих путь вопрос заманивший назад на берегу необходимыми курсивных власти собрал бросил свой которое жизни осталось ipsum его по всей оксмокс, рукопись свою журчит. Рекламных, даже продолжил его наш вскоре по всей рыбного ipsum коварных. Коварных безорфографичный рукописи, образ своих рыбными подпоясал lorem ты пустился имени но! Эта, переулка ручеек свой обеспечивает одна текста имени проектах коварный до буквоград вершину вопрос подпоясал бросил, букв образ парадигматическая текстов. Напоивший страна города вдали текстами? Своих океана дороге злых, домах то текста заголовок?
+              </textarea>
+            <!-- <div class="d-flex align-items-end justify-content-end text-right">
+              <button>сохранить</button>
+            </div> -->
+          </div>
+          <div class="verification_block ml-auto tablet_none">
+            <div class="ampount_box">
+              <p>Сумма за час / $</p>
+              <div class="inp_payment">
+                <input type="text" id="editPaymentInp" maxlength="7" placeholder="Cумма не указана"
+                  onkeypress="return (event.charCode >= 48 && event.charCode <= 57);">
+                <i class="fas fa-money-check-alt"></i>
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+            <div class="verification_box mt-3">
+              <p>верификация</p>
+              <div class="user_info_list">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone"></i>
+                  <span>Личность верифицирована</span>
+                </div>
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="user_phone_num">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-user"></i>
+                  <span>Номер телефон - <a href="" data-toggle="modal" data-target="#EditVerification">не
+                      верифицирован</a></span>
+                </div>
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="user_email">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-envelope"></i>
+                  <span>Почта подтверждена</span>
+                </div>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Desktop experience -->
+
+      <!-- Start Mobile experience -->
+      <div class="row mobile_row">
+        <div class="col-12">
+
+          <div class="block_experience">
+            <div class="block_experience_text">
+              <span>2Lvl</span> <br>
+              <span>70 из 100</span>
+            </div>
+            <div class="skill_bar">
+              <div class="progress_skill" style="width: 70%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mobile_titte_info">
+          <div class="user_info_mobile">
+            <div class="user_avatar">
+              <img src="assets/images/user4.png" alt="">
+            </div>
+            <div class="add_button">
+              <i class="fas fa-user-plus"></i>
+            </div>
+            <div class="user_info_title">
+              <div class="stars mt-2">
+                <img src="assets/images/on_star.png" alt="">
+                <img src="assets/images/on_star.png" alt="">
+                <img src="assets/images/on_star.png" alt="">
+                <img src="assets/images/on_star.png" alt="">
+                <img src="assets/images/off_star.png" alt="">
+              </div>
+              <span class="nick_name">Hamillioner</span>
+              <span>Тип аккаунта: <span class="type"> Исполнитель</span></span>
+              <span class="name">Тимур Касымов</span>
+              <span class="jobs">WEB Developer</span>
+              <div class="sub_info">
+                <span>Узбекистан | Ташкент</span>
+                <span><span>75</span>успешных проектов | <span>20</span>отзывов</span>
+              </div>
+            </div>
+            <div class="info_text_mobile">
+              <p class="scroll_text_mobile">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae cum quis
+                eligendi
+                recusandae dolor
+                sequi dignissimos, ducimus, similique, incidunt sapiente atque nobis voluptatibus facere provident esse!
+                Reiciendis quos corporis deserunt, sapiente repellat quaerat, blanditiis nostrum accusamus,
+                necessitatibus
+                ullam assumenda nisi in vel architecto temporibus provident! Excepturi tempora maiores, sapiente at
+                doloribus dicta repudiandae accusamus cum ducimus dolore nihil, ab sint quasi, ad nemo adipisci
+                consectetur! Perferendis atque ad blanditiis quas provident, consequuntur illum saepe perspiciatis
+                quisquam deleniti. Voluptates, tempore quis! Consectetur eaque facere quisquam veniam sint officiis cum,
+                itaque voluptates incidunt quasi accusantium. Fuga maiores quod cum enim culpa deleniti odit natus, iste
+                atque aliquam laboriosam saepe vel neque dolore aperiam, explicabo adipisci magni aut nemo eos
+                voluptates.
+                Iste itaque voluptas sunt, nisi, repudiandae voluptates fugit molestiae dignissimos cumque eaque
+                laudantium earum recusandae quas odit quos rem temporibus! Assumenda ab ipsa velit iusto dolorem nostrum
+                dolor recusandae et. Iste qui eos quibusdam velit nesciunt voluptates veritatis laboriosam sed,
+                inventore
+                soluta. Minus earum dolorum amet velit quibusdam nam placeat voluptatum architecto iure accusantium ab
+                natus incidunt, maxime sequi quae totam tempora voluptas. Ab blanditiis tenetur quis harum nisi iure
+                accusamus consequuntur perferendis illum vel labore eligendi iusto corrupti ipsam, laborum id!</p>
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="expand_btn_mobile d-flex align-items-center flex-column text-uppercase">Развернуть <i
+                    class="fas fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Mobile experience -->
+    </div>
+  </header>
+  <div class="head__overlay"></div>
+
+
+  <!-- End header **************** -->
+
+  <main class="main_profiles">
+
+    <!-- Start Mobile version **********************************************************************-->
+    <div class="container tablet_row">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="amount_box add_anim ">
+            <div class="amount_info">Сумма за час / $
+            </div>
+            <div class="inp_payment">
+              <input type="text" maxlength="7" placeholder="Cумма не указана"
+                onkeypress="return (event.charCode >= 48 && event.charCode <= 57);" disabled>
+              <i class="fas fa-money-check-alt"></i>
+            </div>
+          </div>
+
+          <div class="verification add_anim ">
+            <div class="verification_btn click_elem">верификация
+            </div>
+            <div class="verification_info" id="special">
+              <div class="user_info_list">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone"></i>
+                  <span>Личность верифицирована</span>
+                </div>
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="user_phone_num">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-user"></i>
+                  <span>Номер телефон - <a href="">не верифицирован</a></span>
+                </div>
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="user_email">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-envelope"></i>
+                  <span>Почта подтверждена</span>
+                </div>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="specializations add_anim">
+            <div class="specialization_btn click_elem">специализации
+            </div>
+            <div class="specializations_info" id="special">
+              <a href="#" class="special__item">Веб-программирование</a>
+              <a href="">Сис. управление(CMS)</a>
+              <a href="">HTML - верстка</a>
+              <a href="">Сайт "Под ключ"</a>
+              <a href="">Интернет - магазин</a>
+              <a href="">Тестирование сайтов</a>
+              <a href="">Маркетинговый анализ</a>
+              <a href="">Рерайтинг</a>
+            </div>
+          </div>
+
+          <div class="similar_performers add_anim">
+            <div class="perfomers_btn click_elem">Дополнительные навыки
+            </div>
+            <div class="performers_info">
+              <a href="#">Водитель</a>
+              <a href="#">Машиностроение</a>
+              <a href="#">Дизайнер</a>
+              <a href="#">Руководитель</a>
+              <a href="#">Машиностроение</a>
+              <a href="#">Водитель</a>
+              <a href="#">Машиностроение</a>
+              <a href="#">Дизайнер</a>
+              <a href="#">Водитель</a>
+              <a href="#">Машиностроение</a>
+              <a href="#">Дизайнер</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Mobile Slider Works -->
+    <div class="portfolio_slider mobile_row">
+      <p>Портфолио</p>
+      <section class="regular slider">
+        <div class="works_list">
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+        </div>
+        <div class="works_list">
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+        </div>
+        <div class="works_list">
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+        </div>
+        <div class="works_list">
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+        </div>
+        <div class="works_list">
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+        </div>
+        <div class="works_list">
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+        </div>
+        <div class="works_list">
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+        </div>
+        <div class="works_list">
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalWorks">
+            <div class="box1"></div>
+          </a>
+        </div>
+      </section>
+    </div>
+    <!-- End Mobile Slider Works -->
+
+    <!-- start mobile profile -->
+    <div class="share_profile_mobile mobile_row">
+      <p>поделитесь профилем</p>
+      <div class="profile_icons_mobile">
+        <i class="fab fa-whatsapp fa-2x"></i>
+        <i class="fab fa-viber fa-2x"></i>
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+        <i class="fab fa-telegram-plane fa-2x"></i>
+        <i class="fab fa-twitter fa-2x"></i>
+      </div>
+    </div>
+    <!-- End mobile profile -->
+
+    <!-- End Mobile verification ********************************************************************-->
+
+    <!-- Start Desktop version ***************-->
+    <div class="container desktop_row">
+      <div class="row mobile_wrap">
+        <div class="col-lg-4 col-12">
+
+          <div class="specializations specializations_desktop mt-4 edit_specializations">
+            <div class="d-flex align-items-center justify-content-between ">
+              <p>специализации</p>
+              <i class="fas fa-pen mt-n3 edit_icon"></i>
+            </div>
+            <div class="specializations_info" id="special">
+              <a href="#" class="special__item">Веб-программирование</a>
+              <a href="">Сис. управление(CMS)</a>
+              <a href="">HTML - верстка</a>
+              <a href="">Сайт "Под ключ"</a>
+              <a href="">Интернет - магазин</a>
+              <a href="">Тестирование сайтов</a>
+              <a href="">Маркетинговый анализ</a>
+              <a href="">Рерайтинг</a>
+            </div>
+          </div>
+
+          <div class="specializations specializations_desktop add_and_remove_specializations mt-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <p>специализации</p>
+              <i class="fas fa-plus-circle mt-n3"></i>
+            </div>
+            <div class="add_specialization">Добавить <i class="fas fa-plus-circle"></i></div>
+            <div class="specializations_info dropZone">
+              <div class="remove_specialization dragItem">
+                <span><i class="fas fa-bars drag_drop"></i> Веб-программирование</span><i
+                  class="fas fa-times-circle remove_icon"></i>
+              </div>
+              <div class="remove_specialization dragItem">
+                <span><i class="fas fa-bars drag_drop"></i> Сис. управление(CMS)</span><i
+                  class="fas fa-times-circle remove_icon"></i>
+              </div>
+              <div class="remove_specialization dragItem">
+                <span><i class="fas fa-bars drag_drop"></i> HTML - верстка</span><i
+                  class="fas fa-times-circle remove_icon"></i>
+              </div>
+              <div class="remove_specialization dragItem">
+                <span><i class="fas fa-bars drag_drop"></i> Сайт "Под ключ"</span><i
+                  class="fas fa-times-circle remove_icon"></i>
+              </div>
+              <div class="remove_specialization dragItem">
+                <span><i class="fas fa-bars drag_drop"></i> Интернет - магазин</span><i
+                  class="fas fa-times-circle remove_icon"></i>
+              </div>
+              <div class="remove_specialization dragItem">
+                <span><i class="fas fa-bars drag_drop"></i> Тестирование сайтов</span><i
+                  class="fas fa-times-circle remove_icon"></i>
+              </div>
+              <div class="remove_specialization dragItem">
+                <span><i class="fas fa-bars drag_drop"></i> Маркетинговый анализ</span><i
+                  class="fas fa-times-circle remove_icon"></i>
+              </div>
+              <div class="remove_specialization dragItem">
+                <span><i class="fas fa-bars drag_drop"></i> Рерайтинг</span><i
+                  class="fas fa-times-circle remove_icon"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="specializations specializations_desktop search_specializations">
+            <div class="d-flex align-items-center justify-content-between ">
+              <p>специализации</p>
+              <i class="fas fa-plus-circle mt-n3 "></i>
+            </div>
+            <!-- <div class="search_item">
+              <input type="text" id="searchSpecializations">
+            </div> -->
+            <div class="specializations_list">
+              <span>WEB-разработка и Сайты</span>
+              <ul>
+                <li><input type="checkbox" class="myCheckBtn" id="check1">
+                  <label for="check1">ВЕБ-программирование</label>
+                </li>
+                <li><input type="checkbox" class="myCheckBtn" id="check2">
+                  <label for="check2">HTML-верстка</label>
+                </li>
+                <li><input type="checkbox" class="myCheckBtn" id="check3">
+                  <label for="check3">Системы управления (CMS)</label>
+                </li>
+                <li><input type="checkbox" class="myCheckBtn" id="check4">
+                  <label for="check4"> Сайт "Под ключ"</label>
+                </li>
+                <li><input type="checkbox" class="myCheckBtn" id="check5">
+                  <label for="check5">Интернет-магазины</label>
+                </li>
+                <li><input type="checkbox" class="myCheckBtn" id="check6">
+                  <label for="check6"> Тестирование сайтов</label>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="similar_performers similar_performers_desktop">
+            <div class="d-flex align-items-center justify-content-between">
+              <p>Дополнительные навыки</p>
+              <i class="fas fa-plus-circle mt-n3 add_skill_btn"></i>
+            </div>
+            <div class="add_skill">
+              <input type="text" id="addSkill" placeholder="Добавить навык" maxlength="20">
+            </div>
+            <div class="performers_info" id="performersInfo">
+              <div class="skill_box"><i class="fas fa-times-circle"></i> Водитель</div>
+              <div class="skill_box"><i class="fas fa-times-circle"></i> Машиностроение</div>
+              <div class="skill_box"><i class="fas fa-times-circle"></i> Дизайнер</div>
+              <div class="skill_box"><i class="fas fa-times-circle"></i> Руководитель</div>
+              <div class="skill_box"><i class="fas fa-times-circle"></i> Машиностроение</div>
+              <div class="skill_box"><i class="fas fa-times-circle"></i> Водитель</div>
+              <div class="skill_box"><i class="fas fa-times-circle"></i> Машиностроение</div>
+              <div class="skill_box"><i class="fas fa-times-circle"></i> Дизайнер</div>
+              <div class="skill_box"><i class="fas fa-times-circle"></i> Водитель</div>
+              <div class="skill_box"><i class="fas fa-times-circle"></i> Машиностроение</div>
+              <div class="skill_box"><i class="fas fa-times-circle"></i> Дизайнер</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="exhibited_works mt-4 w-100">
+            <div class="d-flex align-items-center justify-content-between">
+              <p>Выставленные работы</p>
+              <div class="buttons d-flex align-items-center">
+                <div class="added_btn mr-3">Добавить<i class="fas fa-plus-circle ml-1"></i></div>
+                <button class="exhibited_btn">Все Заказы</button>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap box_works pt-1">
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="adding_work mt-4">
+            <div class="adding_work_title">
+              <strong>Добавление работы</strong>
+              <div class="">
+                <span class="close_adding_work">Закрыть <i class="fas fa-times-circle"></i></span>
+                <button>сохранить</button>
+              </div>
+            </div>
+            <div class="adding_work_list">
+              <div class="add_file">
+                <input type="file" id="addWorkInput">
+                <i class="fas fa-plus-circle fa-3x"></i>
+                <span>Перетаскивай
+                  объекты в это окно</span>
+              </div>
+              <div class="add_info">
+                <input type="text" placeholder="Назовите Вашу работу">
+                <textarea name="" id="" placeholder="Опишите Вашу работу и давьте ссылку" onkeypress="auto_hight(this)"
+                  onkeydown="auto_hight(this)"></textarea>
+                <div class="my_works">
+                  <!-- <div class="my_work_img">
+                    <img src="" alt="">
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- start tablet profile -->
+          <div class="share_profile_mobile tablet_share_profile">
+            <p>поделитесь профилем</p>
+            <div class="profile_icons_mobile">
+              <i class="fab fa-whatsapp fa-2x"></i>
+              <i class="fab fa-viber fa-2x"></i>
+              <i class="fab fa-facebook-square fa-2x"></i>
+              <i class="fab fa-instagram fa-2x"></i>
+              <i class="fab fa-telegram-plane fa-2x"></i>
+              <i class="fab fa-twitter fa-2x"></i>
+            </div>
+          </div>
+          <!-- End tablet profile -->
+        </div>
+      </div>
+    </div>
+    <!-- End Desktop version ************** -->
+  </main>
+
+  <!-- End Main -->
+
+  <!-- start modal -->
+  <div class="modal fade modal_verification" id="EditVerification" data-backdrop="static" data-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal_header">
+          <h5 class="modal-title" id="staticBackdropLabel">Верификация</h5>
+          <div class="close_modal" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times-circle close"></i>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <h6>Личность</h6>
+            <div class="name">
+              <label for="name">полное имя</label>
+              <input type="text" id="name" placeholder="Введите Ваше ФИО" required>
+            </div>
+            <div class="date_brith">
+              <label for="dateBrith">Дата Рождения</label>
+              <div class="inp_date_brith">
+                <input type="date" placeholder="01.01.1990" required>
+                <!-- <i class="fas fa-calendar-alt"></i> -->
+              </div>
+              <div class="country">
+                <select size="1" name="country" id="country" required>
+
+                  <option disabled selected> Выберите Вашу страну</option>
+                  <option value="0">Абхазия</option>
+                  <option value="1">Австралия</option>
+                  <option value="2">Австрия</option>
+                  <option value="3">Азербайджан</option>
+                  <option value="4">Албания</option>
+                  <option value="5">Алжир</option>
+                  <option value="6">Ангола</option>
+                  <option value="7">Андорра</option>
+                  <option value="8">Антигуа и Барбуда</option>
+                  <option value="9">Аргентина</option>
+                  <option value="10">Армения</option>
+                  <option value="11">Аруба</option>
+                  <option value="12">Афганистан</option>
+                  <option value="13">Багамы</option>
+                  <option value="14">Бангладеш</option>
+                  <option value="15">Барбадос</option>
+                  <option value="16">Бахрейн</option>
+                  <option value="17">Белиз</option>
+                  <option value="18">Белоруссия</option>
+                  <option value="16">Бельгия</option>
+                  <option value="17">Бенин</option>
+                  <option value="18">Бермудские Острова</option>
+                  <option value="19">Болгария</option>
+                  <option value="20">Боливия</option>
+                  <option value="21">Босния и Герцеговина</option>
+                  <option value="22">Ботсвана</option>
+                  <option value="23">Бразилия</option>
+                  <option value="24">Бруней</option>
+                  <option value="25">Буркина-Фасо</option>
+                  <option value="26">Бурунди</option>
+                  <option value="27">Бутан</option>
+                  <option value="28">Вануату</option>
+                  <option value="29">Ватикан</option>
+                  <option value="30">Великобритания</option>
+                  <option value="31">Венгрия</option>
+                  <option value="32">Венесуэла</option>
+                  <option value="33">ВиргинскиеОстрова</option>
+                  <option value="34">ВиргинскиеОстрова</option>
+                  <option value="35">ВосточныйТимор</option>
+                  <option value="36">Вьетнам</option>
+                  <option value="37">Габон</option>
+                  <option value="38">Гавайи</option>
+                  <option value="49">Гаити</option>
+                  <option value="50">Гайана</option>
+                  <option value="51">Гамбия</option>
+                  <option value="52">Гана</option>
+                  <option value="53">Гваделупа</option>
+                  <option value="54">Гватемала</option>
+                  <option value="55">Гвиана</option>
+                  <option value="56">Гвинея</option>
+                  <option value="57">Гвинея-Бисау</option>
+                  <option value="58">Германия</option>
+                  <option value="59">Гернси</option>
+                  <option value="60">Гибралтар</option>
+                  <option value="61">Гондурас</option>
+                  <option value="62">Гонконг</option>
+                  <option value="63">Гренада</option>
+                  <option value="64">Гренландия</option>
+                  <option value="65">Греция</option>
+                  <option value="66">Грузия</option>
+                  <option value="67">Гуам</option>
+                  <option value="68">Дания</option>
+                  <option value="69">Джерси</option>
+                  <option value="70">Джибути</option>
+                  <option value="71">Доминика</option>
+                  <option value="72">Доминиканская Республика</option>
+                  <option value="73">Египет</option>
+                  <option value="74">Замбия</option>
+                  <option value="75">ЗападнаяСахара</option>
+                  <option value="76">Зимбабве</option>
+                  <option value="77">Израиль</option>
+                  <option value="78">Индия</option>
+                  <option value="79">Индонезия</option>
+                  <option value="80">Иордания</option>
+                  <option value="81">Ирак</option>
+                  <option value="82">Иран</option>
+                  <option value="83">Ирландия</option>
+                  <option value="84">Исландия</option>
+                  <option value="85">Испания</option>
+                  <option value="86">Италия</option>
+                  <option value="87">Йемен</option>
+                  <option value="88">Кабо-Верде</option>
+                  <option value="89">Казахстан</option>
+                  <option value="90">КаймановыОстрова</option>
+                  <option value="91">Камбоджа</option>
+                  <option value="92">Камерун</option>
+                  <option value="93">Канада</option>
+                  <option value="94">Канарскиеострова</option>
+                  <option value="95">Катар</option>
+                  <option value="96">Кения</option>
+                  <option value="97">Кипр</option>
+                  <option value="98">Киргизия</option>
+                  <option value="99">Кирибати</option>
+                  <option value="100">Китай</option>
+                  <option value="101">КокосовыеОстрова</option>
+                  <option value="102">Колумбия</option>
+                  <option value="103">КоморскиеОстрова</option>
+                  <option value="104">РеспубликаКонго</option>
+                  <option value="105">Конго</option>
+                  <option value="106">Корея(Северная)</option>
+                  <option value="107">Корея(Южная)</option>
+                  <option value="108">Косово</option>
+                  <option value="109">Коста-Рика</option>
+                  <option value="110">Кот-д'Ивуар</option>
+                  <option value="111">Куба</option>
+                  <option value="112">Кувейт</option>
+                  <option value="113">Кукаострова</option>
+                  <option value="114">Лаос</option>
+                  <option value="115">Латвия</option>
+                  <option value="116">Лесото</option>
+                  <option value="117">Либерия</option>
+                  <option value="118">Ливан</option>
+                  <option value="119">Ливия</option>
+                  <option value="120">Литва</option>
+                  <option value="121">Лихтенштейн</option>
+                  <option value="122">Люксембург</option>
+                  <option value="123">Маврикий</option>
+                  <option value="124">Мавритания</option>
+                  <option value="125">Мадагаскар</option>
+                  <option value="126">Мадейра(острова)</option>
+                  <option value="127">Майотта</option>
+                  <option value="128">Македония</option>
+                  <option value="129">Малави</option>
+                  <option value="130">Малайзия</option>
+                  <option value="131">Мали</option>
+                  <option value="133">Мальдивы</option>
+                  <option value="134">Мальта</option>
+                  <option value="135">Марокко</option>
+                  <option value="136">Мартиника</option>
+                  <option value="137">МаршалловыОстрова</option>
+                  <option value="138">Мексика</option>
+                  <option value="139">Мелилья</option>
+                  <option value="140">Микронезия</option>
+                  <option value="141">Мозамбик</option>
+                  <option value="142">Молдавия</option>
+                  <option value="143">Монако</option>
+                  <option value="144">Монголия</option>
+                  <option value="145">Монтсеррат</option>
+                  <option value="146">Мьянма</option>
+                  <option value="147">Мэн</option>
+                  <option value="149">Намибия</option>
+                  <option value="150">Науру</option>
+                  <option value="151">Непал</option>
+                  <option value="152">Нигер</option>
+                  <option value="153">Нигерия</option>
+                  <option value="154">Нидерланды</option>
+                  <option value="155">Никарагуа</option>
+                  <option value="156">Ниуэ</option>
+                  <option value="157">НоваяЗеландия</option>
+                  <option value="158">НоваяКаледония</option>
+                  <option value="159">Норвегия</option>
+                  <option value="160">Норфолк</option>
+                  <option value="161">Объединенные Арабские Эмираты</option>
+                  <option value="162">Оман</option>
+                  <option value="163">Пакистан</option>
+                  <option value="164">Палау</option>
+                  <option value="165">Палестина</option>
+                  <option value="166">Панама</option>
+                  <option value="167">Папуа</option>
+                  <option value="168">Парагвай</option>
+                  <option value="169">Перу</option>
+                  <option value="170">Питкэрн</option>
+                  <option value="171">Польша</option>
+                  <option value="172">Португалия</option>
+                  <option value="173">Приднестровье</option>
+                  <option value="174">Пуэрто-Рико</option>
+                  <option value="175">Реюньон</option>
+                  <option value="176">РождестваОстров</option>
+                  <option value="177">Россия</option>
+                  <option value="178">Руанда</option>
+                  <option value="179">Румыния</option>
+                  <option value="180">Сальвадор</option>
+                  <option value="181">Самоа</option>
+                  <option value="182">Сан-Марино</option>
+                  <option value="183">Сан-Томе и Принсипи</option>
+                  <option value="184">Саудовская Аравия</option>
+                  <option value="185">Свазиленд</option>
+                  <option value="185">Северная Корея</option>
+                  <option value="186">Северная Македония</option>
+                  <option value="189">Северный Кипр</option>
+                  <option value="191">Сенегал</option>
+                  <option value="192">Сен-Пьер и Микелон</option>
+                  <option value="193">Сент-Винсент и Гренадины</option>
+                  <option value="194">Сент-Китс и Невис</option>
+                  <option value="195">Сент-Люсия</option>
+                  <option value="196">Сербия</option>
+                  <option value="197">Сеута</option>
+                  <option value="198">Сингапур</option>
+                  <option value="199">Сирия</option>
+                  <option value="200">Словакия</option>
+                  <option value="201">Словения</option>
+                  <option value="203">Соломоновы Острова</option>
+                  <option value="204">Сомали</option>
+                  <option value="206">Судан</option>
+                  <option value="207">Суринам</option>
+                  <option value="207">США</option>
+                  <option value="208">Сьерра-Леоне</option>
+                  <option value="209">Таджикистан</option>
+                  <option value="210">Таиланд</option>
+                  <option value="211">Тайвань</option>
+                  <option value="212">Тамил-Илам</option>
+                  <option value="213">Танзания</option>
+                  <option value="215">Того</option>
+                  <option value="216">Токелау</option>
+                  <option value="217">Тонга</option>
+                  <option value="218">Тринидад и Тобаго</option>
+                  <option value="219">Тувалу</option>
+                  <option value="220">Тунис</option>
+                  <option value="221">Туркменистан</option>
+                  <option value="222">Турция</option>
+                  <option value="223">Уганда</option>
+                  <option value="224">Украина</option>
+                  <option value="225">Уоллис и Футуна</option>
+                  <option value="226">Уругвай</option>
+                  <option value="227">Узбекистан</option>
+                  <option value="228">Фиджи</option>
+                  <option value="229">Филиппины</option>
+                  <option value="230">Финляндия</option>
+                  <option value="231">Франция</option>
+                  <option value="232">Хорватия</option>
+                  <option value="233">Центрально-африканская республика</option>
+                  <option value="234">Чад</option>
+                  <option value="235">Черногория</option>
+                  <option value="236">Чехия</option>
+                  <option value="237">Чили</option>
+                  <option value="238">Швейцария</option>
+                  <option value="239">Швеция</option>
+                  <option value="240">Шри-Ланка</option>
+                  <option value="241">Эквадор</option>
+                  <option value="242">Экваториальная Гвинея</option>
+                  <option value="243">Эритрея</option>
+                  <option value="244">Эстония</option>
+                  <option value="245">Эфиопия</option>
+                  <option value="246">ЮАР</option>
+                  <option value="247">Южная Корея</option>
+                  <option value="248">Ямайка</option>
+                  <option value="249">Япония</option>
+                </select>
+              </div>
+            </div>
+            <div class="file">
+              <label for="myFile">документ</label>
+              <input type="file" class="attach_passport_photo" required>
+              <i class="fas fa-file-alt pl-4 pr-2"></i>
+              <span class="file_address">Прикрепить фото паспорта</span>
+            </div>
+            <div class="check_file">
+              <input type="checkbox" id="checkFile" required>
+              <label for="checkFile">Я прикрепляю фото с скрытым серийным номером.</label>
+            </div>
+            <h6>Телефон</h6>
+            <div class="phone_list">
+              <label for="phoneList">ваша телефон</label>
+              <input type="text" class="phone" placeholder="Введите Ваш телефон"
+                onkeypress="return (event.charCode >= 43 && event.charCode <= 57);" required>
+              <button class="get_code">получить код</button>
+              <input type="text" class="enter_code text-center" placeholder="Введите код" id="enterCode"
+                onkeypress="return (event.charCode >= 48 && event.charCode <= 57);" maxlength="6" required>
+            </div>
+            <div class="button_verification">
+              <button type="submit">Верифицироваться</button>
+            </div>
+            <div class="text_agreement">
+              <span>Нажимая кнопку “Верифицироватся”, Вы <br>
+                принмаете условия <a href="">Пользовательского соглашения</a></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal -->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"
+    integrity="sha512-ELgdXEUQM5x+vB2mycmnSCsiDZWQYXKwlzh9+p+Hff4f5LA+uf0w2pOp3j7UAuSAajxfEzmYZNOOLQuiotrt9Q=="
+    crossorigin="anonymous"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/edit_profile.js"></script>
+</body>
+
+</html>
