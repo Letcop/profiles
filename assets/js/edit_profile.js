@@ -117,9 +117,42 @@ removeWorks.forEach(remove => {
 
 // Добавить навыки
 
-addSkillBtn.addEventListener('click', () => {
+const skills = [
+  {name: 'UX/UI-дизайн'},
+  {name: 'Моушн-дизайн/видеодизайн'},
+  {name: 'Маркетинг'},
+  {name: 'Верстка'},
+  {name: 'Рекрутинг в IT'},
+  {name: 'Юзабилити'},
+  {name: 'SMM-маркетинг'},
+  {name: 'SEO оптимизация'},
+  {name: 'продвижение сайтов'},
+  {name: 'PHP-программист'},
+  {name: 'Frontend-программист'},
+  {name: 'Backend-программист'},
+  {name: 'Бухгалтерия'},
+  {name: 'Переводы'},
+  {name: '1С-программист'},
+  {name: 'Системный администратор'},
+  {name: 'Fullstack-программист'},
+  {name: 'Вебмастер'},
+  {name: 'Рерайтер'},
+  {name: 'Модератор сайта'},
+  {name: 'Технический дизайнер'},
+  {name: '3D-дизайнер'},
+  {name: 'Визуализатор'},
+  {name: 'Менеджер по продажам'},
+  {name: 'Электронная коммерция'},
+  {name: 'Веб-дизайн'}
+]
 
-  // if(addSkill.value == 'jam') {
+
+addSkillBtn.addEventListener('click', () => {
+  const returnErrorText = document.getElementById('returnErrorText')
+  for(let i = 0; i < skills.length; i++) {
+
+  if(addSkill.value == skills[i].name) {
+  
     let addThisList = addSkillBtn.parentElement.parentElement.children[2];
   let newSkill = document.createElement('div');
   newSkill.classList.add('skill_box');
@@ -147,17 +180,22 @@ addSkillBtn.addEventListener('click', () => {
       addedSkill.classList.remove('skill_bgc');
       addedSkill.children[0].style.display = 'none'
     })
-  });
-
+  })
  // removed skill
  removeSkillBox.forEach((removeSkill) => {
   removeSkill.addEventListener('click', () => {
     console.dir(removeSkill.parentElement.style.display = 'none')
   })
-});
-  // } else {
-    
-  // }
+}); 
+return returnErrorText.innerText = ''
+  }else if(addSkill.value == '') {
+    returnErrorText.innerText = 'создайте свой навыки'
+  }
+  
+  else {
+    returnErrorText.innerText = 'Нет такой навыки'
+  }
+}
 
   
 
@@ -339,9 +377,9 @@ function handleDragend(e) {
   this.children[1].style.display = 'block'
 }
 
-new Sortable(dropZone, {
-  animation: 200
-});
+// new Sortable(dropZone, {
+//   animation: 200
+// });
 
 
 buttonGetCode.addEventListener('click', () => {

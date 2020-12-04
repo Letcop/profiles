@@ -1297,6 +1297,7 @@ button:focus {
       }
     }
     .add_skill {
+      position: relative;
      input {
       width: 100%;
       height: 30px;
@@ -1312,6 +1313,15 @@ button:focus {
     input::first-letter{
       text-transform:uppercase;
     }
+    #returnErrorText {
+      color: #f83d7b;
+      position: absolute;
+      left: 10px;
+      bottom: -15px;
+    }
+  }
+  datalist {
+    max-height: 200px !important;
   }
 
     .skill_box {

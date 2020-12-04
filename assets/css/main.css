@@ -1843,6 +1843,14 @@ button:focus {
   cursor: pointer;
 }
 
+.profiles_page .main_profiles .specializations .add_skill,
+.profiles_page .main_profiles .similar_performers .add_skill,
+.profiles_page .main_profiles .verification .add_skill,
+.profiles_page .main_profiles .mobile_review .add_skill,
+.profiles_page .main_profiles .amount_box .add_skill {
+  position: relative;
+}
+
 .profiles_page .main_profiles .specializations .add_skill input,
 .profiles_page .main_profiles .similar_performers .add_skill input,
 .profiles_page .main_profiles .verification .add_skill input,
@@ -1866,6 +1874,25 @@ button:focus {
 .profiles_page .main_profiles .mobile_review .add_skill input::first-letter,
 .profiles_page .main_profiles .amount_box .add_skill input::first-letter {
   text-transform: uppercase;
+}
+
+.profiles_page .main_profiles .specializations .add_skill #returnErrorText,
+.profiles_page .main_profiles .similar_performers .add_skill #returnErrorText,
+.profiles_page .main_profiles .verification .add_skill #returnErrorText,
+.profiles_page .main_profiles .mobile_review .add_skill #returnErrorText,
+.profiles_page .main_profiles .amount_box .add_skill #returnErrorText {
+  color: #f83d7b;
+  position: absolute;
+  left: 10px;
+  bottom: -15px;
+}
+
+.profiles_page .main_profiles .specializations datalist,
+.profiles_page .main_profiles .similar_performers datalist,
+.profiles_page .main_profiles .verification datalist,
+.profiles_page .main_profiles .mobile_review datalist,
+.profiles_page .main_profiles .amount_box datalist {
+  max-height: 200px !important;
 }
 
 .profiles_page .main_profiles .specializations .skill_box,
