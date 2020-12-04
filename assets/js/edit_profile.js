@@ -377,9 +377,9 @@ function handleDragend(e) {
   this.children[1].style.display = 'block'
 }
 
-// new Sortable(dropZone, {
-//   animation: 200
-// });
+new Sortable(dropZone, {
+  animation: 200
+});
 
 
 buttonGetCode.addEventListener('click', () => {
