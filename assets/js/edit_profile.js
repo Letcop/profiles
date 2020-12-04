@@ -1,4 +1,3 @@
-let editTextButtons = document.querySelectorAll('.edit_text_btn');
 let editPaymentInp = document.getElementById('editPaymentInp');
 let myWorks = document.querySelectorAll('.box_works .box_work');
 let exhibitedBtn = document.querySelector('.exhibited_btn');
@@ -30,33 +29,35 @@ let addAndRemoveSpecializations = document.querySelector('.add_and_remove_specia
 let editSpecializationsBtn = document.querySelector('.edit_specializations .edit_icon');
 let dragItems = document.querySelectorAll('.dragItem');
 let dropZone = document.querySelector('.dropZone');
+let editVerificationModal = document.getElementById('editVerificationModal');
+let editCountryBlockList = document.querySelector('.edit_country_block .country__form_list');
+let editCountryBlock = document.querySelector('.edit_country_block');
+let closeEditVerification = document.getElementById('closeEditVerification');
+let hideTypeAccount = document.querySelector('.type_account .fa-pen');
+let typeAccountInputs = document.querySelectorAll('.type_account_item input');
+let typeAccount = document.querySelector('.type_account');
+let buttonGetCode = document.querySelector('.modal_verification .get_code');
+let addSpecialization = document.querySelector('.add_specialization');
+let searchSpecialization = document.querySelector('.search_specializations');
+let saveSearch = document.querySelector('.save_search');
+let saveAddRemove = document.querySelector('.save_add_remove');
+let removeWorks = document.querySelectorAll('.remove_work')
 
 
-
-
-// function jQuery
 $(document).ready(function() {
-  $('.search_specializations .specializations_list').click(function() {
-    // $(this).siblings().removeClass('anim_performers_info');
-    $(this).toggleClass('anim_performers_info');
-  });
-
+  $('#addSkill').keyup(function(){
+    if($(this).val().length>0 && $(this).val().length<10){
+        $(this).val($(this).val().charAt(0).toUpperCase()+$(this).val().substr(1));
+     }
 });
- 
-
-
-
-editTextButtons.forEach((editText) => {
-  editText.addEventListener('click', () => {
-    console.dir(editText.previousElementSibling.removeAttribute("disabled"))
-  })
+$('#searchSpecializations').keyup(function(){
+  if($(this).val().length>0 && $(this).val().length<10){
+      $(this).val($(this).val().charAt(0).toUpperCase()+$(this).val().substr(1));
+   }
 });
+})
 
-function auto_grow(element) {
-  element.style.height = '5px';
-  element.style.height = (element.scrollHeight) + 'px';
 
-}
 
 // edit payment
 
@@ -104,10 +105,22 @@ removeBoxWork.forEach((removeWork) => {
   })
 })
 
+// edit modal works
+
+
+
+removeWorks.forEach(remove => {
+  remove.addEventListener('click', () => {
+    console.dir(remove.parentElement.style.display = 'none')
+  })
+})
+
 // Добавить навыки
 
 addSkillBtn.addEventListener('click', () => {
-  let addThisList = addSkillBtn.parentElement.parentElement.children[2];
+
+  // if(addSkill.value == 'jam') {
+    let addThisList = addSkillBtn.parentElement.parentElement.children[2];
   let newSkill = document.createElement('div');
   newSkill.classList.add('skill_box');
 
@@ -142,6 +155,11 @@ addSkillBtn.addEventListener('click', () => {
     console.dir(removeSkill.parentElement.style.display = 'none')
   })
 });
+  // } else {
+    
+  // }
+
+  
 
 });
 
@@ -323,4 +341,367 @@ function handleDragend(e) {
 
 new Sortable(dropZone, {
   animation: 200
+});
+
+
+buttonGetCode.addEventListener('click', () => {
+  buttonGetCode.innerHTML = '<span id="timer"></span> <i class="fas fa-clock"></i>'
+  let time = 300;
+  let timer = document.getElementById('timer');
+
+  setInterval(updateCountDown, 1000);
+
+  function updateCountDown() {
+    let minutes = Math.floor(time / 60)
+    let seconds = time % 60
+    minutes = minutes < 10 ? "0" + minutes:minutes
+    seconds = seconds < 10 ? "0" + seconds:seconds
+
+    timer.innerHTML = `${minutes}:${seconds}`
+    time--;
+  }
+
+  setTimeout(function() {
+    buttonGetCode.innerHTML = 'получить код '
+  }, 500000)
 })
+
+
+
+const contries = [
+    {contriename: "Абхазия"},
+    {contriename: "Австралия"},
+    {contriename: "Австрия"},
+    {contriename: "Азербайджан"},
+    {contriename: "Албания"},
+    {contriename: "Алжир"},
+    {contriename: "Ангола"},
+    {contriename: "Андорра"},
+    {contriename: "Антигуа и Барбуда"},
+    {contriename: "Аргентина"},
+    {contriename: "Армения"},
+    {contriename: "Аруба"},
+    {contriename: "Афганистан"},
+    {contriename: "Багамы"},
+    {contriename: "Бангладеш"},
+    {contriename: "Барбадос"},
+    {contriename: "Бахрейн"},
+    {contriename: "Беларусь"},
+    {contriename: "Белиз"},
+    {contriename: "Бельгия"},
+    {contriename: "Бенин"},
+    {contriename: "Бермудские острова"},
+    {contriename: "Болгария"},
+    {contriename: "Боливия"},
+    {contriename: "Босния и Герцеговина"},
+    {contriename: "Ботсвана"},
+    {contriename: "Бразилия"},
+    {contriename: "Бруней"},
+    {contriename: "Буркина Фасо"},
+    {contriename: "Бурунди"},
+    {contriename: "Бутан"},
+    {contriename: "Вануату"},
+    {contriename: "Ватикан"},
+    {contriename: "Великобритания"},
+    {contriename: "Венгрия"},
+    {contriename: "Венесуэла"},
+    {contriename: "Вьетнам"},
+    {contriename: "Габон"},
+    {contriename: "Гавайские острова"},
+    {contriename: "Гайана"},
+    {contriename: "Гаити"},
+    {contriename: "Гамбия"},
+    {contriename: "Гана"},
+    {contriename: "Гваделупа"},
+    {contriename: "Гватемала"},
+    {contriename: "Гвинея"},
+    {contriename: "Гвинея-Бисау"},
+    {contriename: "Германия"},
+    {contriename: "Гондурас"},
+    {contriename: "Гонконг"},
+    {contriename: "Гренада"},
+    {contriename: "Греция"},
+    {contriename: "Грузия"},
+    {contriename: "Дания"},
+    {contriename: "Джибути"},
+    {contriename: "Доминика"},
+    {contriename: "Доминикана"},
+    {contriename: "Египет"},
+    {contriename: "Замбия"},
+    {contriename: "Зимбабве"},
+    {contriename: "Израиль"},
+    {contriename: "Израиль"},
+    {contriename: "Индонезия"},
+    {contriename: "Иордания"},
+    {contriename: "Ирак"},
+    {contriename: "Иран"},
+    {contriename: "Ирландия"},
+    {contriename: "Исландия"},
+    {contriename: "Испания"},
+    {contriename: "Италия"},
+    {contriename: "Йемен"},
+    {contriename: "Кабо-Верде"},
+    {contriename: "Казахстан"},
+    {contriename: "Каймановы острова"},
+    {contriename: "Камбоджа"},
+    {contriename: "Камерун"},
+    {contriename: "Канада"},
+    {contriename: "Канарские острова"},
+    {contriename: "Катар"},
+    {contriename: "Кения"},
+    {contriename: "Кипр"},
+    {contriename: "Киргизия"},
+    {contriename: "Кирибати"},
+    {contriename: "Китай"},
+    {contriename: "Колумбия"},
+    {contriename: "Коморы"},
+    {contriename: "Конго"},
+    {contriename: "Конго-Киншаса"},
+    {contriename: "Коста-Рика"},
+    {contriename: "Кот-д’Ивуар"},
+    {contriename: "Куба"},
+    {contriename: "Кувейт"},
+    {contriename: "Лаос"},
+    {contriename: "Латвия"},
+    {contriename: "Лесото"},
+    {contriename: "Либерия"},
+    {contriename: "Ливан"},
+    {contriename: "Ливия"},
+    {contriename: "Литва"},
+    {contriename: "Лихтенштейн"},
+    {contriename: "Люксембург"},
+    {contriename: "Маврикий"},
+    {contriename: "Мавритания"},
+    {contriename: "Мадагаскар"},
+    {contriename: "Македония"},
+    {contriename: "Малави"},
+    {contriename: "Малайзия"},
+    {contriename: "Мали"},
+    {contriename: "Мальдивы"},
+    {contriename: "Мальта"},
+    {contriename: "Марокко"},
+    {contriename: "Мартиника"},
+    {contriename: "Маршалловы острова"},
+    {contriename: "Мексика"},
+    {contriename: "Мозамбик"},
+    {contriename: "Молдова"},
+    {contriename: "Монако"},
+    {contriename: "Монголия"},
+    {contriename: "Мьянма"},
+    {contriename: "Намибия"},
+    {contriename: "Науру"},
+    {contriename: "Непал"},
+    {contriename: "Нигер"},
+    {contriename: "Нигерия"},
+    {contriename: "Нидерланды"},
+    {contriename: "Никарагуа"},
+    {contriename: "Новая Зеландия"},
+    {contriename: "Норвегия"},
+    {contriename: "ОАЭ"},
+    {contriename: "Оман"},
+    {contriename: "Остров Святой Елены"},
+    {contriename: "Пакистан"},
+    {contriename: "Палау"},
+    {contriename: "Панама"},
+    {contriename: "Папуа - Новая Гвинея"},
+    {contriename: "Парагвай"},
+    {contriename: "Перу"},
+    {contriename: "Польша"},
+    {contriename: "Португалия"},
+    {contriename: "Пуэрто-Рико"},
+    {contriename: "Реюньон"},
+    {contriename: "Россия"},
+    {contriename: "Руанда"},
+    {contriename: "Румыния"},
+    {contriename: "Сальвадор"},
+    {contriename: "Самоа"},
+    {contriename: "Сан-Марино"},
+    {contriename: "Сан-Томе и Принсипи"},
+    {contriename: "Саудовская Аравия"},
+    {contriename: "Свазиленд"},
+    {contriename: "Северная Корея"},
+    {contriename: "Северная Македония"},
+    {contriename: "Сейшелы"},
+    {contriename: "Сенегал"},
+    {contriename: "Сен-Мартен"},
+    {contriename: "Сент-Винсент и Гренадины"},
+    {contriename: "Сент-Китс и Невис"},
+    {contriename: "Сент-Люсия"},
+    {contriename: "Сербия"},
+    {contriename: "Сингапур"},
+    {contriename: "Сирия"},
+    {contriename: "Словакия"},
+    {contriename: "Словения"},
+    {contriename: "Соломоновы Острова"},
+    {contriename: "Сомали"},
+    {contriename: "Судан"},
+    {contriename: "Суринам"},
+    {contriename: "США"},
+    {contriename: "Сьерра-Леоне"},
+    {contriename: "Таджикистан"},
+    {contriename: "Тайвань"},
+    {contriename: "Тайланд"},
+    {contriename: "Танзания"},
+    {contriename: "Того"},
+    {contriename: "Тонга"},
+    {contriename: "Тринидад и Тобаго"},
+    {contriename: "Тувалу"},
+    {contriename: "Тунис"},
+    {contriename: "Туркменистан"},
+    {contriename: "Турция"},
+    {contriename: "Уганда"},
+    {contriename: "Узбекистан"},
+    {contriename: "Украина"},
+    {contriename: "Уоллис и Футуна"},
+    {contriename: "Уругвай"},
+    {contriename: "Фиджи"},
+    {contriename: "Филиппины"},
+    {contriename: "Финляндия"},
+    {contriename: "Франция"},
+    {contriename: "Хорватия"},
+    {contriename: "Центрально-африканская республика"},
+    {contriename: "Чад"},
+    {contriename: "Черногория"},
+    {contriename: "Чехия"},
+    {contriename: "Чили"},
+    {contriename: "Швейцария"},
+    {contriename: "Швеция"},
+    {contriename: "Шри-Ланка"},
+    {contriename: "Эквадор"},
+    {contriename: "Экваториальная Гвинея"},
+    {contriename: "Эритрея"},
+    {contriename: "Эстония"},
+    {contriename: "Эфиопия"},
+    {contriename: "ЮАР"},
+    {contriename: "Южная Корея"},
+    {contriename: "Ямайка"},
+    {contriename: "Япония"}
+]
+
+editVerificationModal.addEventListener('click', () => {
+  editCountryBlock.style.display = 'none'
+});
+closeEditVerification.addEventListener('click', () => {
+  // editCountryBlockList.style.visibility = 'hidden'
+  editCountryBlockList.classList.remove('active__sublist')
+  editCountryBlock.style.display = 'block'
+});
+
+
+const showList = (iteam) => {
+  const list = document.querySelectorAll(iteam);
+
+
+  for(let i = 0; i < list.length; i++){
+      list[i].addEventListener('click', () => {
+          activeList(i)
+      })
+  }
+
+  function activeList(index) {
+      if(list[index].classList.contains('active__list') === true){
+          list[index].classList.remove('active__list');
+          list[index].nextElementSibling.classList.remove('active__sublist');
+
+          setTimeout(() => {
+              list[index].nextElementSibling.style.display = 'none'
+          }, 300)
+      }else{
+          for(let i = 0; i < list.length; i++){
+              list[i].classList.remove('active__list');
+              list[i].nextElementSibling.classList.remove('active__sublist');
+          }
+          list[index].classList.add('active__list');
+          list[index].nextElementSibling.style.display = "block";
+
+          setTimeout(() => {
+              list[index].nextElementSibling.classList.add('active__sublist')
+          }, 10)
+
+      }
+  }
+
+  function addCountries (iteam) {
+      const listBlocks = document.querySelectorAll(iteam);
+    listBlocks.forEach((listBlock) => {
+      for(let i = 0; i < contries.length; i++){
+          let div = document.createElement('div');
+          div.classList.add('country__list_iteam');
+          div.textContent = contries[i].contriename;
+          listBlock.append(div)
+          div.addEventListener('click', () => {
+            changeCountry(contries[i].cites, div)
+          })
+      }
+
+    })
+  }
+  function changeCountry(arr, iteam) {
+      iteam.parentElement.previousElementSibling.querySelector('span').textContent = iteam.textContent;
+      activeList(0);
+  }
+  addCountries('.country__form_list')
+}
+
+showList('.contry__form_btn');
+
+hideTypeAccount.addEventListener('click', () => {
+  typeAccount.classList.toggle('hide_type_account');
+});
+
+typeAccountInputs.forEach((input) => {
+  input.addEventListener('change', () => {
+    let typeAccountText = document.querySelector('.typeAccount_text')
+    typeAccountText.innerText = input.value;
+    typeAccount.classList.toggle('hide_type_account');
+  })
+});
+
+
+// search block
+
+window.onload = () => {
+  let searchSpecializations = document.getElementById('searchSpecializations');
+
+searchSpecializations.oninput = function() {
+  let val = this.value.trim();
+   let searchLists = document.querySelectorAll('.specializations_list label')
+   
+   if(val != ''){
+    searchLists.forEach(elem => {
+      if(elem.innerText.search(val) == -1) {
+        elem.classList.add('hide')
+        elem.previousElementSibling.style.display = 'none';
+        elem.parentElement.parentElement.previousElementSibling.style.display = 'none'
+        console.dir(elem)
+      } 
+    })
+   }else {
+    searchLists.forEach(elem => { 
+      elem.classList.remove('hide')
+      elem.previousElementSibling.style.display = 'flex';
+      elem.parentElement.parentElement.previousElementSibling.style.display = 'block'
+
+    })
+
+  }
+}
+}
+
+
+addSpecialization.addEventListener('click', () => {
+  searchSpecialization.style.display = 'block'
+  addAndRemoveSpecializations.style.display = 'none'
+});
+
+saveSearch.addEventListener('click', () => {
+  searchSpecialization.style.display = 'none'
+  editSpecializations.style.display = 'block'
+});
+
+saveAddRemove.addEventListener('click', () => {
+  addAndRemoveSpecializations.style.display = 'none'
+  editSpecializations.style.display = 'block'
+});
+
+

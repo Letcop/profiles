@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="assets/slick/slick.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/header.css">
@@ -474,53 +475,55 @@
     <!-- Start Desktop experience -->
     <div class="container">
       <div class="row desktop_row">
-        <div class="col-12 d-flex align-items-center justify-content-between">
-          <div class="user_block_info">
-            <div class="circle_avatar">
-              <img src="assets/images/user4.png" alt="">
-              <i class="fas fa-camera fa-2x open_edit_block"></i>
-            </div>
-            <div class="d-flex justify-content-center align-items-center  ml-3 ">
-              <span class="user_nick_name">Hamillioner</span>
-            </div>
-          </div>
-          <!-- edit user block -->
-          <div class="edit_user_block">
-            <div class="circle_avatar">
-              <img src="assets/images/user4.png" id="editMyAvatar" alt="">
-            </div>
-            <div class="profile_photo">
-              <strong>Фото Профиля</strong>
-              <div class="upload_profile_photo">
-                <span>Загрузить <br> Фото профиля</span>
-                <i class="fas fa-arrow-alt-circle-down fa-2x upload_icon"></i>
-                <input type="file" id="uploadProfile">
+        <div class="col-12 d-flex align-items-center justify-content-between mobile_edit_title">
+          <div class="edit_user_title">
+            <div class="user_block_info">
+              <div class="circle_avatar">
+                <img src="assets/images/user4.png" alt="">
+                <i class="fas fa-camera fa-2x open_edit_block"></i>
+              </div>
+              <div class="d-flex justify-content-center align-items-center  ml-3 ">
+                <span class="user_nick_name">Hamillioner</span>
               </div>
             </div>
-            <div class="line"></div>
-            <div class="block_cover">
-              <div class="title">
-                <strong>обложка</strong>
-                <i class="fas fa-times-circle close_edit_profile"></i>
+            <!-- edit user block -->
+            <div class="edit_user_block">
+              <div class="circle_avatar">
+                <img src="assets/images/user4.png" id="editMyAvatar" alt="">
               </div>
-              <div class="cover_item">
-                <div class="cover_list active">
-                  <img src="assets/images/header.jpg" alt="">
+              <div class="profile_photo">
+                <strong>Фото Профиля</strong>
+                <div class="upload_profile_photo">
+                  <span>Загрузить <br> Фото профиля</span>
+                  <i class="fas fa-arrow-alt-circle-down fa-2x upload_icon"></i>
+                  <input type="file" id="uploadProfile">
                 </div>
-                <div class="cover_list">
-                  <img src="assets/images/1.jpg" alt="">
+              </div>
+              <div class="line"></div>
+              <div class="block_cover">
+                <div class="title">
+                  <strong>обложка</strong>
+                  <i class="fas fa-times-circle close_edit_profile"></i>
                 </div>
-                <div class="cover_list">
-                  <img src="assets/images/2.jpg" alt="">
-                </div>
-                <div class="cover_list">
-                  <img src="assets/images/3.jpg" alt="">
-                </div>
-                <div class="cover_list add_my_cover">
-                  <img src="" id="addedMyCover" alt="">
-                  <input type="file" id="uploadMyCover">
-                  <i class="fas fa-plus-circle"></i>
-                  <span id="paymentCover">+1$</span>
+                <div class="cover_item">
+                  <div class="cover_list active">
+                    <img src="assets/images/header.jpg" alt="">
+                  </div>
+                  <div class="cover_list">
+                    <img src="assets/images/1.jpg" alt="">
+                  </div>
+                  <div class="cover_list">
+                    <img src="assets/images/2.jpg" alt="">
+                  </div>
+                  <div class="cover_list">
+                    <img src="assets/images/3.jpg" alt="">
+                  </div>
+                  <div class="cover_list add_my_cover">
+                    <img src="" id="addedMyCover" alt="">
+                    <input type="file" id="uploadMyCover">
+                    <i class="fas fa-plus-circle"></i>
+                    <span id="paymentCover">+1$</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -532,266 +535,43 @@
         </div>
         <div class="col-12 d-flex justify-content-between align-items-end">
           <div class="sub_left_info">
-            <span class="private_info">Тип аккаунта:
-              <select name="type_account" id="typeAccountInput" disabled>
-                <option value="Executor">Исполнитель</option>
-                <option value="Customer">Заказчик</option>
-              </select>
-              <a class="edit_text_btn">
-                <i class="fas fa-pen"></i>
-              </a>
+            <span class="private_info d-flex">Тип аккаунта:
+
+              <div class="type_account">
+                <span class="typeAccount_text pl-2">Исполнитель</span>
+                <i class="fas fa-pen pl-2"></i>
+                <div class="type_account_item">
+                  <label for="r1">
+                    <input type="radio" id="r1" name="type" value="Исполнитель">
+                    Исполнитель
+                  </label>
+                  <label for="r2">
+                    <input type="radio" id="r2" name='type' value="Заказчик">
+                    Заказчик
+                  </label>
+                </div>
+              </div>
             </span>
             <span class="user_name_info">Тимур Касымов</span>
-            <div class="user_address">
+            <div class="user_address d-flex align-items-center">
               <span>3 года на сервисе</span>
-              <span> | </span>
-              <span>
-                <select size="1" name="country" id="country" disabled>
-
-                  <option value="-1">Узбекистан</option>
-                  <option value="0">Абхазия</option>
-                  <option value="1">Австралия</option>
-                  <option value="2">Австрия</option>
-                  <option value="3">Азербайджан</option>
-                  <option value="4">Албания</option>
-                  <option value="5">Алжир</option>
-                  <option value="6">Ангола</option>
-                  <option value="7">Андорра</option>
-                  <option value="8">Антигуа и Барбуда</option>
-                  <option value="9">Аргентина</option>
-                  <option value="10">Армения</option>
-                  <option value="11">Аруба</option>
-                  <option value="12">Афганистан</option>
-                  <option value="13">Багамы</option>
-                  <option value="14">Бангладеш</option>
-                  <option value="15">Барбадос</option>
-                  <option value="16">Бахрейн</option>
-                  <option value="17">Белиз</option>
-                  <option value="18">Белоруссия</option>
-                  <option value="16">Бельгия</option>
-                  <option value="17">Бенин</option>
-                  <option value="18">Бермудские Острова</option>
-                  <option value="19">Болгария</option>
-                  <option value="20">Боливия</option>
-                  <option value="21">Босния и Герцеговина</option>
-                  <option value="22">Ботсвана</option>
-                  <option value="23">Бразилия</option>
-                  <option value="24">Бруней</option>
-                  <option value="25">Буркина-Фасо</option>
-                  <option value="26">Бурунди</option>
-                  <option value="27">Бутан</option>
-                  <option value="28">Вануату</option>
-                  <option value="29">Ватикан</option>
-                  <option value="30">Великобритания</option>
-                  <option value="31">Венгрия</option>
-                  <option value="32">Венесуэла</option>
-                  <option value="33">ВиргинскиеОстрова</option>
-                  <option value="34">ВиргинскиеОстрова</option>
-                  <option value="35">ВосточныйТимор</option>
-                  <option value="36">Вьетнам</option>
-                  <option value="37">Габон</option>
-                  <option value="38">Гавайи</option>
-                  <option value="49">Гаити</option>
-                  <option value="50">Гайана</option>
-                  <option value="51">Гамбия</option>
-                  <option value="52">Гана</option>
-                  <option value="53">Гваделупа</option>
-                  <option value="54">Гватемала</option>
-                  <option value="55">Гвиана</option>
-                  <option value="56">Гвинея</option>
-                  <option value="57">Гвинея-Бисау</option>
-                  <option value="58">Германия</option>
-                  <option value="59">Гернси</option>
-                  <option value="60">Гибралтар</option>
-                  <option value="61">Гондурас</option>
-                  <option value="62">Гонконг</option>
-                  <option value="63">Гренада</option>
-                  <option value="64">Гренландия</option>
-                  <option value="65">Греция</option>
-                  <option value="66">Грузия</option>
-                  <option value="67">Гуам</option>
-                  <option value="68">Дания</option>
-                  <option value="69">Джерси</option>
-                  <option value="70">Джибути</option>
-                  <option value="71">Доминика</option>
-                  <option value="72">Доминиканская Республика</option>
-                  <option value="73">Египет</option>
-                  <option value="74">Замбия</option>
-                  <option value="75">ЗападнаяСахара</option>
-                  <option value="76">Зимбабве</option>
-                  <option value="77">Израиль</option>
-                  <option value="78">Индия</option>
-                  <option value="79">Индонезия</option>
-                  <option value="80">Иордания</option>
-                  <option value="81">Ирак</option>
-                  <option value="82">Иран</option>
-                  <option value="83">Ирландия</option>
-                  <option value="84">Исландия</option>
-                  <option value="85">Испания</option>
-                  <option value="86">Италия</option>
-                  <option value="87">Йемен</option>
-                  <option value="88">Кабо-Верде</option>
-                  <option value="89">Казахстан</option>
-                  <option value="90">КаймановыОстрова</option>
-                  <option value="91">Камбоджа</option>
-                  <option value="92">Камерун</option>
-                  <option value="93">Канада</option>
-                  <option value="94">Канарскиеострова</option>
-                  <option value="95">Катар</option>
-                  <option value="96">Кения</option>
-                  <option value="97">Кипр</option>
-                  <option value="98">Киргизия</option>
-                  <option value="99">Кирибати</option>
-                  <option value="100">Китай</option>
-                  <option value="101">КокосовыеОстрова</option>
-                  <option value="102">Колумбия</option>
-                  <option value="103">КоморскиеОстрова</option>
-                  <option value="104">РеспубликаКонго</option>
-                  <option value="105">Конго</option>
-                  <option value="106">Корея(Северная)</option>
-                  <option value="107">Корея(Южная)</option>
-                  <option value="108">Косово</option>
-                  <option value="109">Коста-Рика</option>
-                  <option value="110">Кот-д'Ивуар</option>
-                  <option value="111">Куба</option>
-                  <option value="112">Кувейт</option>
-                  <option value="113">Кукаострова</option>
-                  <option value="114">Лаос</option>
-                  <option value="115">Латвия</option>
-                  <option value="116">Лесото</option>
-                  <option value="117">Либерия</option>
-                  <option value="118">Ливан</option>
-                  <option value="119">Ливия</option>
-                  <option value="120">Литва</option>
-                  <option value="121">Лихтенштейн</option>
-                  <option value="122">Люксембург</option>
-                  <option value="123">Маврикий</option>
-                  <option value="124">Мавритания</option>
-                  <option value="125">Мадагаскар</option>
-                  <option value="126">Мадейра(острова)</option>
-                  <option value="127">Майотта</option>
-                  <option value="128">Македония</option>
-                  <option value="129">Малави</option>
-                  <option value="130">Малайзия</option>
-                  <option value="131">Мали</option>
-                  <option value="133">Мальдивы</option>
-                  <option value="134">Мальта</option>
-                  <option value="135">Марокко</option>
-                  <option value="136">Мартиника</option>
-                  <option value="137">МаршалловыОстрова</option>
-                  <option value="138">Мексика</option>
-                  <option value="139">Мелилья</option>
-                  <option value="140">Микронезия</option>
-                  <option value="141">Мозамбик</option>
-                  <option value="142">Молдавия</option>
-                  <option value="143">Монако</option>
-                  <option value="144">Монголия</option>
-                  <option value="145">Монтсеррат</option>
-                  <option value="146">Мьянма</option>
-                  <option value="147">Мэн</option>
-                  <option value="149">Намибия</option>
-                  <option value="150">Науру</option>
-                  <option value="151">Непал</option>
-                  <option value="152">Нигер</option>
-                  <option value="153">Нигерия</option>
-                  <option value="154">Нидерланды</option>
-                  <option value="155">Никарагуа</option>
-                  <option value="156">Ниуэ</option>
-                  <option value="157">НоваяЗеландия</option>
-                  <option value="158">НоваяКаледония</option>
-                  <option value="159">Норвегия</option>
-                  <option value="160">Норфолк</option>
-                  <option value="161">Объединенные Арабские Эмираты</option>
-                  <option value="162">Оман</option>
-                  <option value="163">Пакистан</option>
-                  <option value="164">Палау</option>
-                  <option value="165">Палестина</option>
-                  <option value="166">Панама</option>
-                  <option value="167">Папуа</option>
-                  <option value="168">Парагвай</option>
-                  <option value="169">Перу</option>
-                  <option value="170">Питкэрн</option>
-                  <option value="171">Польша</option>
-                  <option value="172">Португалия</option>
-                  <option value="173">Приднестровье</option>
-                  <option value="174">Пуэрто-Рико</option>
-                  <option value="175">Реюньон</option>
-                  <option value="176">РождестваОстров</option>
-                  <option value="177">Россия</option>
-                  <option value="178">Руанда</option>
-                  <option value="179">Румыния</option>
-                  <option value="180">Сальвадор</option>
-                  <option value="181">Самоа</option>
-                  <option value="182">Сан-Марино</option>
-                  <option value="183">Сан-Томе и Принсипи</option>
-                  <option value="184">Саудовская Аравия</option>
-                  <option value="185">Свазиленд</option>
-                  <option value="185">Северная Корея</option>
-                  <option value="186">Северная Македония</option>
-                  <option value="189">Северный Кипр</option>
-                  <option value="191">Сенегал</option>
-                  <option value="192">Сен-Пьер и Микелон</option>
-                  <option value="193">Сент-Винсент и Гренадины</option>
-                  <option value="194">Сент-Китс и Невис</option>
-                  <option value="195">Сент-Люсия</option>
-                  <option value="196">Сербия</option>
-                  <option value="197">Сеута</option>
-                  <option value="198">Сингапур</option>
-                  <option value="199">Сирия</option>
-                  <option value="200">Словакия</option>
-                  <option value="201">Словения</option>
-                  <option value="203">Соломоновы Острова</option>
-                  <option value="204">Сомали</option>
-                  <option value="206">Судан</option>
-                  <option value="207">Суринам</option>
-                  <option value="207">США</option>
-                  <option value="208">Сьерра-Леоне</option>
-                  <option value="209">Таджикистан</option>
-                  <option value="210">Таиланд</option>
-                  <option value="211">Тайвань</option>
-                  <option value="212">Тамил-Илам</option>
-                  <option value="213">Танзания</option>
-                  <option value="215">Того</option>
-                  <option value="216">Токелау</option>
-                  <option value="217">Тонга</option>
-                  <option value="218">Тринидад и Тобаго</option>
-                  <option value="219">Тувалу</option>
-                  <option value="220">Тунис</option>
-                  <option value="221">Туркменистан</option>
-                  <option value="222">Турция</option>
-                  <option value="223">Уганда</option>
-                  <option value="225">Украина</option>
-                  <option value="226">Уоллис и Футуна</option>
-                  <option value="227">Уругвай</option>
-                  <option value="229">Фиджи</option>
-                  <option value="230">Филиппины</option>
-                  <option value="231">Финляндия</option>
-                  <option value="233">Франция</option>
-                  <option value="236">Хорватия</option>
-                  <option value="237">Центрально-африканская республика</option>
-                  <option value="238">Чад</option>
-                  <option value="239">Черногория</option>
-                  <option value="240">Чехия</option>
-                  <option value="241">Чили</option>
-                  <option value="242">Швейцария</option>
-                  <option value="243">Швеция</option>
-                  <option value="244">Шри-Ланка</option>
-                  <option value="245">Эквадор</option>
-                  <option value="246">Экваториальная Гвинея</option>
-                  <option value="247">Эритрея</option>
-                  <option value="248">Эстония</option>
-                  <option value="249">Эфиопия</option>
-                  <option value="251">ЮАР</option>
-                  <option value="252">Южная Корея</option>
-                  <option value="253">Ямайка</option>
-                  <option value="254">Япония</option>
-                </select>
-                <i class="fas fa-pen edit_text_btn"></i>
-                <span> | </span>
-
-                <input type="text" class="city_inp" id="cityInput" value="Ташкент"
-                  onkeypress="this.style.width = ((this.value.length + 1) * 10) + 'px';" size="6" disabled>
-                <a class="edit_text_btn"><i class="fas fa-pen"></i></a>
+              <span class="pl-1 pr-1"> | </span>
+              <span class="d-flex align-items-center">
+                <span>
+                  <div class="country__form_block edit_country_block">
+                    <div class="country__form_iteam">
+                      <div class="contry__form_btn">
+                        <span class="pr-2">Выберите вашу страну </span>
+                        <i class="fas fa-pen edit_text_btn"></i>
+                      </div>
+                      <div class="country__form_list">
+                      </div>
+                    </div>
+                  </div>
+                </span>
+                <!-- <i class="fas fa-pen edit_text_btn pl-2"></i> -->
+                <span class="pl-1 pr-1"> | </span>
+                <span>Ташкент</span>
               </span>
             </div>
           </div>
@@ -822,12 +602,9 @@
         </div>
         <div class="col-12 d-flex align-items-start justify-content-between mt-3">
           <div class="descriptions_list">
-            <textarea class="w-100" onkeypress="auto_grow(this)" onkeydown="auto_grow(this)">
+            <textarea class="w-100">
               Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Вдали приставка океана власти правилами, повстречался путь то. Парадигматическая последний свое текстов семь своих путь вопрос заманивший назад на берегу необходимыми курсивных власти собрал бросил свой которое жизни осталось ipsum его по всей оксмокс, рукопись свою журчит. Рекламных, даже продолжил его наш вскоре по всей рыбного ipsum коварных. Коварных безорфографичный рукописи, образ своих рыбными подпоясал lorem ты пустился имени но! Эта, переулка ручеек свой обеспечивает одна текста имени проектах коварный до буквоград вершину вопрос подпоясал бросил, букв образ парадигматическая текстов. Напоивший страна города вдали текстами? Своих океана дороге злых, домах то текста заголовок?
               </textarea>
-            <!-- <div class="d-flex align-items-end justify-content-end text-right">
-              <button>сохранить</button>
-            </div> -->
           </div>
           <div class="verification_block ml-auto tablet_none">
             <div class="ampount_box">
@@ -852,7 +629,8 @@
               <div class="user_phone_num">
                 <div class="d-flex align-items-center">
                   <i class="fas fa-user"></i>
-                  <span>Номер телефон - <a href="" data-toggle="modal" data-target="#EditVerification">не
+                  <span>Номер телефон - <a href="" id="editVerificationModal" data-toggle="modal"
+                      data-target="#EditVerification">не
                       верифицирован</a></span>
                 </div>
                 <i class="fas fa-times-circle"></i>
@@ -1140,7 +918,7 @@
           <div class="specializations specializations_desktop add_and_remove_specializations mt-4">
             <div class="d-flex align-items-center justify-content-between">
               <p>специализации</p>
-              <i class="fas fa-plus-circle mt-n3"></i>
+              <i class="fas fa-plus-circle mt-n3 save_add_remove"></i>
             </div>
             <div class="add_specialization">Добавить <i class="fas fa-plus-circle"></i></div>
             <div class="specializations_info dropZone">
@@ -1179,37 +957,268 @@
             </div>
           </div>
 
-          <div class="specializations specializations_desktop search_specializations d-none">
+          <div class="specializations specializations_desktop search_specializations">
             <div class="d-flex align-items-center justify-content-between ">
               <p>специализации</p>
-              <i class="fas fa-plus-circle mt-n3 "></i>
+              <i class="fas fa-plus-circle mt-n3 save_search"></i>
             </div>
-            <!-- <div class="search_item">
+            <div class="search_item">
               <input type="text" id="searchSpecializations">
-            </div> -->
-            <div class="specializations_list">
-              <span>WEB-разработка и Сайты</span>
-              <ul>
-                <li><input type="checkbox" class="myCheckBtn" id="check1">
-                  <label for="check1">ВЕБ-программирование</label>
-                </li>
-                <li><input type="checkbox" class="myCheckBtn" id="check2">
-                  <label for="check2">HTML-верстка</label>
-                </li>
-                <li><input type="checkbox" class="myCheckBtn" id="check3">
-                  <label for="check3">Системы управления (CMS)</label>
-                </li>
-                <li><input type="checkbox" class="myCheckBtn" id="check4">
-                  <label for="check4"> Сайт "Под ключ"</label>
-                </li>
-                <li><input type="checkbox" class="myCheckBtn" id="check5">
-                  <label for="check5">Интернет-магазины</label>
-                </li>
-                <li><input type="checkbox" class="myCheckBtn" id="check6">
-                  <label for="check6"> Тестирование сайтов</label>
-                </li>
-              </ul>
+              <i class="far fa-search"></i>
+            </div>
+            <div class="search_specializations_item">
+              <div class="specializations_list">
+                <span>WEB-разработка и Сайты</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">ВЕБ-программирование</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2">HTML-верстка</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3">Системы управления (CMS)</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check4">
+                    <label for="check4"> Сайт "Под ключ"</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check5">
+                    <label for="check5">Интернет-магазины</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check6">
+                    <label for="check6"> Тестирование сайтов</label>
+                  </li>
+                </ul>
 
+              </div>
+              <div class="specializations_list">
+                <span>Тексты и переводы</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">Копирайтинг</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2">Переводы</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3">Редактирование и Корректура</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check4">
+                    <label for="check4">Рерайтинг</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check5">
+                    <label for="check5">Продающие текста</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check6">
+                    <label for="check6"> Нейминг и Слоганы</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check6">
+                    <label for="check6">Сценарии</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check6">
+                    <label for="check6">Транскрибация</label>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="specializations_list">
+                <span>Программирование ПО и систем</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">Мобильные предложения</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2">Прикладное ПО</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3">База данных</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check4">
+                    <label for="check4">1C-программирование</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check5">
+                    <label for="check5"> Системное Програм.</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check6">
+                    <label for="check6">Разработка игр</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check6">
+                    <label for="check6"> Встраиваемые системы</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check6">
+                    <label for="check6">Тестирование ПО</label>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="specializations_list">
+                <span>Управление персоналом</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">Управление продажами</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2">Управление проектами</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3">Подбор персонала (HR)</label>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="specializations_list">
+                <span>ВЕБ-дизайн и интерфейсы</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">Дизайн сайтов</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2">Дизайн интерфейсов и игр</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3">Иконки и Пиксель-арт</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check4">
+                    <label for="check4">Дизайн мобильных приложений</label>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="specializations_list">
+                <span>Администрирование сайтов</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">Наполнение сайтов</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2">Служба поддержки</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3">Системное администрирование</label>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="specializations_list">
+                <span>Графика и Фотография</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">Иллюстрации и Рисунки</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2">3D-графика</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3">Обработка фотографий</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check4">
+                    <label for="check5">Фотосъемка</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check5">
+                    <label for="check4">Шрифты</label>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="specializations_list">
+                <span>Аудио, Видео и Мультимедия</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">Видеомонтаж</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2">Анимация</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3">Озвучивание</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check4">
+                    <label for="check4">Презентации</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check5">
+                    <label for="check5">Музыка и Звуки</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check6">
+                    <label for="check6">Аудиомонтаж</label>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="specializations_list">
+                <span>Учеба и репититорство</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">Контрольные и Тесты</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2">Рефераты и Курсовые</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3">Лабораторные работы</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check4">
+                    <label for="check4">Уроки и Репититорство</label>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="specializations_list">
+                <span>Полиграфия и Айдентика</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">Логотипы и Знаки</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2">Дизайн продукции</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3">Верстка полиграфии</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check4">
+                    <label for="check4">Фирменный стиль</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check5">
+                    <label for="check5"> Наружная реклама</label>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="specializations_list">
+                <span>Архитектура и Инжиниринг</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">Интерьеры и Экстерьеры</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2">Чертежи и Схемы</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3">Машиностроение</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check4">
+                    <label for="check4">Ландшафтный дизайн</label>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="specializations_list">
+                <span>Продвижение сайтов (SEO)</span>
+                <ul>
+                  <li><input type="checkbox" class="myCheckBtn" id="check1">
+                    <label for="check1">Социальные сети (SMM и SMO)</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check2">
+                    <label for="check2"> Поисковые системы (SEO)</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check3">
+                    <label for="check3"> Контекстная реклама</label>
+                  </li>
+                  <li><input type="checkbox" class="myCheckBtn" id="check4">
+                    <label for="check4"> Маркентиговый анализ</label>
+                  </li>
+                </ul>
+
+              </div>
             </div>
           </div>
 
@@ -1219,7 +1228,14 @@
               <i class="fas fa-plus-circle mt-n3 add_skill_btn"></i>
             </div>
             <div class="add_skill">
-              <input type="text" id="addSkill" placeholder="Добавить навык" maxlength="20">
+              <input type="text" list="addThisText" id="addSkill" placeholder="Добавить навык" maxlength="20">
+
+              <datalist id="addThisText">
+                <option value="Водитель">
+                <option value="Машиностроение">
+                <option value="Дизайнер">
+                <option value="Руководитель">
+              </datalist>
             </div>
             <div class="performers_info" id="performersInfo">
               <div class="skill_box"><i class="fas fa-times-circle"></i> Водитель</div>
@@ -1242,73 +1258,73 @@
               <p>Выставленные работы</p>
               <div class="buttons d-flex align-items-center">
                 <div class="added_btn mr-3">Добавить<i class="fas fa-plus-circle ml-1"></i></div>
-                <button class="exhibited_btn">Все Заказы</button>
+                <button class="exhibited_btn">Все Работы</button>
               </div>
             </div>
             <div class="d-flex flex-wrap box_works pt-1">
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
               <div class="box_work">
                 <i class="fas fa-times-circle"></i>
-                <i class="fas fa-pen"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
               </div>
             </div>
           </div>
@@ -1370,7 +1386,7 @@
       <div class="modal-content">
         <div class="modal_header">
           <h5 class="modal-title" id="staticBackdropLabel">Верификация</h5>
-          <div class="close_modal" class="close" data-dismiss="modal" aria-label="Close">
+          <div class="close_modal" id="closeEditVerification" class="close" data-dismiss="modal" aria-label="Close">
             <i class="fas fa-times-circle close"></i>
           </div>
         </div>
@@ -1379,276 +1395,46 @@
             <h6>Личность</h6>
             <div class="name">
               <label for="name">полное имя</label>
-              <input type="text" id="name" placeholder="Введите Ваше ФИО" required>
+              <input type="text" id="name" placeholder="Введите Ваше ФИО">
             </div>
             <div class="date_brith">
               <label for="dateBrith">Дата Рождения</label>
               <div class="inp_date_brith">
-                <input type="date" placeholder="01.01.1990" required>
+                <input type="date" placeholder="01.01.1990">
                 <!-- <i class="fas fa-calendar-alt"></i> -->
               </div>
-              <div class="country">
-                <select size="1" name="country" id="country" required>
+              <div class="modal_country">
 
-                  <option disabled selected> Выберите Вашу страну</option>
-                  <option value="0">Абхазия</option>
-                  <option value="1">Австралия</option>
-                  <option value="2">Австрия</option>
-                  <option value="3">Азербайджан</option>
-                  <option value="4">Албания</option>
-                  <option value="5">Алжир</option>
-                  <option value="6">Ангола</option>
-                  <option value="7">Андорра</option>
-                  <option value="8">Антигуа и Барбуда</option>
-                  <option value="9">Аргентина</option>
-                  <option value="10">Армения</option>
-                  <option value="11">Аруба</option>
-                  <option value="12">Афганистан</option>
-                  <option value="13">Багамы</option>
-                  <option value="14">Бангладеш</option>
-                  <option value="15">Барбадос</option>
-                  <option value="16">Бахрейн</option>
-                  <option value="17">Белиз</option>
-                  <option value="18">Белоруссия</option>
-                  <option value="16">Бельгия</option>
-                  <option value="17">Бенин</option>
-                  <option value="18">Бермудские Острова</option>
-                  <option value="19">Болгария</option>
-                  <option value="20">Боливия</option>
-                  <option value="21">Босния и Герцеговина</option>
-                  <option value="22">Ботсвана</option>
-                  <option value="23">Бразилия</option>
-                  <option value="24">Бруней</option>
-                  <option value="25">Буркина-Фасо</option>
-                  <option value="26">Бурунди</option>
-                  <option value="27">Бутан</option>
-                  <option value="28">Вануату</option>
-                  <option value="29">Ватикан</option>
-                  <option value="30">Великобритания</option>
-                  <option value="31">Венгрия</option>
-                  <option value="32">Венесуэла</option>
-                  <option value="33">ВиргинскиеОстрова</option>
-                  <option value="34">ВиргинскиеОстрова</option>
-                  <option value="35">ВосточныйТимор</option>
-                  <option value="36">Вьетнам</option>
-                  <option value="37">Габон</option>
-                  <option value="38">Гавайи</option>
-                  <option value="49">Гаити</option>
-                  <option value="50">Гайана</option>
-                  <option value="51">Гамбия</option>
-                  <option value="52">Гана</option>
-                  <option value="53">Гваделупа</option>
-                  <option value="54">Гватемала</option>
-                  <option value="55">Гвиана</option>
-                  <option value="56">Гвинея</option>
-                  <option value="57">Гвинея-Бисау</option>
-                  <option value="58">Германия</option>
-                  <option value="59">Гернси</option>
-                  <option value="60">Гибралтар</option>
-                  <option value="61">Гондурас</option>
-                  <option value="62">Гонконг</option>
-                  <option value="63">Гренада</option>
-                  <option value="64">Гренландия</option>
-                  <option value="65">Греция</option>
-                  <option value="66">Грузия</option>
-                  <option value="67">Гуам</option>
-                  <option value="68">Дания</option>
-                  <option value="69">Джерси</option>
-                  <option value="70">Джибути</option>
-                  <option value="71">Доминика</option>
-                  <option value="72">Доминиканская Республика</option>
-                  <option value="73">Египет</option>
-                  <option value="74">Замбия</option>
-                  <option value="75">ЗападнаяСахара</option>
-                  <option value="76">Зимбабве</option>
-                  <option value="77">Израиль</option>
-                  <option value="78">Индия</option>
-                  <option value="79">Индонезия</option>
-                  <option value="80">Иордания</option>
-                  <option value="81">Ирак</option>
-                  <option value="82">Иран</option>
-                  <option value="83">Ирландия</option>
-                  <option value="84">Исландия</option>
-                  <option value="85">Испания</option>
-                  <option value="86">Италия</option>
-                  <option value="87">Йемен</option>
-                  <option value="88">Кабо-Верде</option>
-                  <option value="89">Казахстан</option>
-                  <option value="90">КаймановыОстрова</option>
-                  <option value="91">Камбоджа</option>
-                  <option value="92">Камерун</option>
-                  <option value="93">Канада</option>
-                  <option value="94">Канарскиеострова</option>
-                  <option value="95">Катар</option>
-                  <option value="96">Кения</option>
-                  <option value="97">Кипр</option>
-                  <option value="98">Киргизия</option>
-                  <option value="99">Кирибати</option>
-                  <option value="100">Китай</option>
-                  <option value="101">КокосовыеОстрова</option>
-                  <option value="102">Колумбия</option>
-                  <option value="103">КоморскиеОстрова</option>
-                  <option value="104">РеспубликаКонго</option>
-                  <option value="105">Конго</option>
-                  <option value="106">Корея(Северная)</option>
-                  <option value="107">Корея(Южная)</option>
-                  <option value="108">Косово</option>
-                  <option value="109">Коста-Рика</option>
-                  <option value="110">Кот-д'Ивуар</option>
-                  <option value="111">Куба</option>
-                  <option value="112">Кувейт</option>
-                  <option value="113">Кукаострова</option>
-                  <option value="114">Лаос</option>
-                  <option value="115">Латвия</option>
-                  <option value="116">Лесото</option>
-                  <option value="117">Либерия</option>
-                  <option value="118">Ливан</option>
-                  <option value="119">Ливия</option>
-                  <option value="120">Литва</option>
-                  <option value="121">Лихтенштейн</option>
-                  <option value="122">Люксембург</option>
-                  <option value="123">Маврикий</option>
-                  <option value="124">Мавритания</option>
-                  <option value="125">Мадагаскар</option>
-                  <option value="126">Мадейра(острова)</option>
-                  <option value="127">Майотта</option>
-                  <option value="128">Македония</option>
-                  <option value="129">Малави</option>
-                  <option value="130">Малайзия</option>
-                  <option value="131">Мали</option>
-                  <option value="133">Мальдивы</option>
-                  <option value="134">Мальта</option>
-                  <option value="135">Марокко</option>
-                  <option value="136">Мартиника</option>
-                  <option value="137">МаршалловыОстрова</option>
-                  <option value="138">Мексика</option>
-                  <option value="139">Мелилья</option>
-                  <option value="140">Микронезия</option>
-                  <option value="141">Мозамбик</option>
-                  <option value="142">Молдавия</option>
-                  <option value="143">Монако</option>
-                  <option value="144">Монголия</option>
-                  <option value="145">Монтсеррат</option>
-                  <option value="146">Мьянма</option>
-                  <option value="147">Мэн</option>
-                  <option value="149">Намибия</option>
-                  <option value="150">Науру</option>
-                  <option value="151">Непал</option>
-                  <option value="152">Нигер</option>
-                  <option value="153">Нигерия</option>
-                  <option value="154">Нидерланды</option>
-                  <option value="155">Никарагуа</option>
-                  <option value="156">Ниуэ</option>
-                  <option value="157">НоваяЗеландия</option>
-                  <option value="158">НоваяКаледония</option>
-                  <option value="159">Норвегия</option>
-                  <option value="160">Норфолк</option>
-                  <option value="161">Объединенные Арабские Эмираты</option>
-                  <option value="162">Оман</option>
-                  <option value="163">Пакистан</option>
-                  <option value="164">Палау</option>
-                  <option value="165">Палестина</option>
-                  <option value="166">Панама</option>
-                  <option value="167">Папуа</option>
-                  <option value="168">Парагвай</option>
-                  <option value="169">Перу</option>
-                  <option value="170">Питкэрн</option>
-                  <option value="171">Польша</option>
-                  <option value="172">Португалия</option>
-                  <option value="173">Приднестровье</option>
-                  <option value="174">Пуэрто-Рико</option>
-                  <option value="175">Реюньон</option>
-                  <option value="176">РождестваОстров</option>
-                  <option value="177">Россия</option>
-                  <option value="178">Руанда</option>
-                  <option value="179">Румыния</option>
-                  <option value="180">Сальвадор</option>
-                  <option value="181">Самоа</option>
-                  <option value="182">Сан-Марино</option>
-                  <option value="183">Сан-Томе и Принсипи</option>
-                  <option value="184">Саудовская Аравия</option>
-                  <option value="185">Свазиленд</option>
-                  <option value="185">Северная Корея</option>
-                  <option value="186">Северная Македония</option>
-                  <option value="189">Северный Кипр</option>
-                  <option value="191">Сенегал</option>
-                  <option value="192">Сен-Пьер и Микелон</option>
-                  <option value="193">Сент-Винсент и Гренадины</option>
-                  <option value="194">Сент-Китс и Невис</option>
-                  <option value="195">Сент-Люсия</option>
-                  <option value="196">Сербия</option>
-                  <option value="197">Сеута</option>
-                  <option value="198">Сингапур</option>
-                  <option value="199">Сирия</option>
-                  <option value="200">Словакия</option>
-                  <option value="201">Словения</option>
-                  <option value="203">Соломоновы Острова</option>
-                  <option value="204">Сомали</option>
-                  <option value="206">Судан</option>
-                  <option value="207">Суринам</option>
-                  <option value="207">США</option>
-                  <option value="208">Сьерра-Леоне</option>
-                  <option value="209">Таджикистан</option>
-                  <option value="210">Таиланд</option>
-                  <option value="211">Тайвань</option>
-                  <option value="212">Тамил-Илам</option>
-                  <option value="213">Танзания</option>
-                  <option value="215">Того</option>
-                  <option value="216">Токелау</option>
-                  <option value="217">Тонга</option>
-                  <option value="218">Тринидад и Тобаго</option>
-                  <option value="219">Тувалу</option>
-                  <option value="220">Тунис</option>
-                  <option value="221">Туркменистан</option>
-                  <option value="222">Турция</option>
-                  <option value="223">Уганда</option>
-                  <option value="224">Украина</option>
-                  <option value="225">Уоллис и Футуна</option>
-                  <option value="226">Уругвай</option>
-                  <option value="227">Узбекистан</option>
-                  <option value="228">Фиджи</option>
-                  <option value="229">Филиппины</option>
-                  <option value="230">Финляндия</option>
-                  <option value="231">Франция</option>
-                  <option value="232">Хорватия</option>
-                  <option value="233">Центрально-африканская республика</option>
-                  <option value="234">Чад</option>
-                  <option value="235">Черногория</option>
-                  <option value="236">Чехия</option>
-                  <option value="237">Чили</option>
-                  <option value="238">Швейцария</option>
-                  <option value="239">Швеция</option>
-                  <option value="240">Шри-Ланка</option>
-                  <option value="241">Эквадор</option>
-                  <option value="242">Экваториальная Гвинея</option>
-                  <option value="243">Эритрея</option>
-                  <option value="244">Эстония</option>
-                  <option value="245">Эфиопия</option>
-                  <option value="246">ЮАР</option>
-                  <option value="247">Южная Корея</option>
-                  <option value="248">Ямайка</option>
-                  <option value="249">Япония</option>
-                </select>
+                <div class="country__form_block ">
+                  <div class="country__form_iteam">
+                    <div class="contry__form_btn">
+                      <span>Выберите вашу страну</span>
+                      <i class="fa fa-chevron-down p-0"></i>
+                    </div>
+                    <div class="country__form_list">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="file">
               <label for="myFile">документ</label>
-              <input type="file" class="attach_passport_photo" required>
+              <input type="file" class="attach_passport_photo">
               <i class="fas fa-file-alt pl-4 pr-2"></i>
               <span class="file_address">Прикрепить фото паспорта</span>
             </div>
             <div class="check_file">
-              <input type="checkbox" id="checkFile" required>
+              <input type="checkbox" id="checkFile">
               <label for="checkFile">Я прикрепляю фото с скрытым серийным номером.</label>
             </div>
             <h6>Телефон</h6>
             <div class="phone_list">
               <label for="phoneList">ваша телефон</label>
               <input type="text" class="phone" placeholder="Введите Ваш телефон"
-                onkeypress="return (event.charCode >= 43 && event.charCode <= 57);" required>
-              <button class="get_code">получить код</button>
+                onkeypress="return (event.charCode >= 43 && event.charCode <= 57);">
+              <button type="button" class="get_code">получить код </button>
               <input type="text" class="enter_code text-center" placeholder="Введите код" id="enterCode"
-                onkeypress="return (event.charCode >= 48 && event.charCode <= 57);" maxlength="6" required>
+                onkeypress="return (event.charCode >= 48 && event.charCode <= 57);" maxlength="6">
             </div>
             <div class="button_verification">
               <button type="submit">Верифицироваться</button>
@@ -1663,6 +1449,63 @@
     </div>
   </div>
   <!-- end modal -->
+
+  <!--Start Modal works-->
+  <div class="modal fade modal_works" id="editModalWorks" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal_header">
+          <h5 class="modal-title" id="staticBackdropLabel">Портфолио</h5>
+          <div type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times-circle close"></i>
+          </div>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="name_text" id="workName" value="Letcop">
+          <textarea name="" id="workDescriptions"
+            class="descriptions_text">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Алфавит всеми своего которое гор большой строчка повстречался ведущими буквенных, великий всемогущая образ коварных злых букв, имеет свое вдали! Моей реторический даль дороге назад алфавит но переулка точках продолжил ipsum. Сбить, свой точках. Назад букв до океана! Жаренные, своего силуэт.</textarea>
+          <div class="block_works">
+            <div class="work_list">
+              <div class="my_work ">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQ4SBS84ijiKmQF03mU9gxpDSYehCy081iw&usqp=CAU"
+                  alt="">
+                <i class="fas fa-times-circle remove_work"></i>
+              </div>
+              <div class="my_work">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDLsY8CGA47jzerd4rlZRfBuC9jKmrmCPpA&usqp=CAU"
+                  alt="">
+                <i class="fas fa-times-circle remove_work"></i>
+              </div>
+            </div>
+            <div class="work_list">
+              <div class="my_work">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoKZXGC2af5kXJIukyLmscK99S0VC909164g&usqp=CAU"
+                  alt="">
+                <i class="fas fa-times-circle remove_work"></i>
+              </div>
+              <div class="my_work">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgA-hgm20nLo2Fsv1XiwmsueOMph96_yzkog&usqp=CAU"
+                  alt="">
+                <i class="fas fa-times-circle remove_work"></i>
+              </div>
+            </div>
+            <div class="home_screen">
+              <img src="" alt="" id="homeScreen">
+
+              <i class="fas fa-times-circle close"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End modal works -->
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
