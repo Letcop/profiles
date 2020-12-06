@@ -42,9 +42,10 @@ let searchSpecialization = document.querySelector('.search_specializations');
 let saveSearch = document.querySelector('.save_search');
 let saveAddRemove = document.querySelector('.save_add_remove');
 let removeWorks = document.querySelectorAll('.remove_work');
-let editWorkLists = document.querySelectorAll('.edit_work_list .my_work');
+let editWorkLists = document.querySelectorAll('.edit_work_list .my_work img');
 let yesRemove = document.querySelectorAll('.quation_remove .yesBtn');
 let noRemove = document.querySelectorAll('.quation_remove .noBtn');
+let addPhoto = document.querySelectorAll('.add_photo')
 
 $(document).ready(function() {
   $('#addSkill').keyup(function(){
@@ -116,12 +117,12 @@ removeBoxWork.forEach((removeWork) => {
 
 editWorkLists.forEach(editWorkList => {
   editWorkList.addEventListener('mouseover', () => {
-    editWorkList.children[1].style.display = 'block'
+    editWorkList.nextElementSibling.style.display = 'block'
   })
 });
 editWorkLists.forEach(editWorkList => {
   editWorkList.addEventListener('mouseout', () => {
-    editWorkList.children[1].style.display = 'none'
+    editWorkList.nextElementSibling.style.display = 'none'
   })
 })
  
@@ -143,6 +144,33 @@ noRemove.forEach(no => {
     no.parentElement.parentElement.style.display = 'none'
   });
 });
+
+addPhoto.forEach(elem => {
+  elem.addEventListener('change', (e) => {
+    let img =  elem.offsetParent.children[0]
+    if(e.target.files.length > 0) {
+      let src = URL.createObjectURL(e.target.files[0]);
+      img.src = src;
+      img.style.display = 'block'
+
+      // let myAvatar = document.getElementById('editMyAvatar');
+      // let editMyAvatarMobile = document.getElementById('editMyAvatarMobile');
+      // let mobileAvatarImg = document.getElementById('mobileAvatarImg');
+      // let userBlockImg = document.querySelector('.user_block_info img');
+
+      
+      
+      // userBlockImg.src = src;
+      // myAvatar.src = src;
+      // editMyAvatarMobile.src = src;
+      // mobileAvatarImg.src = src;
+      // userBlockImg.style.display = 'block'
+      // myAvatar.style.display = 'block'
+      // userBlockImg.style.display = 'block'
+
+    }
+  });
+  })
 
 // Добавить навыки
 

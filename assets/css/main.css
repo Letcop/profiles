@@ -294,12 +294,18 @@ button:focus {
   width: 100%;
   padding: 10px 5px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .profiles_page .header_profiles .private_info .type_account_item label:hover {
   background-color: #00cf4d;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+}
+
+.profiles_page .header_profiles .mobile_type_account_item {
+  margin-top: -12px !important;
+  margin-left: 10px;
 }
 
 .profiles_page .header_profiles .sub_left_info {
@@ -731,6 +737,7 @@ button:focus {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .profiles_page .header_profiles .mobile_row .edit_user_block_mobile .circle_avatar {
@@ -2188,7 +2195,7 @@ button:focus {
   color: #f83d7b;
   position: absolute;
   left: 10px;
-  bottom: -15px;
+  bottom: -20px;
 }
 
 .profiles_page .main_profiles .specializations option,
@@ -2763,6 +2770,13 @@ button:focus {
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
 }
 
 .profiles_page .modal_works .modal-body .block_works .work_list .my_work .remove_work {
@@ -2818,7 +2832,11 @@ button:focus {
 .profiles_page .modal_works .modal-body .block_works .work_list .my_work .add_photo {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2828,22 +2846,20 @@ button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .profiles_page .modal_works .modal-body .block_works .work_list .my_work .add_photo input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
-  z-index: 0;
+  z-index: 1;
 }
 
 .profiles_page .modal_works .modal-body .block_works .work_list .my_work .add_photo i {
   color: #c1c4ca;
+  position: absolute;
+  z-index: 0;
 }
 
 .profiles_page .modal_works .modal-body .block_works .home_screen {
@@ -4526,6 +4542,9 @@ button:focus {
   }
   .profiles_page .descriptions_list .edit_textarea {
     min-height: 140px !important;
+  }
+  .profiles_page .tablet_amount {
+    height: 150px;
   }
 }
 
