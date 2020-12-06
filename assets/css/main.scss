@@ -185,6 +185,66 @@ button:focus {
         color: $primary-color-text;
       }
     }
+    .private_info {
+      font-size: 13px;
+      font-weight: 400;
+      display: inline-block;
+      width: auto;
+      select {
+        background: transparent;
+        color: $primary-color;
+        font-weight: 600;
+        padding-left: 5px;
+        border: none;
+        outline: none;
+        option {
+        background-color: $accent-color-light;
+        color: $primary-color;
+        border: none;
+        }
+      }
+      
+      a {
+        color: $primary-color;
+        font-weight: 600;
+        padding-left: 5px;
+      }
+      .fa-pen  {
+        cursor: pointer;
+      }
+      .type_account {
+        position: relative;
+        overflow: hidden;
+        transition: .5s;
+      }
+      .hide_type_account {
+        overflow: visible;
+      }
+      .type_account_item {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        line-height: 10px;
+        background-color: $pr-color;
+        position: absolute;
+        top: 30px;
+        z-index: 999;
+        transition: .5s;
+        input {
+          display: none;
+        }
+        label {
+          width: 100%;
+          padding: 10px 5px;
+          cursor: pointer;
+        }
+        label:hover {
+          background-color: $primary-color;
+          transition: .3s ease-in-out;
+        }
+      }
+    }
     .sub_left_info {
       margin-top: 10px;
       display: flex;
@@ -195,66 +255,7 @@ button:focus {
       .edit_text_btn {
         color: $primary-color-text !important;
       }
-      .private_info {
-        font-size: 13px;
-        font-weight: 400;
-        display: inline-block;
-        width: auto;
-        select {
-          background: transparent;
-          color: $primary-color;
-          font-weight: 600;
-          padding-left: 5px;
-          border: none;
-          outline: none;
-          option {
-          background-color: $accent-color-light;
-          color: $primary-color;
-          border: none;
-          }
-        }
-        
-        a {
-          color: $primary-color;
-          font-weight: 600;
-          padding-left: 5px;
-        }
-        .fa-pen  {
-          cursor: pointer;
-        }
-        .type_account {
-          position: relative;
-          overflow: hidden;
-          transition: .5s;
-        }
-        .hide_type_account {
-          overflow: visible;
-        }
-        .type_account_item {
-          display: flex;
-          align-items: start;
-          justify-content: start;
-          flex-direction: column;
-          line-height: 10px;
-          background-color: $pr-color;
-          position: absolute;
-          top: 30px;
-          z-index: 999;
-          transition: .5s;
-          input {
-            display: none;
-          }
-          label {
-            width: 100%;
-            padding: 10px 5px;
-            cursor: pointer;
-          }
-          label:hover {
-            background-color: $primary-color;
-            transition: .3s ease-in-out;
-          }
-        }
-      }
+      
       
       .user_name_info {
         font-size: 30px;
@@ -547,6 +548,198 @@ button:focus {
         position: absolute;
         z-index: 1;
       }
+      .edit_user_block_mobile {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: $primary-color-text;
+        border-radius: 10px;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+          .circle_avatar {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            position: relative;
+            border: 2px solid $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              position: absolute;
+              top: 2px;
+              left: 2px;
+              right: 0;
+              bottom: 0;
+              width: 96%;
+              height: 96%;
+              border-radius: 50%;
+              object-fit: cover;
+              z-index: 1;
+            }
+            .fa-camera {
+              z-index: 2;
+              cursor: pointer;
+            }
+          }
+          .profile_photo {
+            color: $accent-color;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            text-align: start;
+            flex-direction: column;
+            strong {
+              text-transform: uppercase;
+              font-size: 12px;
+              font-weight: 800;
+            }
+            .upload_profile_photo {
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-top: 10px;
+              cursor: pointer;
+              span {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 15px;
+                text-decoration: underline;
+              }
+              .upload_icon {
+                color: $primary-color;
+                margin-left: 10px;
+                cursor: pointer;
+              }
+              input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                cursor: pointer;
+              }
+            }
+            .upload_profile_photo:hover {
+              color: $primary-color;
+            }
+            .close_edit_profile_mobile {
+              position: absolute;
+              top: 5px;
+              right: 5px;
+              color: #ff8fb4;
+            }
+          }
+          .line {
+            width: 100%;
+            height: 2px;
+            background-color: $divider-color;
+            margin-top: 5px;
+          }
+          .block_cover {
+            width: 100%;
+            position: relative;
+            .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            strong {
+              text-transform: uppercase;
+              font-size: 12px;
+              font-weight: 800;
+              color: $accent-color;
+            }
+            i {
+              color: #ff8fb4;
+              font-size: 18px;
+            }
+            }
+            .cover_item {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-top: 10px;
+              .cover_list {
+                width: 50px;
+                height: 50px;
+                border-radius: 3px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                cursor: pointer;
+      
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 3px;
+                  object-fit: cover;
+                  z-index: 1;
+                }
+                input {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 1;
+                  opacity: 0;
+                }
+                .fa-plus-circle {
+                  color: $divider-color-text;
+                  font-size: 20px;
+                }
+                span {
+                  color: $primary-color;
+                  position: absolute;
+                  top: -5px;
+                  right: -5px;
+                  font-size: 14px;
+                  font-weight: 600;
+                }
+              }
+              .add_my_cover{
+                position: relative;
+               img {
+                display: none;
+              }
+              input {
+                cursor: pointer;
+              }
+            }
+            .active::before {
+              content: '\f058';
+              font-family: 'Font Awesome 5 Free';
+              font-weight: 900;
+              position: absolute;
+              top: -5px;
+              right: -5px;
+              color: $primary-color;
+              z-index: 5;
+              background-color: $primary-color-text;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+            }
+            }
+          }
+      }
       .user_info_mobile {
         top: 0;
         left: 0;
@@ -570,6 +763,13 @@ button:focus {
             height: 100%;
             object-fit: cover;
             border-radius: 50%;
+          }
+          .open_edit_block_mobile {
+            z-index: 2;
+            position: absolute;
+            color: $primary-color-text;
+           top: 20px;
+           left: 20px;
           }
         }
         .add_button,
@@ -618,6 +818,10 @@ button:focus {
             margin-top: 15px;
           }
         }
+        .edit_btns {
+          @include d-lex();
+          font-size: 18px;
+        }
       }
       .info_text_mobile {
         color: $accent-color;
@@ -639,6 +843,12 @@ button:focus {
           max-height: 250px;
           overflow-y: scroll;
           padding-right: 10px;
+        }
+        textarea {
+          width: 100%;
+          min-height: 140px !important;
+          border: none;
+          outline: none;
         }
       }
     }
@@ -942,6 +1152,7 @@ button:focus {
 
 
 .main_profiles {
+  margin-bottom: 20px;
   .mobile_wrap {
     display: flex !important;
     flex-direction: row-reverse !important;
@@ -1151,7 +1362,11 @@ button:focus {
   }
   .specializations_desktop,
   .similar_performers_desktop,
-  .desktop_row_share {
+  .desktop_row_share,
+  .edit_specializations,
+  .add_and_remove_specializations,
+  .search_specializations,
+  .edit_similar_performers{
     overflow: auto !important;
     max-height: 380px !important;
     // height: 300px !important;
@@ -1320,8 +1535,8 @@ button:focus {
       bottom: -15px;
     }
   }
-  datalist {
-    max-height: 200px !important;
+  option {
+    height: 200px !important;
   }
 
     .skill_box {
@@ -1396,6 +1611,95 @@ button:focus {
       i:hover {
         color: $primary-color;
       }
+    }
+  }
+
+  
+  .ampount_box {
+    width: 330px;
+    background-color: $primary-color-text;
+    padding: 15px;
+    border-radius: 10px;
+    color: $accent-color;
+    line-height: 5px;
+    .inp_payment {
+      position: relative;
+    }
+    p {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 500;
+      color: $accent-color;
+    }
+    input {
+      width: 100%;
+      border-radius: 20px;
+      background-color: $divider-color;
+      border: none;
+      height: 25px;
+      padding-left: 40px;
+      padding-right: 10px;
+      font-weight: 500;
+    }
+    input:focus {
+      outline: none;
+      border: 1px solid $primary-color;
+    }
+    .fa-money-check-alt {
+      position: absolute;
+      left: 10px;
+      top: 5px;
+      color: $accent-color;
+    }
+    .fa-times-circle {
+      position: absolute;
+      color: #ff8fb4;
+      right: 10px;
+      top: 5px;
+    }
+    .fa-check-circle {
+      position: absolute;
+      color: $primary-color;
+      right: 10px;
+      top: 5px;
+      display: none;
+    }
+  }
+  .verification_box {
+    width: 330px;
+    padding: 15px;
+    background-color: $primary-color-text;
+    border-radius: 10px;
+    color: $accent-color;
+    p {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .user_info_list,
+    .user_phone_num,
+    .user_email {
+      @include d-lex();
+     span {
+      font-size: 13px;
+      font-weight: 400;
+      padding-left: 5px;
+     }
+     .fa-check-circle {
+      color: $primary-color;
+      padding-left: 30px;
+     }
+    }
+    .user_phone_num {
+      margin: 10px 0;
+      a {
+        color: $primary-color;
+        text-decoration: underline;
+      }
+      .fa-times-circle {
+        color: #ff8fb4;
+        padding-left: 10px;
+       }
     }
   }
   
@@ -1642,22 +1946,75 @@ button:focus {
        .my_work {
          width: 48%;
          height: 200px;
-         background-color: $divider-color;
          border-radius: 10px;
          position: relative;
+
          img {
            width: 100%;
            height: 100%;
            border-radius: 10px;
            object-fit: cover;
          }
-         i {
+         .remove_work {
            position: absolute;
            top: -5px;
            right: -5px;
            color: #ff8fb4;
            background-color: $primary-color-text;
            padding: 3px;
+           display: none;
+           z-index: 3;
+           border-radius: 50%;
+         }
+         .quation_remove {
+           width: 100%;
+           height: 100%;
+           position: absolute;
+           left: 0;
+           top: 0;
+           right: 0;
+           bottom: 0;
+           z-index: 2;
+           text-align: center;
+           background-color: #0009;
+           display: none;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+           border-radius: 10px;
+           strong {
+             font-size: 18px;
+             color: $primary-color-text;
+             line-height: 15px;
+           }
+           button {
+             width: 80px;
+             height: 30px;
+             border-radius: 20px;
+             margin-top: 25px;
+           }
+         }
+         .add_photo {
+           width: 100%;
+           height: 100%;
+          position: relative;
+          display: flex;
+           align-items: center;
+           justify-content: center;
+           input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+             width: 100%;
+             height: 100%;
+             opacity: 0;
+             z-index: 0;
+           }
+           i {
+             color: $divider-color-text;
+           }
          }
        }
       }
@@ -1681,7 +2038,7 @@ button:focus {
           object-fit: cover;
           background-repeat: no-repeat;
       }
-      i {
+      .close {
         position: absolute;
         top: -10px;
         right: -10px;
@@ -2080,6 +2437,7 @@ button:focus {
     }
   } 
   .adding_work_list {
+    flex-direction: row-reverse;
     @include d-lex();
     margin-top: 20px;
     .add_file {
@@ -2786,7 +3144,7 @@ button:focus {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: 100;
+    // z-index: 100;
     transition: 0.3s;
     cursor: pointer;
 }

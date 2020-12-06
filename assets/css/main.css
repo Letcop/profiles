@@ -220,33 +220,14 @@ button:focus {
   color: #ffffff;
 }
 
-.profiles_page .header_profiles .sub_left_info {
-  margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  line-height: 30px;
-}
-
-.profiles_page .header_profiles .sub_left_info .edit_text_btn {
-  color: #ffffff !important;
-}
-
-.profiles_page .header_profiles .sub_left_info .private_info {
+.profiles_page .header_profiles .private_info {
   font-size: 13px;
   font-weight: 400;
   display: inline-block;
   width: auto;
 }
 
-.profiles_page .header_profiles .sub_left_info .private_info select {
+.profiles_page .header_profiles .private_info select {
   background: transparent;
   color: #00cf4d;
   font-weight: 600;
@@ -255,34 +236,34 @@ button:focus {
   outline: none;
 }
 
-.profiles_page .header_profiles .sub_left_info .private_info select option {
+.profiles_page .header_profiles .private_info select option {
   background-color: #12114a;
   color: #00cf4d;
   border: none;
 }
 
-.profiles_page .header_profiles .sub_left_info .private_info a {
+.profiles_page .header_profiles .private_info a {
   color: #00cf4d;
   font-weight: 600;
   padding-left: 5px;
 }
 
-.profiles_page .header_profiles .sub_left_info .private_info .fa-pen {
+.profiles_page .header_profiles .private_info .fa-pen {
   cursor: pointer;
 }
 
-.profiles_page .header_profiles .sub_left_info .private_info .type_account {
+.profiles_page .header_profiles .private_info .type_account {
   position: relative;
   overflow: hidden;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.profiles_page .header_profiles .sub_left_info .private_info .hide_type_account {
+.profiles_page .header_profiles .private_info .hide_type_account {
   overflow: visible;
 }
 
-.profiles_page .header_profiles .sub_left_info .private_info .type_account_item {
+.profiles_page .header_profiles .private_info .type_account_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,20 +286,39 @@ button:focus {
   transition: .5s;
 }
 
-.profiles_page .header_profiles .sub_left_info .private_info .type_account_item input {
+.profiles_page .header_profiles .private_info .type_account_item input {
   display: none;
 }
 
-.profiles_page .header_profiles .sub_left_info .private_info .type_account_item label {
+.profiles_page .header_profiles .private_info .type_account_item label {
   width: 100%;
   padding: 10px 5px;
   cursor: pointer;
 }
 
-.profiles_page .header_profiles .sub_left_info .private_info .type_account_item label:hover {
+.profiles_page .header_profiles .private_info .type_account_item label:hover {
   background-color: #00cf4d;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+}
+
+.profiles_page .header_profiles .sub_left_info {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 30px;
+}
+
+.profiles_page .header_profiles .sub_left_info .edit_text_btn {
+  color: #ffffff !important;
 }
 
 .profiles_page .header_profiles .sub_left_info .user_name_info {
@@ -714,6 +714,270 @@ button:focus {
   z-index: 1;
 }
 
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .circle_avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid #00cf4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .circle_avatar img {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 0;
+  bottom: 0;
+  width: 96%;
+  height: 96%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .circle_avatar .fa-camera {
+  z-index: 2;
+  cursor: pointer;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .profile_photo {
+  color: #253556;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .profile_photo strong {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .profile_photo .upload_profile_photo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .profile_photo .upload_profile_photo span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+  text-decoration: underline;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .profile_photo .upload_profile_photo .upload_icon {
+  color: #00cf4d;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .profile_photo .upload_profile_photo input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .profile_photo .upload_profile_photo:hover {
+  color: #00cf4d;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .profile_photo .close_edit_profile_mobile {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #ff8fb4;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .line {
+  width: 100%;
+  height: 2px;
+  background-color: #efefef;
+  margin-top: 5px;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover {
+  width: 100%;
+  position: relative;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .title strong {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  color: #253556;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .title i {
+  color: #ff8fb4;
+  font-size: 18px;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .cover_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .cover_item .cover_list {
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .cover_item .cover_list img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .cover_item .cover_list input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .cover_item .cover_list .fa-plus-circle {
+  color: #c1c4ca;
+  font-size: 20px;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .cover_item .cover_list span {
+  color: #00cf4d;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .cover_item .add_my_cover {
+  position: relative;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .cover_item .add_my_cover img {
+  display: none;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .cover_item .add_my_cover input {
+  cursor: pointer;
+}
+
+.profiles_page .header_profiles .mobile_row .edit_user_block_mobile .block_cover .cover_item .active::before {
+  content: '\f058';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  color: #00cf4d;
+  z-index: 5;
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
 .profiles_page .header_profiles .mobile_row .user_info_mobile {
   top: 0;
   left: 0;
@@ -742,6 +1006,14 @@ button:focus {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .user_avatar .open_edit_block_mobile {
+  z-index: 2;
+  position: absolute;
+  color: #ffffff;
+  top: 20px;
+  left: 20px;
 }
 
 .profiles_page .header_profiles .mobile_row .user_info_mobile .add_button,
@@ -817,6 +1089,19 @@ button:focus {
   margin-top: 15px;
 }
 
+.profiles_page .header_profiles .mobile_row .user_info_mobile .edit_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
 .profiles_page .header_profiles .mobile_row .info_text_mobile {
   color: #253556;
   margin-top: 15px;
@@ -839,6 +1124,13 @@ button:focus {
   max-height: 250px;
   overflow-y: scroll;
   padding-right: 10px;
+}
+
+.profiles_page .header_profiles .mobile_row .info_text_mobile textarea {
+  width: 100%;
+  min-height: 140px !important;
+  border: none;
+  outline: none;
 }
 
 .profiles_page .achievements_slider {
@@ -1236,6 +1528,10 @@ button:focus {
   color: #00cf4d;
 }
 
+.profiles_page .main_profiles {
+  margin-bottom: 20px;
+}
+
 .profiles_page .main_profiles .mobile_wrap {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -1502,14 +1798,22 @@ button:focus {
 
 .profiles_page .main_profiles .specializations_desktop,
 .profiles_page .main_profiles .similar_performers_desktop,
-.profiles_page .main_profiles .desktop_row_share {
+.profiles_page .main_profiles .desktop_row_share,
+.profiles_page .main_profiles .edit_specializations,
+.profiles_page .main_profiles .add_and_remove_specializations,
+.profiles_page .main_profiles .search_specializations,
+.profiles_page .main_profiles .edit_similar_performers {
   overflow: auto !important;
   max-height: 380px !important;
 }
 
 .profiles_page .main_profiles .specializations_desktop p,
 .profiles_page .main_profiles .similar_performers_desktop p,
-.profiles_page .main_profiles .desktop_row_share p {
+.profiles_page .main_profiles .desktop_row_share p,
+.profiles_page .main_profiles .edit_specializations p,
+.profiles_page .main_profiles .add_and_remove_specializations p,
+.profiles_page .main_profiles .search_specializations p,
+.profiles_page .main_profiles .edit_similar_performers p {
   text-transform: uppercase;
   font-size: 16px !important;
   font-weight: 600 !important;
@@ -1887,12 +2191,12 @@ button:focus {
   bottom: -15px;
 }
 
-.profiles_page .main_profiles .specializations datalist,
-.profiles_page .main_profiles .similar_performers datalist,
-.profiles_page .main_profiles .verification datalist,
-.profiles_page .main_profiles .mobile_review datalist,
-.profiles_page .main_profiles .amount_box datalist {
-  max-height: 200px !important;
+.profiles_page .main_profiles .specializations option,
+.profiles_page .main_profiles .similar_performers option,
+.profiles_page .main_profiles .verification option,
+.profiles_page .main_profiles .mobile_review option,
+.profiles_page .main_profiles .amount_box option {
+  height: 200px !important;
 }
 
 .profiles_page .main_profiles .specializations .skill_box,
@@ -2002,6 +2306,121 @@ button:focus {
 
 .profiles_page .main_profiles .share_profile .profile_icons i:hover {
   color: #00cf4d;
+}
+
+.profiles_page .main_profiles .ampount_box {
+  width: 330px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  color: #253556;
+  line-height: 5px;
+}
+
+.profiles_page .main_profiles .ampount_box .inp_payment {
+  position: relative;
+}
+
+.profiles_page .main_profiles .ampount_box p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  color: #253556;
+}
+
+.profiles_page .main_profiles .ampount_box input {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #efefef;
+  border: none;
+  height: 25px;
+  padding-left: 40px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+.profiles_page .main_profiles .ampount_box input:focus {
+  outline: none;
+  border: 1px solid #00cf4d;
+}
+
+.profiles_page .main_profiles .ampount_box .fa-money-check-alt {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  color: #253556;
+}
+
+.profiles_page .main_profiles .ampount_box .fa-times-circle {
+  position: absolute;
+  color: #ff8fb4;
+  right: 10px;
+  top: 5px;
+}
+
+.profiles_page .main_profiles .ampount_box .fa-check-circle {
+  position: absolute;
+  color: #00cf4d;
+  right: 10px;
+  top: 5px;
+  display: none;
+}
+
+.profiles_page .main_profiles .verification_box {
+  width: 330px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #253556;
+}
+
+.profiles_page .main_profiles .verification_box p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.profiles_page .main_profiles .verification_box .user_info_list,
+.profiles_page .main_profiles .verification_box .user_phone_num,
+.profiles_page .main_profiles .verification_box .user_email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profiles_page .main_profiles .verification_box .user_info_list span,
+.profiles_page .main_profiles .verification_box .user_phone_num span,
+.profiles_page .main_profiles .verification_box .user_email span {
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.profiles_page .main_profiles .verification_box .user_info_list .fa-check-circle,
+.profiles_page .main_profiles .verification_box .user_phone_num .fa-check-circle,
+.profiles_page .main_profiles .verification_box .user_email .fa-check-circle {
+  color: #00cf4d;
+  padding-left: 30px;
+}
+
+.profiles_page .main_profiles .verification_box .user_phone_num {
+  margin: 10px 0;
+}
+
+.profiles_page .main_profiles .verification_box .user_phone_num a {
+  color: #00cf4d;
+  text-decoration: underline;
+}
+
+.profiles_page .main_profiles .verification_box .user_phone_num .fa-times-circle {
+  color: #ff8fb4;
+  padding-left: 10px;
 }
 
 .profiles_page .my_works_slider {
@@ -2334,7 +2753,6 @@ button:focus {
 .profiles_page .modal_works .modal-body .block_works .work_list .my_work {
   width: 48%;
   height: 200px;
-  background-color: #efefef;
   border-radius: 10px;
   position: relative;
 }
@@ -2347,13 +2765,85 @@ button:focus {
      object-fit: cover;
 }
 
-.profiles_page .modal_works .modal-body .block_works .work_list .my_work i {
+.profiles_page .modal_works .modal-body .block_works .work_list .my_work .remove_work {
   position: absolute;
   top: -5px;
   right: -5px;
   color: #ff8fb4;
   background-color: #ffffff;
   padding: 3px;
+  display: none;
+  z-index: 3;
+  border-radius: 50%;
+}
+
+.profiles_page .modal_works .modal-body .block_works .work_list .my_work .quation_remove {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  background-color: #0009;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+
+.profiles_page .modal_works .modal-body .block_works .work_list .my_work .quation_remove strong {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 15px;
+}
+
+.profiles_page .modal_works .modal-body .block_works .work_list .my_work .quation_remove button {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+.profiles_page .modal_works .modal-body .block_works .work_list .my_work .add_photo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profiles_page .modal_works .modal-body .block_works .work_list .my_work .add_photo input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+}
+
+.profiles_page .modal_works .modal-body .block_works .work_list .my_work .add_photo i {
+  color: #c1c4ca;
 }
 
 .profiles_page .modal_works .modal-body .block_works .home_screen {
@@ -2379,7 +2869,7 @@ button:focus {
   background-repeat: no-repeat;
 }
 
-.profiles_page .modal_works .modal-body .block_works i {
+.profiles_page .modal_works .modal-body .block_works .close {
   position: absolute;
   top: -10px;
   right: -10px;
@@ -2886,6 +3376,10 @@ button:focus {
 }
 
 .profiles_page .adding_work .adding_work_list {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3852,7 +4346,6 @@ button:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 100;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
@@ -3926,7 +4419,8 @@ button:focus {
   .profiles_page .tablet_row,
   .profiles_page .mobile_row,
   .profiles_page .head__botton .my_friends,
-  .profiles_page .footer__mob {
+  .profiles_page .footer__mob,
+  .profiles_page .mobile_verification {
     display: none !important;
   }
 }
@@ -3946,7 +4440,8 @@ button:focus {
   .profiles_page .tablet_row,
   .profiles_page .mobile_row,
   .profiles_page .head__botton .my_friends,
-  .profiles_page .footer__mob {
+  .profiles_page .footer__mob,
+  .profiles_page .mobile_verification {
     display: none !important;
   }
 }
@@ -3975,6 +4470,9 @@ button:focus {
   }
   .profiles_page .header_profiles .sub_right_info {
     margin-top: 20px;
+  }
+  .profiles_page .header_profiles .sub_right_info .block_experience .skill_bar {
+    width: 280px !important;
   }
   .profiles_page .exhibited_works .box_work {
     width: 147px !important;
@@ -4009,9 +4507,25 @@ button:focus {
   .profiles_page footer {
     display: none !important;
   }
-  .profiles_page .mobile_edit_title .edit_user_title {
-    width: 80% !important;
+  .profiles_page .mobile_edit_title {
     height: 80px;
+    position: relative !important;
+  }
+  .profiles_page .mobile_edit_title .edit_user_block {
+    width: 100% !important;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+  }
+  .profiles_page .mobile_edit_title .edit_user_block .block_cover {
+    width: 60% !important;
+  }
+  .profiles_page .mobile_edit_title .buttons button {
+    width: 135px !important;
+    font-size: 11px !important;
+  }
+  .profiles_page .descriptions_list .edit_textarea {
+    min-height: 140px !important;
   }
 }
 
@@ -4248,6 +4762,154 @@ button:focus {
   .profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list .avatar {
     width: 85px !important;
     height: 65px;
+  }
+  .profiles_page .mobile_verification,
+  .profiles_page .mobile_exhibited {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profiles_page .exhibited_works p {
+    text-align: center;
+    font-size: 20px !important;
+  }
+  .profiles_page .exhibited_works .buttons {
+    width: 100% !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .profiles_page .exhibited_works .buttons .added_btn {
+    margin-left: 20px !important;
+  }
+  .profiles_page .exhibited_works .box_works {
+    max-height: 350px !important;
+    margin-top: 20px;
+  }
+  .profiles_page .exhibited_works .box_work {
+    width: 140px !important;
+    margin-left: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  .profiles_page .adding_work_title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profiles_page .adding_work_title .mobile_adding_work_title {
+    width: 100%;
+    margin-top: 25px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .profiles_page .adding_work_title .mobile_adding_work_title button {
+    margin-left: 0 !important;
+  }
+  .profiles_page .adding_work_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .profiles_page .adding_work_list .add_info {
+    margin-left: 0 !important;
+  }
+  .profiles_page .adding_work_list .add_info input,
+  .profiles_page .adding_work_list .add_info textarea {
+    width: 300px !important;
+  }
+  .profiles_page .adding_work_list .add_file {
+    margin: auto !important;
+  }
+  .profiles_page .adding_work_list .my_works {
+    max-width: 100% !important;
+    overflow-x: scroll !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .profiles_page .adding_work_list .my_works .my_work_img {
+    width: 140px !important;
+    margin-right: 10px !important;
+  }
+  .profiles_page .modal_verification {
+    padding: 20px 0 !important;
+    color: #253556;
+  }
+  .profiles_page .modal_verification .modal-content {
+    background-color: #efefef;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .profiles_page .modal_verification .modal-body {
+    padding: 0px 20px !important;
+    overflow: hidden;
+  }
+  .profiles_page .modal_verification .modal-body form .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 15px 0;
+  }
+  .profiles_page .modal_verification .modal-body form .name input {
+    width: 80%;
+  }
+  .profiles_page .modal_verification .modal-body form .date_brith {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100px;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .profiles_page .modal_verification .modal-body form .phone_list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .profiles_page .modal_verification .modal-body form .phone_list .phone {
+    width: 190px !important;
+  }
+  .profiles_page .modal_verification .modal-body form .phone_list .get_code,
+  .profiles_page .modal_verification .modal-body form .phone_list .enter_code {
+    margin-top: 10px;
+  }
+  .profiles_page .quation_remove strong {
+    font-size: 14px !important;
+  }
+  .profiles_page .quation_remove button {
+    width: 50px !important;
+    height: 20px !important;
+  }
+  .profiles_page .country__form_list {
+    margin-top: 0 !important;
+  }
+  .profiles_page .country__list_iteam {
+    color: #ffff !important;
   }
 }
 

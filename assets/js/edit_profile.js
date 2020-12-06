@@ -1,4 +1,4 @@
-let editPaymentInp = document.getElementById('editPaymentInp');
+let editPaymentInp = document.querySelectorAll('#editPaymentInp');
 let myWorks = document.querySelectorAll('.box_works .box_work');
 let exhibitedBtn = document.querySelector('.exhibited_btn');
 let boxWorks = document.querySelector('.box_works');
@@ -13,7 +13,7 @@ let addSkill = document.getElementById('addSkill');
 let performersInfo = document.getElementById('performersInfo');
 let removeBoxWork = document.querySelectorAll('.box_work .fa-times-circle');
 let addWorkInput = document.getElementById('addWorkInput');
-let uploadProfile = document.getElementById('uploadProfile');
+let uploadProfile = document.querySelectorAll('#uploadProfile');
 let uploadMyCover = document.getElementById('uploadMyCover');
 let openCoverImages = document.querySelectorAll('.cover_item div');
 let coverListBox = document.querySelectorAll('.cover_item .cover_list');
@@ -33,16 +33,18 @@ let editVerificationModal = document.getElementById('editVerificationModal');
 let editCountryBlockList = document.querySelector('.edit_country_block .country__form_list');
 let editCountryBlock = document.querySelector('.edit_country_block');
 let closeEditVerification = document.getElementById('closeEditVerification');
-let hideTypeAccount = document.querySelector('.type_account .fa-pen');
+let hideTypeAccount = document.querySelectorAll('.type_account .fa-pen');
 let typeAccountInputs = document.querySelectorAll('.type_account_item input');
-let typeAccount = document.querySelector('.type_account');
+let typeAccount = document.querySelectorAll('.type_account');
 let buttonGetCode = document.querySelector('.modal_verification .get_code');
 let addSpecialization = document.querySelector('.add_specialization');
 let searchSpecialization = document.querySelector('.search_specializations');
 let saveSearch = document.querySelector('.save_search');
 let saveAddRemove = document.querySelector('.save_add_remove');
-let removeWorks = document.querySelectorAll('.remove_work')
-
+let removeWorks = document.querySelectorAll('.remove_work');
+let editWorkLists = document.querySelectorAll('.edit_work_list .my_work');
+let yesRemove = document.querySelectorAll('.quation_remove .yesBtn');
+let noRemove = document.querySelectorAll('.quation_remove .noBtn');
 
 $(document).ready(function() {
   $('#addSkill').keyup(function(){
@@ -61,13 +63,17 @@ $('#searchSpecializations').keyup(function(){
 
 // edit payment
 
-editPaymentInp.addEventListener('keypress', () => {
+editPaymentInp.forEach(elem => {
 
-  if((event.charCode >= 48 && event.charCode <= 57) == true) {
-    editPaymentInp.parentElement.children[2].style.display = 'none'
-    editPaymentInp.parentElement.children[3].style.display = 'block'
-  }
-});
+  elem.addEventListener('keypress', () => {
+
+    if((event.charCode >= 48 && event.charCode <= 57) == true) {
+      elem.parentElement.children[2].style.display = 'none'
+      elem.parentElement.children[3].style.display = 'block'
+    }
+  });
+})
+
 
 // My works
 
@@ -108,12 +114,35 @@ removeBoxWork.forEach((removeWork) => {
 // edit modal works
 
 
-
-removeWorks.forEach(remove => {
-  remove.addEventListener('click', () => {
-    console.dir(remove.parentElement.style.display = 'none')
+editWorkLists.forEach(editWorkList => {
+  editWorkList.addEventListener('mouseover', () => {
+    editWorkList.children[1].style.display = 'block'
+  })
+});
+editWorkLists.forEach(editWorkList => {
+  editWorkList.addEventListener('mouseout', () => {
+    editWorkList.children[1].style.display = 'none'
   })
 })
+ 
+removeWorks.forEach(remove => {
+  remove.addEventListener('click', () => {
+    remove.nextElementSibling.style.display = 'flex'
+  })
+});
+
+yesRemove.forEach(yes => {
+  yes.addEventListener('click', () => {
+    yes.parentElement.parentElement.parentElement.children[0].style.display = 'none'
+    yes.parentElement.parentElement.parentElement.children[2].style.display = 'none'
+  });
+})
+
+noRemove.forEach(no => {
+  no.addEventListener('click', () => {
+    no.parentElement.parentElement.style.display = 'none'
+  });
+});
 
 // Добавить навыки
 
@@ -293,23 +322,40 @@ closeEditProfile.addEventListener('click', () => {
   userBlock.style.display = 'flex';
   editUserBlock.style.display = 'none';
 })
+let userBlockImg = document.querySelector('.user_block_info img');
+
+      console.log(mobileAvatarImg.src)
+
+uploadProfile.forEach(upload => {
+  upload.addEventListener('change', (e) => {
+    if(e.target.files.length > 0) {
+      let src = URL.createObjectURL(e.target.files[0]);
+      let myAvatar = document.getElementById('editMyAvatar');
+      let editMyAvatarMobile = document.getElementById('editMyAvatarMobile');
+      let mobileAvatarImg = document.getElementById('mobileAvatarImg');
+      let userBlockImg = document.querySelector('.user_block_info img');
+
+      
+      
+      userBlockImg.src = src;
+      myAvatar.src = src;
+      editMyAvatarMobile.src = src;
+      mobileAvatarImg.src = src;
+      userBlockImg.style.display = 'block'
+      myAvatar.style.display = 'block'
+      userBlockImg.style.display = 'block'
+
+      console.log(mobileAvatarImg.src)
+    }
+  });
+})
 
 
-uploadProfile.addEventListener('change', (e) => {
-  if(e.target.files.length > 0) {
-    let src = URL.createObjectURL(e.target.files[0]);
-    let myAvatar = document.getElementById('editMyAvatar');
-    let userBlockImg = document.querySelector('.user_block_info img');
-    
-    userBlockImg.src = src;
-    myAvatar.src = src;
-    userBlockImg.style.display = 'block'
-    myAvatar.style.display = 'block'
-  }
-});
 
 let headImg = document.querySelector('.header_profiles');
-const [bgc1, bgc2, bgc3, bgc4, bgc5] = openCoverImages;
+const [bgc1, bgc2, bgc3, bgc4, bgc5, mobilebgc1, mobilebgc2, mobilebgc3, mobilebgc4, mobilebgc5] = openCoverImages;
+
+console.log(openCoverImages)
 
 
 bgc1.addEventListener('click', () => {
@@ -325,6 +371,24 @@ bgc3.addEventListener('click', () => {
   
 });
 bgc4.addEventListener('click', () => {
+  headImg.style.backgroundImage =  "url('assets/images/3.jpg')"
+  
+});
+
+
+mobilebgc1.addEventListener('click', () => {
+  headImg.style.backgroundImage =  "url('assets/images/header.jpg')"
+  
+});
+mobilebgc2.addEventListener('click', () => {
+  headImg.style.backgroundImage =  "url('assets/images/1.jpg')"
+  
+});
+mobilebgc3.addEventListener('click', () => {
+  headImg.style.backgroundImage =  "url('assets/images/2.jpg')"
+  
+});
+mobilebgc4.addEventListener('click', () => {
   headImg.style.backgroundImage =  "url('assets/images/3.jpg')"
   
 });
@@ -683,15 +747,26 @@ const showList = (iteam) => {
 
 showList('.contry__form_btn');
 
-hideTypeAccount.addEventListener('click', () => {
-  typeAccount.classList.toggle('hide_type_account');
-});
+hideTypeAccount.forEach(elem => {
+  elem.addEventListener('click', () => {
+    elem.parentElement.classList.toggle('hide_type_account');
+    console.dir(elem.parentElement)
+  });
+})
+
+
 
 typeAccountInputs.forEach((input) => {
   input.addEventListener('change', () => {
-    let typeAccountText = document.querySelector('.typeAccount_text')
-    typeAccountText.innerText = input.value;
-    typeAccount.classList.toggle('hide_type_account');
+    let typeAccountText = document.querySelectorAll('.typeAccount_text')
+    typeAccountText.forEach(text => {
+      
+    text.innerText = input.value;
+    })
+    
+    typeAccount.classList.toggle('hide_type_account'); 
+    
+    // console.dir(input.parentElement.parentElement.parentElement.style.display = 'none')
   })
 });
 
@@ -742,4 +817,22 @@ saveAddRemove.addEventListener('click', () => {
   editSpecializations.style.display = 'block'
 });
 
+
+
+
+// mobile row
+
+let openEditBlockMobile = document.querySelector('.open_edit_block_mobile');
+let editUserBlockMobile = document.querySelector('.edit_user_block_mobile');
+let closeEditProfileMobile = document.querySelector('.close_edit_profile_mobile');
+
+openEditBlockMobile.addEventListener('click', () => {
+  openEditBlockMobile.parentElement.style.display = 'none'
+  editUserBlockMobile.style.display = 'flex'
+});
+
+closeEditProfileMobile.addEventListener('click', () => {
+  openEditBlockMobile.parentElement.style.display = 'block'
+  editUserBlockMobile.style.display = 'none'
+});
 

@@ -7,7 +7,8 @@
         .tablet_row,
         .mobile_row,
        .head__botton .my_friends,
-        .footer__mob {
+        .footer__mob,
+        .mobile_verification {
             display: none !important;
         }
     }
@@ -30,7 +31,8 @@
     .tablet_row,
     .mobile_row,
     .head__botton .my_friends,
-    .footer__mob {
+    .footer__mob,
+    .mobile_verification {
         display: none !important;
     }
 }
@@ -59,6 +61,9 @@
         }
         .sub_right_info {
             margin-top: 20px;
+            .block_experience .skill_bar {
+              width: 280px !important;
+            }
         }
       }
       .exhibited_works {
@@ -93,11 +98,31 @@
       display: none !important;
   }
   .mobile_edit_title {
-    .edit_user_title {
-      width: 80% !important;
-      height: 80px;
+    height: 80px;
+    position: relative !important;
+    .edit_user_block {
+      width: 100% !important;
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      .block_cover {
+        width: 60% !important;
+      }
+    }
+    .buttons {
+      button {
+        width: 135px !important;
+        font-size: 11px !important;
+      }
     }
   }
+  
+  .descriptions_list {
+    .edit_textarea {
+      min-height: 140px !important;
+    }
+  }
+
 }
 }
 
@@ -364,6 +389,126 @@
     }
   }
 // End Modal
+
+.mobile_verification,
+.mobile_exhibited {
+  flex-direction: column;
+}
+.exhibited_works {
+  p {
+    text-align: center;
+    font-size: 20px !important;
+  }
+  .buttons {
+    width: 100% !important;
+    justify-content: space-between !important;
+    .added_btn {
+      margin-left: 20px !important;
+    }
+  }
+  .box_works {
+    max-height: 350px !important;
+    margin-top: 20px;
+  }
+  .box_work {
+    width: 140px !important;
+    margin-left: 15px !important;
+    margin-bottom: 15px !important;
+  }
+}
+.adding_work_title {
+  flex-direction: column;
+  .mobile_adding_work_title {
+    width: 100%;
+    margin-top: 25px;
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      margin-left: 0 !important;
+    }
+  }
+
+}
+.adding_work_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start !important;
+  justify-content: start !important;
+  .add_info {
+    margin-left: 0 !important;
+    input,
+    textarea {
+      width: 300px !important;
+    }
+  }
+  .add_file {
+    margin: auto !important;
+    
+  }
+  .my_works {
+    max-width: 100% !important;
+    overflow-x: scroll !important;
+    flex-wrap: wrap !important;
+    .my_work_img {
+      width: 140px !important;
+      margin-right: 10px !important;
+    }
+  }
+}
+.modal_verification {
+  padding: 20px 0 !important;
+  color: $accent-color;
+  .modal-content {
+    background-color: $divider-color;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .modal-body {
+    padding: 0px 20px !important;
+    overflow: hidden;
+    form {
+      .name {
+        @include d-lex();
+        margin: 15px 0;
+        input {
+          width: 80%;
+        }
+      }
+      .date_brith {
+        flex-wrap: wrap;
+        height: 100px;
+        justify-content: center !important;
+      }
+      .phone_list {
+        flex-wrap: wrap;
+        .phone {
+          width: 190px !important;
+        }
+        .get_code,
+        .enter_code {
+         margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+.quation_remove {
+  strong {
+    font-size: 14px !important;
+  }
+  button {
+    width: 50px !important;
+    height: 20px !important;
+  }
+}
+.country__form_list {
+  margin-top: 0 !important;
+}
+.country__list_iteam {
+  color: #ffff !important;
+}
   }
 }
 @media screen and (max-width: 320px) {
