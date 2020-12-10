@@ -126,6 +126,17 @@
   .tablet_amount {
     height: 150px;
   }
+  .tablet_specializations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .tablet_specializations_left {
+      width: 48%;
+    }
+    .edit_similar_performers {
+      width: 48%;
+    }
+  }
 }
 }
 
@@ -416,7 +427,13 @@
   .box_work {
     width: 140px !important;
     margin-left: 15px !important;
-    margin-bottom: 15px !important;
+    margin-bottom: 15px !important; 
+    i {
+      font-size: 22px;
+    }
+    .fa-pen {
+      font-size: 18px;
+    }
   }
 }
 .adding_work_title {
@@ -511,6 +528,26 @@
 }
 .country__list_iteam {
   color: #ffff !important;
+}
+
+.edit_specializations,
+.edit_similar_performers {
+  .edit_icon {
+    font-size: 18px !important;
+  }
+  
+  .add_skill_btn {
+    font-size: 25px;
+  }
+}
+.exhibited_works {
+  .added_btn {
+    display: flex;
+    align-items: center;
+    i {
+      font-size: 25px;
+    }
+  }
 }
   }
 }

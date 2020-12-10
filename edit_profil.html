@@ -746,7 +746,7 @@
                     <div class="country__form_iteam">
                       <div class="contry__form_btn">
                         <span class="pr-2">Выберите вашу страну </span>
-                        <i class="fas fa-pen edit_text_btn"></i>
+                        <i class="fas fa-pen edit_text_btn mr-2"></i>
                       </div>
                       <div class="country__form_list">
                       </div>
@@ -815,376 +815,380 @@
             </div>
           </div>
 
-          <div class="specializations  mt-4 edit_specializations">
-            <div class="d-flex align-items-center justify-content-between ">
-              <p>специализации</p>
-              <i class="fas fa-pen mt-n3 edit_icon"></i>
+          <div class="tablet_specializations">
+            <div class="tablet_specializations_left">
+              <div class="specializations  mt-4 edit_specializations">
+                <div class="d-flex align-items-center justify-content-between ">
+                  <p>специализации</p>
+                  <i class="fas fa-pen mt-n3 edit_icon"></i>
+                </div>
+                <div class="specializations_info" id="special">
+                  <a href="#" class="special__item">Веб-программирование</a>
+                  <a href="">Сис. управление(CMS)</a>
+                  <a href="">HTML - верстка</a>
+                  <a href="">Сайт "Под ключ"</a>
+                  <a href="">Интернет - магазин</a>
+                  <a href="">Тестирование сайтов</a>
+                  <a href="">Маркетинговый анализ</a>
+                  <a href="">Рерайтинг</a>
+                </div>
+              </div>
+
+              <div class="specializations  add_and_remove_specializations mt-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p>специализации</p>
+                  <i class="fas fa-plus-circle mt-n3 save_add_remove"></i>
+                </div>
+                <div class="add_specialization">Добавить <i class="fas fa-plus-circle"></i></div>
+                <div class="specializations_info dropZone">
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Веб-программирование</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Сис. управление(CMS)</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> HTML - верстка</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Сайт "Под ключ"</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Интернет - магазин</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Тестирование сайтов</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Маркетинговый анализ</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Рерайтинг</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="specializations search_specializations">
+                <div class="d-flex align-items-center justify-content-between ">
+                  <p>специализации</p>
+                  <i class="fas fa-plus-circle mt-n3 save_search"></i>
+                </div>
+                <div class="search_item">
+                  <input type="text" id="searchSpecializations">
+                  <i class="far fa-search"></i>
+                </div>
+                <div class="search_specializations_item">
+                  <div class="specializations_list">
+                    <span>WEB-разработка и Сайты</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">ВЕБ-программирование</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">HTML-верстка</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Системы управления (CMS)</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4"> Сайт "Под ключ"</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check5">Интернет-магазины</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6"> Тестирование сайтов</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Тексты и переводы</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Копирайтинг</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Переводы</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Редактирование и Корректура</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Рерайтинг</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check5">Продающие текста</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6"> Нейминг и Слоганы</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6">Сценарии</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6">Транскрибация</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Программирование ПО и систем</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Мобильные предложения</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Прикладное ПО</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">База данных</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">1C-программирование</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check5"> Системное Програм.</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6">Разработка игр</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6"> Встраиваемые системы</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6">Тестирование ПО</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Управление персоналом</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Управление продажами</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Управление проектами</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Подбор персонала (HR)</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>ВЕБ-дизайн и интерфейсы</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Дизайн сайтов</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Дизайн интерфейсов и игр</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Иконки и Пиксель-арт</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Дизайн мобильных приложений</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Администрирование сайтов</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Наполнение сайтов</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Служба поддержки</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Системное администрирование</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Графика и Фотография</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Иллюстрации и Рисунки</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">3D-графика</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Обработка фотографий</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check5">Фотосъемка</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check4">Шрифты</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Аудио, Видео и Мультимедия</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Видеомонтаж</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Анимация</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Озвучивание</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Презентации</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check5">Музыка и Звуки</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6">Аудиомонтаж</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Учеба и репититорство</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Контрольные и Тесты</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Рефераты и Курсовые</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Лабораторные работы</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Уроки и Репититорство</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Полиграфия и Айдентика</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Логотипы и Знаки</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Дизайн продукции</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Верстка полиграфии</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Фирменный стиль</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check5"> Наружная реклама</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Архитектура и Инжиниринг</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Интерьеры и Экстерьеры</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Чертежи и Схемы</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Машиностроение</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Ландшафтный дизайн</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Продвижение сайтов (SEO)</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Социальные сети (SMM и SMO)</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2"> Поисковые системы (SEO)</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3"> Контекстная реклама</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4"> Маркентиговый анализ</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="specializations_info" id="special">
-              <a href="#" class="special__item">Веб-программирование</a>
-              <a href="">Сис. управление(CMS)</a>
-              <a href="">HTML - верстка</a>
-              <a href="">Сайт "Под ключ"</a>
-              <a href="">Интернет - магазин</a>
-              <a href="">Тестирование сайтов</a>
-              <a href="">Маркетинговый анализ</a>
-              <a href="">Рерайтинг</a>
-            </div>
-          </div>
 
-          <div class="specializations  add_and_remove_specializations mt-4">
-            <div class="d-flex align-items-center justify-content-between">
-              <p>специализации</p>
-              <i class="fas fa-plus-circle mt-n3 save_add_remove"></i>
-            </div>
-            <div class="add_specialization">Добавить <i class="fas fa-plus-circle"></i></div>
-            <div class="specializations_info dropZone">
-              <div class="remove_specialization dragItem">
-                <span><i class="fas fa-bars drag_drop"></i> Веб-программирование</span><i
-                  class="fas fa-times-circle remove_icon"></i>
+            <div class="similar_performers edit_similar_performers">
+              <div class="d-flex align-items-center justify-content-between">
+                <p>Дополнительные навыки</p>
+                <i class="fas fa-plus-circle mt-n3 add_skill_btn"></i>
               </div>
-              <div class="remove_specialization dragItem">
-                <span><i class="fas fa-bars drag_drop"></i> Сис. управление(CMS)</span><i
-                  class="fas fa-times-circle remove_icon"></i>
-              </div>
-              <div class="remove_specialization dragItem">
-                <span><i class="fas fa-bars drag_drop"></i> HTML - верстка</span><i
-                  class="fas fa-times-circle remove_icon"></i>
-              </div>
-              <div class="remove_specialization dragItem">
-                <span><i class="fas fa-bars drag_drop"></i> Сайт "Под ключ"</span><i
-                  class="fas fa-times-circle remove_icon"></i>
-              </div>
-              <div class="remove_specialization dragItem">
-                <span><i class="fas fa-bars drag_drop"></i> Интернет - магазин</span><i
-                  class="fas fa-times-circle remove_icon"></i>
-              </div>
-              <div class="remove_specialization dragItem">
-                <span><i class="fas fa-bars drag_drop"></i> Тестирование сайтов</span><i
-                  class="fas fa-times-circle remove_icon"></i>
-              </div>
-              <div class="remove_specialization dragItem">
-                <span><i class="fas fa-bars drag_drop"></i> Маркетинговый анализ</span><i
-                  class="fas fa-times-circle remove_icon"></i>
-              </div>
-              <div class="remove_specialization dragItem">
-                <span><i class="fas fa-bars drag_drop"></i> Рерайтинг</span><i
-                  class="fas fa-times-circle remove_icon"></i>
-              </div>
-            </div>
-          </div>
+              <div class="add_skill">
+                <input type="text" list="addThisText" id="addSkill" placeholder="Добавить навык" maxlength="25">
+                <span id="returnErrorText"></span>
 
-          <div class="specializations search_specializations">
-            <div class="d-flex align-items-center justify-content-between ">
-              <p>специализации</p>
-              <i class="fas fa-plus-circle mt-n3 save_search"></i>
-            </div>
-            <div class="search_item">
-              <input type="text" id="searchSpecializations">
-              <i class="far fa-search"></i>
-            </div>
-            <div class="search_specializations_item">
-              <div class="specializations_list">
-                <span>WEB-разработка и Сайты</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">ВЕБ-программирование</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2">HTML-верстка</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3">Системы управления (CMS)</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check4">
-                    <label for="check4"> Сайт "Под ключ"</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check5">
-                    <label for="check5">Интернет-магазины</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check6">
-                    <label for="check6"> Тестирование сайтов</label>
-                  </li>
-                </ul>
-
+                <datalist id="addThisText">
+                  <option value="UX/UI-дизайн">
+                  <option value="Моушн-дизайн/видеодизайн">
+                  <option value="Маркетинг">
+                  <option value="Верстка">
+                  <option value="Рекрутинг в IT">
+                  <option value="Юзабилити">
+                  <option value="SMM-маркетинг">
+                  <option value="SEO оптимизация">
+                  <option value="продвижение сайтов">
+                  <option value="PHP-программист">
+                  <option value="Frontend-программист">
+                  <option value="Backend-программист">
+                  <option value="Бухгалтерия">
+                  <option value="Переводы">
+                  <option value="1С-программист">
+                  <option value="Системный администратор">
+                  <option value="Fullstack-программист">
+                  <option value="Вебмастер">
+                  <option value="Рерайтер">
+                  <option value="Модератор сайта">
+                  <option value="Технический дизайнер">
+                  <option value="3D-дизайнер">
+                  <option value="">
+                  <option value="Менеджер по продажам">
+                  <option value="Электронная коммерция">
+                  <option value="Веб-дизайн">
+                </datalist>
               </div>
-              <div class="specializations_list">
-                <span>Тексты и переводы</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">Копирайтинг</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2">Переводы</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3">Редактирование и Корректура</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check4">
-                    <label for="check4">Рерайтинг</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check5">
-                    <label for="check5">Продающие текста</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check6">
-                    <label for="check6"> Нейминг и Слоганы</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check6">
-                    <label for="check6">Сценарии</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check6">
-                    <label for="check6">Транскрибация</label>
-                  </li>
-                </ul>
-
+              <div class="performers_info" id="performersInfo">
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Веб-дизайн</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Визуализатор</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Дизайнер</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Frontend-программист</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Backend-программист</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Верстка</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Модератор сайта</div>
               </div>
-              <div class="specializations_list">
-                <span>Программирование ПО и систем</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">Мобильные предложения</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2">Прикладное ПО</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3">База данных</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check4">
-                    <label for="check4">1C-программирование</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check5">
-                    <label for="check5"> Системное Програм.</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check6">
-                    <label for="check6">Разработка игр</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check6">
-                    <label for="check6"> Встраиваемые системы</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check6">
-                    <label for="check6">Тестирование ПО</label>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="specializations_list">
-                <span>Управление персоналом</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">Управление продажами</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2">Управление проектами</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3">Подбор персонала (HR)</label>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="specializations_list">
-                <span>ВЕБ-дизайн и интерфейсы</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">Дизайн сайтов</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2">Дизайн интерфейсов и игр</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3">Иконки и Пиксель-арт</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check4">
-                    <label for="check4">Дизайн мобильных приложений</label>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="specializations_list">
-                <span>Администрирование сайтов</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">Наполнение сайтов</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2">Служба поддержки</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3">Системное администрирование</label>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="specializations_list">
-                <span>Графика и Фотография</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">Иллюстрации и Рисунки</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2">3D-графика</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3">Обработка фотографий</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check4">
-                    <label for="check5">Фотосъемка</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check5">
-                    <label for="check4">Шрифты</label>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="specializations_list">
-                <span>Аудио, Видео и Мультимедия</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">Видеомонтаж</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2">Анимация</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3">Озвучивание</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check4">
-                    <label for="check4">Презентации</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check5">
-                    <label for="check5">Музыка и Звуки</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check6">
-                    <label for="check6">Аудиомонтаж</label>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="specializations_list">
-                <span>Учеба и репититорство</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">Контрольные и Тесты</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2">Рефераты и Курсовые</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3">Лабораторные работы</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check4">
-                    <label for="check4">Уроки и Репититорство</label>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="specializations_list">
-                <span>Полиграфия и Айдентика</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">Логотипы и Знаки</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2">Дизайн продукции</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3">Верстка полиграфии</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check4">
-                    <label for="check4">Фирменный стиль</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check5">
-                    <label for="check5"> Наружная реклама</label>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="specializations_list">
-                <span>Архитектура и Инжиниринг</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">Интерьеры и Экстерьеры</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2">Чертежи и Схемы</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3">Машиностроение</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check4">
-                    <label for="check4">Ландшафтный дизайн</label>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="specializations_list">
-                <span>Продвижение сайтов (SEO)</span>
-                <ul>
-                  <li><input type="checkbox" class="myCheckBtn" id="check1">
-                    <label for="check1">Социальные сети (SMM и SMO)</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check2">
-                    <label for="check2"> Поисковые системы (SEO)</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check3">
-                    <label for="check3"> Контекстная реклама</label>
-                  </li>
-                  <li><input type="checkbox" class="myCheckBtn" id="check4">
-                    <label for="check4"> Маркентиговый анализ</label>
-                  </li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="similar_performers edit_similar_performers">
-            <div class="d-flex align-items-center justify-content-between">
-              <p>Дополнительные навыки</p>
-              <i class="fas fa-plus-circle mt-n3 add_skill_btn"></i>
-            </div>
-            <div class="add_skill">
-              <input type="text" list="addThisText" id="addSkill" placeholder="Добавить навык" maxlength="25">
-              <span id="returnErrorText"></span>
-
-              <datalist id="addThisText">
-                <option value="UX/UI-дизайн">
-                <option value="Моушн-дизайн/видеодизайн">
-                <option value="Маркетинг">
-                <option value="Верстка">
-                <option value="Рекрутинг в IT">
-                <option value="Юзабилити">
-                <option value="SMM-маркетинг">
-                <option value="SEO оптимизация">
-                <option value="продвижение сайтов">
-                <option value="PHP-программист">
-                <option value="Frontend-программист">
-                <option value="Backend-программист">
-                <option value="Бухгалтерия">
-                <option value="Переводы">
-                <option value="1С-программист">
-                <option value="Системный администратор">
-                <option value="Fullstack-программист">
-                <option value="Вебмастер">
-                <option value="Рерайтер">
-                <option value="Модератор сайта">
-                <option value="Технический дизайнер">
-                <option value="3D-дизайнер">
-                <option value="">
-                <option value="Менеджер по продажам">
-                <option value="Электронная коммерция">
-                <option value="Веб-дизайн">
-              </datalist>
-            </div>
-            <div class="performers_info" id="performersInfo">
-              <div class="skill_box"><i class="fas fa-times-circle"></i> Веб-дизайн</div>
-              <div class="skill_box"><i class="fas fa-times-circle"></i> Визуализатор</div>
-              <div class="skill_box"><i class="fas fa-times-circle"></i> Дизайнер</div>
-              <div class="skill_box"><i class="fas fa-times-circle"></i> Frontend-программист</div>
-              <div class="skill_box"><i class="fas fa-times-circle"></i> Backend-программист</div>
-              <div class="skill_box"><i class="fas fa-times-circle"></i> Верстка</div>
-              <div class="skill_box"><i class="fas fa-times-circle"></i> Модератор сайта</div>
             </div>
           </div>
         </div>
@@ -1465,6 +1469,9 @@
             </div>
           </div>
 
+        </div>
+        <div class="modal_footer">
+          <button>сохранить</button>
         </div>
       </div>
     </div>

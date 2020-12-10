@@ -108,7 +108,15 @@ exhibitedBtn.addEventListener('click', () => {
 // remove work
 removeBoxWork.forEach((removeWork) => {
   removeWork.addEventListener('click', () => {
-  removeWork.parentElement.style.display = 'none'
+    let quation = prompt('Вы точно хотите удалить ваше работе (да/нет)');
+    if(quation == 'да') {
+      removeWork.parentElement.style.display = 'none'
+      alert('Ваше работе удаленно')
+    } else if(quation == '') {
+      alert('Ваше работе не удаленно')
+    } else if(quation == 'нет') {
+      alert('Ваше работе не удаленно')
+    }
   })
 })
 
@@ -241,7 +249,7 @@ addSkillBtn.addEventListener('click', () => {
  // removed skill
  removeSkillBox.forEach((removeSkill) => {
   removeSkill.addEventListener('click', () => {
-    console.dir(removeSkill.parentElement.style.display = 'none')
+    removeSkill.parentElement.style.display = 'none'
   })
 }); 
 return returnErrorText.innerText = ''
@@ -278,7 +286,7 @@ skillBoxs.forEach((skillBox) => {
 
 removeSkillBox.forEach((removeSkill) => {
   removeSkill.addEventListener('click', () => {
-    console.dir(removeSkill.parentElement.style.display = 'none')
+    removeSkill.parentElement.style.display = 'none'
   })
 });
 
@@ -325,10 +333,23 @@ addWorkInput.addEventListener('change', (e) => {
       remove.style.display = 'none'
     });
     
-    remove.addEventListener('click', () => {
+    if (myWorks.children.length == 5) {
+      // div.remove()
       div.style.display = 'none'
-    })
-  }
+      addWorkInput.parentElement.children[0].style.display = 'none'
+      addWorkInput.parentElement.children[2].innerText = 'Вы можете создать только четыре объекта'
+      addWorkInput.parentElement.children[2].style.color = 'red'
+      
+    } 
+
+    
+    remove.addEventListener('click', () => {
+      div.style.display = 'none';
+      addWorkInput.parentElement.children[0].style.display = 'block'
+      addWorkInput.parentElement.children[2].innerText = 'Перетаскивай объекты в это окно'
+      addWorkInput.parentElement.children[2].style.color = '#12114a'
+    });
+  } 
 });
 
 // добавить высота для textarea
@@ -352,8 +373,6 @@ closeEditProfile.addEventListener('click', () => {
 })
 let userBlockImg = document.querySelector('.user_block_info img');
 
-      console.log(mobileAvatarImg.src)
-
 uploadProfile.forEach(upload => {
   upload.addEventListener('change', (e) => {
     if(e.target.files.length > 0) {
@@ -373,7 +392,6 @@ uploadProfile.forEach(upload => {
       myAvatar.style.display = 'block'
       userBlockImg.style.display = 'block'
 
-      console.log(mobileAvatarImg.src)
     }
   });
 })
@@ -383,7 +401,6 @@ uploadProfile.forEach(upload => {
 let headImg = document.querySelector('.header_profiles');
 const [bgc1, bgc2, bgc3, bgc4, bgc5, mobilebgc1, mobilebgc2, mobilebgc3, mobilebgc4, mobilebgc5] = openCoverImages;
 
-console.log(openCoverImages)
 
 
 bgc1.addEventListener('click', () => {
@@ -475,6 +492,8 @@ new Sortable(dropZone, {
 
 
 buttonGetCode.addEventListener('click', () => {
+  buttonGetCode.disabled = true;
+  buttonGetCode.style.cursor = 'not-allowed'
   buttonGetCode.innerHTML = '<span id="timer"></span> <i class="fas fa-clock"></i>'
   let time = 300;
   let timer = document.getElementById('timer');
@@ -492,8 +511,10 @@ buttonGetCode.addEventListener('click', () => {
   }
 
   setTimeout(function() {
-    buttonGetCode.innerHTML = 'получить код '
-  }, 500000)
+    buttonGetCode.innerHTML = 'получить код ';
+    buttonGetCode.disabled = false;
+    buttonGetCode.style.cursor = 'pointer'
+  }, 300000)
 })
 
 
@@ -778,7 +799,6 @@ showList('.contry__form_btn');
 hideTypeAccount.forEach(elem => {
   elem.addEventListener('click', () => {
     elem.parentElement.classList.toggle('hide_type_account');
-    console.dir(elem.parentElement)
   });
 })
 
@@ -814,7 +834,6 @@ searchSpecializations.oninput = function() {
         elem.classList.add('hide')
         elem.previousElementSibling.style.display = 'none';
         elem.parentElement.parentElement.previousElementSibling.style.display = 'none'
-        console.dir(elem)
       } 
     })
    }else {

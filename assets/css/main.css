@@ -280,7 +280,7 @@ button:focus {
   line-height: 10px;
   background-color: #100f41;
   position: absolute;
-  top: 30px;
+  top: 32px;
   z-index: 999;
   -webkit-transition: .5s;
   transition: .5s;
@@ -849,6 +849,7 @@ button:focus {
   top: 5px;
   right: 5px;
   color: #ff8fb4;
+  font-size: 25px;
 }
 
 .profiles_page .header_profiles .mobile_row .edit_user_block_mobile .line {
@@ -1106,7 +1107,11 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 18px;
+  font-size: 22px;
+}
+
+.profiles_page .header_profiles .mobile_row .user_info_mobile .fa-pen {
+  font-size: 17px;
 }
 
 .profiles_page .header_profiles .mobile_row .info_text_mobile {
@@ -2871,7 +2876,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  z-index: 1;
+  z-index: 99;
   border: 1.5 px solid #00cf4d;
   display: none;
 }
@@ -2894,12 +2899,34 @@ button:focus {
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 2;
+  z-index: 100;
   opacity: 1 !important;
 }
 
 .profiles_page .modal_works .modal-body .block_works i:hover {
   color: tomato;
+}
+
+.profiles_page .modal_works .modal_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.profiles_page .modal_works .modal_footer button {
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .profiles_page .modal_my_friends {
@@ -3467,6 +3494,7 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .profiles_page .adding_work .adding_work_list .add_info input,
@@ -3498,12 +3526,11 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: 100%;
 }
 
 .profiles_page .adding_work .adding_work_list .add_info .my_work_img {
+  display: block;
   width: 120px;
   height: 100px;
   border-radius: 5px;
@@ -4072,8 +4099,8 @@ button:focus {
 
 .profiles_page .modal_verification .modal-body form .phone_list .get_code i {
   color: #ffffff;
-  -webkit-animation: anim_timer 700s alternate;
-          animation: anim_timer 700s alternate;
+  -webkit-animation: anim_timer 1000s alternate;
+          animation: anim_timer 1000s alternate;
   font-size: 18px;
   padding-left: 5px;
 }
@@ -4546,6 +4573,23 @@ button:focus {
   .profiles_page .tablet_amount {
     height: 150px;
   }
+  .profiles_page .tablet_specializations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .profiles_page .tablet_specializations .tablet_specializations_left {
+    width: 48%;
+  }
+  .profiles_page .tablet_specializations .edit_similar_performers {
+    width: 48%;
+  }
 }
 
 @media only screen and (min-width: 568px) and (max-width: 767px) {
@@ -4811,6 +4855,12 @@ button:focus {
     margin-left: 15px !important;
     margin-bottom: 15px !important;
   }
+  .profiles_page .exhibited_works .box_work i {
+    font-size: 22px;
+  }
+  .profiles_page .exhibited_works .box_work .fa-pen {
+    font-size: 18px;
+  }
   .profiles_page .adding_work_title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4929,6 +4979,25 @@ button:focus {
   }
   .profiles_page .country__list_iteam {
     color: #ffff !important;
+  }
+  .profiles_page .edit_specializations .edit_icon,
+  .profiles_page .edit_similar_performers .edit_icon {
+    font-size: 18px !important;
+  }
+  .profiles_page .edit_specializations .add_skill_btn,
+  .profiles_page .edit_similar_performers .add_skill_btn {
+    font-size: 25px;
+  }
+  .profiles_page .exhibited_works .added_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profiles_page .exhibited_works .added_btn i {
+    font-size: 25px;
   }
 }
 
