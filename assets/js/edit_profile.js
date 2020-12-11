@@ -42,7 +42,7 @@ let searchSpecialization = document.querySelector('.search_specializations');
 let saveSearch = document.querySelector('.save_search');
 let saveAddRemove = document.querySelector('.save_add_remove');
 let removeWorks = document.querySelectorAll('.remove_work');
-let editWorkLists = document.querySelectorAll('.edit_work_list .my_work img');
+let editWorkLists = document.querySelectorAll('.edit_work_list .my_img');
 let yesRemove = document.querySelectorAll('.quation_remove .yesBtn');
 let noRemove = document.querySelectorAll('.quation_remove .noBtn');
 let addPhoto = document.querySelectorAll('.add_photo')
@@ -111,11 +111,11 @@ removeBoxWork.forEach((removeWork) => {
     let quation = prompt('Вы точно хотите удалить ваше работе (да/нет)');
     if(quation == 'да') {
       removeWork.parentElement.style.display = 'none'
-      alert('Ваше работе удаленно')
+      alert('Ваше работе удалено')
     } else if(quation == '') {
-      alert('Ваше работе не удаленно')
+      alert('Ваше работе не удалено')
     } else if(quation == 'нет') {
-      alert('Ваше работе не удаленно')
+      alert('Ваше работе не удалено')
     }
   })
 })
@@ -125,25 +125,28 @@ removeBoxWork.forEach((removeWork) => {
 
 editWorkLists.forEach(editWorkList => {
   editWorkList.addEventListener('mouseover', () => {
-    editWorkList.nextElementSibling.style.display = 'block'
+    editWorkList.children[1].style.display = 'block'
   })
 });
 editWorkLists.forEach(editWorkList => {
   editWorkList.addEventListener('mouseout', () => {
-    editWorkList.nextElementSibling.style.display = 'none'
+    editWorkList.children[1].style.display = 'none'
   })
 })
  
 removeWorks.forEach(remove => {
   remove.addEventListener('click', () => {
-    remove.nextElementSibling.style.display = 'flex'
+    // remove.nextElementSibling.style.display = 'flex'
+    console.dir(remove.parentElement.nextElementSibling.style.display = 'flex')
   })
 });
 
 yesRemove.forEach(yes => {
   yes.addEventListener('click', () => {
-    yes.parentElement.parentElement.parentElement.children[0].style.display = 'none'
-    yes.parentElement.parentElement.parentElement.children[2].style.display = 'none'
+    // yes.parentElement.parentElement.parentElement.children[0].style.display = 'none'
+    // yes.parentElement.parentElement.parentElement.children[2].style.display = 'none'
+    console.dir(yes.parentElement.parentElement.previousElementSibling.style.display = 'none');
+    console.dir(yes.parentElement.parentElement.style.display = 'none');
   });
 })
 

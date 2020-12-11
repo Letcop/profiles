@@ -164,7 +164,7 @@ myWorksInfo.forEach((myWork) => {
   myWork.addEventListener('click', () => {
     let myImg = document.getElementById('homeScreen');
     myImg.src = myWork.src
-    homeScreenWork.style.display = 'block';
+    homeScreenWork.style.display = 'flex';
 
   })
 });
