@@ -90,6 +90,7 @@ button:focus {
 .profiles_page .search_specializations_item::-webkit-scrollbar,
 .profiles_page .home_screen::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
   cursor: pointer;
 }
 
@@ -1027,6 +1028,18 @@ button:focus {
   left: 20px;
 }
 
+.profiles_page .header_profiles .mobile_row .user_info_mobile .add_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .profiles_page .header_profiles .mobile_row .user_info_mobile .add_button,
 .profiles_page .header_profiles .mobile_row .user_info_mobile .edit_button {
   text-align: end;
@@ -1037,6 +1050,7 @@ button:focus {
   color: #c1c4ca;
   margin-right: 5px;
   cursor: pointer;
+  font-size: 25px;
 }
 
 .profiles_page .header_profiles .mobile_row .user_info_mobile .user_info_title {
@@ -2886,11 +2900,11 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
   z-index: 99;
   display: none;
-  overflow-y: scroll;
+  overflow: scroll;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2900,12 +2914,51 @@ button:focus {
   background-color: #c1c4ca;
 }
 
+.profiles_page .modal_works .modal-body .block_works .home_screen .edit_size,
+.profiles_page .modal_works .modal-body .block_works .home_screen .user_edit_size {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 25px;
+  height: 60px;
+}
+
+.profiles_page .modal_works .modal-body .block_works .home_screen .edit_size i,
+.profiles_page .modal_works .modal-body .block_works .home_screen .user_edit_size i {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.profiles_page .modal_works .modal-body .block_works .home_screen .edit_size i:hover,
+.profiles_page .modal_works .modal-body .block_works .home_screen .user_edit_size i:hover {
+  color: #00cf4d;
+}
+
 .profiles_page .modal_works .modal-body .block_works #homeScreen {
-  max-width: 90%;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .profiles_page .modal_works .modal-body .block_works .close {
@@ -4093,8 +4146,22 @@ button:focus {
           justify-content: space-between;
 }
 
+.profiles_page .modal_verification .modal-body form .phone_list label {
+  position: relative;
+}
+
 .profiles_page .modal_verification .modal-body form .phone_list .phone {
   width: 220px;
+}
+
+.profiles_page .modal_verification .modal-body form .phone_list .error {
+  color: #ff8fb4;
+  font-size: 12px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 40px;
+  left: calc(100%/2.5);
+  display: none;
 }
 
 .profiles_page .modal_verification .modal-body form .phone_list .get_code {

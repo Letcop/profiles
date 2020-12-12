@@ -108,7 +108,7 @@ exhibitedBtn.addEventListener('click', () => {
 // remove work
 removeBoxWork.forEach((removeWork) => {
   removeWork.addEventListener('click', () => {
-    let quation = prompt('Вы точно хотите удалить ваше работе (да/нет)');
+    let quation = prompt('Вы точно хотите удалить вашу работу (да/нет)');
     if(quation == 'да') {
       removeWork.parentElement.style.display = 'none'
       alert('Ваше работе удалено')
@@ -495,29 +495,43 @@ new Sortable(dropZone, {
 
 
 buttonGetCode.addEventListener('click', () => {
-  buttonGetCode.disabled = true;
-  buttonGetCode.style.cursor = 'not-allowed'
-  buttonGetCode.innerHTML = '<span id="timer"></span> <i class="fas fa-clock"></i>'
-  let time = 300;
-  let timer = document.getElementById('timer');
 
-  setInterval(updateCountDown, 1000);
+  let valNum = buttonGetCode.previousElementSibling.children[0];
+  let error = buttonGetCode.previousElementSibling.children[1];
 
-  function updateCountDown() {
-    let minutes = Math.floor(time / 60)
-    let seconds = time % 60
-    minutes = minutes < 10 ? "0" + minutes:minutes
-    seconds = seconds < 10 ? "0" + seconds:seconds
-
-    timer.innerHTML = `${minutes}:${seconds}`
-    time--;
+  if(valNum.value == '') {
+    error.style.display = 'block'
+  }
+  else {
+    buttonGetCode.disabled = true;
+    valNum.disabled = true;
+    buttonGetCode.style.cursor = 'not-allowed'
+    buttonGetCode.innerHTML = '<span id="timer"></span> <i class="fas fa-clock"></i>'
+    let time = 300;
+    let timer = document.getElementById('timer');
+  
+    setInterval(updateCountDown, 1000);
+  
+    function updateCountDown() {
+      let minutes = Math.floor(time / 60)
+      let seconds = time % 60
+      minutes = minutes < 10 ? "0" + minutes:minutes
+      seconds = seconds < 10 ? "0" + seconds:seconds
+  
+      timer.innerHTML = `${minutes}:${seconds}`
+      time--;
+    }
+  
+    setTimeout(function() {
+      buttonGetCode.innerHTML = 'получить код ';
+      buttonGetCode.disabled = false;
+      buttonGetCode.style.cursor = 'pointer'
+      valNum.disabled = false;
+    }, 300000)
+    error.style.display = 'none'
+    
   }
 
-  setTimeout(function() {
-    buttonGetCode.innerHTML = 'получить код ';
-    buttonGetCode.disabled = false;
-    buttonGetCode.style.cursor = 'pointer'
-  }, 300000)
 })
 
 

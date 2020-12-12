@@ -1354,9 +1354,11 @@
             </div>
             <h6>Телефон</h6>
             <div class="phone_list">
-              <label for="phoneList">ваша телефон</label>
-              <input type="text" class="phone" placeholder="Введите Ваш телефон"
-                onkeypress="return (event.charCode >= 43 && event.charCode <= 57);">
+              <label for="phoneList">ваша телефон
+                <input type="text" class="phone" placeholder="Введите Ваш телефон"
+                  onkeypress="return (event.charCode >= 43 && event.charCode <= 57);">
+                <span class="error">Введите Ваш телефон</span>
+              </label>
               <button type="button" class="get_code">получить код </button>
               <input type="text" class="enter_code text-center" placeholder="Введите код" id="enterCode"
                 onkeypress="return (event.charCode >= 48 && event.charCode <= 57);" maxlength="6">

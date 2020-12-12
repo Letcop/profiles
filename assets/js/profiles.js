@@ -19,6 +19,8 @@ let workName = document.getElementById('workName');
 let workDescriptions = document.getElementById('workDescriptions');
 let myFriendsList = document.querySelectorAll('.modal-body .my_friends_list');
 let removeMyFriend = document.querySelectorAll('.modal-body .my_friends_list .remove_friend');
+let editSizeBtns = document.querySelectorAll('.edit_size i');
+let editSizeBtns2 = document.querySelectorAll('.edit_size_user i');
 
 
 
@@ -53,6 +55,17 @@ $(document).ready(function() {
     autoplaySpeed: 2500,
 
   });
+
+  // $('#homeScreen').okzoom({
+  //   width: 300,
+  //   height: 300,
+  //   round: false,
+  //   background: "#fff",
+  //   backgroundRepeat: "no-repeat",
+  //   shadow: "0 0 5px #000",
+  //   border: "1px solid black"
+  // });
+  
 
 });
 
@@ -203,6 +216,43 @@ function returnInfo() {
 
 returnInfo();
 
+
+
+
+ const [addSize, removeSize] = editSizeBtns;
+
+ console.log(editSizeBtns)
+ 
+ addSize.addEventListener('click', () => {
+  let myImg = document.getElementById('homeScreen');
+  let h = myImg.clientHeight;
+  let w = myImg.clientWidth;
+  h = h + 100;
+  w = w + 100;
+
+  console.log(myImg.style.height = h + 'px')
+  console.log(myImg.style.width = w + 'px')
+ });
+
+ removeSize.addEventListener('click', () => {
+  let myImg = document.getElementById('homeScreen');
+  let h = myImg.clientHeight;
+  let w = myImg.clientWidth;
+  h = h - 100;
+  w = w - 100;
+
+  if(myImg.clientHeight < 650) {
+    h = myImg.clientHeight;
+    w = myImg.clientWidth;
+  }
+
+  console.log(myImg.style.height = h + 'px')
+  console.log(myImg.style.width = w + 'px')
+ });
+
+
+
+ 
 
 
 
