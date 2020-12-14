@@ -426,6 +426,9 @@ button:focus {
       display: flex;
       align-items: start;
       flex-direction: column;
+      .customer_amount {
+        display: none;
+      }
       .ampount_box {
         width: 330px;
         background-color: $primary-color-text;
@@ -433,6 +436,13 @@ button:focus {
         border-radius: 10px;
         color: $accent-color;
         line-height: 5px;
+        position: relative;
+        img {
+          position: absolute;
+          width: 18px;
+          top: 4px;
+          left: 10px;
+        }
         .inp_payment {
           position: relative;
         }
@@ -3270,6 +3280,15 @@ button:focus {
        color: $primary-color-text;
     }
   }
+}
+.perfomers_list {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: start !important;
+}
+.specializations_list {
+  width: 500px !important;
 }
  }
 

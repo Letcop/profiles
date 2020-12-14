@@ -137,7 +137,7 @@ editWorkLists.forEach(editWorkList => {
 removeWorks.forEach(remove => {
   remove.addEventListener('click', () => {
     // remove.nextElementSibling.style.display = 'flex'
-    console.dir(remove.parentElement.nextElementSibling.style.display = 'flex')
+    remove.parentElement.nextElementSibling.style.display = 'flex'
   })
 });
 
@@ -145,8 +145,8 @@ yesRemove.forEach(yes => {
   yes.addEventListener('click', () => {
     // yes.parentElement.parentElement.parentElement.children[0].style.display = 'none'
     // yes.parentElement.parentElement.parentElement.children[2].style.display = 'none'
-    console.dir(yes.parentElement.parentElement.previousElementSibling.style.display = 'none');
-    console.dir(yes.parentElement.parentElement.style.display = 'none');
+    yes.parentElement.parentElement.previousElementSibling.style.display = 'none'
+    yes.parentElement.parentElement.style.display = 'none'
   });
 })
 
@@ -823,15 +823,34 @@ hideTypeAccount.forEach(elem => {
 
 typeAccountInputs.forEach((input) => {
   input.addEventListener('change', () => {
-    let typeAccountText = document.querySelectorAll('.typeAccount_text')
+    let typeAccountText = document.querySelectorAll('.typeAccount_text');
+    let specializations = document.querySelector('.tablet_specializations');
+    let performersAmount = document.querySelector('.performers_amount');
+    let customerAmount = document.querySelector('.customer_amount');
     typeAccountText.forEach(text => {
-      
     text.innerText = input.value;
-    })
-    
-    typeAccount.classList.toggle('hide_type_account'); 
-    
-    // console.dir(input.parentElement.parentElement.parentElement.style.display = 'none')
+
+    if(text.innerText == 'Заказчик') {
+      exhibitedWorks.style.display = 'none'
+      performersAmount.style.display = 'none'
+      customerAmount.style.display = 'block'
+      specializations.classList.add('perfomers_list')
+      specializations.parentElement.classList.remove('col-lg-4')
+      specializations.parentElement.children[1].children[0].classList.add('specializations_list')
+      specializations.parentElement.children[1].children[1].classList.add('specializations_list')
+      console.dir(input.parentElement.parentElement.parentElement.classList.remove('hide_type_account'))
+    } else {
+      exhibitedWorks.style.display = 'block'
+      performersAmount.style.display = 'block'
+      customerAmount.style.display = 'none'
+      specializations.classList.remove('perfomers_list')
+      specializations.parentElement.classList.add('col-lg-4')
+      specializations.parentElement.children[1].children[0].classList.remove('specializations_list')
+      specializations.parentElement.children[1].children[1].classList.remove('specializations_list')
+      input.parentElement.parentElement.parentElement.classList.remove('hide_type_account')
+
+    }
+    });
   })
 });
 

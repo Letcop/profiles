@@ -137,6 +137,9 @@
       width: 48%;
     }
   }
+  .specializations_list {
+    width: 330px !important;
+  }
 }
 }
 
@@ -207,6 +210,10 @@
     }
   }
 // End Modal
+
+.perfomers_list {
+  flex-direction: column !important;
+}
 
   }
 }
@@ -308,6 +315,13 @@
     }
   }
 // End Modal
+
+.perfomers_list {
+  flex-direction: column !important;
+}
+.specializations_list {
+  width: 100% !important;
+}
 
   }
 }

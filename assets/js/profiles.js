@@ -203,7 +203,7 @@ myFriendsList.forEach((myFriend) => {
 
 removeMyFriend.forEach((removeFriend) => {
   removeFriend.addEventListener('click', () => {
-    console.dir(removeFriend.parentElement.style.display = 'none')
+    removeFriend.parentElement.style.display = 'none'
   })
 })
 
@@ -221,7 +221,6 @@ returnInfo();
 
  const [addSize, removeSize] = editSizeBtns;
 
- console.log(editSizeBtns)
  
  addSize.addEventListener('click', () => {
   let myImg = document.getElementById('homeScreen');
@@ -230,8 +229,8 @@ returnInfo();
   h = h + 100;
   w = w + 100;
 
-  console.log(myImg.style.height = h + 'px')
-  console.log(myImg.style.width = w + 'px')
+  myImg.style.height = h + 'px'
+myImg.style.width = w + 'px'
  });
 
  removeSize.addEventListener('click', () => {
@@ -246,8 +245,8 @@ returnInfo();
     w = myImg.clientWidth;
   }
 
-  console.log(myImg.style.height = h + 'px')
-  console.log(myImg.style.width = w + 'px')
+  myImg.style.height = h + 'px'
+myImg.style.width = w + 'px'
  });
 
 

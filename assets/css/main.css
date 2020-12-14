@@ -553,6 +553,10 @@ button:focus {
           flex-direction: column;
 }
 
+.profiles_page .header_profiles .verification_block .customer_amount {
+  display: none;
+}
+
 .profiles_page .header_profiles .verification_block .ampount_box {
   width: 330px;
   background-color: #ffffff;
@@ -560,6 +564,14 @@ button:focus {
   border-radius: 10px;
   color: #253556;
   line-height: 5px;
+  position: relative;
+}
+
+.profiles_page .header_profiles .verification_block .ampount_box img {
+  position: absolute;
+  width: 18px;
+  top: 4px;
+  left: 10px;
 }
 
 .profiles_page .header_profiles .verification_block .ampount_box .inp_payment {
@@ -4509,6 +4521,23 @@ button:focus {
   color: #ffffff;
 }
 
+.profiles_page .perfomers_list {
+  width: 100% !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: start !important;
+}
+
+.profiles_page .specializations_list {
+  width: 500px !important;
+}
+
 @-webkit-keyframes anim_skill {
   from {
     width: 0;
@@ -4675,6 +4704,9 @@ button:focus {
   .profiles_page .tablet_specializations .edit_similar_performers {
     width: 48%;
   }
+  .profiles_page .specializations_list {
+    width: 330px !important;
+  }
 }
 
 @media only screen and (min-width: 568px) and (max-width: 767px) {
@@ -4736,6 +4768,12 @@ button:focus {
   .profiles_page .modal_works .modal-content {
     width: 100% !important;
     margin-left: 0px !important;
+  }
+  .profiles_page .perfomers_list {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
 }
 
@@ -4826,6 +4864,15 @@ button:focus {
   .profiles_page .modal_my_friends .modal-body .my_friends_item .my_friends_list .avatar {
     width: 65px !important;
     height: 65px;
+  }
+  .profiles_page .perfomers_list {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .profiles_page .specializations_list {
+    width: 100% !important;
   }
 }
 
