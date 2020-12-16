@@ -56,17 +56,6 @@ $(document).ready(function() {
 
   });
 
-  // $('#homeScreen').okzoom({
-  //   width: 300,
-  //   height: 300,
-  //   round: false,
-  //   background: "#fff",
-  //   backgroundRepeat: "no-repeat",
-  //   shadow: "0 0 5px #000",
-  //   border: "1px solid black"
-  // });
-  
-
 });
 
 

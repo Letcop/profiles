@@ -486,6 +486,9 @@ button:focus {
           display: none;
         }
       }
+      .custumer_inp_payment input {
+        padding-left: 15px !important;
+      }
       .verification_box {
         width: 330px;
         padding: 15px;
@@ -3289,6 +3292,9 @@ button:focus {
 }
 .specializations_list {
   width: 500px !important;
+}
+.tablet_amount input {
+  padding-left: 15px !important;
 }
  }
 

@@ -165,6 +165,9 @@
               </g>
             </svg>
           </div>
+          <div class="my_friends" data-toggle="modal" data-target="#myFriends">
+            <i class="fas fa-user-friends fa-2x"></i>
+          </div>
         </div>
         <div class="head__right clickedElem">
           <div class="head__bottom clickedElem">
@@ -484,13 +487,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="add_friends">добавить в друзья</button>
-            <button class="create_group">написать</button>
+            <button class="add_friends" data-toggle="modal" data-target="#myFriends">мои друзья</button>
+            <a href="./edit_profil.html"><button class="create_group">редактировать</button></a>
           </div>
         </div>
         <div class="col-12 d-flex justify-content-between align-items-end">
           <div class="sub_left_info">
-            <span class="private_info">Тип аккаунта: <a>Заказчик</a></span>
+            <span class="private_info">Тип аккаунта: <a> Заказчик</a></span>
             <span class="user_name_info">Тимур Касымов</span>
             <div class="user_address">
               <span>3 года на сервисе</span> <span> | </span>
@@ -630,9 +633,8 @@
             <div class="user_avatar">
               <img src="assets/images/user4.png" alt="">
             </div>
-            <div class="add_button">
-              <i class="far fa-envelope"></i>
-              <i class="fas fa-user-plus"></i>
+            <div class="edit_button">
+              <i class="fas fa-user-edit"></i>
             </div>
             <div class="user_info_title">
               <div class="stars mt-2">
@@ -858,7 +860,6 @@
         </div>
       </div>
     </div>
-
 
     <!-- Start mobile comments -->
 
@@ -1408,24 +1409,116 @@
             </div>
             <div class="work_list">
               <div class="my_work">
-                <img src="assets/images/123.jpg" alt="">
-              </div>
-              <div class="my_work">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgA-hgm20nLo2Fsv1XiwmsueOMph96_yzkog&usqp=CAU"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoKZXGC2af5kXJIukyLmscK99S0VC909164g&usqp=CAU"
                   alt="">
               </div>
+              <div class="my_work">
+                <img src="assets/images/123.jpg" alt="">
+              </div>
             </div>
-            <div class="home_screen">
-              <img src="" alt="" id="homeScreen">
-              <i class="fas fa-times-circle close"></i>
+            <div class="screen">
+              <div class="home_screen">
+                <img src="" alt="" id="homeScreen">
 
-              <div class="edit_size">
-                <i class="fas fa-plus-square mmmmmm"></i>
-                <i class="fas fa-minus-square"></i>
-                <p></p>
-                <p></p>
-                <p></p>
+                <i class="fas fa-times-circle close"></i>
+                <div class="edit_size">
+                  <i class="fas fa-plus-square"></i>
+                  <i class="fas fa-minus-square"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End modal works -->
+
+  <!--Start Modal My friends-->
+  <div class="modal fade modal_my_friends" id="myFriends" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal_header">
+          <h5 class="modal-title" id="staticBackdropLabel">Мои друзья</h5>
+          <div type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times-circle close"></i>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="my_friends_item">
+            <div class="my_friends_list">
+              <div class="avatar">
+                <img src="assets/images/user4.png" alt="">
+              </div>
+              <div class="name">
+                <strong>Георгий Петров</strong>
+                <span>masteryoda128</span>
+              </div>
+              <div class="remove_friend">
+                <i class="fas fa-times-circle close"></i>
+              </div>
+            </div>
+            <div class="my_friends_list">
+              <div class="avatar">
+                <img src="assets/images/user4.png" alt="">
+              </div>
+              <div class="name">
+                <strong>Георгий Петров</strong>
+                <span>masteryoda128</span>
+              </div>
+              <div class="remove_friend">
+                <i class="fas fa-times-circle close"></i>
+              </div>
+            </div>
+            <div class="my_friends_list">
+              <div class="avatar">
+                <img src="assets/images/user4.png" alt="">
+              </div>
+              <div class="name">
+                <strong>Георгий Петров</strong>
+                <span>masteryoda128</span>
+              </div>
+              <div class="remove_friend">
+                <i class="fas fa-times-circle close"></i>
+              </div>
+            </div>
+            <div class="my_friends_list">
+              <div class="avatar">
+                <img src="assets/images/user4.png" alt="">
+              </div>
+              <div class="name">
+                <strong>Георгий Петров</strong>
+                <span>masteryoda128</span>
+              </div>
+              <div class="remove_friend">
+                <i class="fas fa-times-circle close"></i>
+              </div>
+            </div>
+            <div class="my_friends_list">
+              <div class="avatar">
+                <img src="assets/images/user4.png" alt="">
+              </div>
+              <div class="name">
+                <strong>Георгий Петров</strong>
+                <span>masteryoda128</span>
+              </div>
+              <div class="remove_friend">
+                <i class="fas fa-times-circle close"></i>
+              </div>
+            </div>
+            <div class="my_friends_list">
+              <div class="avatar">
+                <img src="assets/images/user4.png" alt="">
+              </div>
+              <div class="name">
+                <strong>Георгий Петров</strong>
+                <span>masteryoda128</span>
+              </div>
+              <div class="remove_friend">
+                <i class="fas fa-times-circle close"></i>
               </div>
             </div>
           </div>

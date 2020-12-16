@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профили</title>
+  <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/slick/slick.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+</head>
+
+<body class="profiles_page edit_profile">
+  <header class="header_profiles">
+    <!-- Start Navbar Header -->
+    <div class="conteiner">
+      <div class="head__main_block">
+        <div class="head__burger">
+          <div class="burger__iteam"></div>
+        </div>
+        <img class="media__logo" src="assets/icons/icon.svg">
+
+        <div class="head__left">
+          <img class="head__logo" src="assets/icons/icon.svg">
+          <nav>
+            <a href="#/">Заказы</a>
+            <a href="#/">Вакансии</a>
+
+            <div class="head__bottom clickedElem">
+              <span>Люди</span>
+              <i class="fal fa-chevron-down"></i>
+
+              <div class="hide__link">
+                <a href="#/">Все команды</a>
+                <a href="#/">Все исполнители</a>
+              </div>
+            </div>
+
+            <div class="head__bottom clickedElem">
+              <span>Еще</span>
+              <i class="fal fa-chevron-down"></i>
+
+              <div class="hide__link">
+                <a href="#/">Форум</a>
+                <a href="#/">Блог</a>
+                <a href="#/">Новости</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="head__botton">
+          <div class="head__bell clickedElem active__bell">
+            <p>200</p>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 251.2 251.2"
+              style="enable-background:new 0 0 251.2 251.2;" xml:space="preserve">
+              <path class="st0" d="M174.9,154.9c-0.3-0.3-0.4-0.6-0.4-1v-44.8c0-25.4-19.5-46.3-44.2-48.7V49.8c0-2.6-2.1-4.7-4.7-4.7
+            c-2.6,0-4.7,2.1-4.7,4.7v10.7c-24.8,2.4-44.2,23.3-44.2,48.7v44.8c0,0.4-0.2,0.7-0.4,1l-11.7,11.7c-2,2-3.1,4.7-3.1,7.6v3.6
+            c0,5.9,4.8,10.8,10.8,10.8h32.7c1.7,9.9,10.3,17.5,20.7,17.5s19-7.6,20.7-17.5H179c5.9,0,10.8-4.8,10.8-10.8v-3.6
+            c0-2.9-1.1-5.6-3.1-7.6L174.9,154.9z M125.6,196.7c-5.2,0-9.6-3.5-11.1-8.2h22.1C135.1,193.3,130.8,196.7,125.6,196.7z M61.7,150.1
+            c-0.9,0.9-2.1,1.4-3.3,1.4c-1.2,0-2.4-0.5-3.3-1.4c-7.5-7.5-11.6-17.5-11.6-28s4.1-20.6,11.6-28c1.8-1.8,4.8-1.8,6.6,0
+            c1.8,1.8,1.8,4.8,0,6.6c-5.7,5.7-8.9,13.3-8.9,21.4c0,8.1,3.1,15.7,8.9,21.4C63.5,145.3,63.5,148.3,61.7,150.1z M45.2,160
+            c1.8,1.8,1.8,4.8,0,6.6c-0.9,0.9-2.1,1.4-3.3,1.4c-1.2,0-2.4-0.5-3.3-1.4c-11.9-11.9-18.5-27.7-18.5-44.5s6.6-32.6,18.5-44.5
+            c1.8-1.8,4.8-1.8,6.6,0c1.8,1.8,1.8,4.8,0,6.6c-10.1,10.1-15.7,23.6-15.7,37.9S35.1,149.9,45.2,160z M196.1,150.1
+            c-0.9,0.9-2.1,1.4-3.3,1.4s-2.4-0.5-3.3-1.4c-1.8-1.8-1.8-4.8,0-6.6c11.8-11.8,11.8-31.1,0-42.9c-1.8-1.8-1.8-4.8,0-6.6
+            c1.8-1.8,4.8-1.8,6.6,0C211.6,109.5,211.6,134.7,196.1,150.1z M231,122.1c0,16.8-6.6,32.6-18.5,44.5c-0.9,0.9-2.1,1.4-3.3,1.4
+            s-2.4-0.5-3.3-1.4c-1.8-1.8-1.8-4.8,0-6.6c10.1-10.1,15.7-23.6,15.7-37.9s-5.6-27.8-15.7-37.9c-1.8-1.8-1.8-4.8,0-6.6
+            c1.8-1.8,4.8-1.8,6.6,0C224.5,89.4,231,105.3,231,122.1z" />
+            </svg>
+
+            <div class="hide__modal_block" id="remove__mobile">
+              <div class="hide__modal_triangle"></div>
+              <div class="hide__bell_modal">
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-bullhorn"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Напоминание</div>
+                    <div class="hide__modal_text">Действие вашего вашего тарифа истекает через 1 день! </div>
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-award"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Достижение</div>
+                    <div class="hide__modal_text">Вы получили новое достижение “Торговец”</div>
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-star"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Рейтинг</div>
+                    <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от
+                      <span>Hamilioner</span></div>
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-gift"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Подарки</div>
+                    <div class="hide__modal_text">Администрация Letcop поздравляет вас с Днем Рождения, вы получаете в
+                      подарок тариф "Gold"</div>
+
+                  </div>
+                </div>
+                <div class="hide__modal_iteam">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div class="hide__modal_content">
+                    <div class="hide__modal_title">Администрация</div>
+                    <div class="hide__modal_text">Ваш заказ был удален по причине "Ненормативная лексика"</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head__chat active__chat">
+            <p>50000000</p>
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 477.6 477.6" style="enable-background:new 0 0 477.6 477.6;"
+              xml:space="preserve">
+              <g>
+                <g>
+                  <path class="st0" d="M407.6,70c-45.1-45.1-105-70-168.8-70S115.1,24.9,70,70c-87,87-93.3,226-15.8,320.2
+                  c-10.7,21.9-23.3,36.5-37.6,43.5C7.9,438,3,447.4,4.4,457c1.5,9.7,8.9,17.2,18.6,18.7c5.3,0.8,11,1.3,16.9,1.3l0,0
+                  c29.3,0,60.1-10.1,85.8-27.8c34.6,18.6,73.5,28.4,113.1,28.4c63.8,0,123.7-24.8,168.8-69.9s69.9-105.1,69.9-168.8
+                  S452.7,115.1,407.6,70z" />
+                  <path class="st1"
+                    d="M338.8,160h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5S346.2,160,338.8,160z" />
+                  <path class="st1" d="M338.8,225.3h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5
+                  S346.2,225.3,338.8,225.3z" />
+                  <path class="st1" d="M338.8,290.6h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5
+                  S346.2,290.6,338.8,290.6z" />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="head__right clickedElem">
+          <div class="head__bottom clickedElem">
+            <span>RU</span>
+            <i class="fal fa-chevron-down"></i>
+            <div class="hide__link">
+              <a href="#/">UZ</a>
+            </div>
+          </div>
+          <a href="#/" class="head__singIn large_signIn">
+            <i class="fal fa-sign-in"></i>
+            <p>Войти</p>
+          </a>
+          <div class="head__profile">
+            <div class="head__foto">
+              <img src="assets/icons/avatar.png">
+            </div>
+            <div class="head__profile_content">
+              <div class="head__logine">
+                <p>Hamillioner</p>
+                <i class="fal fa-chevron-down"></i>
+              </div>
+              <div class="head__name">Тимур Касымов</div>
+              <div class="head__line_block">
+                <div class="head__line"></div>
+                <div class="head__line_number">1 LV</div>
+              </div>
+            </div>
+          </div>
+          <div class="head__hide">
+            <div class="head__hide_box">
+              <div class="head__hide_left">
+                <a class="head__hide_share" href="#/">
+                  <span>ФИНАНСЫ</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a><br>
+                <a href="#/">История переводов</a><br>
+                <a href="#/">Реферальная программа</a><br>
+                <a href="#/">Платный услуги</a><br>
+                <a href="#/">Настройки</a><br>
+              </div>
+              <div class="head__hide_right">
+                <a class="head__hide_share" href="#/">
+                  <span>ПРОФИЛЬ</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a><br>
+                <a href="#/">Команды</a><br>
+                <a href="#/">Вкладки</a><br>
+                <a href="#/">Мои заявки</a><br>
+                <a href="#/">Творческая мастерская</a><br>
+              </div>
+            </div>
+            <div class="media__hide_box">
+              <div class="media__hide_button">
+                <a href="#/">ПРОФИЛЬ</a>
+                <i class="fas fa-external-link-alt icon"></i>
+                <i class="fal fa-chevron-down down__icon"></i>
+              </div>
+              <div class="media__hide_links">
+                <a href="#/">История переводов</a><br>
+                <a href="#/">Реферальная программа</a><br>
+                <a href="#/">Платный услуги</a><br>
+                <a href="#/">Настройки</a>
+              </div>
+
+              <div class="color_blue media__hide_button">
+                <a href="#/">ФИНАНСЫ</a>
+                <i class="fas fa-external-link-alt icon"></i>
+                <i class="fal fa-chevron-down down__icon"></i>
+              </div>
+              <div class="media__hide_links">
+                <a href="#/">Команды</a><br>
+                <a href="#/">Вкладки</a><br>
+                <a href="#/">Мои заявки</a><br>
+                <a href="#/">Творческая мастерская</a>
+              </div>
+            </div>
+            <div class="head__hide_bottom">
+              <a class="head__support" href="#/">
+                <span>Поддержка</span>
+                <i class="fas fa-headset"></i>
+              </a>
+              <a class="head__logout" href="#/">
+                <span>Выход</span>
+                <i class="fal fa-sign-out"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="head__media_modal clickedElem">
+      <div class="head__modal_inner">
+        <a href="#/">Заказы</a>
+        <a href="#/">Вакансии</a>
+        <div class="media__hide_box">
+          <div class="media__hide_button">
+            <a href="#/">Люди</a>
+            <i class="fal fa-chevron-down down__icon"></i>
+          </div>
+          <div class="media__hide_links">
+            <a href="#/">Все команды</a>
+            <a href="#/">Все исполнители</a>
+
+          </div>
+
+          <div class="media__hide_button">
+            <a href="#/">Еще</a>
+            <i class="fal fa-chevron-down down__icon"></i>
+          </div>
+          <div class="media__hide_links">
+            <a href="#/">Форум</a>
+            <a href="#/">Блог</a>
+            <a href="#/">Новости</a>
+          </div>
+        </div>
+        <div class="change__lang">
+          <p class="change__title">Язык</p>
+          <p class="active__lang">RU</p>
+          <p>UZ</p>
+        </div>
+        <i class="fas fa-times-circle close"></i>
+      </div>
+      <div class="mobile__modal">
+        <div class="head__profile">
+          <div class="head__foto">
+            <img src="assets/icons/avatar.png">
+          </div>
+          <div class="head__profile_content">
+            <div class="modile__head_login ">
+              <p>Hamillioner</p>
+            </div>
+            <div class="head__name">Тимур Касымов</div>
+            <div class="head__line_block">
+              <div class="head__line"></div>
+              <div class="head__line_number">1 LV</div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile__singIn">
+          <a href="#/" class="head__singIn">
+            <i class="fal fa-sign-in"></i>
+            <p>Войти</p>
+          </a>
+        </div>
+        <div class="mobile__normal_menu head_mobile_page">
+          <div class="media__hide_box">
+            <div class="media__hide_button">
+              <a href="#/">Меню</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Заказы</a>
+              <a href="#/">Вакансии</a>
+              <a href="#/">Все команды</a>
+              <a href="#/">Все исполнители</a>
+              <a href="#/">Форум</a>
+              <a href="#/">Блог</a>
+              <a href="#/">Новости</a>
+            </div>
+
+            <div class="media__hide_button">
+              <a href="#/">ПРОФИЛЬ</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">История переводов</a>
+              <a href="#/">Реферальная программа</a>
+              <a href="#/">Платный услуги</a>
+              <a href="#/">Настройки</a>
+            </div>
+
+            <div class="media__hide_button">
+              <a href="#/">ФИНАНСЫ</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Команды</a>
+              <a href="#/">Вкладки</a>
+              <a href="#/">Мои заявки</a>
+              <a href="#/">Творческая мастерская</a>
+            </div>
+          </div>
+          <div class="change__lang">
+            <p class="change__title">Язык</p>
+            <p class="active__lang">RU</p>
+            <p>UZ</p>
+          </div>
+          <div class="head__hide_bottom">
+            <a class="head__support" href="#/">
+              <span>Поддержка</span>
+              <i class="fas fa-headset"></i>
+            </a>
+            <a class="head__logout" href="#/">
+              <span>Выход</span>
+              <i class="fal fa-sign-out"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mobile__singin_menu head__modal_inner mobile_modal_head_page">
+          <a href="#/">Заказы</a>
+          <a href="#/">Вакансии</a>
+          <div class="media__hide_box">
+            <div class="media__hide_button">
+              <a href="#/">Люди</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Все команды</a>
+              <a href="#/">Все исполнители</a>
+
+            </div>
+
+            <div class="media__hide_button">
+              <a href="#/">Еще</a>
+              <i class="fal fa-chevron-down down__icon"></i>
+            </div>
+            <div class="media__hide_links">
+              <a href="#/">Форум</a>
+              <a href="#/">Блог</a>
+              <a href="#/">Новости</a>
+            </div>
+          </div>
+          <div class="change__lang">
+            <p class="change__title">Язык</p>
+            <p class="active__lang">RU</p>
+            <p>UZ</p>
+          </div>
+          <!-- <i class="fas fa-times-circle close"></i> -->
+        </div>
+
+        <i class="fas fa-times-circle close"></i>
+
+      </div>
+    </div>
+
+    <div class="mobile__bell_modal hide__modal_block">
+      <div class="hide__modal_triangle"></div>
+      <div class="hide__bell_modal">
+        <div class="hide__modal_iteam">
+          <i class="fas fa-bullhorn"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Напоминание</div>
+            <div class="hide__modal_text">Действие вашего вашего тарифа истекает через 1 день! </div>
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-award"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Достижение</div>
+            <div class="hide__modal_text">Вы получили новое достижение “Торговец”</div>
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-star"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Рейтинг</div>
+            <div class="hide__modal_text">Ваш рейтинг повысился просмотрите новый отзыв от <span>Hamilioner</span></div>
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-gift"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Подарки</div>
+            <div class="hide__modal_text">Администрация Letcop поздравляет вас с Днем Рождения, вы получаете в подарок
+              тариф "Gold"</div>
+
+          </div>
+        </div>
+        <div class="hide__modal_iteam">
+          <i class="fas fa-exclamation-circle"></i>
+          <div class="hide__modal_content">
+            <div class="hide__modal_title">Администрация</div>
+            <div class="hide__modal_text">Ваш заказ был удален по причине "Ненормативная лексика"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar Header -->
+
+
+    <!-- Start Desktop experience -->
+    <div class="container">
+      <div class="row desktop_row">
+        <div class="col-12 d-flex align-items-center justify-content-between mobile_edit_title">
+          <div class="edit_user_title">
+            <div class="user_block_info">
+              <div class="circle_avatar">
+                <img src="assets/images/user4.png" alt="">
+                <i class="fas fa-camera fa-2x open_edit_block"></i>
+              </div>
+              <div class="d-flex justify-content-center align-items-center  ml-3 ">
+                <span class="user_nick_name">Hamillioner</span>
+              </div>
+            </div>
+            <!-- edit user block -->
+            <div class="edit_user_block">
+              <div class="circle_avatar">
+                <img src="assets/images/user4.png" id="editMyAvatar" alt="">
+              </div>
+              <div class="profile_photo">
+                <strong>Фото Профиля</strong>
+                <div class="upload_profile_photo">
+                  <span>Загрузить <br> Фото профиля</span>
+                  <i class="fas fa-arrow-alt-circle-down fa-2x upload_icon"></i>
+                  <input type="file" id="uploadProfile">
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="block_cover">
+                <div class="title">
+                  <strong>обложка</strong>
+                  <i class="fas fa-times-circle close_edit_profile"></i>
+                </div>
+                <div class="cover_item">
+                  <div class="cover_list active">
+                    <img src="assets/images/header.jpg" alt="">
+                  </div>
+                  <div class="cover_list">
+                    <img src="assets/images/1.jpg" alt="">
+                  </div>
+                  <div class="cover_list">
+                    <img src="assets/images/2.jpg" alt="">
+                  </div>
+                  <div class="cover_list">
+                    <img src="assets/images/3.jpg" alt="">
+                  </div>
+                  <div class="cover_list add_my_cover">
+                    <img src="" id="addedMyCover" alt="">
+                    <input type="file" id="uploadMyCover">
+                    <i class="fas fa-plus-circle"></i>
+                    <span id="paymentCover">+1$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="add_friends">удалить аккаунт</button>
+            <button class="create_group">сохранить</button>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-between align-items-end">
+          <div class="sub_left_info">
+            <span class="private_info d-flex">Тип аккаунта:
+
+              <div class="type_account">
+                <span class="typeAccount_text pl-2">Заказчик</span>
+                <i class="fas fa-pen pl-2"></i>
+                <div class="type_account_item">
+                  <label for="r1">
+                    <input type="radio" id="r1" name="type" value="Исполнитель">
+                    Исполнитель
+                  </label>
+                  <label for="r2">
+                    <input type="radio" id="r2" name='type' value="Заказчик">
+                    Заказчик
+                  </label>
+                </div>
+              </div>
+            </span>
+            <span class="user_name_info">Тимур Касымов</span>
+            <div class="user_address d-flex align-items-center">
+              <span>3 года на сервисе</span>
+              <span class="pl-1 pr-1"> | </span>
+              <span class="d-flex align-items-center">
+                <span>
+                  <div class="country__form_block edit_country_block">
+                    <div class="country__form_iteam">
+                      <div class="contry__form_btn">
+                        <span class="pr-2">Выберите вашу страну </span>
+                        <i class="fas fa-pen edit_text_btn"></i>
+                      </div>
+                      <div class="country__form_list">
+                      </div>
+                    </div>
+                  </div>
+                </span>
+                <!-- <i class="fas fa-pen edit_text_btn pl-2"></i> -->
+                <span class="pl-1 pr-1"> | </span>
+                <span>Ташкент</span>
+              </span>
+            </div>
+          </div>
+          <div class="sub_right_info">
+            <div class="user_stars">
+              <span>2 Lvl</span>
+              <div class="reviews">
+                <span>20 <span> отзывов</span></span>
+                <div class="stars">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/on_star.png" alt="">
+                  <img src="assets/images/off_star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="block_experience">
+              <div class="block_experience_text">
+                <span class="experience_text">Опыт </span>
+                <span>70 из 100</span>
+              </div>
+              <div class="skill_bar">
+                <div class="progress_skill" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex align-items-start justify-content-between mt-3">
+          <div class="descriptions_list">
+            <textarea class="w-100 edit_textarea">
+              Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Вдали приставка океана власти правилами, повстречался путь то. Парадигматическая последний свое текстов семь своих путь вопрос заманивший назад на берегу необходимыми курсивных власти собрал бросил свой которое жизни осталось ipsum его по всей оксмокс, рукопись свою журчит. Рекламных, даже продолжил его наш вскоре по всей рыбного ipsum коварных. Коварных безорфографичный рукописи, образ своих рыбными подпоясал lorem ты пустился имени но! Эта, переулка ручеек свой обеспечивает одна текста имени проектах коварный до буквоград вершину вопрос подпоясал бросил, букв образ парадигматическая текстов. Напоивший страна города вдали текстами? Своих океана дороге злых, домах то текста заголовок?
+              </textarea>
+          </div>
+          <div class="verification_block ml-auto tablet_none">
+            <div class="ampount_box performers_amount">
+              <p>Компания</p>
+              <div class="inp_payment custumer_inp_payment">
+                <input type="text" id="editPaymentInp" maxlength="7" placeholder="Компания не указана">
+              </div>
+            </div>
+            <div class="verification_box mt-3">
+              <p>верификация</p>
+              <div class="user_info_list">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone"></i>
+                  <span>Личность верифицирована</span>
+                </div>
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="user_phone_num">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-user"></i>
+                  <span>Номер телефон - <a href="" id="editVerificationModal" data-toggle="modal"
+                      data-target="#EditVerification">не
+                      верифицирован</a></span>
+                </div>
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="user_email">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-envelope"></i>
+                  <span>Почта подтверждена</span>
+                </div>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Desktop experience -->
+
+      <!-- Start Mobile experience -->
+      <div class="row mobile_row">
+        <div class="col-12">
+
+          <div class="block_experience">
+            <div class="block_experience_text">
+              <span>2Lvl</span> <br>
+              <span>70 из 100</span>
+            </div>
+            <div class="skill_bar">
+              <div class="progress_skill" style="width: 70%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mobile_titte_info">
+          <div class="user_info_mobile">
+            <div class="user_avatar">
+              <img src="assets/images/user4.png" id="mobileAvatarImg" alt="">
+              <i class="fas fa-camera fa-2x open_edit_block_mobile"></i>
+            </div>
+
+            <div class="edit_user_block_mobile">
+              <div class="w-100 d-flex align-items-center justify-content-between flex-row-reverse">
+                <div class="circle_avatar mr-5">
+                  <img src="assets/images/user4.png" id="editMyAvatarMobile" alt="">
+                </div>
+                <div class="profile_photo">
+                  <strong>Фото Профиля</strong>
+                  <div class="upload_profile_photo">
+                    <span>Загрузить <br> Фото профиля</span>
+                    <i class="fas fa-arrow-alt-circle-down fa-2x upload_icon"></i>
+                    <input type="file" id="uploadProfile">
+                  </div>
+                  <i class="fas fa-times-circle close_edit_profile_mobile"></i>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="block_cover">
+                <div class="title">
+                  <strong>обложка</strong>
+                </div>
+                <div class="cover_item">
+                  <div class="cover_list active">
+                    <img src="assets/images/header.jpg" alt="">
+                  </div>
+                  <div class="cover_list">
+                    <img src="assets/images/1.jpg" alt="">
+                  </div>
+                  <div class="cover_list">
+                    <img src="assets/images/2.jpg" alt="">
+                  </div>
+                  <div class="cover_list">
+                    <img src="assets/images/3.jpg" alt="">
+                  </div>
+                  <div class="cover_list add_my_cover">
+                    <img src="" id="addedMyCover" alt="">
+                    <input type="file" id="uploadMyCover">
+                    <i class="fas fa-plus-circle"></i>
+                    <span id="paymentCover">+1$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="add_button edit_btns">
+              <i class="fas fa-save"></i>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+            <div class="user_info_title">
+              <div class="stars mt-2">
+                <img src="assets/images/on_star.png" alt="">
+                <img src="assets/images/on_star.png" alt="">
+                <img src="assets/images/on_star.png" alt="">
+                <img src="assets/images/on_star.png" alt="">
+                <img src="assets/images/off_star.png" alt="">
+              </div>
+              <span class="nick_name">Hamillioner</span>
+              <span class="d-flex private_info">Тип аккаунта:
+                <div class="type_account">
+                  <span class="typeAccount_text pl-2">Исполнитель</span>
+                  <i class="fas fa-pen pl-2"></i>
+                  <div class="type_account_item mobile_type_account_item">
+                    <label for="r1">
+                      <input type="radio" id="r1" name="type" value="Исполнитель">
+                      Исполнитель
+                    </label>
+                    <label for="r2">
+                      <input type="radio" id="r2" name='type' value="Заказчик">
+                      Заказчик
+                    </label>
+                  </div>
+                </div></span>
+              <span class="name">Тимур Касымов</span>
+              <span class="jobs">Meneger</span>
+              <div class="sub_info">
+                <span class="d-flex">
+                  <div class="country__form_block edit_country_block">
+                    <div class="country__form_iteam">
+                      <div class="contry__form_btn">
+                        <span class="pr-2">Выберите вашу страну </span>
+                        <i class="fas fa-pen edit_text_btn mr-2"></i>
+                      </div>
+                      <div class="country__form_list">
+                      </div>
+                    </div>
+                  </div> | Ташкент
+                </span>
+              </div>
+            </div>
+            <div class="info_text_mobile">
+              <textarea
+                class="edit_text_mobile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati ex voluptate odit. Consequuntur dicta, sit explicabo officiis cupiditate sunt magni labore similique, impedit facere odio nihil praesentium, laboriosam suscipit temporibus quibusdam numquam enim laborum ratione quidem qui corporis? Omnis cumque dolorum, harum molestias veritatis laborum blanditiis labore. Doloribus soluta, laboriosam illum dolorem enim iure illo expedita consectetur ducimus laudantium labore quo accusamus sequi consequatur pariatur debitis commodi distinctio minima maiores, tenetur, hic error voluptatibus? Dolorem quae ducimus tenetur facere! Aliquid quae itaque veritatis! Voluptatum iste saepe repellat molestias qui. Deserunt accusantium sequi esse voluptate perspiciatis iste magnam, quam ipsa?</textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Mobile experience -->
+    </div>
+  </header>
+  <div class="head__overlay"></div>
+
+
+  <!-- End header **************** -->
+
+  <main class="main_profiles">
+
+    <!-- Start Desktop version ***************-->
+    <div class="container">
+      <div class="row mobile_wrap">
+        <div class="col-12">
+          <div class="d-flex align-items-start justify-content-between mobile_verification">
+            <div class="ampount_box tablet_amount mt-3">
+              <p>Компания</p>
+              <div class="inp_payment">
+                <input type="text" id="editPaymentInp" placeholder="Компания не указана">
+              </div>
+            </div>
+            <div class="verification_box mt-3">
+              <p>верификация</p>
+              <div class="user_info_list">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone"></i>
+                  <span>Личность верифицирована</span>
+                </div>
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="user_phone_num">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-user"></i>
+                  <span>Номер телефон - <a href="" id="editVerificationModal" data-toggle="modal"
+                      data-target="#EditVerification">не
+                      верифицирован</a></span>
+                </div>
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="user_email">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-envelope"></i>
+                  <span>Почта подтверждена</span>
+                </div>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet_specializations perfomers_list">
+            <div class="tablet_specializations_left">
+              <div class="specializations  mt-4 edit_specializations specializations_list">
+                <div class="d-flex align-items-center justify-content-between ">
+                  <p>специализации</p>
+                  <i class="fas fa-pen mt-n3 edit_icon"></i>
+                </div>
+                <div class="specializations_info" id="special">
+                  <a href="#" class="special__item">Веб-программирование</a>
+                  <a href="">Сис. управление(CMS)</a>
+                  <a href="">HTML - верстка</a>
+                  <a href="">Сайт "Под ключ"</a>
+                  <a href="">Интернет - магазин</a>
+                  <a href="">Тестирование сайтов</a>
+                  <a href="">Маркетинговый анализ</a>
+                  <a href="">Рерайтинг</a>
+                </div>
+              </div>
+
+              <div class="specializations  add_and_remove_specializations specializations_list mt-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p>специализации</p>
+                  <i class="fas fa-plus-circle mt-n3 save_add_remove"></i>
+                </div>
+                <div class="add_specialization">Добавить <i class="fas fa-plus-circle"></i></div>
+                <div class="specializations_info dropZone">
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Веб-программирование</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Сис. управление(CMS)</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> HTML - верстка</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Сайт "Под ключ"</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Интернет - магазин</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Тестирование сайтов</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Маркетинговый анализ</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                  <div class="remove_specialization dragItem">
+                    <span><i class="fas fa-bars drag_drop"></i> Рерайтинг</span><i
+                      class="fas fa-times-circle remove_icon"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="specializations search_specializations">
+                <div class="d-flex align-items-center justify-content-between ">
+                  <p>специализации</p>
+                  <i class="fas fa-plus-circle mt-n3 save_search"></i>
+                </div>
+                <div class="search_item">
+                  <input type="text" id="searchSpecializations">
+                  <i class="far fa-search"></i>
+                </div>
+                <div class="search_specializations_item">
+                  <div class="specializations_list">
+                    <span>WEB-разработка и Сайты</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">ВЕБ-программирование</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">HTML-верстка</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Системы управления (CMS)</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4"> Сайт "Под ключ"</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check5">Интернет-магазины</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6"> Тестирование сайтов</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Тексты и переводы</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Копирайтинг</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Переводы</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Редактирование и Корректура</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Рерайтинг</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check5">Продающие текста</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6"> Нейминг и Слоганы</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6">Сценарии</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6">Транскрибация</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Программирование ПО и систем</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Мобильные предложения</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Прикладное ПО</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">База данных</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">1C-программирование</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check5"> Системное Програм.</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6">Разработка игр</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6"> Встраиваемые системы</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6">Тестирование ПО</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Управление персоналом</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Управление продажами</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Управление проектами</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Подбор персонала (HR)</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>ВЕБ-дизайн и интерфейсы</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Дизайн сайтов</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Дизайн интерфейсов и игр</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Иконки и Пиксель-арт</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Дизайн мобильных приложений</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Администрирование сайтов</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Наполнение сайтов</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Служба поддержки</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Системное администрирование</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Графика и Фотография</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Иллюстрации и Рисунки</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">3D-графика</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Обработка фотографий</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check5">Фотосъемка</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check4">Шрифты</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Аудио, Видео и Мультимедия</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Видеомонтаж</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Анимация</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Озвучивание</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Презентации</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check5">Музыка и Звуки</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check6">
+                        <label for="check6">Аудиомонтаж</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Учеба и репититорство</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Контрольные и Тесты</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Рефераты и Курсовые</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Лабораторные работы</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Уроки и Репититорство</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Полиграфия и Айдентика</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Логотипы и Знаки</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Дизайн продукции</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Верстка полиграфии</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Фирменный стиль</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check5">
+                        <label for="check5"> Наружная реклама</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Архитектура и Инжиниринг</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Интерьеры и Экстерьеры</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2">Чертежи и Схемы</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3">Машиностроение</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4">Ландшафтный дизайн</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="specializations_list">
+                    <span>Продвижение сайтов (SEO)</span>
+                    <ul>
+                      <li><input type="checkbox" class="myCheckBtn" id="check1">
+                        <label for="check1">Социальные сети (SMM и SMO)</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check2">
+                        <label for="check2"> Поисковые системы (SEO)</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check3">
+                        <label for="check3"> Контекстная реклама</label>
+                      </li>
+                      <li><input type="checkbox" class="myCheckBtn" id="check4">
+                        <label for="check4"> Маркентиговый анализ</label>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="similar_performers edit_similar_performers specializations_list">
+              <div class="d-flex align-items-center justify-content-between">
+                <p>Дополнительные навыки</p>
+                <i class="fas fa-plus-circle mt-n3 add_skill_btn"></i>
+              </div>
+              <div class="add_skill">
+                <input type="text" list="addThisText" id="addSkill" placeholder="Добавить навык" maxlength="25">
+                <span id="returnErrorText"></span>
+
+                <datalist id="addThisText">
+                  <option value="UX/UI-дизайн">
+                  <option value="Моушн-дизайн/видеодизайн">
+                  <option value="Маркетинг">
+                  <option value="Верстка">
+                  <option value="Рекрутинг в IT">
+                  <option value="Юзабилити">
+                  <option value="SMM-маркетинг">
+                  <option value="SEO оптимизация">
+                  <option value="продвижение сайтов">
+                  <option value="PHP-программист">
+                  <option value="Frontend-программист">
+                  <option value="Backend-программист">
+                  <option value="Бухгалтерия">
+                  <option value="Переводы">
+                  <option value="1С-программист">
+                  <option value="Системный администратор">
+                  <option value="Fullstack-программист">
+                  <option value="Вебмастер">
+                  <option value="Рерайтер">
+                  <option value="Модератор сайта">
+                  <option value="Технический дизайнер">
+                  <option value="3D-дизайнер">
+                  <option value="">
+                  <option value="Менеджер по продажам">
+                  <option value="Электронная коммерция">
+                  <option value="Веб-дизайн">
+                </datalist>
+              </div>
+              <div class="performers_info" id="performersInfo">
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Веб-дизайн</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Визуализатор</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Дизайнер</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Frontend-программист</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Backend-программист</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Верстка</div>
+                <div class="skill_box"><i class="fas fa-times-circle"></i> Модератор сайта</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 d-none">
+          <div class="exhibited_works mt-4 w-100">
+            <div class="d-flex align-items-center justify-content-between mobile_exhibited">
+              <p>Выставленные работы</p>
+              <div class="buttons d-flex align-items-center">
+                <div class="added_btn mr-3">Добавить<i class="fas fa-plus-circle ml-1"></i></div>
+                <button class="exhibited_btn">Все Работы</button>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap box_works pt-1">
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+              <div class="box_work">
+                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-pen" data-toggle="modal" data-target="#editModalWorks"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="adding_work mt-4">
+            <div class="adding_work_title">
+              <strong>Добавление работы</strong>
+              <div class="mobile_adding_work_title">
+                <span class="close_adding_work">Закрыть <i class="fas fa-times-circle"></i></span>
+                <button>сохранить</button>
+              </div>
+            </div>
+            <div class="adding_work_list">
+              <div class="add_info">
+                <input type="text" placeholder="Назовите Вашу работу">
+                <textarea name="" id="" placeholder="Опишите Вашу работу и давьте ссылку" onkeypress="auto_hight(this)"
+                  onkeydown="auto_hight(this)"></textarea>
+                <div class="my_works">
+                  <!-- <div class="my_work_img">
+                    <img src="" alt="">
+                  </div> -->
+                </div>
+              </div>
+              <div class="add_file">
+                <input type="file" id="addWorkInput">
+                <i class="fas fa-plus-circle fa-3x"></i>
+                <span>Перетаскивай
+                  объекты в это окно</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Desktop version ************** -->
+  </main>
+
+  <!-- End Main -->
+
+  <!-- start modal -->
+  <div class="modal fade modal_verification" id="EditVerification" data-backdrop="static" data-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal_header">
+          <h5 class="modal-title" id="staticBackdropLabel">Верификация</h5>
+          <div class="close_modal" id="closeEditVerification" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times-circle close"></i>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <h6>Личность</h6>
+            <div class="name">
+              <label for="name">полное имя</label>
+              <input type="text" id="name" placeholder="Введите Ваше ФИО">
+            </div>
+            <div class="date_brith">
+              <label for="dateBrith">Дата Рождения</label>
+              <div class="inp_date_brith">
+                <input type="date" placeholder="01.01.1990">
+                <!-- <i class="fas fa-calendar-alt"></i> -->
+              </div>
+              <div class="modal_country">
+
+                <div class="country__form_block ">
+                  <div class="country__form_iteam">
+                    <div class="contry__form_btn">
+                      <span>Выберите вашу страну</span>
+                      <i class="fa fa-chevron-down p-0"></i>
+                    </div>
+                    <div class="country__form_list">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="file">
+              <label for="myFile">документ</label>
+              <input type="file" class="attach_passport_photo">
+              <i class="fas fa-file-alt pl-4 pr-2"></i>
+              <span class="file_address">Прикрепить фото паспорта</span>
+            </div>
+            <div class="check_file">
+              <input type="checkbox" id="checkFile">
+              <label for="checkFile">Я прикрепляю фото с скрытым серийным номером.</label>
+            </div>
+            <h6>Телефон</h6>
+            <div class="phone_list">
+              <label for="phoneList">ваша телефон
+                <input type="text" class="phone" placeholder="Введите Ваш телефон"
+                  onkeypress="return (event.charCode >= 43 && event.charCode <= 57);">
+                <span class="error">Введите Ваш телефон</span>
+              </label>
+              <button type="button" class="get_code">получить код </button>
+              <input type="text" class="enter_code text-center" placeholder="Введите код" id="enterCode"
+                onkeypress="return (event.charCode >= 48 && event.charCode <= 57);" maxlength="6">
+            </div>
+            <div class="button_verification">
+              <button type="submit">Верифицироваться</button>
+            </div>
+            <div class="text_agreement">
+              <span>Нажимая кнопку “Верифицироватся”, Вы <br>
+                принмаете условия <a href="">Пользовательского соглашения</a></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal -->
+
+  <!--Start Modal works-->
+  <div class="modal fade modal_works" id="editModalWorks" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal_header">
+          <h5 class="modal-title" id="staticBackdropLabel">Портфолио</h5>
+          <div type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times-circle close"></i>
+          </div>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="name_text" id="workName" value="Letcop">
+          <textarea name="" id="workDescriptions"
+            class="descriptions_text">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Алфавит всеми своего которое гор большой строчка повстречался ведущими буквенных, великий всемогущая образ коварных злых букв, имеет свое вдали! Моей реторический даль дороге назад алфавит но переулка точках продолжил ipsum. Сбить, свой точках. Назад букв до океана! Жаренные, своего силуэт.</textarea>
+          <div class="block_works">
+            <div class="work_list edit_work_list">
+              <div class="my_work ">
+                <div class="my_img">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQ4SBS84ijiKmQF03mU9gxpDSYehCy081iw&usqp=CAU"
+                    alt="">
+                  <i class="fas fa-times-circle remove_work"></i>
+                </div>
+                <div class="quation_remove">
+                  <strong>Вы действительно хотите удалить это</strong>
+                  <div>
+                    <button class="yesBtn">Да</button>
+                    <button class="noBtn">Нет</button>
+                  </div>
+                </div>
+                <div class="add_photo">
+                  <input type="file">
+                  <i class="fas fa-plus-circle fa-3x"></i>
+                </div>
+              </div>
+              <div class="my_work">
+                <div class="my_img">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDLsY8CGA47jzerd4rlZRfBuC9jKmrmCPpA&usqp=CAU"
+                    alt="">
+                  <i class="fas fa-times-circle remove_work"></i>
+                </div>
+                <div class="quation_remove">
+                  <strong>Вы действительно хотите удалить это</strong>
+                  <div>
+                    <button class="yesBtn">Да</button>
+                    <button class="noBtn">Нет</button>
+                  </div>
+                </div>
+                <div class="add_photo">
+                  <input type="file">
+                  <i class="fas fa-plus-circle fa-3x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="work_list edit_work_list">
+              <div class="my_work">
+                <div class="my_img">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoKZXGC2af5kXJIukyLmscK99S0VC909164g&usqp=CAU"
+                    alt="">
+                  <i class="fas fa-times-circle remove_work"></i>
+                </div>
+                <div class="quation_remove">
+                  <strong>Вы действительно хотите удалить это</strong>
+                  <div>
+                    <button class="yesBtn">Да</button>
+                    <button class="noBtn">Нет</button>
+                  </div>
+                </div>
+                <div class="add_photo">
+                  <input type="file">
+                  <i class="fas fa-plus-circle fa-3x"></i>
+                </div>
+              </div>
+              <div class="my_work">
+                <div class="my_img">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgA-hgm20nLo2Fsv1XiwmsueOMph96_yzkog&usqp=CAU"
+                    alt="">
+                  <i class="fas fa-times-circle remove_work"></i>
+                </div>
+                <div class="quation_remove">
+                  <strong>Вы действительно хотите удалить это</strong>
+                  <div>
+                    <button class="yesBtn">Да</button>
+                    <button class="noBtn">Нет</button>
+                  </div>
+                </div>
+                <div class="add_photo">
+                  <input type="file">
+                  <i class="fas fa-plus-circle fa-3x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="home_screen">
+              <img src="" alt="" id="homeScreen">
+              <i class="fas fa-times-circle close"></i>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal_footer">
+          <button>сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End modal works -->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"
+    integrity="sha512-ELgdXEUQM5x+vB2mycmnSCsiDZWQYXKwlzh9+p+Hff4f5LA+uf0w2pOp3j7UAuSAajxfEzmYZNOOLQuiotrt9Q=="
+    crossorigin="anonymous"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/edit_profile.js"></script>
+</body>
+
+</html>
